@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD BANK</title>
+    <link rel="stylesheet" href="./Styles/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body>
+<!-- green navbar start -->
+  <div class="top-links d-none d-lg-flex">
+    <a class="nav-link" href="#">Personal</a>
+    <a class="nav-link" href="#">Small Business</a>
+    <a class="nav-link" href="#">Commercial</a>
+    <a class="nav-link" href="#">Investing</a>
+    <a class="nav-link" href="#">About TD</a>
+  </div>
+
+    <!-- green navbar end -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="./Investing.html">
+        <img src="./Image/td-logo-desktop.png" alt="image" class="logo-img">
+      </a>
+
+      <!-- Toggler button for mobile -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tdNavbar" aria-controls="tdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="tdNavbar">
+        <ul class="navbar-nav ml-auto align-items-lg-center">
+          <!-- Icons -->
+          <li class="nav-item"><a class="nav-link" href="#"><input type="search" id="search" placeholder="Search"></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-map-marker-alt"></i> Locations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Help</a></li>
+
+          <!-- Dropdown: Canada -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-globe"></i> Canada
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+                <a class="dropdown-item" href="#">Canada ✔</a>
+                <a class="dropdown-item" href="#">United Kingdom</a>
+            </div>
+          </li>
+          <!-- Dropdown: English -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              English
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Français</a>
+            </div>
+          </li>
+          <!-- Divider (desktop only) -->
+          <li class="d-none d-lg-block divider"></li>
+
+          <!-- Dropdown: Login -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Login
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginDropdown">
+              <a class="dropdown-item" href="#">EasyWeb</a>
+              <a class="dropdown-item" href="#">WebBroker</a>
+              <a class="dropdown-item" href="#">Insurance</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Mobile Navbar -->
+  <nav class="navbar navbar-expand-lg main-navbar" id="mobileNavbar">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./Image/td-logo-desktop.png" alt="image" class="logo-img">
+      </a>
+
+      <!-- Toggler button for mobile -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tdNavbar" aria-controls="tdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <!-- <li class="nav-item dropdown"> -->
+            <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>
+              Login
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginDropdown">
+              <a class="dropdown-item" href="#">EasyWeb</a>
+              <a class="dropdown-item" href="#">WebBroker</a>
+              <a class="dropdown-item" href="#">Insurance</a>
+            </div>
+          <!-- </li> -->
+      <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="tdNavbar">
+          <a class="nav-link" href="#"><input type="search" id="search" placeholder="Search"></a>
+          <ul class="navbar-nav ml-auto align-items-lg-center">
+            <li class="nav-item top-links d-lg-flex d-block w-100 justify-content-center">
+                <select name="" id="Investing">
+                    <a class="nav-link" href="#"><option value="TD:Investing">TD:Investing</option></a>
+                    <a class="nav-link" href="#"><option value="personal">Personal</option></a>
+                    <a class="nav-link" href="#"><option value="smallBusiness">Small Business</option></a>
+                    <a class="nav-link" href="#"><option value="commercial">Commercial</option></a>
+                    <a class="nav-link" href="#"><option value="investing">Investing</option></a>
+                    <a class="nav-link" href="#"><option value="aboutTd">About TD</option></a>
+                </select>
+            </li>
+          <!-- Icons -->
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-map-marker-alt"></i> Locations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Help</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-globe"></i> Canada</a></li>
+
+          <!-- Dropdown: English -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              English
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Français</a>
+            </div>
+          </li>
+
+          <!-- Divider (desktop only) -->
+          <li class="d-none d-lg-block divider"></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- NAVBAR END -->
+    <div class="section">
+        <!-- GET TO KNOW US START -->
+
+        <div class="left-right-section">
+            <div class="left-section">
+                <img src="./Image/About img 1.jpg" alt="image">
+            </div>
+            <div class="right-section">
+                <p>Get to know TD, a top 10 North American bank.</p>
+            </div>
+        </div>
+
+        <!-- GET TO KNOW US END -->
+        <!-- ABOUT TD START  -->
+
+        <div class="about-td">
+            <div id="about-td">
+                <h3>About TD</h3>
+            </div>
+            <div id="get-to-know-us">
+                <h3>Get to know to us</h3>
+            </div>
+            <div class="grid">
+                <div class="who-we-are">
+                    <div class="icon">
+                        <i class="fa fa-bank"></i>
+                    </div>
+                    <div class="who-we-are-contents">
+                        <a href="#">Who we are <i class="fa fa-angle-right"></i></a>
+                        <p>Find out how our proven<br>business model, purpose-<br>driven and forward<br>focus sets TD apart.</p>
+                    </div>
+                </div>
+                <div class="our-colleaques">
+                    <div class="icon">
+                        <i class="fa fa-male"></i>
+                    </div>
+                    <div class="our-colleagues-contents">
+                        <a href="#">Our colleagues <i class="fa fa-angle-right"></i></a>
+                        <p>We create an environment<br>for colleagues to thrive and<br>unlock their full career<br>potential.</p>
+                    </div>
+                </div>
+                <div class="corporate-profile">
+                    <div class="icon">
+                        <img src="./Image/td-logo-desktop.png" alt="image">
+                    </div>
+                    <div class="corporate-profile-contents">
+                        <a href="#">Corporate profile <i class="fa fa-angle-right"></i></a>
+                        <p>TD Bank Group offers<br>products and services to<br>over 27.9 million customers<br>worldwide.</p>
+                    </div>
+                </div>
+                <div class="corporate-citizenship">
+                    <div class="icon">
+                        <i class="fa fa-leanpub"></i>
+                    </div>
+                    <div class="corporate-citizenship-contents">
+                        <a href="#">Corporate citizenship <i class="fa fa-angle-right"></i></a>
+                        <p>TD helps create the<br>conditions for everyone to<br>succeed in a changing<br>world.</p>
+                    </div>
+                </div>
+                <div class="sustainability">
+                    <div class="icon">
+                        <i class="fa fa-hand-grab-o" aria-hidden="true"></i>
+                    </div>
+                    <div class="sustainability-contents">
+                        <a href="#">Sustainability <i class="fa fa-angle-right"></i></a>
+                        <p>Learn how we're<br>embedding sustainability<br>into our business.</p>
+                    </div>
+                </div>
+                <div class="investor-relations">
+                    <div class="icon">
+                        <i class="fa fa-user"></i>
+                    </div>
+                    <div class="investor-relations-contents">
+                        <a href="#">Investor relations <i class="fa fa-angle-right"></i></a>
+                        <p>Find reporting and<br>disclosures TD's strategy<br>and financial performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT TD END  -->
+
+        <!-- OUR STORY START -->
+
+        <div class="our-story">
+            <h3>Our story</h3>
+            <div class="working-together">
+                <div class="working-together-image">
+                    <img src="./Image/our story img 1.png" alt="image">
+                </div>
+                <div class="working-together-contents">
+                    <a href="#">Working together, toward an inclusive and <br> sustainable future <i class="fa fa-angle-right"></i></a>
+                    <p>Our Environmental, Social and Governance (ESG) strategy reflects <br>the commitments we make and is represented by the actions we <br>take together. Learn more about our approach to ESG.</p>
+                </div>
+            </div>
+            <div class="Reimaging-our-future">
+                <div class="Reimaging-our-future-image">
+                    <img src="./Image/our story img 2.png" alt="image">
+                </div>
+                <div class="Reimaging-our-future-contents">
+                    <a href="#">Reimagining the future of TD branches, one community <br>at a time<i class="fa fa-angle-right"></i></a>
+                    <p>Renovations like the one at this TD branch create a new banking <br>experience, with a more welcoming atmosphere and in-person <br>meeting spaces.</p>
+                </div>
+            </div>
+            <div class="Protecting-our-planet">
+                <div class="Protecting-our-planet-image">
+                    <img src="./Image/our story img 3.png" alt="image">
+                </div>
+                <div class="Protecting-our-planet-contents">
+                    <a href="#">Protecting yourself from fraud and scams<i class="fa fa-angle-right"></i></a>
+                    <p>Resources and advice to help keep you and your family safe and <br>informed</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- OUR STORY END -->
+
+            <!-- TD EVENTS START -->
+        <div class="td-event">
+            <h3>TD Events</h3>
+            <div class="td-event-contents">
+                <div class="td-event-image">
+                    <img src="./Image/td-invest-en (1).png" alt="image">
+                </div>
+                <div class="td-event-contents-text">
+                    <small>Proven innovator, new perspectives</small><br>
+                    <p>TD Invent – It's how we bring <br>innovation to life.</p>
+                </div>
+            </div>
+            <p id="td-event">TD Invent is our enterprise approach to innovation and supports our business <br>strategy as a forward-focused bank. It's about using emerging technology to <br>engage with our customers and exceeding their rapidly evolving expectations. </p>
+            <div class="btn">
+                <button class="explore-td">Explore TD Invent</button>   
+            </div>
+        </div>
+
+        <!-- TD EVENTS END -->
+
+        <!-- INNOVATION ACCELERATED END  -->
+
+        <div class="innovation">
+            <div class="innovation-accelerated">
+                <div class="innovation-accelerated-image">
+                    <img src="./Image/innovational-accelerated 1.png" alt="image">
+                </div>
+                <div class="innovation-accelerated-contents">
+                    <h4>Innovation accelerated</h4>
+                    <p>We’ve developed a proven, repeatable way to explore, test and get <br>our ground-breaking ideas into your hands fast.</p>
+                </div>
+            </div>
+            <div class="Empowered">
+                <div class="Empowered-image">
+                    <img src="./Image/empowered-collagues.png" alt="image">
+                </div>
+                <div class="Empowered-contents">
+                    <h4>Empowered colleagues</h4>
+                    <p>We’ve made it easy for TD employees to harness their creativity, bring their ideas to life, and solve customer and colleague problems.</p>
+                </div>
+            </div>
+            <div class="human-approach">
+                <div class="human-approach-image">
+                    <img src="./Image/human-approach (1).png" alt="image">
+                </div>
+                <div class="human-approach-contents">
+                    <h4>A human approach</h4>
+                    <p>We put you at the centre of everything we do. This ensures we’re designing things that you want, need and can use intuitively.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- INNOVATION ACCELERATED END -->
+
+        <!-- OUR LEADERSHIP START -->
+
+        <div class="our-leadership">
+            <h3 id="leadership">Our leadership</h3>
+            <p>Meet our Chair and Senior Leadership, then familarize yourself with our corporate profile, history and more.</p>
+            <div class="anchor-tag">
+                <a href="#">See corporate information <i class="fa fa-angle-right"></i></a>   
+            </div>
+            <h3 class="award">Awards</h3>
+            <div class="our-leadership-contents">
+                <div class="second-grid">
+                    <div class="grid-one">
+                        <div class="grid-one-image">
+                            <img src="./Image/sustainabilityleader.png" alt="image">
+                        </div>
+                        <div class="grid-tag">
+                            <a href="./Recognize.html">Recognized for sustainability efforts</a>
+                        </div>
+                        <div class="grid-one-contents">
+                            <p>TD was listed in the Dow Jones Sustainability North American Index for the 12th consecutive year in 2023.</p>
+                        </div>
+                    </div>
+                    <div class="grid-two">
+                        <div class="grid-two-image">
+                            <img src="./Image/bestworkplace.png" alt="image">
+                        </div>
+                        <div class="grid-tag">
+                            <a href="#">One of the Best Workplaces<sup>TM</sup> in Canada</a>
+                        </div>
+                        <div class="grid-two-contents">
+                            <p>In 2024, TD was named one of the Best Workplaces™ in Canada by Great Place to Work for the 19th year in a row.</p>
+                        </div>
+                    </div>
+                    <div class="grid-three">
+                        <div class="grid-three-image">
+                            <img src="./Image/bestmobileapp.png" alt="image">
+                        </div>
+                        <div class="grid-tag">
+                            <a href="./powerRank.html">Award-winning mobile banking app</a>
+                        </div>
+                        <div class="grid-three-contents">
+                            <p>In 2023, TD tied for "Highest in Customer Satisfaction" among mobile banking apps in Canada, awarded by J.D. Power.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="grid-one">
+                            <div class="grid-one-image">
+                                <img src="./Image/sustainabilityleader.png" alt="image">
+                            </div>
+                            <div class="grid-tag">
+                                <a href="#">Recognized for sustainability efforts</a>
+                            </div>
+                            <div class="grid-one-contents">
+                                <p>TD was listed in the Dow Jones Sustainability North American Index for the 12th consecutive year in 2023.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="grid-two">
+                            <div class="grid-two-image">
+                                <img src="./Image/bestworkplace.png" alt="image">
+                            </div>
+                            <div class="grid-tag">
+                                <a href="#">One of the Best Workplaces<sup>TM</sup> in Canada</a>
+                            </div>
+                            <div class="grid-two-contents">
+                                <p>In 2024, TD was named one of the Best Workplaces™ in Canada by Great Place to Work for the 19th year in a row.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="grid-three">
+                            <div class="grid-three-image">
+                                <img src="./Image/bestmobileapp.png" alt="image">
+                            </div>
+                            <div class="grid-tag">
+                                <a href="#">Award-winning mobile banking app</a>
+                            </div>
+                            <div class="grid-three-contents">
+                                <p>In 2023, TD tied for "Highest in Customer Satisfaction" among mobile banking apps in Canada, awarded by J.D. Power.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="anchor-tag">
+                    <a href="./Awards.html">View the entire list of our awards and recognition <i class="fa fa-angle-right"></i></a>   
+                </div>
+        </div>  
+        <!-- OUR LEADERSHIP END -->
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./Script/scripts.js"></script>
+</body>
+</html>

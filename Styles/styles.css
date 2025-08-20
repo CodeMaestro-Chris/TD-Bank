@@ -1,0 +1,5425 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.section {
+    width: 95%;
+    margin: 0px auto;
+}
+
+ /* Navbar base */
+.navbar {
+    padding: 0;
+    
+}
+
+/* Top links (desktop strip, collapse into menu on mobile) */
+.top-links {
+    background-color: #008A00; /* TD green */
+    padding: 5px 0;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100%;
+    z-index: 9999 !important; 
+}
+
+.top-links .nav-link {
+    color: white !important;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 8px;
+}
+.top-links .nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Main navbar */
+.main-navbar {
+    background-color: #00281A; /* Dark green */
+    position: fixed !important;
+    top: 40px !important;
+    width: 100%;
+    z-index: 9999 !important; 
+}
+
+.navbar-nav .nav-link {
+    color: #d4c5a0 !important; /* Gold-ish */
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+}
+
+.divider {
+    border-left: 1px solid #d4c5a0;
+    height: 25px;
+    margin: 0 15px;
+}
+.logo-img {
+    height: 35px;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+    /* background-color: #00281A; */
+    background-color: #ffffff !important;
+    border: none;
+    min-width: 200px;
+}
+.dropdown-menu .dropdown-item {
+    color: #d4c5a0;
+    padding: 12px 20px;
+    font-size: 16px;
+}
+.dropdown-menu .dropdown-item:hover {
+    background-color: #008A00;
+    color: #fff;
+}
+
+
+/* Mobile toggle button */
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28212,197,160,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Collapsed menu styling */
+.navbar-collapse {
+    background-color: #00281A; /* Dark green menu on mobile */
+}
+.navbar-collapse .nav-link {
+    color: #d4c5a0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.navbar-collapse .nav-link:hover {
+    color: #fff !important;
+}
+
+a i {
+    margin: 0px 5px;
+}
+
+#search {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #d4c5a0;
+    font-size: 16px;
+    border-bottom: 1px solid #d4c5a0;
+}
+
+#search ::placeholder {
+    color: #d4c5a0;
+    opacity: 0.7; /* Slightly transparent placeholder */
+    font-weight: 600;
+    padding: 0px 10px !important;
+}
+
+    #search:focus {
+    border-bottom: 2px solid #d4c5a0; /* Highlight on focus */
+}
+
+#mobileNavbar {
+    display: none !important; /* Hide all nav items by default */
+}
+
+#mobileNavbar .container-fluid .navbar-toggler {
+    position: relative;
+}
+
+#mobileNavbar .container-fluid .navbar-toggler {
+    position: absolute;
+    left: 55px;
+    top: 5px;
+}
+
+#mobileNavbar #nav-link .nav-item {
+    color: #000000 !important;
+    font-weight: 600;
+    width: 100% !important;
+    border: 2px solid #000000 !important;
+}
+
+.top-links {
+display: none; /* Hide top links on mobile */
+}
+
+
+#mobileNavbar .container-fluid #loginDropdown {
+    color: #d4c5a0 !important;
+}
+    
+#mobileNavbar .container-fluid #loginDropdown i {
+    color: #d4c5a0 !important;
+    font-size: 20px;
+}
+
+.section {
+    position: relative;
+}
+
+.selector {
+    display: flex !important;
+    width: 90% !important;
+    margin: 0px auto !important;
+    padding: 10px 0px;
+    color: #000000 !important;
+    background-color: #000000 !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.selector .nav-item {
+    background-color: #000000 !important;
+}
+
+.selector .nav-item .nav-link .dropdown-menu {
+    color: #000000 !important;
+}
+
+.award-recognition {
+    margin-top: 120px !important;
+}
+
+.login {
+    margin-top: 85px !important;
+}
+
+.it-is-our-business {
+    margin-top: 80px !important;
+}
+
+.recognized {
+    margin-top: 120px !important;
+}
+/* GET TO KNOW US START */
+
+.section .left-right-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    width: 95%;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.781);
+}
+
+.section .left-right-section .left-section img {
+    width: 100%;
+}
+
+.section .left-right-section .left-section {
+    width: 100%;
+    /* margin: 0px 0px; */
+}
+
+.section .left-right-section .right-section {
+    width: 100%;
+}
+
+.section .left-right-section .right-section p {
+    font-size: 30px;
+    font-weight: 800px;
+    width: 90%;
+    color: #008000;
+}
+
+/* GET TO KNOW US END */
+
+/* ABOUT TD START  */
+.section .about-td  {
+    width: 95%;
+    margin: 40px auto;
+}
+
+.section .about-td #about-td {
+    text-align: center;
+    color: #008000;
+}
+
+.section .about-td #get-to-know-us {
+    text-align: center;
+    color: #008000;
+    margin-top: 20px;
+}
+
+.about-td .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 40px auto;
+}
+
+.about-td .grid .who-we-are {
+    display: flex;
+}
+
+.about-td .grid .who-we-are .icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.about-td .grid .who-we-are .icon i {
+    font-size: 30px;
+    color: #008000;
+}
+
+.about-td .grid .who-we-are .icon i:hover {
+    color: #fff;
+}
+
+.about-td .grid .who-we-are .icon:hover {
+    background-color: #008000;
+    color: white;
+}
+
+.about-td .grid .who-we-are .who-we-are-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.about-td .grid .who-we-are .who-we-are-contents p {
+    margin-top: 15px;
+}
+
+.about-td .grid .our-colleaques {
+    display: flex;
+}
+
+.about-td .grid .our-colleaques .icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.about-td .grid .our-colleaques .icon i {
+    font-size: 30px;
+    color: #008000;
+}
+
+.about-td .grid .our-colleaques .icon i:hover {
+    color: #fff;
+}
+
+.about-td .grid .our-colleaques .icon:hover {
+    background-color: #008000;
+    color: white;
+}
+
+.about-td .grid .our-colleaques .our-colleagues-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.about-td .grid .our-colleaques .our-colleagues-contents p {
+    margin-top: 15px;
+}
+
+.about-td .grid .corporate-profile {
+    display: flex;
+}
+
+.about-td .grid .corporate-profile .icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.about-td .grid .corporate-profile .icon img {
+    width: 40px;
+}
+
+.about-td .grid .corporate-profile .icon:hover {
+    background-color: #008000;
+    color: white;
+}
+
+.about-td .grid .corporate-profile .corporate-profile-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.about-td .grid .corporate-profile .corporate-profile-contents p {
+    margin-top: 15px;
+}
+
+.about-td .grid .corporate-citizenship {
+    display: flex;
+}
+
+.about-td .grid .corporate-citizenship .icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.about-td .grid .corporate-citizenship .icon i {
+    font-size: 30px;
+    color: #008000;
+}
+
+.about-td .grid .corporate-citizenship .icon i:hover {
+    color: #fff;
+}
+
+.about-td .grid .corporate-citizenship .icon:hover {
+    background-color: #008000;
+    color: white;
+}
+
+.about-td .grid .corporate-citizenship .corporate-citizenship-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.about-td .grid .corporate-citizenship .corporate-citizenship-contents p {
+    margin-top: 15px;
+}
+
+.about-td .grid .sustainability {
+    display: flex;
+}
+
+.about-td .grid .sustainability .icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.about-td .grid .sustainability .icon i {
+    font-size: 30px;
+    color: #008000;
+}
+
+.about-td .grid .sustainability .icon i:hover {
+    color: #fff;
+}
+
+.about-td .grid .sustainability .icon:hover {
+    background-color: #008000;
+    color: white;
+}
+
+.about-td .grid .sustainability .sustainability-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.about-td .grid .sustainability .sustainability-contents p {
+    margin-top: 15px;
+}
+
+.about-td .grid .investor-relations {
+    display: flex;
+}
+
+.about-td .grid .investor-relations .icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.about-td .grid .investor-relations .icon i {
+    font-size: 30px;
+    color: #008000;
+}
+
+.about-td .grid .investor-relations .icon i:hover {
+    color: #fff;
+}
+
+.about-td .grid .investor-relations .icon:hover {
+    background-color: #008000;
+    color: white;
+}
+
+.about-td .grid .investor-relations .investor-relations-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.about-td .grid .investor-relations .investor-relations-contents p {
+    margin-top: 15px;
+}
+/* ABOUT TD END  */
+
+/* OUR STORY START */
+
+.our-story h3 {
+    text-align: center;
+    color: #008000;
+}
+
+.our-story .working-together {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 95%;
+    margin: 40px auto;
+}
+
+.our-story .working-together .working-together-image {
+    width: 100%;
+}
+
+.our-story .working-together .working-together-image img {
+    width: 100%;
+}
+
+.our-story .working-together .working-together-contents {
+    width: 100%;
+}
+
+.our-story .working-together .working-together-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.our-story .working-together .working-together-contents a i {
+    font-size: 16px;
+}
+
+.our-story .working-together .working-together-contents p {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.our-story .Reimaging-our-future {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 95%;
+    margin: 40px auto;
+}
+
+.our-story .Reimaging-our-future .Reimaging-our-future-image {
+    width: 100%;
+}
+
+.our-story .Reimaging-our-future .Reimaging-our-future-image img {
+    width: 100%;
+}
+
+.our-story .Reimaging-our-future .Reimaging-our-future-contents {
+    width: 100%;
+}
+
+.our-story .Reimaging-our-future .Reimaging-our-future-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.our-story .Reimaging-our-future .Reimaging-our-future-contents a i {
+    font-size: 16px;
+}
+
+.our-story .Reimaging-our-future .Reimaging-our-future-contents p {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+.our-story .Protecting-our-planet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 95%;
+    margin: 40px auto;
+}
+
+.our-story .Protecting-our-planet .Protecting-our-planet-image {
+    width: 100%;
+}
+
+.our-story .Protecting-our-planet .Protecting-our-planet-image img {
+    width: 100%;
+}
+
+.our-story .Protecting-our-planet .Protecting-our-planet-contents {
+    width: 100%;
+}
+
+.our-story .Protecting-our-planet .Protecting-our-planet-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.our-story .Protecting-our-planet .Protecting-our-planet-contents a i {
+    font-size: 16px;
+}
+
+.our-story .Protecting-our-planet .Protecting-our-planet-contents p {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+/* OUR STORY END */
+
+/* TD EVENTS START */
+
+.td-event {
+    margin-top: 40px;
+    background-color: rgb(245, 245, 252);
+    padding: 20px 0px;
+}
+
+.td-event h3 {
+    text-align: center;
+    color: #008000;
+}
+
+.td-event .td-event-contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 95%;
+    margin: 40px auto;
+}
+
+.td-event .td-event-contents .td-event-image {
+    width: 100%;
+}
+
+.td-event .td-event-contents .td-event-image img {
+    width: 100%;
+}
+
+.td-event .td-event-contents .td-event-contents-text {
+    width: 100%;
+}
+
+.td-event .td-event-contents .td-event-contents-text small {
+    font-weight: 600;
+}
+
+.td-event .td-event-contents .td-event-contents-text p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.td-event #td-event {
+    text-align: center;
+}
+
+.td-event .btn {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.td-event .explore-td {
+    padding: 10px 20px;
+    background-color: #008000;
+    color: white;
+    border: none;
+    margin: 0px auto;
+}
+
+.td-event .explore-td:hover {
+    background-color: transparent;
+    border: 2px solid #008000;
+    color: #005700;
+    transition: all 0.5s ease;
+}
+
+/* TD EVENTS END */
+
+/* INNOVATION ACCELERATED START  */
+
+.innovation .innovation-accelerated {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 95%;
+    margin: 40px auto;
+}
+
+.innovation .innovation-accelerated .innovation-accelerated-image {
+    width: 100%;
+}
+
+.innovation .innovation-accelerated .innovation-accelerated-image img {
+    width: 100%;
+}
+
+.innovation .innovation-accelerated .innovation-accelerated-contents {
+    width: 100%;
+}
+
+.innovation .innovation-accelerated .innovation-accelerated-contents h4 {
+    margin-bottom: 20px;
+}
+
+.innovation .innovation-accelerated .innovation-accelerated-contents p {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.innovation .Empowered {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 95%;
+    margin: 40px auto;
+}
+
+.innovation .Empowered .Empowered-image {
+    width: 100%;
+}
+
+.innovation .Empowered .Empowered-image img {
+    width: 100%;
+}
+
+.innovation .Empowered .Empowered-contents {
+    width: 100%;
+}
+
+.innovation .Empowered .Empowered-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.innovation .Empowered .Empowered-contents a i {
+    font-size: 16px;
+}
+
+.innovation .Empowered .Empowered-contents p {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.innovation .human-approach {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 95%;
+    margin: 40px auto;
+}
+
+.innovation .human-approach .human-approach-image {
+    width: 100%;
+}
+
+.innovation .human-approach .human-approach-image img {
+    width: 100%;
+}
+
+.innovation .human-approach .human-approach-contents {
+    width: 100%;
+}
+
+.innovation .human-approach .human-approach-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.innovation .human-approach .human-approach-contents a i {
+    font-size: 16px;
+}
+
+.innovation .human-approach .human-approach-contents p {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+/* INNOVATION ACCELERATED END  */
+
+/* OUR LEADERSHIP START */
+
+.our-leadership {
+    width: 95%;
+    margin: 40px auto;
+}
+
+.our-leadership #leadership {
+    text-align: center;
+    color: #008000;
+}
+
+.our-leadership p {
+    text-align: center;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 15px;
+}
+
+.our-leadership .anchor-tag {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.our-leadership a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+.our-leadership .award {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.our-leadership .our-leadership-contents {
+    margin: 40px auto;
+}
+
+.our-leadership .our-leadership-contents .second-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.our-leadership .our-leadership-contents .second-grid .grid-one {
+    width: 100%;
+    text-align: center;
+}
+
+.our-leadership .our-leadership-contents .second-grid .grid-one .grid-one-image {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.our-leadership .our-leadership-contents .second-grid .grid-two {
+    width: 100%;
+    text-align: center;
+}
+
+.our-leadership .our-leadership-contents .second-grid .grid-two .grid-two-image {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.our-leadership .our-leadership-contents .second-grid .grid-three {
+    width: 100%;
+    text-align: center;
+}
+
+.our-leadership .our-leadership-contents .second-grid .grid-three .grid-three-image {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.our-leadership #carouselExampleSlidesOnly {
+    display: none;
+}
+
+/* OUR LEADERSHIP END */
+
+
+/* AWARD AND RECOGINTION SECTION START*/
+
+.award-recognition {
+    width: 54%;
+    margin: 20px auto;
+    line-height: 28px;
+}
+
+.award-recognition #award {
+    color: #000000;
+    text-align: center;
+    border-bottom: 2px solid #008000;
+    padding-bottom: 20px;
+}
+
+.award-recognition .sustainability-indices h3 {
+    text-align: center;
+    margin: 30px 0px;
+    padding: 15px 0px;
+}
+
+.award-recognition .sustainability-indices li::marker {
+    color: #008000;
+}
+
+.award-recognition .Social h3 {
+    text-align: center;
+    margin: 30px 0px;
+    padding: 15px 0px;
+    border-top: 1px solid #d6d1d1;
+}
+
+.award-recognition .Social li::marker {
+    color: #008000;
+}
+
+.award-recognition .Environmental h3 {
+    text-align: center;
+    margin: 30px 0px;
+    padding: 15px 0px;
+    border-top: 1px solid #d6d1d1;
+}
+
+.award-recognition .Environmental li::marker {
+    color: #008000;
+}
+
+.award-recognition .Governance-Reputation h3 {
+    text-align: center;
+    margin: 30px 0px;
+    padding: 15px 0px;
+    border-top: 1px solid #d6d1d1;
+}
+
+.award-recognition .Governance-Reputation li::marker {
+    color: #008000;
+}
+
+.copywrite {
+    text-align: center;
+    width: 100%;
+}
+
+.copywrite small{
+    margin-top: 30px;
+    line-height: 10px;
+    text-align: center;
+}
+/* AWARD AND RECOGINTION SECTION END*/
+
+/* RECOGNIZED SECTION START */
+
+.recognized {
+    width: 70%;
+    margin: 40px auto;
+}
+
+a {
+    color: #008000 !important;
+    text-decoration: none !important;
+}
+
+.recognized .td-rank {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #d6d1d1;
+    margin-bottom: 20px;
+}
+
+.recognized .td-rank #td-bank {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.recognized .td-rank h1 {
+    font-weight: 600;
+    margin: 10px 0px;
+    font-size: 35px;
+}
+
+.recognized .td-rank small {
+    color: #524f4f8f;
+    font-weight: 600;
+    align-items: center;
+}
+
+.recognized .td-recognize .td-group span {
+    color: #524f4f8f;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 20px 0px;
+}
+
+.recognized .td-recognize #td-recognize {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.recognized .td-recognize #td-recognize p span {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.recognized .td-recognize #td-recognize p {
+    line-height: 28px;
+}
+
+.recognized .td-recognize #td-recognize ul {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.recognized .td-recognize #td-recognize span {
+    margin-top: 20px;
+}
+
+.recognized .td-recognize #td-recognize #toronto-dominion {
+    padding-top: 10px;
+}
+
+.recognized .td-recognize #td-recognize #J-D {
+    margin-top: 20px;
+}
+
+.recognized .td-recognize #td-recognize .empty-line {
+    border-bottom: 2px solid black;
+    width: 30%;
+    padding: 10px 0px;
+    margin-bottom: 30px;
+}
+
+.recognized .td-recognize #td-recognize #trading {
+    font-size: 11px;
+}
+
+/* RECOGNIZED SECTION END */
+
+/* PERSONAL SECTION START */
+
+.section .small-business {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #d6d1d1;
+    gap: 40px;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.section .small-business .mobile-image {
+    display: none;
+}
+
+.section .small-business #small-business {
+    background-color: #008000;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.section .small-business #small-business:hover {
+    background-color: transparent;
+    color: #008000;
+    border: 2px solid #008000;
+    transition: all 0.5s ease;
+}
+
+.section .small-business #small-business h1 {
+    font-weight: 600;
+}
+
+.section .small-business .small-business-contents {
+    line-height: 23px;
+    padding-right: 20px;
+    border-right: 3px solid #d6d1d1;
+}
+
+.section .small-business-contents #para {
+    margin: 15px 0px;
+}
+
+.section .small-business .small-business-contents #mobile-para {
+    display: none;
+}
+
+.section .small-business .small-business-contents .small-business-btn #Learn-more {
+    padding: 10px 20px;
+    background-color: white;
+    border: transparent;
+    border: 2px solid #008000;
+    outline: none;
+    color:#008000;
+    font-weight: 800px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.section .small-business .small-business-contents .small-business-btn #Learn-more:hover {
+    background-color: #008000;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.section .small-business .online-banking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    color: #043804;
+}
+
+.section .small-business .online-banking #online-banking h3 {
+    color: #043804;
+    font-size: 23px;
+    font-weight: 800px;
+    margin-bottom: 15px;
+} 
+
+.section .small-business .online-banking #online-banking #login {
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #008000;
+    color: white;
+    border: transparent;
+    outline: none;
+    font-weight: 800px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.section .small-business .online-banking #online-banking #login:hover {
+    background-color: transparent;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: all 0.5s ease;
+}
+
+.section .small-business .online-banking #online-banking #login i {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.section .small-business .online-banking #online-banking .online-banking-tag {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.section .small-business .online-banking #online-banking .online-banking-tag a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.section .small-business .online-banking #online-banking .online-banking-tag a i {
+    font-weight: 600;
+}
+
+.section .small-business .online-banking #online-trading {
+    margin-top: 20px;
+    border-top: 1px solid #d6d1d1;
+    padding-top: 26px;
+}
+
+.section .small-business .online-banking #online-trading h3 {
+    color: #043804;
+    font-size: 23px;
+    font-weight: 800px;
+    margin-bottom: 15px;
+} 
+
+.section .small-business .online-banking #online-trading #login {
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #008000;
+    color: white;
+    border: transparent;
+    outline: none;
+    font-weight: 800px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.section .small-business .online-banking #online-trading #login:hover {
+    background-color: transparent;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: all 0.5s ease;
+}
+
+.section .small-business .online-banking #online-trading #login i {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.section .small-business .online-banking #online-trading .online-banking-tag {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.section .small-business .online-banking #online-trading .online-banking-tag a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.section .small-business .online-banking #online-trading .online-banking-tag a i {
+    font-weight: 600;
+}
+
+
+/* PERSONAL SECTION END */
+
+/* WELCOME TO TD START */
+
+
+.section .welcome-td  {
+    width: 95%;
+    margin: 40px auto;
+}
+
+.section .welcome-td #welcome-td {
+    text-align: center;
+    color: #008000;
+}
+
+.section .welcome-td #explore-td {
+    text-align: center;
+    color: #008000;
+    margin-top: 20px;
+}
+
+.welcome-td .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 40px auto;
+    padding-bottom: 40px;
+    border-bottom: 10px solid #d6d1d1;
+}
+
+.welcome-td .grid .find-cheque {
+    display: flex;
+}
+
+.welcome-td .grid .find-cheque .icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.welcome-td .grid .find-cheque .icon i {
+    font-size: 30px;
+    color: #008000;
+}
+
+.welcome-td .grid .find-cheque .icon i:hover {
+    color: #fff;
+}
+
+.welcome-td .grid .find-cheque .icon:hover {
+    background-color: #008000;
+    color: white;
+}
+
+.welcome-td .grid .find-cheque .find-cheque-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.welcome-td .grid .find-cheque .find-cheque-contents p {
+    margin-top: 15px;
+}
+
+.welcome-td .grid .find-savings {
+    display: flex;
+}
+
+.welcome-td .grid .find-savings .icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.welcome-td .grid .find-savings .icon i {
+    font-size: 30px;
+    color: #008000;
+}
+
+.welcome-td .grid .find-savings .icon i:hover {
+    color: #fff;
+}
+
+.welcome-td .grid .find-savings .icon:hover {
+    background-color: #008000;
+    color: white;
+}
+
+.welcome-td .grid .find-savings .find-savings-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.welcome-td .grid .find-savings .find-savings-contents p {
+    margin-top: 15px;
+}
+
+.welcome-td .grid .find-credit {
+    display: flex;
+}
+
+.welcome-td .grid .find-credit .icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.welcome-td .grid .find-credit .icon i {
+    font-size: 30px;
+    color: #008000;
+}
+
+.welcome-td .grid .find-credit .icon i:hover {
+    color: #fff;
+}
+
+.welcome-td .grid .find-credit .icon:hover {
+    background-color: #008000;
+    color: white;
+}
+
+.welcome-td .grid .find-credit .find-credit-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.welcome-td .grid .find-credit .find-credit-contents p {
+    margin-top: 15px;
+}
+
+.welcome-td .grid .explore-mortgage {
+    display: flex;
+}
+
+.welcome-td .grid .explore-mortgage .icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.welcome-td .grid .explore-mortgage .icon i {
+    font-size: 30px;
+    color: #008000;
+}
+
+.welcome-td .grid .explore-mortgage .icon i:hover {
+    color: #fff;
+}
+
+.welcome-td .grid .explore-mortgage .icon:hover {
+    background-color: #008000;
+    color: white;
+}
+
+.welcome-td .grid .explore-mortgage .explore-mortgage-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.welcome-td .grid .explore-mortgage .explore-mortgage-contents p {
+    margin-top: 15px;
+}
+
+.welcome-td .grid .personal-investing {
+    display: flex;
+}
+
+.welcome-td .grid .personal-investing .icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.welcome-td .grid .personal-investing .icon i {
+    font-size: 30px;
+    color: #008000;
+}
+
+.welcome-td .grid .personal-investing .icon i:hover {
+    color: #fff;
+}
+
+.welcome-td .grid .personal-investing .icon:hover {
+    background-color: #008000;
+    color: white;
+}
+
+.welcome-td .grid .personal-investing .personal-investing-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.welcome-td .grid .personal-investing .personal-investing-contents p {
+    margin-top: 15px;
+}
+
+.welcome-td .grid .borrowing {
+    display: flex;
+}
+
+.welcome-td .grid .borrowing .icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.welcome-td .grid .borrowing .icon i {
+    font-size: 30px;
+    color: #008000;
+}
+
+.welcome-td .grid .borrowing .icon i:hover {
+    color: #fff;
+}
+
+.welcome-td .grid .borrowing .icon:hover {
+    background-color: #008000;
+    color: white;
+}
+
+.welcome-td .grid .borrowing .borrowing-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.welcome-td .grid .borrowing .borrowing-contents p {
+    margin-top: 15px;
+}
+
+.welcome-td .grid .invest-trade {
+    display: flex;
+}
+
+.welcome-td .grid .invest-trade .icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.welcome-td .grid .invest-trade .icon i {
+    font-size: 30px;
+    color: #008000;
+}
+
+.welcome-td .grid .invest-trade .icon i:hover {
+    color: #fff;
+}
+
+.welcome-td .grid .invest-trade .icon:hover {
+    background-color: #008000;
+    color: white;
+}
+
+.welcome-td .grid .invest-trade .invest-trade-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.welcome-td .grid .invest-trade .invest-trade-contents p {
+    margin-top: 15px;
+}
+
+.welcome-td .grid .personalized-wealth {
+    display: flex;
+}
+
+.welcome-td .grid .personalized-wealth .icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.welcome-td .grid .personalized-wealth .icon i {
+    font-size: 30px;
+    color: #008000;
+}
+
+.welcome-td .grid .personalized-wealth .icon i:hover {
+    color: #fff;
+}
+
+.welcome-td .grid .personalized-wealth .icon:hover {
+    background-color: #008000;
+    color: white;
+}
+
+.welcome-td .grid .personalized-wealth .personalized-wealth-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.welcome-td .grid .personalized-wealth .personalized-wealth-contents p {
+    margin-top: 15px;
+}
+
+.welcome-td .grid .today-rate {
+    display: flex;
+}
+
+.welcome-td .grid .today-rate .icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.welcome-td .grid .today-rate .icon i {
+    font-size: 30px;
+    color: #008000;
+}
+
+.welcome-td .grid .today-rate .icon i:hover {
+    color: #fff;
+}
+
+.welcome-td .grid .today-rate .icon:hover {
+    background-color: #008000;
+    color: white;
+}
+
+.welcome-td .grid .today-rate .today-rate-contents a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.welcome-td .grid .today-rate .today-rate-contents p {
+    margin-top: 15px;
+}
+
+/* WELCOME TO TD END */
+
+/* NEED HELP START */
+
+.section .need-help {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.section .need-help #need-help p {
+    margin: 20px 0px;
+}
+
+.section .need-help #need-help .need-help-btn #get-started {
+    padding: 10px 20px;
+    background-color: #008000;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    cursor: pointer;
+}
+
+.section .need-help #need-help .need-help-btn #get-started:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+
+.section .mobile-need-help {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.section .mobile-need-help #need-help p {
+    margin: 20px 0px;
+}
+
+.section .mobile-need-help #need-help .need-help-btn #get-started {
+    padding: 10px 20px;
+    background-color: #008000;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    cursor: pointer;
+}
+
+.section .mobile-need-help #need-help .need-help-btn #get-started:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+
+.section .need-help #mobile-need-help {
+    display: none;
+}
+
+.section .mobile-need-help {
+    display: none;
+}
+
+/* NEED HELP END */
+
+/* PLAN YOUR MOVE START */
+
+.section .plan-ur-move {
+    margin: 40px auto;
+    background-color: rgb(240, 240, 240);
+    padding: 20px 0px;
+} 
+
+.section .plan-ur-move h3 {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.section .plan-ur-move #plan-ur-move {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.section .plan-ur-move #plan-ur-move .plan-ur-move-img  {
+    width: 100%;
+}
+
+.section .plan-ur-move #plan-ur-move .plan-ur-move-img img {
+    width: 100%;
+}
+
+.section .plan-ur-move #plan-ur-move .plan-ur-move-contents {
+    width: 100%;
+}
+
+.section .plan-ur-move #plan-ur-move .plan-ur-move-contents .plan-ur-move-btn #plan-ur-move-btn {
+    padding: 10px 20px;
+    background-color: #008000;
+    border: transparent;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    cursor: pointer;
+}
+
+.section .plan-ur-move #plan-ur-move .plan-ur-move-contents .plan-ur-move-btn #plan-ur-move-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+ }
+/* PLAN YOUR MOVE END */
+
+/* TD ADVICE START */
+
+.td-advice {
+    text-align: center;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #d6d1d1;
+}
+
+.td-advice p {
+    margin: 15px 0px;
+    line-height: 28px;
+}
+
+.td-advice .td-advice-btn #td-advice-btn {
+    padding: 10px 20px;
+    background-color: #008000;
+    border: transparent;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    cursor: pointer;
+}
+
+.td-advice .td-advice-btn #td-advice-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+/* TD ADVICE END */
+
+/* PLAN FOR YOUR FINANCIAL START */
+
+.plan-ur-financial h3 {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.plan-ur-financial .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 30px auto;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #d6d1d1
+}
+
+.plan-ur-financial .grid .card .card-body {
+    background-color: rgb(240, 240, 240);
+}
+
+.plan-ur-financial .grid .card .card-body .btn {
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #ffffff !important;
+    border: transparent !important;
+    outline: none !important;
+    color: #008000 !important;
+    font-weight: 800px !important;
+    border: 2px solid #008000 !important;
+    cursor: pointer !important;
+}
+
+.plan-ur-financial .grid .card .card-body .btn:hover {
+    background-color: #008000 !important;
+    color: #ffffff !important;
+    transition: 0.3s ease-in-out !important;
+}
+
+/* PLAN FOR YOUR FINANCIAL END */
+
+/* PROTECT YOURSELF AGAINST FRAUD START */
+
+.section .protect-fraud {
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.section .protect-fraud h3 {
+    margin: 20px 0px;
+}
+
+.section .protect-fraud p {
+    line-height: 28px;
+}
+
+.section .protect-fraud .protect-fraud-contents {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 80%;
+}
+
+.section .protect-fraud .protect-fraud-contents .left-side {
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+}
+
+.section .protect-fraud .protect-fraud-contents .left-side h3 {
+    margin-top: 15px;
+}
+
+.section .protect-fraud .protect-fraud-contents .left-side p {
+    line-height: 28px;
+    margin: 15px 0px;
+}
+
+.section .protect-fraud .protect-fraud-contents .left-side .left-side-btn #left-side-btn {
+    padding: 10px 20px;
+    background-color: #008000;
+    border: transparent;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.section .protect-fraud .protect-fraud-contents .left-side .left-side-btn #left-side-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+
+.section .protect-fraud .protect-fraud-contents .right-side {
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+}
+
+.section .protect-fraud .protect-fraud-contents .right-side h3 {
+    margin-top: 15px;
+}
+
+.section .protect-fraud .protect-fraud-contents .right-side p {
+    line-height: 28px;
+    margin: 15px 0px;
+}
+
+.section .protect-fraud .protect-fraud-contents .right-side .right-side-btn #right-side-btn {
+    padding: 10px 20px;
+    background-color: #008000;
+    border: transparent;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.section .protect-fraud .protect-fraud-contents .right-side .right-side-btn #right-side-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+/* PROTECT YOURSELF AGAINST FRAUD END */
+
+/* ESTATE PLANNING START */
+
+.section .estate-planning {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #d6d1d1;
+}
+
+.section .estate-planning #estate-planning p {
+    margin: 20px 0px;
+}
+
+.section .estate-planning #estate-planning .estate-planning-btn #estate-planning-btn {
+    padding: 10px 20px;
+    background-color: #008000;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    cursor: pointer;
+}
+
+.section .estate-planning #estate-planning .estate-planning-btn #estate-planning-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+
+.section .mobile-estate-planning {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.section .mobile-estate-planning #estate-planning p {
+    margin: 20px 0px;
+}
+
+.section .mobile-estate-planning #estate-planning .estate-planning-btn #estate-planning-btn {
+    padding: 10px 20px;
+    background-color: #008000;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    cursor: pointer;
+}
+
+.section .mobile-estate-planning #estate-planning .estate-planning-btn #estate-planning-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+
+.section .estate-planning #mobile-estate-planning {
+    display: none;
+}
+
+.section .mobile-estate-planning {
+    display: none;
+}
+
+/* ESTATE PLANNING END */
+
+/* CHECK YOUR FINANCIAL HEALTH START */
+
+
+.check-financial-health {
+    text-align: center;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #d6d1d1;
+}
+
+.check-financial-health p {
+    margin: 15px 0px;
+    line-height: 28px;
+}
+
+.check-financial-health .check-financial-health-btn #check-financial-health-btn {
+    padding: 10px 20px;
+    background-color: #008000;
+    border: transparent;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    width: 30%;
+    cursor: pointer;
+}
+
+.check-financial-health .check-financial-health-btn #check-financial-health-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+
+/* CHECK YOUR FINANCIAL HEALTH END */
+
+/* IT NEVER BEEN START */
+
+.section .it-never-been {
+    text-align: center;
+}
+
+.section .it-never-been h3 {
+    margin-top: 30px;
+}
+
+.section .it-never-been #it-never-been {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    width: 95%;
+}
+
+.section .it-never-been #it-never-been .easy-safe-secure {
+    text-align: center;
+}
+
+.section .it-never-been #it-never-been .easy-safe-secure h3 {
+    margin: 20px 0px;
+}
+
+.section .it-never-been #it-never-been .easy-safe-secure #easy-safe-secure-btn {
+    padding: 10px 20px;
+    background-color: #008000;
+    border: transparent;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    width: 50%;
+    cursor: pointer;
+}
+
+.section .it-never-been #it-never-been .easy-safe-secure #easy-safe-secure-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+
+.section .it-never-been #it-never-been .bank-from-anywhere h3 {
+    margin: 20px 0px;
+}
+
+.section .it-never-been #it-never-been .bank-from-anywhere #bank-from-anywhere-btn {
+    padding: 10px 20px;
+    background-color: #008000;
+    border: transparent;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    width: 50%;
+    cursor: pointer;
+}
+
+.section .it-never-been #it-never-been .bank-from-anywhere #bank-from-anywhere-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+/* IT NEVER BEEN END */
+
+/* UPDATES FROM US START */
+
+.section .update-content {
+    margin: 30px auto;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+}
+
+.section .update-content h3 {
+    margin-top: 20px;
+}
+
+.section .update-content .update {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    margin: 20px 0px;
+    gap: 40px;
+}
+
+
+.section .update-content .update .card {
+    border: transparent !important;
+    background-color: #fff;
+}
+
+.section .update-content .update .card .card-body a {
+    background-color: transparent !important;
+    color: #008000 !important;
+    border: none !important;
+    font-weight: 600;
+}
+
+.section .update-content .update .card .card-body a i {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.section .update-content .get-advice {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    margin: 20px 0px;
+    gap: 40px;
+}
+
+
+.section .update-content .get-advice .card {
+    border: transparent !important;
+    background-color: #fff;
+}
+
+.section .update-content .get-advice .card .card-body a {
+    background-color: white !important;
+    color: #008000 !important;
+    border: none !important;
+    border: 2px solid #008000 !important;
+    font-weight: 600;
+    width: 80%;
+}
+
+.section .update-content .get-advice .card .card-body a:hover {
+    background-color: #008000;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+}
+
+
+/* UPDATES FROM US END */
+
+
+
+/* WHY BANK WITH TD START */
+
+.section .why-banking-td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #d6d1d1;
+}
+
+.section .why-banking-td #why-banking-td p {
+    margin: 20px 0px;
+}
+
+.section .why-banking-td #why-banking-td .why-banking-td-btn #why-banking-td-btn {
+    padding: 10px 20px;
+    background-color: #008000;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    cursor: pointer;
+}
+
+.section .why-banking-td #why-banking-td span {
+    font-weight: 600;
+}
+
+.section .why-banking-td #why-banking-td #desktop-why-banking-td {
+    margin-bottom: 15px;
+}
+
+.section .why-banking-td #why-banking-td .why-banking-td-btn #why-banking-td-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+
+.section .mobile-why-banking-td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.section .mobile-why-banking-td #why-banking-td p {
+    margin: 20px 0px;
+}
+
+.section .mobile-why-banking-td #why-banking-td span {
+    font-weight: 600;
+}
+
+.section .mobile-why-banking-td #why-banking-td #desktop-why-banking-td {
+    margin-bottom: 15px;
+}
+
+.section .mobile-why-banking-td #why-banking-td .why-banking-td-btn #why-banking-td-btn {
+    padding: 10px 20px;
+    background-color: #008000;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    cursor: pointer;
+}
+
+.section .mobile-why-banking-td #why-banking-td .why-banking-td-btn #why-banking-td-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+
+.section .why-banking-td #mobile-why-banking-td {
+    display: none;
+}
+
+.section .mobile-why-banking-td {
+    display: none;
+}
+
+/* WHY BANK WITH TD END */
+
+ /* SEE THE WAYS TD ENRICHES START */
+
+.td-enriches {
+    margin: 40px auto;
+}
+
+.td-enriches h3 {
+    text-align: center;
+    color: #008000;
+    margin: 20px 0px;
+}
+
+.td-enriches #td-enriches .card-group .card {
+    text-align: center;
+    background-color: transparent !important;
+}
+
+.td-enriches #td-enriches .card-group .card h5 {
+    color: #008000;
+}
+
+#mobile-td-enriches {
+    display: none;
+}
+
+ /* SEE THE WAYS TD ENRICHES END */
+
+ /* FIND YOUR ANSWER START */
+
+.section .find-your-answer {
+    text-align: center;
+    margin: 40px 0px;
+    background-color: rgb(240, 240, 240);
+    padding: 20px 0px;
+}
+
+.section .find-your-answer h3 {
+    margin: 20px 0px;
+}
+
+.section .find-your-answer form {
+    margin: 20px auto;
+}
+
+.section .find-your-answer form #input {
+    width: 40%;
+    padding: 10px 10px;
+    border: none;
+    color: #008000;
+    border: 2px solid #008000;
+    outline: none;
+    font-weight: 600;
+}
+
+.section .find-your-answer form #input:focus {
+    border: 2px solid #008000;
+    box-shadow: 0px 0px 5px #008000;
+ }
+ 
+.section .find-your-answer form #ask-us {
+    padding: 12px 20px;
+    background-color: #008000;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    width: 30%;
+    cursor: pointer;
+}
+ 
+.section .find-your-answer form #ask-us:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+
+.section .find-your-answer a {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+ /* FIND YOUR ANSWER END */
+
+ /* DEPOSIT PROTECTION START */
+
+.section .deposit-protection {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 40px auto;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #d6d1d1;
+}
+
+.section .deposit-protection #deposit-protection .deposit-protection-img img {
+    margin: 20px 0px;
+}
+
+.section .deposit-protection #regulated-by-ciro {
+    margin-top: 40px;
+}
+
+.section .deposit-protection #regulated-by-ciro .regulated-by-ciro-img img {
+    width: 40%;
+    margin-bottom: 60px;
+}
+
+.section .deposit-protection .regulated-by-ciro #regulated-by-ciro-img {
+    width: 50%;
+}
+
+.section .deposit-protection a i {
+    color: #008000;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.section .deposit-protection a i {
+    font-size: 16px;
+    font-weight: 600;
+}
+ /* DEPOSIT PROTECTION END */
+
+ 
+/* GET UP TO DOLLAR SECTION START */
+
+.section .get-up-to-dollar {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #d6d1d1;
+    margin: 40px auto;
+    display: block;
+}
+
+.section .get-up-to-dollar #get-up-to-dollar-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 40px;
+}
+
+.section .get-up-to-dollar .mobile-image {
+    display: none;
+}
+
+.section .get-up-to-dollar .get-up-to-dollar-contents {
+    line-height: 23px;
+    padding: 20px;
+    width: 100%;
+    border-left: 3px solid #d6d1d1;
+}
+
+.section .get-up-to-dollar-contents #para {
+    margin: 15px 0px;
+}
+
+.section .get-up-to-dollar .get-up-to-dollar-contents #mobile-para {
+    display: none;
+}
+
+.section .get-up-to-dollar .get-up-to-dollar-contents .get-up-to-dollar-btn #Learn-more {
+    padding: 10px 20px;
+    background-color: white;
+    border: transparent;
+    border: 2px solid #008000;
+    outline: none;
+    color:#008000;
+    font-weight: 800px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.section .get-up-to-dollar .get-up-to-dollar-contents .get-up-to-dollar-btn #Learn-more:hover {
+    background-color: #008000;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.section .get-up-to-dollar .get-up-to-dollar-contents .get-up-to-dollar-btn a {
+    font-weight: 600;
+}
+
+.section .aeroplane-visa {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #d6d1d1;
+    margin: 40px auto;
+    background-color: #f0f0f0;
+}
+
+.section .aeroplane-visa #aeroplane-visa-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 40px;
+}
+
+.section .aeroplane-visa .mobile-image {
+    display: none;
+}
+
+.section .aeroplane-visa .aeroplane-visa-contents {
+    line-height: 23px;
+    padding: 20px;
+    width: 100%;
+}
+
+.section .aeroplane-visa-contents #para {
+    margin: 15px 0px;
+}
+
+.section .aeroplane-visa .aeroplane-visa-contents #mobile-para {
+    display: none;
+}
+
+.section .aeroplane-visa .aeroplane-visa-contents .aeroplane-visa-btn #Learn-more {
+    padding: 10px 20px;
+    background-color: white;
+    border: transparent;
+    border: 2px solid #008000;
+    outline: none;
+    color:#008000;
+    font-weight: 800px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.section .aeroplane-visa .aeroplane-visa-contents .aeroplane-visa-btn #Learn-more:hover {
+    background-color: #008000;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.section .aeroplane-visa .aeroplane-visa-contents .aeroplane-visa-btn a {
+    font-weight: 600;
+}
+
+
+.section .start-growing {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #d6d1d1;
+    margin: 40px auto;
+    display: block;
+}
+
+.section .start-growing #start-growing-div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 40px;
+}
+
+.section .start-growing .mobile-image {
+    display: none;
+}
+
+.section .start-growing .start-growing-contents {
+    line-height: 23px;
+    padding: 20px;
+    width: 100%;
+    border-left: 3px solid #d6d1d1;
+}
+
+.section .start-growing-contents #para {
+    margin: 15px 0px;
+}
+
+.section .start-growing .start-growing-contents #mobile-para {
+    display: none;
+}
+
+.section .start-growing .start-growing-contents .start-growing-btn #Learn-more {
+    padding: 10px 20px;
+    background-color: white;
+    border: transparent;
+    border: 2px solid #008000;
+    outline: none;
+    color:#008000;
+    font-weight: 800px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.section .start-growing .start-growing-contents .start-growing-btn #Learn-more:hover {
+    background-color: #008000;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.section .start-growing .start-growing-contents .start-growing-btn a {
+    font-weight: 600;
+}
+
+.section .small-business-toggle {
+    margin: 40px auto;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+}
+
+.section .small-business-toggle h3 {
+    color: #000000;
+    padding: 15px 0px;
+}
+
+.section .small-business-toggle .small-business-toggle-contents {
+    border-bottom: 1px solid #858181 !important;
+}
+
+.section .small-business-toggle .small-business-toggle-contents ul {
+    width: 100% !important;
+    padding-top: 40px;
+    margin: 0px auto;
+    background-color: #fff;
+    border: none !important;
+}
+
+.section .small-business-toggle .small-business-toggle-contents ul #custom-tab {
+    border-left: 1px solid #858181 !important;
+    border-right: 1px solid #858181 !important;
+    padding: 30px;
+    outline: none !important;
+}
+
+.section .small-business-toggle .small-business-toggle-contents ul #dedicated-tab {
+    padding: 30px;
+    border: none !important;
+    outline: none !important;
+}
+.section .small-business-toggle .small-business-toggle-contents ul #local-tab {
+    border-right: 1px solid #858181 !important;
+    padding: 30px;
+    outline: none !important;
+}
+
+.section .td-commited-contents #myTab .nav-item .nav-link {
+    text-align: center !important;
+    color: #000000 !important;
+    padding: 40px 10px !important;
+    font-weight: 600;
+}
+
+/* GET UP TO DOLLAR SECTION END */
+
+/* POINT OF SALES SECTION START  */
+
+.section .point-of-sale {
+    width: 95%;
+    margin: 40px auto;
+    text-align: center;
+}   
+
+.section .point-of-sale h3 {
+    font-weight: 600;
+}
+
+.section .point-of-sale p {
+    margin: 20px 0px;
+}
+
+.section .point-of-sale .point-of-sale-contents {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    width: 80%;
+}
+
+.section .point-of-sale .point-of-sale-contents i {
+    font-size: 30px;
+    color: #008000;
+}
+
+.section .point-of-sale .point-of-sale-contents i:hover {
+    color: #fff !important;
+}
+
+.section .point-of-sale .point-of-sale-contents .icons {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.section .point-of-sale .point-of-sale-contents .icons:hover {
+    background-color: #008000;
+    transition: 0.4s ease-in-out;
+
+}
+
+.section .point-of-sale .point-of-sale-contents #online-payment  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section .point-of-sale .point-of-sale-contents #point-of-sale  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section .point-of-sale .point-of-sale-contents #partners  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section .point-of-sale .point-of-sale-contents #unattended-device  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section .point-of-sale .point-of-sale-contents #integrated-bizz  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* POINT OF SALES SECTION END  */
+
+/* LET US HELP FIND IDEAL SECTION START  */
+
+.section .let-us-help {
+    margin: 40px auto;
+    background-color: #fafafa;
+    padding: 10px;
+}
+
+.section .let-us-help h3 {
+    padding-top: 20px;
+}
+
+.section .let-us-help p {
+    line-height: 28px;
+    margin: 20px 0px;
+}
+
+.section .let-us-help #get_started {
+    padding: 10px 20px;
+    width: 20%;
+    background-color: #ffffff;
+    border: transparent;
+    outline: none;
+    color: #008000;
+    font-weight: 800px;
+    border: 2px solid #008000;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.section .let-us-help #get_started:hover {
+    background-color: #008000;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+
+/* LET US HELP FIND IDEAL SECTION END  */
+
+/* ACCEPT PAYMENTS IN MORE PLACES SECTION START */
+
+.section .accept-payments {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.section .accept-payments h3 {
+    margin: 20px 0px;
+}
+
+.section .accept-payments p {
+    line-height: 28px;
+}
+
+/* ACCEPT PAYMENTS IN MORE PLACES SECTION END */
+
+/*  POINT-OF-SALE (POS) SECTION START  */
+
+.section .pos {
+    margin: 40px auto;
+    background-color: #fafafa;
+    padding: 10px;
+}
+
+.section .pos h3 {
+    padding-top: 20px;
+}
+
+.section .pos p {
+    line-height: 28px;
+    margin: 20px 0px;
+}
+
+.section .pos #see_all_pos {
+    padding: 10px 20px;
+    width: 20%;
+    background-color: #ffffff;
+    border: transparent;
+    outline: none;
+    color: #008000;
+    font-weight: 800px;
+    border: 2px solid #008000;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.section .pos #see_all_pos:hover {
+    background-color: #008000;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+
+/*  POINT-OF-SALE (POS) SECTION SECTION END  */
+
+/* ACCEPT SECURE ONLINE PAYMENT SECTION START  */
+
+.section .accept-secure-payment {
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section .accept-secure-payment #accept-secure-payment-content {
+    width: 40%;
+}
+
+.section .accept-secure-payment #accept-secure-payment-content ul {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.section .accept-secure-payment p {
+    line-height: 28px;
+    margin: 20px 0px;
+}
+
+.section .accept-secure-payment #see_online-btn {
+    padding: 10px 20px;
+    width: 60%;
+    background-color: #ffffff;
+    border: transparent;
+    outline: none;
+    color: #008000;
+    font-weight: 800px;
+    border: 2px solid #008000;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.section .accept-secure-payment #see_online-btn:hover {
+    background-color: #008000;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+
+/* ACCEPT SECURE ONLINE PAYMENT SECTION END  */
+
+/* LOGIN SECTION START */
+
+.login {
+    margin: 20px auto;
+    background-image: url('../Image/our\ story\ img\ 1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-bottom: 5px solid #008000;
+}
+
+.login #login {
+    background-color: #00000015;
+    /* padding: 70px 0px; */
+}
+
+.login #login #welcome-to-login {
+    width: 90%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px 0px;
+}
+
+.login #login .welcome-to-login h3 {
+    color: #008000;
+}
+
+.login #login .welcome-to-login form {
+    border: 1px solid #f0eded;
+    margin-bottom: 20px;
+    padding: 30px;
+    background: linear-gradient(360deg, rgb(241, 241, 241), white);
+}
+
+.login #login .welcome-to-login h3 {
+    margin: 20px 0px;
+}
+
+.login #login .welcome-to-login form #name {
+    height: 50px;
+    width: 320px;
+    color: #000000;
+    border-radius: 5px 5px 0px 0px;
+    margin: 15px 0px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border: 1px solid #000000;
+}
+
+.login #login .welcome-to-login form #password {
+    height: 50px;
+    width: 320px;
+    color: #000000;
+    border-radius: 5px 5px 0px 0px;
+    margin: 15px 0px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border: 1px solid #000000;
+}
+
+.login #login .welcome-to-login form .login-checkbox a {
+    font-weight: 600 !important;
+    color: #000000 !important;
+}
+
+.login #login .welcome-to-login form a {
+    font-weight: 600;
+}
+
+.login #login .welcome-to-login .login-btn {
+    text-align: center;
+}
+
+.login #login .welcome-to-login .login-btn #login_btn {
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    background-color: #f0eded;
+    color: #00000062;
+    border: 2px solid #00000044;
+    width: 200px;
+}
+
+.login #login .welcome-to-login form input::placeholder {
+    padding: 5px;
+}
+
+.login #login .welcome-to-login form input:hover {
+    border-bottom: 2px solid #008000;
+    transition: 0.4s ease-in-out;
+}
+
+.login #login .welcome-to-login form input:focus {
+    border: 2px solid #008000;
+    box-shadow: 0px 0px 5px #008000;
+}
+
+.login #login .welcome-to-login form #forget_tag {
+    text-decoration: none;
+    color: #008000;
+    font-weight: 600;
+}
+
+.login #login .sign_up {
+    margin: 40px 0px;
+}
+
+.login #login .sign_up #sign_up {
+    padding: 20px 0px !important;
+    line-height: 33px;
+    border-bottom: 3px solid #bebcbc;
+}
+
+.login #login .sign_up .find-more {
+    margin-top: 20px;
+}
+
+.login #login .sign_up a {
+    font-weight: 600 !important;
+}
+
+.login #login .sign_up #lock {
+    display: flex;
+    align-items:first baseline;
+}
+
+.login #login .sign_up #lock i {
+    margin: 0px 10px;
+    color: #008000;
+    font-size: 30px;
+}
+
+.login #login .sign_up p {
+    line-height: 25px;
+    margin-top: 6px;
+}
+
+.questions {
+    width: 95%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.questions #questions {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 95%;
+}
+
+.questions #questions a {
+    color: #000000 !important;
+}
+
+.questions table {
+    border: none;
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid #000000;
+    text-align: center;
+}
+
+.questions table tr th {
+    position: relative;
+    left: 350px;
+    padding: 10px 0px;
+}
+
+.questions table tr {
+    border: 1px solid #000000;
+}
+
+.questions table tr td {
+    text-align: center;
+    padding: 10px 10px;
+    border-left: 1px solid #000000;
+}
+
+.questions #questions p {
+    margin: 20px 0px;
+}
+
+/* LOGIN SECTION END */
+
+ /* WELCOME TO TD SMALL BUSINESS SECTION START */
+
+.welcome-to-td {
+    margin: 40px auto;
+    width: 95%;
+    border-bottom: 2px solid #d6d1d1;
+} 
+
+.welcome-to-td #welcome-to-td {
+    text-align: center;
+}
+
+.welcome-to-td #welcome-to-td h3 {
+    margin: 30px 0px;
+    color: #043804;
+}
+
+.welcome-to-td #welcome-to-td p {
+    margin: 20px 0px;
+}
+
+.welcome-to-td #welcome-to-td .welcome-to-td-grid {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 95%;
+}
+
+.welcome-to-td #welcome-to-td .welcome-to-td-grid .welcome-to-td-icons #icons {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.welcome-to-td #welcome-to-td .welcome-to-td-grid .welcome-to-td-icons #icons i {
+    font-size: 30px;
+    color: #008000;
+}
+
+.welcome-to-td #welcome-to-td .welcome-to-td-grid .welcome-to-td-icons #icons i:hover {
+    color: #fff;
+}
+
+.welcome-to-td #welcome-to-td .welcome-to-td-grid .welcome-to-td-icons #icons:hover {
+    background-color: #008000;
+    color: white;
+}
+
+ /* WELCOME TO TD SMALL BUSINESS SECTION END */
+
+/*  BANKING ADVICE SECTION START */
+
+.banking-advice {
+    margin: 40px auto;
+    width: 95%;
+}
+
+.banking-advice h3 {
+    text-align: center;
+    color: #005700;
+    margin: 20px 0px;
+}
+
+.banking-advice .card-group {
+    gap: 20px !important;
+    margin: 40px auto;
+}
+
+.banking-advice .card-group .card-body {
+    border: none !important;
+    background-color: #f0f0f0 !important; 
+}
+
+.banking-advice .card-group .card-body h5 {
+    color: #008000 !important;
+    font-weight: 600 !important;
+}
+
+/*  BANKING ADVICE SECTION END  */
+
+/*  GO TO ADVICE HUB SECTION START  */
+
+.section .go-to-advice-hub {
+    margin: 40px auto;
+    width: 95%;
+    text-align: center;
+}
+
+.section .go-to-advice-hub #go-to-advice-hub-btn {
+    padding: 10px 20px;
+    background-color: #008000;
+    border: transparent;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    cursor: pointer;
+    width: 30%;
+}
+
+.section .go-to-advice-hub #go-to-advice-hub-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+
+/*  GO TO ADVICE HUB SECTION END  */
+
+/* BUSINESS BANKING SECTION START */
+
+
+.section .business-banking {
+    margin: 40px auto;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.section .business-banking h3 {
+    color: #043804;
+    padding: 20px  0px !important;
+}
+
+.section .business-banking #business-banking {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    margin: 20px 0px;
+    gap: 40px;
+}
+
+.section .business-banking #business-banking .card {
+    border: transparent !important;
+    background-color: #fff;
+}
+
+.section .business-banking #business-banking .card .card-body a {
+    background-color: white !important;
+    color: #008000 !important;
+    border: none !important;
+    border: 2px solid #008000 !important;
+    font-weight: 600;
+    width: 80%;
+}
+
+.section .business-banking #business-banking .card .card-body a:hover {
+    background-color: #008000;
+    color: #fff;
+    transition: 0.4s ease-in-out;
+}
+
+/* BUSINESS BANKING SCETION END */
+
+/* INDUSTRY EXPERTISE SECTION START */
+
+.section .industry-expertise {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #f0eded;
+}
+
+.section .industry-expertise h3 {
+    color: #043804;
+    padding: 20px 0px;
+}
+
+.section .industry-expertise #industry-expertise .industry-expertise-btn #industry-expertise-btn {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #008000;
+    border: transparent;
+    outline: none;
+    border: 2px solid #008000;
+    font-weight: 800px;
+    cursor: pointer;
+    width: 30%;
+}
+
+.section .industry-expertise #industry-expertise .industry-expertise-btn #industry-expertise-btn:hover {
+    background-color: #008000;
+    color: #ffffff;
+    border: 2px solid #008000;
+    transition: 0.3s ease-in-out;
+}
+
+.section .industry-expertise #industry-expertise .industry-expertise-img {
+    width: 100%;
+    text-align: center;
+}
+
+.section .industry-expertise #industry-expertise #industry-expertise-btn {
+    padding: 10px 20px;
+    background-color: #008000;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    cursor: pointer;
+}
+
+.section .industry-expertise #industry-expertise #industry-expertise-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+
+.section .mobile-industry-expertise {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.section .mobile-industry-expertise #mobile-industry-expertise .industry-expertise-btn #industry-expertise-btn {
+    padding: 10px 20px;
+    background-color: #008000;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    cursor: pointer;
+}
+
+.section .mobile-industry-expertise #mobile-industry-expertise .industry-expertise-btn #industry-expertise-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+
+.section .industry-expertise .industry-expertise-image #mobile-industry-expertise {
+    display: none;
+}
+
+.section .mobile-industry-expertise {
+    display: none;
+}
+
+
+/* INDUSTRY EXPERTISE SECTION END */
+
+/* UPLIFTING PEOPLE THROUGH DIVERSITY SECTION START */
+
+.section .uplifting {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.section .uplifting h3 {
+    margin: 40px 0px;
+}
+
+.section .uplifting .card .card-body {
+    background-color: #f0f0f0 !important;
+}
+
+.section .uplifting .card .card-body h5 {
+    color: #008000 !important;
+    margin: 10px 0px !important;
+    font-weight: 600 !important;
+}
+
+.section .uplifting .card .card-body h5 i {
+    font-weight: 600;
+}
+/* UPLIFTING PEOPLE THROUGH DIVERSITY SECTION END */
+
+/* LOOKING FOR GOVERNMENT? SECTION START  */
+
+.section .looking-for-government {
+    margin: 40px auto;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px 0px;
+}
+
+.section .looking-for-government h3 {
+    color: #043804;
+    margin: 20px 0px;
+}
+
+.section .looking-for-government p {
+    margin-bottom: 20px;
+}
+
+.section .looking-for-government .looking-for-government-btn #looking-for-government-btn {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: none;
+    border: 2px solid #008000;
+    outline: none;
+    color: #008000;
+    font-weight: 600;
+    cursor: pointer;
+    width: 25%;
+} 
+
+.section .looking-for-government .looking-for-government-btn #looking-for-government-btn:hover {
+    background-color: #008000;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+
+/* LOOKING FOR GOVERNMENT? SECTION END */
+
+/* WE'RE READY TO HELP YOU SECTION START */
+
+.section .we-are-ready {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.section .we-are-ready h3 {
+    color: #043804;
+    margin: 30px 0px;
+}
+
+.section .we-are-ready #we-are-ready {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 30px auto;
+}
+
+.section .we-are-ready #we-are-ready .book-an-appointment #book-an-appointment-btn {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #008000;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    width: 90%;
+}
+
+.section .we-are-ready #we-are-ready .find-an-account {
+    border-left: 2px solid #d6d1d1;
+    border-right: 2px solid #d6d1d1;
+    padding: 0px 5px;
+}
+
+.section .we-are-ready #we-are-ready .find-an-account #book-an-appointment-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+
+.section .we-are-ready #we-are-ready .find-an-account #book-an-appointment-btn {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #008000;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    width: 90%;
+}
+
+.section .we-are-ready #we-are-ready .book-an-appointment #book-an-appointment-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+
+.section .we-are-ready #we-are-ready .call-us-btn #call-us-btn {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    color: #008000;
+    font-weight: 600;
+    border: 2px solid #008000;
+    cursor: pointer;
+    width: 90%;
+}
+
+.section .we-are-ready #we-are-ready .call-us-btn #call-us-btn:hover {
+    background-color: #008000;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+
+/* WE'RE READY TO HELP YOU SECTION END */
+
+/* COMMECIAL SECTION START */
+
+/* COMMECIAL SECTION IT'S OUR BUSINESS START */
+
+.it-is-our-business {
+    margin: 0px auto;
+    text-align: center;
+    background-image: url('../Image/commercial-landing2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.it-is-our-business #it-is-our-business {
+    background-color: #000000a4;
+    padding: 170px 0px;
+}
+
+.it-is-our-business h3 {
+    color: #ffff;
+    margin: 30px 0px;
+}
+
+.mobile-it-is-our-business {
+    display: none;
+}
+
+/* COMMECIAL SECTION IT'S OUR BUSINESS END */
+
+/* WE'RE HERE TO HELP START */
+
+.section .we-re-here {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.section .we-re-here h3 {
+    color: #000000;
+}
+
+.section .we-re-here p {
+    margin: 15px 0px;
+}
+
+.section .we-re-here #visit-para {
+    color: #008000;
+    font-weight: 600;
+}
+
+.section .we-re-here #we-re-here {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.section .we-re-here #we-re-here .see-td p {
+    margin: 15px 0px;
+    color: #008000;
+    font-weight: 600;
+}
+
+.section .we-re-here #we-re-here .see-td p i {
+    font-weight: 600;
+}
+
+.section .we-re-here #we-re-here .see-td .see-td-img {
+    margin-bottom: 15px;
+}
+
+/* WE'RE HERE TO HELP END */
+
+/* TD COMMITED START  */
+
+.section .td-commited {
+    margin: 40px auto;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding-top: 30px;
+}
+
+.section .td-commited h3 {
+    color: #000000;
+    padding: 15px 0px;
+}
+
+.section .td-commited .td-commited-contents {
+    border-bottom: 1px solid #858181 !important;
+}
+
+.section .td-commited .td-commited-contents ul {
+    width: 60% !important;
+    padding-top: 40px;
+    margin: 0px auto;
+    border: none !important;
+}
+
+.section .td-commited .td-commited-contents ul #custom-tab {
+    border-left: 1px solid #858181 !important;
+    border-right: 1px solid #858181 !important;
+}
+
+.section .td-commited .td-commited-contents ul #local-tab {
+    border-right: 1px solid #858181 !important;
+}
+
+.section #myTabContent h3{
+    text-align: center;
+    color: #000000 !important;
+}
+
+.section .td-commited-contents #myTab .nav-item .nav-link {
+    text-align: center !important;
+    color: #000000 !important;
+    padding: 40px 10px !important;
+    font-weight: 600;
+}
+
+#myTabContent {
+    background-color: #fff;
+}
+
+#myTabContent #dedicated {
+    margin: 30px 0px;
+}
+
+#myTabContent #dedicated .dedicated-contents {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: center;
+    margin: 30px auto;
+    width: 90%;
+}
+
+#myTabContent #dedicated .dedicated-contents .dedicated-image img {
+    width: 100%;
+}
+
+#custom {
+    background-color: #fff;
+}
+
+#custom h3 {
+    margin: 30px 0px;
+}
+
+#custom .customized-contents {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: center;
+    margin: 30px auto;
+    width: 90%;
+}
+
+#custom .customized-contents .customized-image img {
+    width: 100%;
+}
+
+#local {
+    background-color: #fff;
+}
+
+#local h3 {
+    margin: 30px 0px;
+}
+
+#local .local-expertise-contents {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: center;
+    margin: 30px auto;
+    width: 90%;
+}
+
+#local .local-expertise-contents .local-expertise-image img {
+    width: 100%;
+}
+
+#fraud {
+    background-color: #fff;
+}
+
+#fraud h3 {
+    margin: 30px 0px;
+}
+
+#fraud .fraud-contents {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: center;
+    margin: 30px auto;
+    width: 90%;
+}
+
+#fraud .fraud-contents .fraud-image img {
+    width: 100%;
+}
+
+#fraud .fraud-contents #fraud-text #fraud-btn {
+    padding: 10px 20px;
+    background-color: #043804;
+    border: transparent;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    cursor: pointer;
+    width: 30%;
+}
+
+#fraud .fraud-contents #fraud-text #fraud-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #043804;
+    color: #043804;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* TD COMMITED END  */
+
+/* WE OFFER EXPERTISE IN SPECIFIC BUSINESS START */
+
+.section .we-offer-expertise {
+    width: 95%;
+    margin: 40px auto;
+    text-align: center;
+}   
+
+.section .we-offer-expertise h3 {
+    font-weight: 600;
+    color: #000000;
+}
+
+.section .we-offer-expertise .expertise-contents {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 40px auto;
+    gap: 40px;
+}
+
+.section .we-offer-expertise .expertise-contents p {
+    margin: 20px 0px;
+}
+
+.section .we-offer-expertise .expertise-contents i {
+    font-size: 30px;
+    color: #008000;
+}
+
+.section .we-offer-expertise .expertise-contents i:hover {
+    color: #fff !important;
+}
+
+.section .we-offer-expertise .expertise-contents .expertise-icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.section .we-offer-expertise .expertise-contents .expertise-icon:hover {
+    background-color: #008000;
+    transition: 0.4s ease-in-out;
+
+}
+
+.section .we-offer-expertise .expertise-contents .expertise-card  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section .we-offer-expertise {
+    width: 95%;
+    margin: 40px auto;
+    text-align: center;
+}   
+
+.section .we-offer-expertise h3 {
+    font-weight: 600;
+    color: #000000;
+}
+
+.section .we-offer-expertise .expertise-contents {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 40px auto;
+    gap: 40px;
+    text-align: center;
+}
+
+.section .we-offer-expertise .expertise-contents p {
+    margin: 20px 0px;
+}
+
+.section .we-offer-expertise .expertise-contents i {
+    font-size: 30px;
+    color: #008000;
+}
+
+.section .we-offer-expertise .expertise-contents i:hover {
+    color: #fff !important;
+}
+
+.section .we-offer-expertise .expertise-contents .expertise-icon {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #008000;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.section .we-offer-expertise .expertise-contents .expertise-icon:hover {
+    background-color: #008000;
+    transition: 0.4s ease-in-out;
+
+}
+
+.section .we-offer-expertise .expertise-contents .expertise-card  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* BANK FROM OFFICE START */
+
+
+.section .bank-from-office {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.section .bank-from-office #bank-from-office {
+    background-color: #f0f0f0;
+    padding: 20px 0px;
+}
+
+.section .bank-from-office #bank-from-office h3 {
+    color: #000000;
+    margin: 20px 0px;
+}
+
+.section .bank-from-office #bank-from-office P {
+    margin: 20px 0px;
+}
+
+.section .bank-from-office h3 {
+    color: #000000;
+    margin: 15px 0px;
+}
+
+.section .bank-from-office .bank-from-office-contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 30px auto;
+    width: 90%;
+    border-bottom: 1px solid #858181;
+}
+
+.section .bank-from-office .bank-from-office-contents .implentation-plan {
+    border-right: 1px solid #858181;
+    border-left: 1px solid #858181;  
+}
+
+.section .bank-from-office .bank-from-office-contents #bank-office-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #858181;
+    background-color: #ffffff;
+}
+
+.section .bank-from-office .bank-from-office-contents #bank-office-contents h5 {
+    margin: 15px 0px;
+}
+
+
+/* BANK FROM OFFICE END */
+
+
+/*NEED SOME HELP START */
+
+.section .need-some-help {
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.section .need-some-help h3 {
+    color: #043804;
+    margin: 20px 0px;
+}
+
+.section .need-some-help p {
+    margin-bottom: 20px;
+}
+
+.section .need-some-help h5 {
+    margin: 15px 0px;
+}
+
+.section .need-some-help .need-some-help-btn #need-some-help-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #043804;
+    color: #ffffff;
+    outline: none;
+    font-weight: 600;
+    cursor: pointer;
+    width: 25%;
+} 
+
+.section .need-some-help .need-some-help-btn #need-some-help-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #043804;
+    color: #043804;
+    transition: 0.3s ease-in-out;
+}
+
+/* NEED SOME HELP END */
+
+/* INVESTING AT TD SECTION START */
+
+.section .invest-at-td {
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.section #invest .invest {
+    display: block;
+    flex-direction: column;
+    line-height: 28px;
+    text-align: center;
+}
+
+.section #invest {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 30px auto;
+    width: 90%;
+}
+
+.section #invest .invest #invest-para {
+    font-weight:600;
+    color: #008000;
+    margin: 15px 0px;
+}
+
+.section #invest .invest #invest-para i {
+    font-weight: 600;
+}
+
+/* INVESTING AT TD SECTION END*/
+
+/* WE HAVE MORE TO OFFER START  */
+
+.section .we-have-more {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.section .we-have-more p {
+    width: 90%;
+}
+
+.section .we-have-more #we-have-more {
+    display: flex;
+    align-items: center;
+    width: 74%;
+    margin: 30px auto;
+}
+
+.section .we-have-more #we-have-more .we-have-more-image img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.section .we-have-more #we-have-more .we-have-more-text p {
+    color: #008000;
+    font-weight: 600;
+}
+
+.section .we-have-more #we-have-more .we-have-more-text h3 {
+    font-weight: 600;
+}
+
+.section .we-have-more .we-have-more-btn #we-have-more-btn {
+    padding: 10px 20px;
+    background-color: #043804;
+    border: transparent;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    cursor: pointer;
+    width: 30%;
+}
+
+.section .we-have-more .we-have-more-btn #we-have-more-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #043804;
+    color: #043804;
+    transition: 0.3s ease-in-out;
+}
+
+/* WE HAVE MORE TO OFFER END */
+
+/* WITH TD SECTION START */
+
+.section {
+    margin-top: 130px;
+}
+
+.section .with-td-investor {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.section .with-td-investor h3 {
+    margin: 20px 0px;
+}
+
+.section .with-td-investor #with-td-investor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 40px 0px;
+}
+
+.section .card {
+    position: relative;
+    width: 380px;
+    height: 200px;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.section .card img {
+    width: 100%;
+    display: block;
+}
+
+.section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 50, 50, 0.8); /* semi-transparent background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 15px;
+}
+
+.section .card:hover .overlay {
+    opacity: 1;
+}
+
+/* WITH TD SECTION END */
+
+
+@media (max-width: 1023px) {
+    .mobile-header-nav-links .cmp-header-site-navigation-links__nav {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .cmp-site-utility-mobile * {
+        scroll-behavior: smooth;
+    }
+}
+
+.cmp-header-site-navigation-links__nav {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+::after, ::before {
+    box-sizing: inherit;
+}
+nav {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+body {
+    font-family: "TD Graphik SemiLight", Helvetica-, "droid sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5334;
+    color: rgb(28, 28, 28);
+    max-width: 100%;
+    overflow-x: hidden;
+    font-variant-ligatures: no-contextual;
+}
+
+html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+    font-size: 1pc;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+
+html {
+    line-height: 1.15;
+    text-size-adjust: 100%;
+}
+
+::after, ::before {
+    box-sizing: inherit;
+}
+
+::after, ::before {
+    box-sizing: inherit;
+}
+
+.cmp-header-site-navigation-links ::-webkit-scrollbar {
+    width: 5px;
+    position: absolute;
+}
+
+.cmp-header-site-navigation-links ::-webkit-scrollbar-thumb, .cmp-header-site-navigation-links ::-webkit-scrollbar-thumb:hover {
+    background: rgb(97, 97, 97);
+    border-radius: 5px;
+}
+
+.cmp-header-site-navigation-links ::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    
+/* INVESTING AT TD SECTION START */
+
+.section {
+    margin-top: 80px;
+}
+
+.section #invest {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* INVESTING AT TD SECTION END */
+
+/* WE HAVE MORE TO OFFER START*/
+
+.section .we-have-more #we-have-more {
+    display: block;
+    width: 95%;
+    
+}
+.section .we-have-more .we-have-more-btn #we-have-more-btn {
+    width: 60%;
+}
+
+/* WE HAVE MORE TO OFFER END */
+
+
+/* WITH TD SECTION START */
+
+.section .with-td-investor #with-td-investor {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.section .card {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.section .card img {
+    width: 100%;
+    display: block;
+}
+
+
+/* WITH TD SECTION END */
+
+}
+
+@media screen and (max-width: 1000px) {
+
+/* PERSONAL SECTION START */
+
+.section .small-business {
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+.section .small-business .online-banking {
+    display: none;
+}
+
+/* PERSONAL SECTION END  */
+
+
+/* GET UP TO DOLLAR SECTION START */
+
+.section .get-up-to-dollar #get-up-to-dollar-div {
+    grid-template-columns: 1fr;
+}
+
+.section .get-up-to-dollar .mobile-image {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.section .get-up-to-dollar #get-up-to-dollar {
+  display: none;
+}
+
+.section .get-up-to-dollar .get-up-to-dollar-image {
+    display: none;
+}
+
+.section .get-up-to-dollar .get-up-to-dollar-contents {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.section .get-up-to-dollar-contents #para {
+    display: none;
+}
+
+.section .get-up-to-dollar .get-up-to-dollar-contents #mobile-para {
+    display: block;
+}
+
+.section .meet-ur-small-biss {
+    display: flex;
+}
+
+.section .meet-ur-small-biss #meet-ur-small-biss {
+    border-left: none;
+    padding-left: 0px;
+}
+
+.section .meet-ur-small-biss #touch-bistro {
+    border-left: none;
+    padding-left: 0px;
+}
+
+.section .meet-ur-small-biss #td-merchant {
+    border-left: none;
+    padding-left: 0px;
+}
+
+.section .meet-ur-small-biss h3 {
+    color: #008000;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.section .meet-ur-small-biss a {
+    text-decoration: none;
+    color: #000000!important;
+}
+/* GET UP TO DOLLAR SECTION END */
+
+/* POINT OF SALES SECTION START  */
+
+.section .point-of-sale .point-of-sale-contents {
+    width: 90%;
+}
+
+/* POINT OF SALES SECTION END */
+} 
+
+/* Full width dropdowns on mobile */
+
+@media (max-width: 991.98px) { /* Bootstrap lg breakpoint */
+.dropdown-menu {
+    position: static !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    float: none;
+    width: 100%;
+    margin-top: 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.dropdown-menu .dropdown-item {
+    color: #000000 !important;
+}
+    
+.dropdown-menu .dropdown-item:hover {
+    background-color: transparent !important;
+    color: #00000013;
+    transition: 0.4s ease-in-out;
+}
+
+#mobileNavbar {
+    display: block !important;
+    position: fixed !important;
+    top: 0px !important;
+    width: 100%;
+    z-index: 9999 !important; /* Show on mobile */
+}
+
+.main-navbar {
+    display: none; /* Hide desktop navbar on mobile */
+}
+
+.top-links {
+    display: block;
+    background-color: #ffffff !important;
+}
+
+.main-navbar a.nav-link {
+    color: #000000 !important;
+    font-weight: 600;
+}
+
+.main-navbar a.nav-link:hover {
+    color: #000000 !important;
+}
+
+a i {
+    margin: 0px 5px;
+    color: #000000 !important;
+}
+
+
+#mobileNavbar #tdNavbar {
+    background-color: #fff !important; /* white background */
+    /* padding: 10px 0;     */
+}
+
+#mobileNavbar #tdNavbar .navbar-nav .top-links .nav-link {
+    color: #d4c5a0 !important;
+    background-color: #f0f0f0 !important;
+}  
+
+#mobileNavbar .container-fluid #tdNavbar .navbar-nav .nav-item #Investing {
+    color: #000000 !important;
+    font-weight: 600;
+    width: 100% !important;
+    height: 50px !important;
+    border: none !important;
+    margin: 0px 10px !important;
+    background-color: #f0f0f0 !important;
+    outline: none !important;
+}
+
+#mobileNavbar .container-fluid #tdNavbar .navbar-nav .nav-item option {
+    color: #000000 !important;
+    padding: 10px !important;
+}
+
+#mobileNavbar #tdNavbar .navbar-nav .top-links .nav-link:hover {
+    color: #ffffff !important;
+    transition: 0.4s ease-in-out;
+}
+
+#mobileNavbar #tdNavbar .nav-item {
+    color: #000000 !important;
+}
+
+#mobileNavbar .container-fluid #tdNavbar .nav-link #search {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #000000;
+    font-size: 16px;
+    border: 2px solid #000000;
+    padding: 0px 10px !important;
+    width: 100%;
+    height: 40px !important;
+}
+
+#tdNavbar .nav-link #search i {
+    display: none !important;
+}
+
+}
+
+@media screen and (max-width: 900px) {
+/* ABOUT TD START  */
+
+.about-td .grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+/* ABOUT TD END*/
+
+/* OUR STORY START */
+
+.our-story .working-together {
+    display: block;
+}
+
+.our-story .working-together .working-together-image {
+    margin-bottom: 20px;
+}
+
+.our-story .Reimaging-our-future {
+    display: block;
+}
+
+.our-story .Reimaging-our-future .Reimaging-our-future-image {
+    margin-bottom: 20px;
+}
+
+.our-story .Protecting-our-planet {
+    display: block;
+}
+
+.our-story .Protecting-our-planet .Protecting-our-planet-image {
+    margin-bottom: 20px;
+}
+
+
+/* OUR STORY END */
+
+/* TD EVENTS START */
+.td-event .td-event-contents {
+    display: block;
+}
+
+.td-event .td-event-contents .td-event-image {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* TD EVENTS END */
+
+
+/* INNOVATION ACCELERATED START  */
+
+.innovation .innovation-accelerated {
+    display: block;
+}
+
+.innovation .innovation-accelerated .innovation-accelerated-image {
+    margin-bottom: 20px;
+}
+
+.innovation .Empowered {
+    display: block;
+}
+
+.innovation .human-approach .human-approach-image {
+    margin-bottom: 20px;
+}
+
+.innovation .human-approach {
+    display: block;
+}
+
+.innovation .Empowered .Empowered-image {
+    margin-bottom: 20px;
+}
+
+/* INNOVATION ACCELERATED END  */
+
+/* OUR LEADERSHIP START */
+
+.our-leadership .our-leadership-contents .second-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* OUR LEADERSHIP END */
+
+
+/* PERSONAL SECTION START */
+
+.section .small-business {
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+.section .small-business .online-banking {
+    display: none;
+}
+
+/* PERSONAL SECTION END  */
+
+/* WELCOME TO TD START  */
+
+.welcome-td .grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* WELCOME TO TD END */
+
+/* POINT OF SALES SECTION START  */
+
+.section .point-of-sale .point-of-sale-contents {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+}
+
+/* POINT OF SALES SECTION END */
+
+/* INVESTING AT TD SECTION START */
+
+.section #invest {
+    grid-template-columns: 1fr;
+}
+
+/* INVESTING AT TD SECTION END */
+
+/* WE HAVE MORE TO OFFER START*/
+
+.section .we-have-more #we-have-more {
+    display: block;
+    width: 95%;
+    
+}
+.section .we-have-more .we-have-more-btn #we-have-more-btn {
+    width: 60%;
+}
+
+/* WE HAVE MORE TO OFFER END */
+
+
+/* WITH TD SECTION START */
+
+.section .with-td-investor #with-td-investor {
+    grid-template-columns: 1fr;
+}
+
+.section .card {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.section .card img {
+    width: 100%;
+    display: block;
+}
+
+
+/* WITH TD SECTION END */
+
+.award-recognition {
+    margin-top: 45px !important;
+}
+
+.login {
+    margin-top: 44px !important;
+}
+
+.it-is-our-business {
+    margin-top: 45px !important;
+}
+
+.recognized {
+    margin-top: 45px !important;
+}
+
+}
+
+
+@media screen and (max-width: 850px) {
+    /* PERSONAL SECTION START */
+
+.section .small-business {
+    grid-template-columns: 1fr;
+}
+
+
+.section .small-business .online-banking {
+    display: none;
+}
+
+.section .small-business .small-business-image {
+    display: none;
+}
+
+.section .small-business #small-business {
+    display: none;
+}
+
+.section .small-business .mobile-image img {
+    width: 100%;
+}
+
+.section .small-business .mobile-image {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+
+.section .small-business .small-business-contents {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.section .small-business-contents #para {
+    display: none;
+}
+
+.section .small-business .small-business-contents #mobile-para {
+    display: block;
+}
+
+
+.section .small-business .small-business-contents .small-business-btn #Learn-more {
+    width: 100%;
+    margin: 15px auto;
+}
+
+/* PERSONAL SECTION END  */
+
+
+/* LOGIN SECTION START */
+
+.login #login #welcome-to-login {
+    display: block;
+}
+
+.login #login .welcome-to-login h3 {
+    padding: 20px 0px;
+}
+
+.login #login .welcome-to-login form #name {
+    width: 100%;
+}
+
+.login #login .welcome-to-login form #password {
+    width: 100%;
+}
+
+.login #login .welcome-to-login form .login-checkbox a {
+    font-weight: 600 !important;
+    text-align: center;
+    color: #000000 !important;
+}
+
+.login #login .welcome-to-login form a {
+    font-weight: 600;
+    font-size: 18px !important;
+}
+
+.questions {
+    width: 95%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.questions #questions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 95%;
+}
+
+.questions table {
+    margin: 15px;
+}
+
+.questions table tr th {
+    left: 140px;
+}
+
+.questions table tr {
+    padding: 5px 0px;
+    border: 1px solid #000000;
+}
+
+.questions table tr td {
+    padding: 5px 5px;
+}
+
+.questions #questions p {
+    line-height: 30px;
+}
+
+/* LOGIN SECTION END */
+
+ 
+}
+
+@media screen and (max-width: 800px) {
+/* GET TO KNOW US START */
+.section .left-right-section {
+    display: block;
+}
+
+
+.section .left-right-section .left-section {
+    width: 95%;
+    margin: 0px auto;
+}
+
+.section .left-right-section .right-section {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* UPDATES FROM US START */
+
+.section .update-content {
+    margin: 30px auto;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    padding: 10px;
+}
+
+.section .update-content h3 {
+    margin-top: 20px;
+}
+
+.section .update-content .update {
+    grid-template-columns: 1fr !important;
+}
+
+.section .update-content .get-advice {
+    grid-template-columns: 1fr !important;
+}
+
+/* UPDATES FROM US END */
+
+/* GET TO KNOW US END */
+
+
+}
+
+@media screen and (max-width: 690px) {
+    
+/* ABOUT TD START  */
+
+.about-td .grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+/* ABOUT TD END*/
+
+/* OUR LEADERSHIP START */
+
+.our-leadership .our-leadership-contents .second-grid {
+    display: none;
+}
+
+.our-leadership #carouselExampleSlidesOnly {
+    display: block;
+    text-align: center;
+}
+
+/* OUR LEADERSHIP END */
+
+ /* AWARD AND RECOGINTION SECTION START  */
+ 
+.award-recognition {
+    width: 95%;
+    margin: 20px auto;
+    line-height: 28px;
+}
+
+
+/* AWARD AND RECOGINTION SECTION END*/
+
+/* RECOGNIZED SECTION START */
+
+.recognized {
+    width: 90%;
+}
+
+.recognized .td-recognize #td-recognize {
+    width: 90%;
+}
+
+.recognized .td-recognize #td-recognize ul {
+    width: 90%;
+}
+
+/* RECOGNIZED SECTION START */
+
+
+/* WELCOME TO TD START */
+
+.welcome-td .grid {
+    grid-template-columns: 1fr;
+}
+
+/* WELCOME TO TD END */
+
+/* NEED HELP START */
+
+.section .need-help {
+    display: none;
+}
+
+.section .mobile-need-help {
+    display: block;
+    text-align: center;
+}
+
+.section .mobile-need-help #desktop-need-help {
+    display: none;
+}
+
+.section .mobile-need-help #mobile-need-help {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.section .mobile-need-help #need-help .need-help-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.section .mobile-need-help #need-help .need-help-btn #get-started {
+    width: 100%;
+}
+/* NEED HELP END */
+
+/* ESTATE PLANNING START */
+
+.section .estate-planning {
+    display: none;
+}
+
+.section .mobile-estate-planning {
+    display: block;
+    text-align: center;
+}
+
+.section .mobile-estate-planning #desktop-estate-planning {
+    display: none;
+}
+
+.section .mobile-estate-planning #mobile-estate-planning {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.section .mobile-estate-planning #estate-planning .estate-planning-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.section .mobile-estate-planning #estate-planning .estate-planning-btn #estate-planning-btn {
+    width: 100%;
+}
+/* ESTATE PLANNING END */
+
+/* INDUSTRY EXPERTISE SECTION START */
+
+
+.section .industry-expertise {
+    display: none;
+}
+
+.section .mobile-industry-expertise {
+    display: block;
+    text-align: center;
+}
+
+.section .mobile-industry-expertise #desktop-industry-expertise {
+    display: none;
+}
+
+.section .mobile-industry-expertise #mobile-industry-expertise {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.section .mobile-industry-expertise #industry-expertise .industry-expertise-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.section .mobile-industry-expertise #industry-expertise .industry-expertise-btn #industry-expertise-btn {
+    padding: 10px 20px;
+    background-color: #008000;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-weight: 800px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.section .mobile-industry-expertise #industry-expertise .industry-expertise-btn #industry-expertise-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: 0.3s ease-in-out;
+}
+
+/* INDUSTRY EXPERTISE SECTION END */
+
+/* PLAN YOUR MOVE START */
+
+.section .plan-ur-move #plan-ur-move {
+    display: block;
+}
+
+.section .plan-ur-move #plan-ur-move .plan-ur-move-contents {
+    margin-top: 20px;
+}
+
+.section .plan-ur-move #plan-ur-move .plan-ur-move-contents ,
+.plan-ur-move-btn #plan-ur-move-btn {
+    width: 100%;
+    text-align: center;
+}
+
+/* PLAN YOUR MOVE END */
+
+/* TD ADVICE START */
+
+.td-advice .td-advice-btn #td-advice-btn {
+    width: 100%;
+}
+
+/* TD ADVICE END */
+
+/* PLAN FOR YOUR FINANCIAL START */
+
+.plan-ur-financial .grid {
+    grid-template-columns: 1fr;
+}
+/* PLAN FOR YOUR FINANCIAL END */
+
+/* PROTECT YOURSELF AGAINST FRAUD START */
+
+.section .protect-fraud .protect-fraud-contents {
+    display: block;
+    width: 95%;
+    margin: 20px auto;
+}
+
+/* PROTECT YOURSELF AGAINST FRAUD END */
+
+/* CHECK YOUR FINANCIAL HEALTH START */
+
+.check-financial-health .check-financial-health-btn #check-financial-health-btn {
+    width: 50%;
+}
+
+/* CHECK YOUR FINANCIAL HEALTH END */
+
+/* IT NEVER BEEN START */
+
+.section .it-never-been #it-never-been {
+    display: block;
+}
+
+/* IT NEVER BEEN END */
+
+/* SEE THE WAYS TD ENRICHES START */
+
+#mobile-td-enriches {
+    display: block;
+}
+
+#mobile-td-enriches .card .card-body {
+    text-align: center;
+    color: #008000;
+}
+
+.td-enriches #td-enriches {
+    display: none;
+}
+/* SEE THE WAYS TD ENRICHES END */
+
+/* WHY BANK WITH TD START */
+
+.section .why-banking-td {
+    display: none;
+}
+
+.section .mobile-why-banking-td {
+    display: block;
+    text-align: center;
+}
+
+.section .mobile-why-banking-td #desktop-why-banking-td {
+    display: none;
+}
+
+.section .mobile-why-banking-td #mobile-why-banking-td {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.section .mobile-why-banking-td #why-banking-td .why-banking-td-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.section .mobile-why-banking-td #why-banking-td .why-banking-td-btn #why-banking-td-btn {
+    width: 100%;
+}
+/* WHY BANK WITH TD END */
+
+
+ /* DEPOSIT PROTECTION START */
+
+.section .deposit-protection {
+    display: block;
+}
+
+
+.section .deposit-protection #regulated-by-ciro {
+    padding: 10px;
+}
+
+ /* DEPOSIT PROTECTION END */
+
+ /* GET UP TO DOLLAR SECTION START */
+
+.section .meet-ur-small-biss {
+    display: block;
+}
+
+.get-up-to-dollar #get-up-to-dollar-div .mobile-image img {
+    width: 100%;
+}
+
+.section .small-business-toggle .small-business-toggle-contents {
+    border-bottom: none !important;
+}
+
+.section .small-business-toggle .small-business-toggle-contents ul #custom-tab {
+    border-left: none !important;
+    border-right: none !important;;
+}
+
+.section .small-business-toggle .small-business-toggle-contents ul #dedicated-tab {
+    border: none !important;
+}
+
+.section .small-business-toggle .small-business-toggle-contents ul #local-tab {
+    border-right: none !important;
+}
+ /* GET UP TO DOLLAR SECTION END */
+
+ 
+/* LET US HELP FIND IDEAL SECTION START  */
+
+.section .let-us-help #get_started {
+    width: 40%;
+}
+
+.section .let-us-help p {
+    padding: 5px;
+}
+
+/* LET US HELP FIND IDEAL SECTION END*/
+ 
+/* POINT-OF-SALE (POS) SECTION START  */
+
+.section .pos #see_all_pos {
+    width: 40%;
+}
+
+.section .pos p {
+    padding: 5px;
+}
+
+/* POINT-OF-SALE (POS) SECTION END*/
+
+/* ACCEPT SECURE ONLINE PAYMENT SECTION START  */
+
+.section .accept-secure-payment #accept-secure-payment-content {
+    width: 100%;
+}
+
+
+.section .accept-secure-payment #see_online-btn {
+    width: 70%;
+}
+
+/* ACCEPT SECURE ONLINE PAYMENT SECTION END  */
+
+
+/* LOGIN SECTION START */
+
+.login #login #welcome-to-login {
+    display: block;
+}
+
+.login #login .welcome-to-login h3 {
+    padding: 20px 0px;
+}
+
+.login #login .welcome-to-login form #name {
+    width: 100%;
+}
+
+.login #login .welcome-to-login form #password {
+    width: 100%;
+}
+
+.login #login .welcome-to-login form .login-checkbox a {
+    font-weight: 600 !important;
+    text-align: center;
+    color: #000000 !important;
+}
+
+.login #login .welcome-to-login form a {
+    font-weight: 600;
+    font-size: 13px !important;
+}
+
+.questions {
+    width: 95%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.questions #questions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 95%;
+}
+
+.questions table {
+    margin: 15px;
+}
+
+.questions table tr th {
+    left: 140px;
+}
+
+.questions table tr {
+    padding: 5px 0px;
+    border: 1px solid #000000;
+}
+
+.questions table tr td {
+    padding: 5px 5px;
+}
+
+.questions #questions p {
+    line-height: 30px;
+}
+
+/* LOGIN SECTION END */
+
+ /* WELCOME TO TD SMALL BUSINESS SECTION START */
+
+ 
+.welcome-to-td #welcome-to-td .welcome-to-td-grid {
+    display: block;
+    gap: 20px;
+}
+
+/* WELCOME TO TD SMALL BUSINESS SECTION END */
+
+/* BANKING ADVICE SECTION START*/
+
+.banking-advice {
+    text-align: center;
+}
+
+/* BANKING ADVICE SECTION END */
+
+/*  GO TO ADVICE HUB SECTION START  */
+
+
+.section .go-to-advice-hub #go-to-advice-hub-btn {
+    width: 80%;
+}
+
+/*  GO TO ADVICE HUB SECTION END */
+
+/* BUSINESS BANKING SECTION START */
+
+.section .business-banking #business-banking {
+    grid-template-columns: 1fr !important;
+}
+
+/* BUSINESS BANKING SECTION END */
+
+/* LOOKING FOR GOVERNMENT? SECTION START */
+
+.section .looking-for-government .looking-for-government-btn #looking-for-government-btn {
+    width: 90%;
+    margin: 0px auto;
+} 
+
+/* LOOKING FOR GOVERNMENT? SECTION END */
+
+
+/* WE'RE READY TO HELP YOU SECTION START */
+
+.section .we-are-ready #we-are-ready {
+    grid-template-columns: 1fr;
+}
+
+/* WE'RE READY TO HELP YOU SECTION END */
+
+/* COMMECIAL SECTION START  */
+
+/* COMMECIAL SECTION IT'S OUR BUSINESS START */
+
+.it-is-our-business {
+    display: none;
+}
+
+.mobile-it-is-our-business {
+    display: block;
+    margin-top: 45px !important;
+}
+
+.mobile-it-is-our-business .mobile-it-is-our-business-image img{
+    width: 100%;
+}
+
+.mobile-it-is-our-business .mobile-it-is-our-business-text {
+    margin: 30px 0px;
+    text-align: center;
+    border-bottom: 2px solid #f0eded;
+    padding-bottom: 10px;
+}
+
+.mobile-it-is-our-business .mobile-it-is-our-business-text h3 {
+    color: #000000;
+}
+/* COMMECIAL SECTION IT'S OUR BUSINESS END */
+
+
+/* WE'RE HERE TO HELP START*/
+
+.section .we-re-here #we-re-here {
+    display: block;
+}
+
+/* WE'RE HERE TO HELP END */
+
+
+/* TD COMMITED START  */
+
+#myTabContent #dedicated .dedicated-contents {
+    grid-template-columns: 1fr;
+}
+
+.section .we-offer-expertise .expertise-contents {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#custom .customized-contents {
+    grid-template-columns: 1fr;
+
+}
+
+#local .local-expertise-contents {
+    grid-template-columns: 1fr;
+}
+
+#fraud .fraud-contents {
+    grid-template-columns: 1fr;
+
+}
+
+#fraud .fraud-contents #fraud-text #fraud-btn {
+    width: 60%;
+}
+
+/* TD COMMITED END  */
+
+
+/* BANK FROM OFFICE START */
+
+.section .bank-from-office .bank-from-office-contents {
+    grid-template-columns: 1fr;
+}
+
+.section .bank-from-office .bank-from-office-contents .implentation-plan {
+    border-right: none;
+    border-left: none;  
+}
+
+/* COMMECIAL SECTION END  */
+
+/* NEED SOME HELP START */
+
+.section .need-some-help .need-some-help-btn #need-some-help-btn {
+    width: 90%;
+    margin: 0px auto;
+} 
+
+/* NEED SOME HELP END */
+
+/* INVESTING AT TD SECTION START */
+
+.section #invest {
+    grid-template-columns: 1fr;
+}
+
+/* INVESTING AT TD SECTION END */
+
+/* WE HAVE MORE TO OFFER START*/
+
+.section .we-have-more #we-have-more {
+    display: block;
+    width: 95%;
+    
+}
+.section .we-have-more .we-have-more-btn #we-have-more-btn {
+    width: 60%;
+}
+
+/* WE HAVE MORE TO OFFER END */
+
+
+/* WITH TD SECTION START */
+
+.section .with-td-investor #with-td-investor {
+    grid-template-columns: 1fr;
+}
+
+.section .card {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.section .card img {
+    width: 100%;
+    display: block;
+}
+
+
+/* WITH TD SECTION END */
+
+}
+
+@media screen and (max-width: 425px) {
+ 
+/*  WE OFFER EXPERTISE IN SPECIFIC BUSINESS START */
+
+
+.section .we-offer-expertise .expertise-contents {
+    grid-template-columns: 1fr;
+}
+
+ /* WE OFFER EXPERTISE IN SPECIFIC BUSINESS END */
+
+
+}
+
+@media screen and (max-width: 380px) {
+    
+/*GET TO KNOW US */
+
+.section .left-right-section .right-section p {
+    font-size: 20px;
+}
+/* GET TO KNOW US*/
+
+/* ABOUT TD START */
+
+.section {
+    width: 100%;
+}
+
+.section .about-td  {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.section .about-td #get-to-know-us {
+    margin-top: 10px;
+}
+
+/* ABOUT TD END */
+
+/* GET UP TO DOLLAR SECTION START */
+.section .get-up-to-dollar .mobile-image {
+    display: block;
+    text-align: center;
+    width: 90%;
+}
+
+/* GET UP TO DOLLAR SECTION END */
+
+ 
+/* POINT-OF-SALE (POS) SECTION START  */
+
+.section .pos #see_all_pos {
+    width: 75%;
+}
+
+.section .pos p {
+    padding: 5px;
+}
+
+/* POINT-OF-SALE (POS) SECTION END*/
+
+/* ACCEPT SECURE ONLINE PAYMENT SECTION START  */
+
+.section .accept-secure-payment #see_online-btn {
+    width: 75%;
+}
+
+/* ACCEPT SECURE ONLINE PAYMENT SECTION END  */
+
+/* LOGIN SECTION START */
+
+.login #login #welcome-to-login {
+    display: block;
+}
+
+.login #login .welcome-to-login h3 {
+    padding: 20px 0px;
+}
+
+.login #login .welcome-to-login form #name {
+    width: 100%;
+}
+
+.login #login .welcome-to-login form #password {
+    width: 100%;
+}
+
+.login #login .welcome-to-login form .login-checkbox a {
+    font-weight: 600 !important;
+    text-align: center;
+    color: #000000 !important;
+}
+
+.login #login .welcome-to-login form a {
+    font-weight: 600;
+    font-size: 13px !important;
+}
+
+.questions {
+    width: 95%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.questions #questions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 95%;
+}
+
+.questions table {
+    margin: 15px;
+}
+
+.questions table tr th {
+    left: 80px;
+}
+
+.questions table tr {
+    padding: 5px 0px;
+    border: 1px solid #000000;
+}
+
+.questions table tr td {
+    padding: 5px 5px;
+}
+
+.questions #questions p {
+    line-height: 30px;
+}
+
+/* LOGIN SECTION END */
+
+
+/*  GO TO ADVICE HUB SECTION START  */
+
+
+.section .go-to-advice-hub #go-to-advice-hub-btn {
+    width: 80%;
+}
+
+/*  GO TO ADVICE HUB SECTION END */
+
+/* COMMERCIAL SECTION START  */
+
+/* TD COMMITED END  */
+
+#fraud .fraud-contents #fraud-text #fraud-btn {
+    width: 90%;
+}
+
+/* COMMERCIAL SECTION END  */
+
+
+
+/* WITH TD SECTION START */
+
+
+
+.section .with-td-investor h3 {
+    margin: 20px 0px;
+}
+
+.section .with-td-investor #with-td-investor {
+    grid-template-columns: 1fr;
+}
+
+.section .card {
+   margin: 10px 0px;
+}
+/* WITH TD SECTION END */
+
+}
+

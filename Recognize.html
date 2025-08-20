@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD BANK</title>
+    <link rel="stylesheet" href="./Styles/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body>
+      <!-- green navbar start -->
+  <div class="top-links d-none d-lg-flex">
+    <a class="nav-link" href="#">Personal</a>
+    <a class="nav-link" href="#">Small Business</a>
+    <a class="nav-link" href="#">Commercial</a>
+    <a class="nav-link" href="#">Investing</a>
+    <a class="nav-link" href="#">About TD</a>
+  </div>
+
+    <!-- green navbar end -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="./Investing.html">
+        <img src="./Image/td-logo-desktop.png" alt="image" class="logo-img">
+      </a>
+
+      <!-- Toggler button for mobile -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tdNavbar" aria-controls="tdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="tdNavbar">
+        <ul class="navbar-nav ml-auto align-items-lg-center">
+          <!-- Icons -->
+          <li class="nav-item"><a class="nav-link" href="#"><input type="search" id="search" placeholder="Search"></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-map-marker-alt"></i> Locations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Help</a></li>
+
+          <!-- Dropdown: Canada -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-globe"></i> Canada
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+                <a class="dropdown-item" href="#">Canada ✔</a>
+                <a class="dropdown-item" href="#">United Kingdom</a>
+            </div>
+          </li>
+          <!-- Dropdown: English -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              English
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Français</a>
+            </div>
+          </li>
+          <!-- Divider (desktop only) -->
+          <li class="d-none d-lg-block divider"></li>
+
+          <!-- Dropdown: Login -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Login
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginDropdown">
+              <a class="dropdown-item" href="#">EasyWeb</a>
+              <a class="dropdown-item" href="#">WebBroker</a>
+              <a class="dropdown-item" href="#">Insurance</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Mobile Navbar -->
+  <nav class="navbar navbar-expand-lg main-navbar" id="mobileNavbar">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./Image/td-logo-desktop.png" alt="image" class="logo-img">
+      </a>
+
+      <!-- Toggler button for mobile -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tdNavbar" aria-controls="tdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <!-- <li class="nav-item dropdown"> -->
+            <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>
+              Login
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginDropdown">
+              <a class="dropdown-item" href="#">EasyWeb</a>
+              <a class="dropdown-item" href="#">WebBroker</a>
+              <a class="dropdown-item" href="#">Insurance</a>
+            </div>
+          <!-- </li> -->
+      <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="tdNavbar">
+          <a class="nav-link" href="#"><input type="search" id="search" placeholder="Search"></a>
+          <ul class="navbar-nav ml-auto align-items-lg-center">
+            <li class="nav-item top-links d-lg-flex d-block w-100 justify-content-center">
+                <select name="" id="Investing">
+                    <a class="nav-link" href="#"><option value="TD:Investing">TD:Investing</option></a>
+                    <a class="nav-link" href="#"><option value="personal">Personal</option></a>
+                    <a class="nav-link" href="#"><option value="smallBusiness">Small Business</option></a>
+                    <a class="nav-link" href="#"><option value="commercial">Commercial</option></a>
+                    <a class="nav-link" href="#"><option value="investing">Investing</option></a>
+                    <a class="nav-link" href="#"><option value="aboutTd">About TD</option></a>
+                </select>
+            </li>
+          <!-- Icons -->
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-map-marker-alt"></i> Locations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Help</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-globe"></i> Canada</a></li>
+
+          <!-- Dropdown: English -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              English
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Français</a>
+            </div>
+          </li>
+
+          <!-- Divider (desktop only) -->
+          <li class="d-none d-lg-block divider"></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- NAVBAR END -->
+    <div class="recognized">
+        <div class="td-rank">
+            <a href="#" id="td-bank">TD BANK GROUP</a>
+            <h1>TD ranked among top banks in the Dow Jones <br>Sustainability North America Index</h1>
+            <small><i class="fa fa-clock-o"></i> 3 minute read</small>
+        </div>
+        <div class="td-recognize">
+            <div class="td-group">
+                <span>By TD Bank Group • Dec 13, 2023</span>
+            </div>
+            <div id="td-recognize">
+                <p><span>T</span>D is recognized for its sustainability efforts for twelfth consecutive year</p>
+                <p>TORONTO, Dec. 13, 2023 /CNW/ - TD Bank Group (TD) is pleased to be <br>ranked in the Dow Jones Sustainability North America Index (DJSI) for the <br>twelfth consecutive year. The DJSI North America Index recognizes the top <br>20% of sustainability performers among the 600 largest companies in the <br>U.S. and Canada based on long-term economic, environmental, and social <br>criteria. TD scored in the top 5% of banks world-wide as assessed in the <br>2023 S&P Global Corporate Sustainability Assessment (CSA) as of <br>December 8, 2023.</p>
+                <p>"Our inclusion in the DJSI North America Index for the twelfth consecutive <br>year is a testament to TD's commitment to deliver on its purpose to <br>positively impact our customers, colleagues and communities" said Janice <br>Farrell Jones, SVP, Sustainability & Corporate Citizenship, TD. "We continue <br>to work to help create a more inclusive and sustainable future and we are <br>proud to have our efforts acknowledged in the DJSI."</p>
+                <p>Some of the Bank's recent investments and <br>goals related to inclusive and sustainable growth include:</p>
+                <ul>
+                    <li>Introducing a new <a href="#">$500 billion (CAD) Sustainable & Decarbonization <br>Finance Target</a> to support key environmental, decarbonization, and <br>social activities by 2030.</li>
+                    <li>Signing an agreement to purchase 27,500 metric tons of <a href="#">Direct Air <br>Capture (DAC) carbon dioxide removal credits</a> over a four-year period <br>from STRATOS. 1PointFive's first DAC plant currently under <br>construction in Texas, subject to STRATOS becoming operational.</li>
+                    <li>Awarding <a href="#">$10 million</a> (CAD/USD) through the 2022 TD Ready <br>Challenge to 10 Canadian and American organizations focused on <br>assisting people and communities who may be disproportionately <br>affected by climate change and the transition to a low-carbon <br>economy.</li>
+                    <li></li>
+                </ul>
+                <p>Other key recognitions TD has received for its sustainability efforts in 2023 <br>include:</p>
+                <ul>
+                    <li>Named North America's Best Bank for Corporate Responsibility by <br>Euromoney for its demonstrated commitment to managing the <br>environmental impact of operations, promoting workforce <br>development and social mobility, and fostering diversity and <br>inclusion.</li>
+                    <li>Included in the 2023 Bloomberg Gender-Equality Index (GEI) for the <br>seventh consecutive year</li>
+                    <li>Named a Top Company for Diversity in 2023 by DiversityInc and <br>ranked #2 in the Forbes list of Best Employers for Diversity 2023</li>
+                    <li>Recognized as "Leaders in LGBTQ+ Workplace Inclusion" by the US <br>focused Human Rights Campaign Foundation</li>
+                </ul>
+                <p>TD thanks its customers, colleagues, and the community it serves and <br>congratulates all members ranked in the 2023 DJSI North America Index</p>
+                <p>Learn more about how <a href="#">TD is</a> helping to contribute to a more sustainable <br>future and read the TD <a href="#">2022 Climate Action Plan</a>, and TD <a href="#">2022 ESG Report</a>.</p>
+                <p>For more information about DJSI North American Index, please <a href="#">click here.</a></p>
+                <small>About TD Bank Group</small>
+                <p id="toronto-dominion">The Toronto-Dominion Bank and its subsidiaries are collectively known as <br>TD Bank Group ("TD" or the "Bank"). TD is the sixth largest bank in North <br>America by assets and serves over 27.5 million customers in four key <br>businesses operating in a number of locations in financial centres around <br>the globe: Canadian Personal and Commercial Banking, including <br>TD Canada Trust and TD Auto Finance Canada; U.S. Retail, including TD Bank,<br> America's Most Convenient Bank®, TD Auto Finance U.S., TD Wealth (U.S.),<br> and an investment in The Charles Schwab Corporation; Wealth <br>Management and Insurance, including TD Wealth (Canada), TD Direct <br>Investing, and TD Insurance; and Wholesale Banking, including TD <br>Securities and TD Cowen. TD also ranks among the world's leading online <br>financial services firms, with more than 16 million active online and mobile <br>customers. TD had $1.96 trillion in assets on October 31, 2023. The <br>Toronto-Dominion Bank trades under the symbol "TD" on the Toronto and <br>New York Stock Exchanges.</p>
+                <span>SOURCE TD Bank Group</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./Script/scripts.js"></script>
+</body>
+</html>

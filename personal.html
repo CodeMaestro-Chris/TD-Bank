@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD BANK</title>
+    <link rel="stylesheet" href="./Styles/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body>
+      <!-- green navbar start -->
+  <div class="top-links d-none d-lg-flex">
+    <a class="nav-link" href="#">Personal</a>
+    <a class="nav-link" href="#">Small Business</a>
+    <a class="nav-link" href="#">Commercial</a>
+    <a class="nav-link" href="#">Investing</a>
+    <a class="nav-link" href="#">About TD</a>
+  </div>
+
+    <!-- green navbar end -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="./Investing.html">
+        <img src="./Image/td-logo-desktop.png" alt="image" class="logo-img">
+      </a>
+
+      <!-- Toggler button for mobile -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tdNavbar" aria-controls="tdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="tdNavbar">
+        <ul class="navbar-nav ml-auto align-items-lg-center">
+          <!-- Icons -->
+          <li class="nav-item"><a class="nav-link" href="#"><input type="search" id="search" placeholder="Search"></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-map-marker-alt"></i> Locations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Help</a></li>
+
+          <!-- Dropdown: Canada -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-globe"></i> Canada
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+                <a class="dropdown-item" href="#">Canada ✔</a>
+                <a class="dropdown-item" href="#">United Kingdom</a>
+            </div>
+          </li>
+          <!-- Dropdown: English -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              English
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Français</a>
+            </div>
+          </li>
+          <!-- Divider (desktop only) -->
+          <li class="d-none d-lg-block divider"></li>
+
+          <!-- Dropdown: Login -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Login
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginDropdown">
+              <a class="dropdown-item" href="#">EasyWeb</a>
+              <a class="dropdown-item" href="#">WebBroker</a>
+              <a class="dropdown-item" href="#">Insurance</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Mobile Navbar -->
+  <nav class="navbar navbar-expand-lg main-navbar" id="mobileNavbar">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./Image/td-logo-desktop.png" alt="image" class="logo-img">
+      </a>
+
+      <!-- Toggler button for mobile -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tdNavbar" aria-controls="tdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <!-- <li class="nav-item dropdown"> -->
+            <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>
+              Login
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginDropdown">
+              <a class="dropdown-item" href="#">EasyWeb</a>
+              <a class="dropdown-item" href="#">WebBroker</a>
+              <a class="dropdown-item" href="#">Insurance</a>
+            </div>
+          <!-- </li> -->
+      <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="tdNavbar">
+          <a class="nav-link" href="#"><input type="search" id="search" placeholder="Search"></a>
+          <ul class="navbar-nav ml-auto align-items-lg-center">
+            <li class="nav-item top-links d-lg-flex d-block w-100 justify-content-center">
+                <select name="" id="Investing">
+                    <a class="nav-link" href="#"><option value="TD:Investing">TD:Investing</option></a>
+                    <a class="nav-link" href="#"><option value="personal">Personal</option></a>
+                    <a class="nav-link" href="#"><option value="smallBusiness">Small Business</option></a>
+                    <a class="nav-link" href="#"><option value="commercial">Commercial</option></a>
+                    <a class="nav-link" href="#"><option value="investing">Investing</option></a>
+                    <a class="nav-link" href="#"><option value="aboutTd">About TD</option></a>
+                </select>
+            </li>
+          <!-- Icons -->
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-map-marker-alt"></i> Locations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Help</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-globe"></i> Canada</a></li>
+
+          <!-- Dropdown: English -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              English
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Français</a>
+            </div>
+          </li>
+
+          <!-- Divider (desktop only) -->
+          <li class="d-none d-lg-block divider"></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- NAVBAR END -->
+    <div class="section">
+        <div class="small-business">
+            <div class="mobile-image">
+                <img src="./Image/personal-mobile.png.jpg" alt="image">
+            </div>
+            <div class="small-business-image">
+                <img src="./Image/personal.png-removebg-preview.png" alt="image">
+            </div>
+            <div id="small-business">
+                <h1>Meet your <br>Small <br>Business <br>Match</h1>
+            </div>
+            <div class="small-business-contents">
+                <p id="para"> Small Business Match Get up to $2,700. Start by opening <br>select TD Small Business Banking <br>products, plus get banking advice to <br>help with your business needs<sup>1</sup>.</p>
+                <p id="mobile-para"> Small Business Match Get up to $2,700. Start by opening select TD Small Business Banking products, plus get banking advice to help with your business needs<sup>1</sup>.</p>
+                <div class="small-business-btn">
+                    <button id="Learn-more">Learn More</button>
+                </div>
+                <p><sup>1</sup>Conditions apply</p>
+            </div>
+
+            <div class="online-banking">
+                <div id="online-banking">
+                    <h3>EasyWeb: Online Banking</h3>
+                    <button id="login"><i class="fa fa-lock"></i>Login</button>
+                    <div class="online-banking-tag">
+                        <a href="#">Register <i class="fa fa-angle-right"></i></a>
+                        <a href="#">Security Guarantee <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div id="online-trading">
+                    <h3>WebBroker Online Trading</h3>
+                    <button id="login"><i class="fa fa-lock"></i>Login</button>
+                    <div class="online-banking-tag">
+                        <a href="#">Register <i class="fa fa-angle-right"></i></a>
+                        <a href="#">Security Guarantee <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- WELCOME TO TD START -->
+
+        <div class="welcome-td">
+            <div id="welcome-td">
+                <h3>Welcome to TD Personal Banking</h3>
+            </div>
+            <div id="explore-td">
+                <h3>Explore TD Canada Trust and related products and services</h3>
+            </div>
+            <div class="grid">
+                <div class="find-cheque">
+                    <div class="icon">
+                        <i class="fa fa-credit-card-alt"></i>
+                    </div>
+                    <div class="find-cheque-contents">
+                        <a href="#">Find a chequing account <i class="fa fa-angle-right"></i></a>
+                        <p>For daily spending, making <br> bill payments and more</p>
+                    </div>
+                </div>
+                <div class="find-savings">
+                    <div class="icon">
+                        <i class="fa fa-blind"></i>
+                    </div>
+                    <div class="find-savings-contents">
+                        <a href="#">Find a savings account <i class="fa fa-angle-right"></i></a>
+                        <p>Accounts to help you grow <br>your savings</p>
+                    </div>
+                </div>
+                <div class="find-credit">
+                    <div class="icon">
+                        <i class="fa fa-credit-card"></i>
+                    </div>
+                    <div class="find-credit-contents">
+                        <a href="#">Find a credit card <i class="fa fa-angle-right"></i></a>
+                        <p>TD credit cards offer a host <br>of benefits and features</p>
+                    </div>
+                </div>
+                <div class="explore-mortgage">
+                    <div class="icon">
+                        <i class="fa fa-leanpub"></i>
+                    </div>
+                    <div class="explore-mortgage-contents">
+                        <a href="#">Explore Mortgage options <i class="fa fa-angle-right"></i></a>
+                        <p>Get specialized advice to <br>help with your home <br>ownership journey</p>
+                    </div>
+                </div>
+                <div class="personal-investing">
+                    <div class="icon">
+                        <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                    </div>
+                    <div class="personal-investing-contents">
+                        <a href="#">Personal Investing <i class="fa fa-angle-right"></i></a>
+                        <p>Registered plans and <br>investments to help you <br>reach your goals</p>
+                    </div>
+                </div>
+                <div class="borrowing">
+                    <div class="icon">
+                        <i class="fa fa-picture-o"></i>
+                    </div>
+                    <div class="borrowing-contents">
+                        <a href="#">Borrowing <i class="fa fa-angle-right"></i></a>
+                        <p>Find a borrowing option that <br>fits your life</p>
+                    </div>
+                </div>
+                <div class="invest-trade">
+                    <div class="icon">
+                        <i class="fa fa-line-chart"></i>
+                    </div>
+                    <div class="invest-trade-contents">
+                        <a href="#">Invest and trade online <i class="fa fa-angle-right"></i></a>
+                        <p>TD Direct Investing – <br>innovative tools for self- <br>directed investors</p>
+                    </div>
+                </div>
+                <div class="personalized-wealth">
+                    <div class="icon">
+                        <i class="fa fa-user-times"></i>
+                    </div>
+                    <div class="personalized-wealth-contents">
+                        <a href="#">Personalized wealth advice <i class="fa fa-angle-right"></i></a>
+                        <p>Goals-based planning and <br> advice with a TD Wealth <br> advisor</p>
+                    </div>
+                </div>
+                <div class="today-rate">
+                    <div class="icon">
+                        <i class="fa fa-percent"></i>
+                    </div>
+                    <div class="today-rate-contents">
+                        <a href="#">Today's rates <i class="fa fa-angle-right"></i></a>
+                        <p>Current rates for borrowing <br> & investing products</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- WELCOME TO TD END  -->
+
+        <!-- NEED HELP START -->
+
+        <div class="need-help">
+            <div id="need-help">
+                <h3 id="desktop-need-help">Need help finding the right TD products?</h3>
+                <p>Just answer a few questions and we can better help direct you to achieving <br>your goals.</p>
+                <div class="need-help-btn">
+                    <button id="get-started">Get Started</button>
+                </div>
+            </div>
+            <div class="need-help-image">
+                <h3 id="mobile-need-help">Need help finding the right TD products?</h3>
+                <img src="./Image/personal-products-icon.png" alt="image">
+            </div>
+        </div>
+        <div class="mobile-need-help">
+            <div class="need-help-image">
+                <h3 id="mobile-need-help">Need help finding the right TD products?</h3>
+                <img src="./Image/personal-products-icon.png" alt="image">
+            </div> 
+            <div id="need-help">
+                <h3 id="desktop-need-help">Need help finding the right TD products?</h3>
+                <p>Just answer a few questions and we can better help direct you to achieving <br>your goals.</p>
+                <div class="need-help-btn">
+                    <button id="get-started">Get Started</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEED HELP END -->
+
+        <!-- PLAN YOUR MOVE START -->
+
+        <div class="plan-ur-move">
+            <h3>Plan your move to Canada</h3>
+            <div id="plan-ur-move">
+                <div class="plan-ur-move-img">
+                    <img src="./Image/plan-your-move-to-canada.png" alt="image">
+                </div>
+                <div class="plan-ur-move-contents">
+                    <p>Start learning about the Canadian banking system, <br>the immigration process and what you could expect <br>when you arrive.</p>
+                    <div class="plan-ur-move-btn">
+                        <button id="plan-ur-move-btn">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PLAN YOUR MOVE END -->
+
+        <!-- TD ADVICE START -->
+
+        <div class="td-advice">
+            <h3>TD Advice - ready to help you move <br>forward</h3>
+            <p>Looking for financial advice? Read through our articles, videos and tools with helpful information for <br>
+                everyday banking, borrowing, saving and financial <br>planing needs.
+            </p>
+            <div class="td-advice-btn">
+                <button id="td-advice-btn">Learn more</button>
+            </div>
+        </div>
+
+        <!-- TD ADVICE END -->
+
+        <!-- PLAN FOR YOUR FINANCIAL START -->
+
+        <div class="plan-ur-financial">
+            <h3>Plan for your financial future <br>with our unique banking <br> solutions</h3>
+            <div class="grid">
+                <div class="card" style="width: 18rem col-md-4;">
+                    <img src="./Image/personal-post-1.png" class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">I'm a teen/parent</h5>
+                        <p class="card-text">it's never too late - or too early - to plan for your finacial future. Check out our
+                            convenient banking options to help you grow and manage your money.
+                        </p>
+                        <a href="#" class="btn btn-primary">Get started</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem col-md-4;">
+                    <img src="./Image/personal-student.png" class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">I'm a student</h5>
+                        <p class="card-text">Discover TD banking solutions and resources to help you gain confidence about staying on top of your finances while in school</p>
+                        <a href="#" class="btn btn-primary">Start Planning</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem col-md-4;">
+                    <img src="./Image/personal-youth.png" class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">I'm a post grad/young adult</h5>
+                        <p class="card-text">From everyday banking to investment advice, we're here to help you improve your financial game.</p>
+                        <a href="#" class="btn btn-primary">Enter your next phase</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PLAN FOR YOUR FINANCIAL END -->
+
+        <!-- PROTECT YOURSELF AGAINST FRAUD START -->
+
+        <div class="protect-fraud">
+            <h3>Protect yourself against fraud</h3>
+            <p>While we make every effort to secure your personal information, there's plenty you can do to avoid failing <br>
+                prey to fraud and identify theft. Through awarness and good online habits, you can spot scam attempts <br>
+                and significantly reduce your risk before it happens.
+            </p>
+            <div class="protect-fraud-contents">
+                <div class="left-side">
+                    <h3>How TD protects you</h3>
+                    <p>Using security features and tools like TD Fraud Alerts, TD <br>Transaction Alerts, Two-Step Verification, Card Controls, and <br>more, we’re trying our best to help you safeguard <br>your finances and protect you and your family from being victims <br>of fraud.</p>
+                    <div class="left-side-btn">
+                        <button id="left-side-btn">Explore more</button>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <h3 style="font-size: 26px;">Protecting yourself and your family</h3>
+                    <p>Some scams are common to everyone, while others are <br>designed to specifically target youth, seniors and <br>newcomers to Canada. We can help you learn how to <br> spot various fraud and scams aimed both at you and your <br> loved ones.</p>
+                    <div class="right-side-btn">
+                        <button id="right-side-btn">Find out how</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PROTECT YOURSELF AGAINST FRAUD END  -->
+
+        
+        <!-- ESTATE PLANNING START -->
+
+        <div class="estate-planning">
+            <div id="estate-planning">
+                <h3 id="desktop-estate-planning">Estate planning and settlement advice</h3>
+                <p>If you are looking for information on how to plan your own Estate or need support <br>with settling an Estate of a loved one, we're here to help.</p>
+                <div class="estate-planning-btn">
+                    <button id="estate-planning-btn">Learn more</button>
+                </div>
+            </div>
+            <div class="estate-planning-image">
+                <h3 id="mobile-estate-planning">Estate planning and settlement advice</h3>
+                <img src="./Image/personal-estate.png" alt="image">
+            </div>
+        </div>
+        <div class="mobile-estate-planning">
+            <div class="estate-planning-image">
+                <h3 id="mobile-estate-planning">Estate planning and settlement advice</h3>
+                <img src="./Image/personal-estate.png" alt="image">
+            </div> 
+            <div id="estate-planning">
+                <h3 id="desktop-estate-planning">Estate planning and settlement advice</h3>
+                <p>If you are looking for information on how to plan your own Estate or need support <br>with settling an Estate of a loved one, we're here to help.</p>
+                <div class="estate-planning-btn">
+                    <button id="estate-planning-btn">Learn more</button>
+                </div>
+            </div>
+        </div>
+
+        <!--ESTATE PLANNING END -->
+
+        <!-- CHECK YOUR FINANCIAL HEALTH START -->
+
+        <div class="check-financial-health">
+            <h3>Check your financial health</h3>
+            <p>
+                Try the Financial Health Assessment Tool. This tool can help assess your financial health and <br>
+                provide tips and information by answering a few questions.
+            </p>
+            <div class="check-financial-health-btn">
+                <button id="check-financial-health-btn">Get started</button>
+            </div>
+        </div>
+        
+        <!-- CHECK YOUR FINANCIAL HEALTH END -->
+
+        <!-- IT NEVER BEEN START -->
+
+        <div class="it-never-been">
+            <h3>It's never been more important to bank digitally</h3>
+            <div id="it-never-been">
+                <div class="easy-safe-secure">
+                    <div class="easy-safe-secure-img">
+                        <img src="./Image/personal-easy.png" alt="image">
+                    </div>
+                    <h3>Easy, safe and secure banking from home</h3>
+                    <p>At this time, we encourage you to bank digitally.</p>
+                    <button id="easy-safe-secure-btn">Learn more</button>
+                </div>
+                <div class="bank-from-anywhere">
+                    <div class="bank-from-anywhere-img">
+                        <img src="./Image/digitaltutorials-sm-en.png" alt="image">
+                    </div>
+                    <h3>Bank from anywhere with confidence</h3>
+                    <p>It’s easy to get started with online and mobile banking.</p>
+                    <button id="bank-from-anywhere-btn">View All Tutorials</button>
+                </div>
+            </div>
+        </div>
+        <!-- IT NEVER BEEN END -->
+
+        <!-- UPDATES FROM US START -->
+
+        <div class="update-content">
+            <h3>Updates from us</h3>
+            <div class="update">
+                <div class="card" style="width: 10rem col-md-4;">
+                    <div class="card-body">
+                        <h3 class="card-title">Personal TD Chequing Accounts</h3>
+                        <p class="card-text">Pay bills, send money, make purchases, <br> and manage your cash flow.</p>
+                        <a href="#" class="btn btn-primary">Learn More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem col-md-4;">
+                    <div class="card-body">
+                        <h3 class="card-title">Accelerate your <br>savings</h3>
+                        <p class="card-text">Get a premium rate with TD Growth <br> Savings Account</p>
+                        <a href="#" class="btn btn-primary">Find Out More <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem col-md-4;">
+                    <div class="card-body">
+                        <h3 class="card-title">Looking for a TD Credit Card?</h3>
+                        <p class="card-text">Our Credit Card Selector Tool can help you <br> choose.</p>
+                        <a href="#" class="btn btn-primary">Learn more <i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="get-advice">
+                <div class="card mb-3" style="max-width: 540px col-md-4;" id="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                        <img src="./Image/personal-couple-dining.png" class="card-img" alt="image">
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Get advice virtually, or in person.</h5>
+                            <p class="card-text">Ask a TD advisor and get the advice you <br>need.</p>
+                            <a href="#" class="btn btn-primary">Learn more</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 540px col-md-4;" id="card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./Image/digital-tools-en.jpeg" class="card-img" alt="image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Digital Tools</h5>
+                                <p class="card-text">Our digital tools are safe and secure, <br>and help make everyday banking easy.</p>
+                                <a href="#" class="btn btn-primary">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- UPDATES FROM US END -->
+
+        <!-- WHY BANK WITH TD -->
+
+        <div class="why-banking-td">
+            <div id="why-banking-td">
+                <h3 id="desktop-why-banking-td">Why Bank with TD</h3>
+                <span>Convenient banking</span>
+                <p>At TD, there are so many ways to bank. You can bank online, in branch, on the <br> phone and with the TD apps.</p>
+            </div>
+            <div class="why-banking-td-image">
+                <h3 id="mobile-why-banking-td">Why Bank with TD</h3>
+                <img src="./Image/manywaystobank-en.png" alt="image">
+            </div>
+        </div>
+        <div class="mobile-why-banking-td">
+            <div class="why-banking-td-image">
+                <h3 id="mobile-why-banking-td">Why Bank with TD</h3>
+                <img src="./Image/manywaystobank-en.png" alt="image">
+            </div> 
+            <div id="why-banking-td">
+                <h3 id="desktop-why-banking-td">Why Bank with TD</h3>
+                <span>Convenient banking</span>
+                <p>At TD, there are so many ways to bank. You can bank online, in branch, on the <br>phone and with the TD apps.</p>
+            </div>
+        </div>
+
+        <!--WHY BANK WITH TD -->
+
+        <!-- SEE THE WAYS TD ENRICHES START -->
+
+        <div class="td-enriches">
+            <h3>See the ways in which TD enriches lives</h3>
+            <div id="td-enriches">
+                <div class="card-group">
+                    <div class="card">
+                        <img src="./Image/personal-sustainability.png" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Sustainability <i class="fa fa-angle-right"></i></h5>
+                            <p class="card-text">Learn how we're embedding <br>sustainability into our business</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Image/personal-ready-comitmnt-en.png" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">TD Ready Commitment <i class="fa fa-angle-right"></i></h5>
+                            <p class="card-text">We're targeting $1 billion in community <br>giving by 2030</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Image/personal-customer.png" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Customer Appreciation <i class="fa fa-angle-right"></i></h5>
+                            <p class="card-text">We're celebrating 10 years of <br>#TDThanksYou with chances for <br>our customers to win prizes</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Image/personal-publication.png" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Publications <i class="fa fa-angle-right"></i></h5>
+                            <p class="card-text">2024 Public Accountability Statement is <br>now available</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-td-enriches">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                             <div class="card">
+                                <img src="./Image/personal-sustainability.png" class="card-img-top d-block w-100" alt="image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sustainability <i class="fa fa-angle-right"></i></h5>
+                                    <p class="card-text">Learn how we're embedding <br>sustainability into our business</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img src="./Image/personal-ready-comitmnt-en.png" class="card-img-top d-block w-100" alt="image">
+                                <div class="card-body">
+                                    <h5 class="card-title">TD Ready Commitment <i class="fa fa-angle-right"></i></h5>
+                                    <p class="card-text">We're targeting $1 billion in community <br>giving by 2030</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img src="./Image/personal-customer.png" class="card-img-top d-block w-100" alt="image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Customer Appreciation <i class="fa fa-angle-right"></i></h5>
+                                    <p class="card-text">We're celebrating 10 years of <br>#TDThanksYou with chances for <br>our customers to win prizes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="card">
+                                <img src="./Image/personal-publication.png" class="card-img-top d-block w-100" alt="image">
+                                <div class="card-body">
+                                    <h5 class="card-title">Publications <i class="fa fa-angle-right"></i></h5>
+                                    <p class="card-text">2024 Public Accountability Statement is <br>now available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- SEE THE WAYS TD ENRICHES END -->
+
+        <!-- FIND YOUR ANSWER START -->
+
+        <div class="find-your-answer">
+            <h3>Have a question? Find answers here</h3>
+            <form action="#">
+                <input type="text" name="" id="input" placeholder="What's your question?">
+                <button id="ask-us">Ask Us</button>
+            </form>
+            <a href="#">Popular questions <i class="fa fa-angle-right"></i></a>
+        </div>
+
+        <!-- FIND YOUR ANSWER END -->
+
+        <!-- DEPOSIT PROTECTION START -->
+
+        <div class="deposit-protection">
+            <div id="deposit-protection">
+                <div class="deposit-protection-img">
+                    <img src="./Image/personal-badge.png" alt="image">
+                </div>
+                <div class="deposit-protection-contents">
+                    <p>Your deposits may be insurable by the Canada Deposit Insurance Corporation.</p>
+                    <a href="#" class="deposit-protection-tag">Learn more <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+            <div id="regulated-by-ciro">
+                <div class="regulated-by-ciro-img">
+                    <img src="./Image/personal-badge-2.png" alt="image">
+                </div>
+                <div class="regulated-by-ciro-contents">
+                    <p>CIRO regulation applies to TD Investment Services Inc., a separate company from <br> and a wholly-owned subsidiary of The Toronto-Dominion Bank.</p>
+                    <a href="#" class="regulated-by-ciro-tag">www.ciro.ca <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- DEPOSIT PROTECTION END -->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./Script/scripts.js"></script>
+</body>
+</html>

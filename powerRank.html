@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD BANK</title>
+    <link rel="stylesheet" href="./Styles/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body>
+      <!-- green navbar start -->
+  <div class="top-links d-none d-lg-flex">
+    <a class="nav-link" href="#">Personal</a>
+    <a class="nav-link" href="#">Small Business</a>
+    <a class="nav-link" href="#">Commercial</a>
+    <a class="nav-link" href="#">Investing</a>
+    <a class="nav-link" href="#">About TD</a>
+  </div>
+
+    <!-- green navbar end -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="./Investing.html">
+        <img src="./Image/td-logo-desktop.png" alt="image" class="logo-img">
+      </a>
+
+      <!-- Toggler button for mobile -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tdNavbar" aria-controls="tdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="tdNavbar">
+        <ul class="navbar-nav ml-auto align-items-lg-center">
+          <!-- Icons -->
+          <li class="nav-item"><a class="nav-link" href="#"><input type="search" id="search" placeholder="Search"></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-map-marker-alt"></i> Locations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Help</a></li>
+
+          <!-- Dropdown: Canada -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-globe"></i> Canada
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+                <a class="dropdown-item" href="#">Canada ✔</a>
+                <a class="dropdown-item" href="#">United Kingdom</a>
+            </div>
+          </li>
+          <!-- Dropdown: English -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              English
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Français</a>
+            </div>
+          </li>
+          <!-- Divider (desktop only) -->
+          <li class="d-none d-lg-block divider"></li>
+
+          <!-- Dropdown: Login -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Login
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginDropdown">
+              <a class="dropdown-item" href="#">EasyWeb</a>
+              <a class="dropdown-item" href="#">WebBroker</a>
+              <a class="dropdown-item" href="#">Insurance</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Mobile Navbar -->
+  <nav class="navbar navbar-expand-lg main-navbar" id="mobileNavbar">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./Image/td-logo-desktop.png" alt="image" class="logo-img">
+      </a>
+
+      <!-- Toggler button for mobile -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tdNavbar" aria-controls="tdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <!-- <li class="nav-item dropdown"> -->
+            <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>
+              Login
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginDropdown">
+              <a class="dropdown-item" href="#">EasyWeb</a>
+              <a class="dropdown-item" href="#">WebBroker</a>
+              <a class="dropdown-item" href="#">Insurance</a>
+            </div>
+          <!-- </li> -->
+      <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="tdNavbar">
+          <a class="nav-link" href="#"><input type="search" id="search" placeholder="Search"></a>
+          <ul class="navbar-nav ml-auto align-items-lg-center">
+            <li class="nav-item top-links d-lg-flex d-block w-100 justify-content-center">
+                <select name="" id="Investing">
+                    <a class="nav-link" href="#"><option value="TD:Investing">TD:Investing</option></a>
+                    <a class="nav-link" href="#"><option value="personal">Personal</option></a>
+                    <a class="nav-link" href="#"><option value="smallBusiness">Small Business</option></a>
+                    <a class="nav-link" href="#"><option value="commercial">Commercial</option></a>
+                    <a class="nav-link" href="#"><option value="investing">Investing</option></a>
+                    <a class="nav-link" href="#"><option value="aboutTd">About TD</option></a>
+                </select>
+            </li>
+          <!-- Icons -->
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-map-marker-alt"></i> Locations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Help</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-globe"></i> Canada</a></li>
+
+          <!-- Dropdown: English -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              English
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Français</a>
+            </div>
+          </li>
+
+          <!-- Divider (desktop only) -->
+          <li class="d-none d-lg-block divider"></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- NAVBAR END -->
+    <div class="recognized">
+        <div class="td-rank">
+            <a href="#" id="td-bank">TD BANK GROUP</a>
+            <h1>J.D. Power ranks TD #1 in Banking Mobile App <br>customer satisfaction</h1>
+            <small><i class="fa fa-clock-o"></i> 3 minute read</small>
+        </div>
+        <div class="td-recognize">
+            <div class="td-group">
+                <span>By TD Bank Group • Jun 8, 2023</span>
+            </div>
+            <div id="td-recognize">
+                <p><span>T</span>D earns top marks for speed and information/content</p>
+                <p>TORONTO, June 8, 2023 /CNW/ - TD Bank Group (TD) was recognized <br>by J.D. Power as "Highest in Customer Satisfaction" for its Canadian mobile<br>banking app1, moving up one spot in the ranking since 2022. The <br>recognition comes from the J.D. Power 2023 Canada Banking Mobile App <br>Satisfaction Study which includes feedback from more than 1,500 banking <br>customers surveyed across Canada.</p>
+                <p>"We are proud to be recognized by J.D. Power for our innovative Canadian <br> banking mobile app," says Rizwan Khalfan, Chief Digital and Payments <br> Officer, TD Bank Group. "At TD, personalization is key to delivering <br>legendary customer experiences across all our interactions. Through the <br>use of data and AI, we are empowering our customers with insights to best <br>meet their financial needs."</p>
+                <p>The J.D. Power 2023 Canada Banking Mobile App Satisfaction Study <br>measures overall customer satisfaction based on performance across four <br>study factors, including Navigation, Speed, Visual Appeal, <br>and Information/Content. TD achieved particularly high scores in Speed and <br>Information/Content.</p>
+                <p>The TD Canadian mobile app enables access to banking, rewards, and <br> trading<sup>2</sup> through a single sign-on within the app. TD has the largest <br>number of monthly active mobile users among Canadian banks for the <br>past nine consecutive years<sup>3</sup>.</p>
+                <small>About TD Bank Group</small>
+                <p id="toronto-dominion">The Toronto-Dominion Bank and its subsidiaries are collectively known as <br> TD Bank Group ("TD" or the "Bank"). TD is the sixth largest bank in North <br>America by assets and serves over 27.5 million customers in four key <br> businesses operating in a number of locations in financial centres around <br>the globe: Canadian Personal and Commercial Banking, including TD <br>Canada Trust and TD Auto Finance Canada; U.S. Retail, including TD Bank, <br>America's Most Convenient Bank®, TD Auto Finance U.S., <br>TD Wealth (U.S.), and an investment in The Charles Schwab Corporation; Wealth <br>Management and Insurance, including TD Wealth (Canada), TD Direct <br>Investing, and TD Insurance; and Wholesale Banking, including TD <br>Securities. TD also ranks among the world's leading online financial <br>services firms, with more than 16 million active online and mobile <br>customers. TD had $1.9 trillion in assets on April 30, 2023. The Toronto- <br>Dominion Bank trades under the symbol "TD" on the Toronto and New York <br>Stock Exchanges.</p>
+                <small>About TD Bank Group</small>
+                <p id="J-D">J.D. Power is a global leader in consumer insights, advisory services and <br>data and analytics. A pioneer in the use of big data, artificial intelligence <br> (AI) and algorithmic modelling capabilities to understand consumer <br>behavior, J.D. Power has been delivering incisive industry intelligence on <br>customer interactions with brands and products for more than 50 years. <br>The world's leading businesses across major industries rely on J.D. Power <br>to guide their customer-facing strategies.</p>
+                <p>J.D. Power has offices in North America, Europe and Asia Pacific. To learn <br> more about the company's business offerings, visit JDPower.com/business.</p>
+                <div class="empty-line"></div>
+                <p id="trading"><sup>1</sup> Tied in 2023. For J.D. Power 2023 award information, visit jdpower.com/awards</p>
+                <p id="trading"><sup>2</sup>Trading in a TD Direct Investing account, an offering of TD Waterhouse Canada Inc. Trading is not available in the TD app <br>for TD EasyTrade accounts.</p>
+                <p id="trading"><sup>3</sup> Source: Data.ai. Based on Big 5 Canadian Banks (i.e., TD, RBC, Scotiabank, BMO, and CIBC) for the period ending December <br>31, 2022.</p>
+                <span>SOURCE TD Bank Group</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./Script/scripts.js"></script>
+</body>
+</html>

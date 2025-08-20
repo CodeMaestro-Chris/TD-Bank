@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TD BANK</title>
+    <link rel="stylesheet" href="./Styles/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body>
+      <!-- green navbar start -->
+  <div class="top-links d-none d-lg-flex">
+    <a class="nav-link" href="#">Personal</a>
+    <a class="nav-link" href="#">Small Business</a>
+    <a class="nav-link" href="#">Commercial</a>
+    <a class="nav-link" href="#">Investing</a>
+    <a class="nav-link" href="#">About TD</a>
+  </div>
+
+    <!-- green navbar end -->
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg main-navbar">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="./Investing.html">
+        <img src="./Image/td-logo-desktop.png" alt="image" class="logo-img">
+      </a>
+
+      <!-- Toggler button for mobile -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tdNavbar" aria-controls="tdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="tdNavbar">
+        <ul class="navbar-nav ml-auto align-items-lg-center">
+          <!-- Icons -->
+          <li class="nav-item"><a class="nav-link" href="#"><input type="search" id="search" placeholder="Search"></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-map-marker-alt"></i> Locations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Help</a></li>
+
+          <!-- Dropdown: Canada -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-globe"></i> Canada
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+                <a class="dropdown-item" href="#">Canada ✔</a>
+                <a class="dropdown-item" href="#">United Kingdom</a>
+            </div>
+          </li>
+          <!-- Dropdown: English -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              English
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Français</a>
+            </div>
+          </li>
+          <!-- Divider (desktop only) -->
+          <li class="d-none d-lg-block divider"></li>
+
+          <!-- Dropdown: Login -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Login
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginDropdown">
+              <a class="dropdown-item" href="#">EasyWeb</a>
+              <a class="dropdown-item" href="#">WebBroker</a>
+              <a class="dropdown-item" href="#">Insurance</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Mobile Navbar -->
+  <nav class="navbar navbar-expand-lg main-navbar" id="mobileNavbar">
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="./Image/td-logo-desktop.png" alt="image" class="logo-img">
+      </a>
+
+      <!-- Toggler button for mobile -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tdNavbar" aria-controls="tdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <!-- <li class="nav-item dropdown"> -->
+            <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>
+              Login
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginDropdown">
+              <a class="dropdown-item" href="#">EasyWeb</a>
+              <a class="dropdown-item" href="#">WebBroker</a>
+              <a class="dropdown-item" href="#">Insurance</a>
+            </div>
+          <!-- </li> -->
+      <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="tdNavbar">
+          <a class="nav-link" href="#"><input type="search" id="search" placeholder="Search"></a>
+          <ul class="navbar-nav ml-auto align-items-lg-center">
+            <li class="nav-item top-links d-lg-flex d-block w-100 justify-content-center">
+                <select name="" id="Investing">
+                    <a class="nav-link" href="#"><option value="TD:Investing">TD:Investing</option></a>
+                    <a class="nav-link" href="#"><option value="personal">Personal</option></a>
+                    <a class="nav-link" href="#"><option value="smallBusiness">Small Business</option></a>
+                    <a class="nav-link" href="#"><option value="commercial">Commercial</option></a>
+                    <a class="nav-link" href="#"><option value="investing">Investing</option></a>
+                    <a class="nav-link" href="#"><option value="aboutTd">About TD</option></a>
+                </select>
+            </li>
+          <!-- Icons -->
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-map-marker-alt"></i> Locations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Help</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-globe"></i> Canada</a></li>
+
+          <!-- Dropdown: English -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              English
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+              <a class="dropdown-item" href="#">English</a>
+              <a class="dropdown-item" href="#">Français</a>
+            </div>
+          </li>
+
+          <!-- Divider (desktop only) -->
+          <li class="d-none d-lg-block divider"></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- NAVBAR END -->
+     
+    <div class="section">
+        <!-- SMALL BUSINESS SECTION START -->
+
+        <div class="tab-content mt-3" id="myTabContent">
+            <div class="tab-pane fade show active" id="dedicated" role="tabpanel">
+                <div class="get-up-to-dollar">
+                    <div id="get-up-to-dollar-div">
+                        <div class="mobile-image">
+                            <img src="./Image/small-business-image.png-removebg-preview(1).png" alt="image">
+                        </div>
+                        <div class="get-up-to-dollar-image">
+                            <img src="./Image/small-business-image1.jpg" alt="image">
+                        </div>
+
+                        <div class="get-up-to-dollar-contents">
+                            <p id="para">Start by opening select TD Small Business Banking <br>products, plus get banking advice to help with your <br>business needs. <sup>1</sup>Conditions apply</p>
+                            <p id="mobile-para">Start by opening select TD Small Business Banking products, plus get banking advice to help with your business needs. <sup>1</sup>Conditions apply</p>
+                            <div class="get-up-to-dollar-btn">
+                                <button id="Learn-more">Learn More</button>
+                                <a href="#">Have us call you <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- WE OFFER EXPERTISE IN SPECIFIC BUSINESS END -->
+            <div class="tab-pane fade" id="custom" role="tabpanel">
+                <div class="start-growing">
+                    <div id="start-growing-div">
+                        <div class="mobile-image">
+                            <img src="./Image/small- business-image2.jpg" alt="image">
+                        </div>
+                        <div class="start-growing-image">
+                            <img src="./Image/small- business-image2.jpg" alt="image">
+                        </div>
+                        <div class="start-growing-contents">
+                            <p id="para">Small business and a TD Small Business Account <br> Manager, just go together.</p>
+                            <p id="mobile-para">Small business and a TD Small Business Account Manager, just go together.</p>
+                            <div class="start-growing-btn">
+                                <button id="Learn-more">Apply Online</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="local" role="tabpanel">
+                <div class="aeroplane-visa">
+                    <div id="aeroplane-visa-div">
+                        <div class="mobile-image">
+                            <img src="./Image/small-business-image3.jpg" alt="image">
+                        </div>
+                        <div class="aeroplane-visa-image">
+                            <img src="./Image/small-business-image3.jpg" alt="image">
+                        </div>
+
+                        <div class="aeroplane-visa-contents">
+                            <p id="para">Earn up to 60,000 Aeroplan pointsr: with the TD® <br> Aeroplan® Visa* Business Card</p>
+                            <p id="mobile-para">Earn up to 60,000 Aeroplan pointsr: with the TD® Aeroplan® Visa* Business Card</p>
+                            <div class="aeroplane-visa-btn">
+                                <button id="Learn-more">Apply Online</button><br>
+                                <small>Conditions Apply.</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="small-business-toggle">
+                <div class="small-business-toggle-contents">
+                    <!-- Tab Navigation -->
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="dedicated-tab" data-toggle="tab" href="#dedicated" role="tab">Get up to $2,700 <br> Meet your Small Business Match</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="custom-tab" data-toggle="tab" href="#custom" role="tab">Introducing TouchBistro <br>TD Merchant Solutions is now integrated<br>with TouchBistro.</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="local-tab" data-toggle="tab" href="#local" role="tab">TD Merchant Insight login <br>Find out what's new at TDMS</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- SMALL BUSINESS SECTION END -->
+          
+
+           
+        </div>
+       <!--POINT OF SALES SECTION START
+
+        <div class="point-of-sale">
+            <h3>Point of sale and Ecommerce</h3>
+            <p>Find a payment solution that meets your specific business
+                needs – from restaurant and retail, to automotive,<br>
+                personal care, or professional services.
+            </p>
+            <p>Benefit from debit and credit card payment processing online,
+                in-person, or on the go. It’s easy to accept <br> 
+                payments with Canada's trusted payment processor.
+            </p>
+            <div class="point-of-sale-contents">
+                <div id="online-payment">
+                    <div class="icons"><i class="fa fa-shopping-cart"></i></div>
+                    <p>Online Payment <br>Processing</p>
+                </div>
+                <div id="point-of-sale">
+                    <div class="icons"><i class="fa fa-mobile-phone"></i></div>
+                    <p>Point-of-Sale (POS) <br>System</p>
+                </div>
+                <div id="partners">
+                    <div class="icons"><i class="fa fa-gift"></i></div>
+                    <p>Partnerships</p>
+                </div>
+                <div id="unattended-device">
+                    <div class="icons"><i class="fa fa-microphone"></i></div>
+                    <p>Unattended Devices</p>
+                </div>
+                <div id="integrated-bizz">
+                   <div class="icons"><i class="fa fa-file"></i></div>
+                    <p>Integrated business <br>Directory</p>
+                </div>
+            </div>
+        </div>
+      POINT OF SALES SECTION END
+
+      LET US HELP FIND IDEAL SECTION START 
+
+      <div class="let-us-help">
+        <h3>Let us help find your ideal payment solution</h3>
+        <p>Whether you're starting, growing or managing your business, let us help you <br>
+            find a payment solution that can meet your business needs.
+        </p>
+        <button id="get_started">Get Started</button>
+      </div>
+
+      LET US HELP FIND IDEAL SECTION END 
+
+      ACCEPT PAYMENTS IN MORE PLACES SECTION START
+
+      <div class="accept-payments">
+        <h3>Accept payments in more places</h3>
+        <p>Accept all major types of card payments including Visa*, Mastercard®, Discover®, American Express®, <br>
+             UnionPay®, and Interac® as well as mobile wallets including Apple Pay®, Google Pay™, 
+             Alipay® and WeChat <br> Pay™.<sup>1</sup>
+        </p>
+      </div>
+      ACCEPT PAYMENTS IN MORE PLACES SECTION END
+
+      
+      POINT-OF-SALE (POS) SECTION START 
+
+      <div class="pos">
+        <h3>Point-of-Sale (POS) systems</h3>
+        <p>Process payments securely<sup>2</sup> in-person or on the go whether you're in the 
+            <br>restaurant, retail, automotive, personal care, or professional services 
+            <br> business.
+        </p>
+        <p>Wireless, countertop, or mobile, process your card payments securely with <h6>TD Merchant Solutions</h6> .</p>
+        <button id="see_all_pos">See all POS machines</button>
+      </div>
+
+      POINT-OF-SALE (POS) SECTION SECTION END 
+
+      ACCEPT SECURE ONLINE PAYMENT SECTION START
+
+      <div class="accept-secure-payment">
+        <div class="empty-div"></div>
+        <div id="accept-secure-payment-content">
+            <p>Optimize your payment processing system whether you’re an <br>established business or just starting out.</p>
+            <ul>
+                <li>Reach customers more ways by accepting credit and debit <br>payments online through a website or mobile application.</li>
+                <li>Manage your cash flow effectively with our easy-to-use <br>reporting features and billing options for recurring <br>payments.</li>
+                <li>Enjoy Ecommerce solutions that meet the needs of your <br>growing business.</li>
+                <li>Flexibility empowers your business: accept online payments <br> anytime, anywhere.</li>
+            </ul>
+            <button id="see_online-btn">See online payments options</button>
+        </div>
+      </div>
+      ACCEPT SECURE ONLINE PAYMENT SECTION END -->
+
+      <!-- WELCOME TO TD SMALL BUSINESS SECTION START -->
+
+      <div class="welcome-to-td">
+        <div id="welcome-to-td">
+            <h3>Welcome to TD Small Business Banking</h3>
+            <p>Here’s how we can help you</p>
+            <div class="welcome-to-td-grid">
+                <div class="welcome-to-td-icons">
+                    <div id="icons">
+                        <i class="fa fa-hourglass"></i>
+                    </div>
+                    <div><p>Bank Accounts</p></div>
+                </div>
+                <div class="welcome-to-td-icons">
+                    <div id="icons">
+                        <i class="fa fa-credit-card"></i>
+                    </div>
+                    <p>Credit Cards</p>
+                </div>
+                <div class="welcome-to-td-icons">
+                    <div id="icons">
+                        <i class="fa fa-dollar"></i>
+                    </div>
+                    <p>Credit Solutions</p>
+                </div>
+                <div class="welcome-to-td-icons">
+                    <div id="icons">
+                        <i class="fa fa-calculator"></i>
+                    </div>
+                    <p>TD Merchant Solutions</p>
+                </div>
+            </div>
+        </div>
+      </div>
+       <!-- WELCOME TO TD SMALL BUSINESS SECTION END -->
+
+       <!-- BANKING ADVICE SECTION START -->
+
+        <div class="banking-advice">
+            <h3>Banking advice at every stage of your business</h3>
+            <div class="card-group">
+                <div class="card">
+                    <img src="./Image/start-your-business-en.png" class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">Starting Your Business <i class="fa fa-angle-right"></i></h5>
+                        <p class="card-text">Make the most of our resources <br> and learn how to clarify your <br>business idea. Assemble a <br>business plan. Manage your <br> cashflow, plus more.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Image/grow-your-business.png" class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">Growing Your Business <i class="fa fa-angle-right"></i></h5>
+                        <p class="card-text">Take advantage of our resources <br> and tips on how to build customer <br> loyalty, keeping customers <br> engaged, attracting new <br>customers and more.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Image/manage-your-business.png" class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">Managing Your Business<i class="fa fa-angle-right"></i></h5>
+                        <p class="card-text">We can help with tools—like TD’s <br> Cashflow Calculator—to manage <br> your business more efficiently, <br> streamline operations, and <br>generate more accurate <br>forecasting.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Image/business-succession.png" class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">Business Succession <i class="fa fa-angle-right"></i></h5>
+                        <p class="card-text">Preparing for retirement? Passing <br> your business to family? Selling to <br> a partner, employee, or third <br> party? We're here to help.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <!-- BANKING ADVICE SECTION END -->
+
+       <!-- GO TO ADVICE HUB SECTION START -->
+
+        <div class="go-to-advice-hub">
+            <p>Explore our repository of stories that inspire. Small business owners across Canada share the challenges and <br> opportunities they face.</p>
+            <button id="go-to-advice-hub-btn">Go to Advice Hub</button>
+        </div>
+       <!-- GO TO ADVICE HUB SECTION START -->
+
+        <!-- BUSINESS BANKING SECTION START -->
+
+        <div class="business-banking">
+            <h3>Business banking resources</h3>
+            <div id="business-banking">
+                <div class="card mb-3" style="max-width: 540px col-md-4;" id="card">
+                   <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./Image/small-business-resources.png" class="card-img" alt="image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Small Business Resource Centre</h5>
+                                <p class="card-text">TD can help you see the big picture when it <br>comes to running your business.</p>
+                                <a href="#" class="btn btn-primary">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" style="max-width: 540px col-md-4;" id="card">
+                   <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="./Image/merchantresourcecentre-fr.png" class="card-img" alt="image">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Small Business Resource Centre</h5>
+                                <p class="card-text">TD can help you see the big picture when it <br>comes to running your business.</p>
+                                <a href="#" class="btn btn-primary">Learn more</a>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <!-- BUSINESS BANKING SECTION END -->
+
+        <!-- INDUSTRY EXPERTISE SECTION START -->
+         
+         <div class="industry-expertise">
+            <div id="industry-expertise">
+                <h3 id="desktop-industry-expertise">Industry expertise</h3>
+                <p>     
+                    See how we’re ready to help you with 
+                    banking advice—designed to help navigate <br>
+                    within specific business industries.
+                </p>
+                <div class="industry-expertise-btn">
+                    <button id="industry-expertise-btn">Explore More</button>
+                </div>
+            </div>
+            <div class="industry-expertise-image">
+                <h3 id="mobile-industry-expertise">Industry expertise</h3>
+                <img src="./Image/industry-expertise.png" alt="image">
+            </div>
+        </div>
+        <div class="mobile-industry-expertise">
+            <div class="industry-expertise-image">
+                <h3 id="mobile-industry-expertise">Industry expertise</h3>
+                <img src="./Image/industry-expertise.png" alt="image">
+            </div> 
+            <div id="industry-expertise">
+                <h3 id="desktop-industry-expertise">Industry expertise</h3>
+                <p>
+                    See how we’re ready to help you with 
+                    banking advice—designed to help navigate <br>
+                    within specific business industries.
+                </p>
+                <div class="industry-expertise-btn">
+                    <button id="industry-expertise-btn">Explore More</button>
+                </div>
+            </div>
+        </div>
+        <!-- INDUSTRY EXPERTISE SECTION END -->
+
+        <!--  UPLIFTING PEOPLE THROUGH DIVERSITY SECTION START -->
+
+        <div class="uplifting">
+            <h3>Uplifting people through diversity and inclusion</h3>
+            <div id="uplifting">
+                <div class="card-group">
+                    <div class="card">
+                        <img src="./Image/black-enterprenuer.png" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Black Entrepreneurs <i class="fa fa-angle-right"></i></h5>
+                            <p class="card-text">
+                                Helping Black entrepreneurs and businesses with <br>
+                                access to capital, resources and expert advice.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Image/2SLGBTQ.png" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">2SLGBTQ+ <i class="fa fa-angle-right"></i></h5>
+                            <p class="card-text">
+                                Supporting 2SLGBTQ+ individuals through a variety <br>
+                                of inclusive policies, programs and initiatives.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./Image/women-in-business-en.png" class="card-img-top" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-title">Women in Business <i class="fa fa-angle-right"></i></h5>
+                            <p class="card-text">
+                                The TD Women in Enterprise team proudly supports <br>
+                                women-led and owned businesses. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  UPLIFTING PEOPLE THROUGH DIVERSITY SECTION END -->
+
+        <!-- LOOKING FOR GOVERNMENT? SECTION START -->
+
+        <div class="looking-for-government">
+            <div class="looking-for-government-img">
+                <img src="./Image/fundingselector.png" alt="image">
+            </div>
+            <h3>Looking for government support?</h3>
+            <p>We can help you find the right resources to help your business.</p>
+            <div class="looking-for-government-btn">
+                <button id="looking-for-government-btn">Learn More</button>
+            </div>
+        </div>
+        <!-- LOOKING FOR GOVEQRNMENT? SECTION END -->
+
+        <!-- WE'RE READY TO HELP YOU SECTION START -->
+
+        <div class="we-are-ready">
+            <h3>We're ready to help you</h3>
+           <div id="we-are-ready">
+                <div class="book-an-appointment">
+                    <div class="looking-for-government-img">
+                        <img src="./Image/book-an-appointment-en.png" alt="image">
+                    </div>
+                    <h3>Book an appointment</h3>
+                    <p>Fill in your information to have a TD Small Business <br> Banking Specialist contact you.</p>
+                    <div class="book-an-appointment-btn">
+                        <button id="book-an-appointment-btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="find-an-account">
+                    <div class="find-an-account-img">
+                        <img src="./Image/find-account-manager.png" alt="image">
+                    </div>
+                    <h3>Find an Account Manager</h3>
+                    <p>Meet an Account Manager Small Business (AMSB) in <br>person at your nearest TD branch</p>
+                    <div class="call-us-btn">
+                        <button id="call-us-btn">Find Us</button>
+                    </div>
+                </div>
+                <div class="book-an-appointment">
+                    <div class="looking-for-government-img">
+                        <img src="./Image/call-us.png" alt="image">
+                    </div>
+                    <h3>Call us</h3>
+                    <p>Phone to speak with a TD Business Banking <br>Specialist at our Small Business Advice Centre.</p>
+                    <h3>1-800-450-7318</h3>
+                </div>
+            </div>        
+        </div>
+        <!-- WE'RE READY TO HELP YOU SECTION END -->
+    </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./Script/scripts.js"></script>
+</body>
+</html>
