@@ -1,28 +1,4 @@
 
-
-
-// let start_growing = document.querySelector (".start-growing");
-// let aeroplane_visa = document.querySelector (".aeroplane-visa");
-
-// if (start_growing === null || aeroplane_visa === null) {
-//     start_growing.addEventListener ('click', function () {
-//         let start_growing = document.querySelector ('.start-growing');
-//         if (start_growing.style.display === "none" || start_growing.style.display === "") {
-//             start_growing.style.display = "block";
-//         } else {
-//             start_growing.style.display = "none";
-//         }
-//     });
-
-// }
-
-
-
-
-
-
-
-
 // LOGIN SECTION START
 
 function formvalidation () {

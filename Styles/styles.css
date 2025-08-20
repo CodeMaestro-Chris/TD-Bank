@@ -122,7 +122,7 @@ a i {
     padding: 0px 10px !important;
 }
 
-    #search:focus {
+#search:focus {
     border-bottom: 2px solid #d4c5a0; /* Highlight on focus */
 }
 
@@ -289,7 +289,7 @@ display: none; /* Hide top links on mobile */
     color: white;
 }
 
-.about-td .grid .who-we-are .who-we-are-contents a {
+.about-td .grid .who-we-are .who-we-are-contents h6 {
     color: #008000;
     text-decoration: none;
     font-weight: 600;
@@ -329,7 +329,7 @@ display: none; /* Hide top links on mobile */
     color: white;
 }
 
-.about-td .grid .our-colleaques .our-colleagues-contents a {
+.about-td .grid .our-colleaques .our-colleagues-contents h6 {
     color: #008000;
     text-decoration: none;
     font-weight: 600;
@@ -364,7 +364,7 @@ display: none; /* Hide top links on mobile */
     color: white;
 }
 
-.about-td .grid .corporate-profile .corporate-profile-contents a {
+.about-td .grid .corporate-profile .corporate-profile-contents h6 {
     color: #008000;
     text-decoration: none;
     font-weight: 600;
@@ -404,7 +404,7 @@ display: none; /* Hide top links on mobile */
     color: white;
 }
 
-.about-td .grid .corporate-citizenship .corporate-citizenship-contents a {
+.about-td .grid .corporate-citizenship .corporate-citizenship-contents h6 {
     color: #008000;
     text-decoration: none;
     font-weight: 600;
@@ -444,7 +444,7 @@ display: none; /* Hide top links on mobile */
     color: white;
 }
 
-.about-td .grid .sustainability .sustainability-contents a {
+.about-td .grid .sustainability .sustainability-contents h6 {
     color: #008000;
     text-decoration: none;
     font-weight: 600;
@@ -484,7 +484,7 @@ display: none; /* Hide top links on mobile */
     color: white;
 }
 
-.about-td .grid .investor-relations .investor-relations-contents a {
+.about-td .grid .investor-relations .investor-relations-contents h6 {
     color: #008000;
     text-decoration: none;
     font-weight: 600;
@@ -1071,6 +1071,7 @@ a {
 .section .small-business .small-business-contents {
     line-height: 23px;
     padding-right: 20px;
+    font-size: 14.5px;
     border-right: 3px solid #d6d1d1;
 }
 
@@ -1150,6 +1151,7 @@ h3 {
 .section .small-business .online-banking #online-banking .online-banking-tag a {
     color: #008000;
     text-decoration: none;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -1203,6 +1205,7 @@ h3 {
 .section .small-business .online-banking #online-trading .online-banking-tag a {
     color: #008000;
     text-decoration: none;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -1271,7 +1274,7 @@ h3 {
     color: white;
 }
 
-.welcome-td .grid .find-cheque .find-cheque-contents a {
+.welcome-td .grid .find-cheque .find-cheque-contents h6 {
     color: #008000;
     text-decoration: none;
     font-weight: 600;
@@ -1311,7 +1314,7 @@ h3 {
     color: white;
 }
 
-.welcome-td .grid .find-savings .find-savings-contents a {
+.welcome-td .grid .find-savings .find-savings-contents h6 {
     color: #008000;
     text-decoration: none;
     font-weight: 600;
@@ -1351,7 +1354,7 @@ h3 {
     color: white;
 }
 
-.welcome-td .grid .find-credit .find-credit-contents a {
+.welcome-td .grid .find-credit .find-credit-contents h6 {
     color: #008000;
     text-decoration: none;
     font-weight: 600;
@@ -1391,7 +1394,7 @@ h3 {
     color: white;
 }
 
-.welcome-td .grid .explore-mortgage .explore-mortgage-contents a {
+.welcome-td .grid .explore-mortgage .explore-mortgage-contents h6 {
     color: #008000;
     text-decoration: none;
     font-weight: 600;
@@ -1431,7 +1434,7 @@ h3 {
     color: white;
 }
 
-.welcome-td .grid .personal-investing .personal-investing-contents a {
+.welcome-td .grid .personal-investing .personal-investing-contents h6 {
     color: #008000;
     text-decoration: none;
     font-weight: 600;
@@ -1471,7 +1474,7 @@ h3 {
     color: white;
 }
 
-.welcome-td .grid .borrowing .borrowing-contents a {
+.welcome-td .grid .borrowing .borrowing-contents h6 {
     color: #008000;
     text-decoration: none;
     font-weight: 600;
@@ -1511,7 +1514,7 @@ h3 {
     color: white;
 }
 
-.welcome-td .grid .invest-trade .invest-trade-contents a {
+.welcome-td .grid .invest-trade .invest-trade-contents h6 {
     color: #008000;
     text-decoration: none;
     font-weight: 600;
@@ -1551,7 +1554,7 @@ h3 {
     color: white;
 }
 
-.welcome-td .grid .personalized-wealth .personalized-wealth-contents a {
+.welcome-td .grid .personalized-wealth .personalized-wealth-contents h6 {
     color: #008000;
     text-decoration: none;
     font-weight: 600;
@@ -1591,7 +1594,7 @@ h3 {
     color: white;
 }
 
-.welcome-td .grid .today-rate .today-rate-contents a {
+.welcome-td .grid .today-rate .today-rate-contents h6 {
     color: #008000;
     text-decoration: none;
     font-weight: 600;
@@ -1812,6 +1815,7 @@ h3 {
     justify-content: space-between;
     margin: 30px auto;
     width: 80%;
+    gap: 40px;
 }
 
 .section .protect-fraud .protect-fraud-contents .left-side {
@@ -2047,6 +2051,7 @@ h3 {
     color: #008000;
     transition: 0.3s ease-in-out;
 }
+
 /* IT NEVER BEEN END */
 
 /* UPDATES FROM US START */
@@ -2117,8 +2122,6 @@ h3 {
 
 
 /* UPDATES FROM US END */
-
-
 
 /* WHY BANK WITH TD START */
 
@@ -3901,8 +3904,6 @@ h3 {
 
 .section .card {
     position: relative;
-    width: 380px;
-    height: 200px;
     overflow: hidden;
     margin: 0px auto;
 }
@@ -3910,6 +3911,11 @@ h3 {
 .section .card img {
     width: 100%;
     display: block;
+}
+
+.section .tall-card {
+   width: 400px;
+    height: 275px;
 }
 
 .section .overlay {
@@ -3934,86 +3940,6 @@ h3 {
 }
 
 /* WITH TD SECTION END */
-
-
-@media (max-width: 1023px) {
-    .mobile-header-nav-links .cmp-header-site-navigation-links__nav {
-        width: 100%;
-    }
-}
-
-@media (max-width: 1023px) {
-    .cmp-site-utility-mobile * {
-        scroll-behavior: smooth;
-    }
-}
-
-.cmp-header-site-navigation-links__nav {
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-}
-
-::after, ::before {
-    box-sizing: inherit;
-}
-nav {
-    display: block;
-    unicode-bidi: isolate;
-}
-
-body {
-    font-family: "TD Graphik SemiLight", Helvetica-, "droid sans", sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.5334;
-    color: rgb(28, 28, 28);
-    max-width: 100%;
-    overflow-x: hidden;
-    font-variant-ligatures: no-contextual;
-}
-
-html {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-html {
-    font-size: 1pc;
-    box-sizing: border-box;
-    background-color: rgb(255, 255, 255);
-}
-
-html {
-    line-height: 1.15;
-    text-size-adjust: 100%;
-}
-
-::after, ::before {
-    box-sizing: inherit;
-}
-
-::after, ::before {
-    box-sizing: inherit;
-}
-
-.cmp-header-site-navigation-links ::-webkit-scrollbar {
-    width: 5px;
-    position: absolute;
-}
-
-.cmp-header-site-navigation-links ::-webkit-scrollbar-thumb, .cmp-header-site-navigation-links ::-webkit-scrollbar-thumb:hover {
-    background: rgb(97, 97, 97);
-    border-radius: 5px;
-}
-
-.cmp-header-site-navigation-links ::-webkit-scrollbar-track {
-    background: transparent;
-    border-radius: 5px;
-}
-
-
-
 
 
 
@@ -4253,7 +4179,7 @@ a i {
 #mobileNavbar .container-fluid #tdNavbar .navbar-nav .nav-item #Investing {
     color: #000000 !important;
     font-weight: 600;
-    width: 100% !important;
+    width: 95% !important;
     height: 50px !important;
     border: none !important;
     margin: 0px 10px !important;
@@ -4285,6 +4211,7 @@ a i {
     padding: 0px 10px !important;
     width: 100%;
     height: 40px !important;
+    margin-top: 20px !important;
 }
 
 #tdNavbar .nav-link #search i {
