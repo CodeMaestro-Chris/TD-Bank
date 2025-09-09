@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TD Bank Clone</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts (for clean sans-serif look) -->
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <style>
+    body {
+      font-family: "Outfit", sans-serif;
+      background-color: #ffffff;
+    }    
+    .tabs {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+  
+    .tab-btn {
+      background: none;
+      border: none;
+      font-size: 16px;
+      font-weight: 500;
+      color: #333;
+      padding: 10px 15px;
+      border-bottom: 2px solid transparent;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+  
+    .tab-btn.active {
+      color: #006644;
+      border-bottom: 2px solid #006644;
+    }
+  
+    .tab-content {
+      text-align: center;
+      font-size: 16px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  
+ <!-- Navbar -->
+ <div class="top-nav section-1">
+  <div class="container py-1 d-flex align-items-center justify-content-between">
+    <div class="col-7">
+      <span class="fw-bold me-4">Personal</span>
+      <span class="me-4">Small Business</span>
+      <span class="me-4">Commercial</span>
+      <span class="me-4">Investing & Wealth</span>
+      <span>About Us</span>
+    </div>
+    <div class="col-1 d-flex justify-content-end">
+      <img src="./images/country-us-en.png" class="col-3 ml-5" alt="">
+    </div>
+  </div>
+</div>
+ <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="./index.html">
+      <span><img src="./images/tdb-tag-white-en.png" alt=""></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="./personal.html">Personal</a></li>
+        <li class="nav-item"><a class="nav-link" href="./SmallBusiness.html">Small Business</a></li>
+        <li class="nav-item"><a class="nav-link" href="./Commercial.html">Commercial</a></li>
+        <li class="nav-item"><a class="nav-link" href="./Investing.html">Investing & Wealth</a></li>
+        <li class="nav-item"><a class="nav-link" href="./About.html">About Us</a></li>
+      </ul>
+      <div class="login-icons d-flex align-items-center">
+        <i class="bi bi-geo-alt-fill"></i>
+        <i class="bi bi-question-circle-fill"></i>
+        <i class="bi bi-search"></i>
+        <a class="btn btn-outline-success ms-3" href="./login.html"><span class="mr-2 bi bi-user"></span> Log In</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- learning-center.html -->
+
+<section style="padding: 50px 20px;">
+    <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+      <h1 class="primary-text mb-4 fs-3">
+        Learning Center
+      </h1>
+      <p class="fs-6 col-md-10 mx-auto mt-4">No matter where you are on your financial journey, we’re here to help. Opening your first checking account, planning for retirement, and all the big moments in between. Explore our financial education tips, tools and resources so you can feel prepared for it all.</p>
+    </div>
+  </section>
+
+  <!-- Tabs Section -->
+<section style="background-color: white;" class="mb-5">
+    <div style=" margin: 0 auto;" >
+      <div class="tabs bb" style="padding: 0 20px;">
+        <button class="tab-btn active" onclick="showTab('life')">Life Stages</button>
+        <button class="tab-btn" onclick="showTab('topics')">Topics</button>
+        <button class="tab-btn" onclick="showTab('tools')">Tools and calculators</button>
+      </div>
+  
+      <!-- <div id="life" class="tab-content" style="display: block;">
+        <p>Content for Life Stages...</p>
+      </div>
+      <div id="topics" class="tab-content" style="display: none;">
+        <p>Content for Topics...</p>
+      </div>
+      <div id="tools" class="tab-content" style="display: none;">
+        <p>Content for Tools and Calculators...</p>
+      </div> -->
+    </div>
+  </section>
+  
+  <div class="mt-5">
+
+    <!-- FILTER AREA -->
+    <div class="filter-area rounded">
+      <div class="row align-items-center gy-3 container mx-auto">
+        <!-- Topics (left) -->
+        <div class="col-lg-7">
+          <div class="d-flex align-items-center mb-2">
+            <h6 class="filter-title mb-0">Filter by Topics</h6>
+            <i class="bi bi-sliders ms-2"></i>
+          </div>
+  
+          <div class="topics-row" id="topicsContainer" aria-label="Topic filters">
+            <!-- pills injected by JS -->
+          </div>
+        </div>
+  
+        <!-- Media Type & Search (right) -->
+        <div class="col-lg-5">
+          <div class="d-flex justify-content-lg-end gap-3 align-items-center">
+            <div class="media-select">
+              <label class="d-block mb-1">Media Type</label>
+              <select id="mediaSelect" class="form-select form-select-sm" aria-label="Media type">
+                <option value="all">All</option>
+                <option value="article">Article</option>
+                <option value="video">Video</option>
+                <option value="tool">Tool</option>
+              </select>
+            </div>
+  
+            <div class="search-input">
+              <label class="d-block mb-1">Search by keyword</label>
+              <input id="searchInput" type="search" placeholder="Enter a keyword" aria-label="Search articles">
+              <!-- <i class="bi bi-search" id="searchBtn" title="Search"></i>    -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- RESULTS header (counts / page) -->
+    <div class="results-header mt-4 container mx-auto">
+      <div class="results-meta" id="resultsMeta">Results: 0 — 0 of 0 in All</div>
+      <div class="page-info d-flex align-items-center gap-3">
+        <div id="pageInfo">Page 0 of 0</div>
+        <div class="pager" id="pagerControls" aria-hidden="false">
+          <button id="prevBtn" title="Previous">‹ Prev</button>
+          <button id="nextBtn" title="Next">Next ›</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- CARDS grid -->
+    <div class="row g-4 container mx-auto" id="resultsGrid">
+      <!-- cards injected by JS -->
+    </div>
+  
+  </div>
+
+  <div class="container my-5">
+    <h4 class="primary-text text-center mb-4">TD Phone Support recognized by J.D. Power</h4>
+    <div class="row justify-content-center gap-3">
+      <div class="col-md-5">
+        <img src="./images/computer-3-3d-en.jpeg" alt="" class="w-100 img-fluid">
+      </div>
+      <div class="col-md-5">
+        <p>Find a tutorial to help you manage all aspects of your TD Bank accounts with Online Banking, including the TD Bank App.</p>
+        <p>Plus, additional how to's for small business banking, commercial banking, TD eTreasury, and TD auto finance.</p>
+        <p>Make the most of your accounts and learn how to use the TD Bank services available to you.</p>
+        <a href="./About.html" class="btn primary-btn py-2 px-5 w-50 section-1">Learn More</a>
+        <a href="./About.html" class="btn primary-btn py-2 px-5 w-100 section-2">Learn More</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="connect">
+    <div class="row container mx-auto g-5 my-5">
+      <h3>Connect with us</h3>
+      <div class="col-md-4 px-4 text-center br">
+        <img src="./images/calladvisor02-en.svg" alt="contact us image" class="w-75">
+        <h5 class="my-3">Contact us</h5>
+        <p class="mb-4">Have a question about a specific TD Bank product or service? We have the specialists you need available to help</p>
+        <a href="./login.html" class="btn btn primary-btn w-100">Find out more</a>
+      </div>
+      <div class="col-md-4 px-4 text-center br">
+        <img src="./images/locateabranch-en.svg" alt="Find us image" class="w-75">
+        <h5 class="my-3">In Person</h5>
+        <p class="mb-4">Book an appointment at your local TD Bank store to speak with a Banking Specialist about your accounts</p>
+        <a href="./login.html" class="btn btn primary-btn w-100">Find a TD Bank</a>
+      </div>
+      <div class="col-md-4 px-4 text-center">
+        <img src="./images/phone-en.svg" alt="Call us image" class="col-8 mb-2 pb-1 img-fluid">
+        <h5 class="my-3">By phone</h5>
+        <p class="mb-4">Speak with a Bank Specialist to answer any questions about your account or banking with TD Bank</p>
+        <h5 class="text-danger py-2">+1 (414) 485-4572</h5>
+      </div>
+    </div>
+  </div><br>
+
+  <div class="bg-light py-5">
+    <div class="container px-5">
+        <h4 class="mb-3 primary-text">Have a question? Find answers here</h4>
+        <div class="d-flex justify-content-between">
+            <div class="col-md-8  position-relative">
+                <!-- <i class="bi bi-search position-absolute"></i> -->
+                <input type="text" class="form-control subscribe h-100" placeholder="What's your question?">
+            </div>
+            <div class="col-md-8 px-2 section-2">
+                <a href="" class="btn primary-btn py-2 w-100">Ask Us</a>
+            </div>
+            <div class="col-md-3 section-1">
+                <a href="" class="btn primary-btn py-2 w-100">Ask Us</a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <footer class="bg-light pt-5">
+    <div class="container text-center">
+  
+      <!-- Contact CTA -->
+      <div class="mb-4">
+        <a href="./login.html" class="primary-text fs-5 text-decoration-none">
+          Need to talk to us directly? <span class="fw-semibold">Contact us ›</span>
+        </a>
+      </div>
+  
+      <!-- Social Icons -->
+      <div class="mb-4">
+        <p class="fw-semibold text-muted">Follow TD Bank</p>
+        <div class="d-flex justify-content-center gap-3 col-3 mx-auto">
+          <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+  
+      <!-- Footer Links -->
+      <div class="row justify-content-center mb-4">
+        <div class="col-auto">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Privacy</a></li>
+            <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">California Privacy</a></li>
+            <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Online Advertising</a></li>
+            <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Terms of Use</a></li>
+            <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Security</a></li>
+            <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">About Us</a></li>
+            <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Accessibility</a></li>
+            <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Careers</a></li>
+            <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Site Map</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <!-- Divider -->
+      <hr class="w-75 mx-auto my-5">
+  
+      <!-- Housing + FDIC Info -->
+      <div class="col-md-6 mx-auto my-3">
+        <img src="./images/equal-housing.svg" alt="Equal Housing" width="60" height="60">
+        <span class="primary-text fw-semibold mb-0">Equal Housing Lender</span>
+        <p class="primary-text fw-semibold">Member FDIC. Bank Deposits FDIC Insured</p>
+      </div>
+  
+      <hr class="w-75 mx-auto my-5">
+      
+      <div class="col-lg-8 mx-auto fw-semibold text-muted">
+        <small>SECURITIES AND OTHER INVESTMENT AND INSURANCE PRODUCTS ARE: NOT A DEPOSIT; NOT FDIC INSURED; NOT INSURED BY ANY FEDERAL GOVERNMENT AGENCY; NOT GUARANTEED BY TD BANK, N.A. OR ANY OF ITS AFFILIATES; AND, MAY BE SUBJECT TO INVESTMENT RISK, INCLUDING POSSIBLE LOSS OF VALUE.</small>
+      </div>
+  
+      <hr class="w-75 mx-auto my-5">
+      <div class="col-lg-8 mx-auto text-muted mb-4">
+        <small><span class="fw-semibold">tdbankservicesupport@gmail.com<br>
+            ©2025 TD Bank, N.A. All Rights Reserved.</small>
+      </div>
+      <br>
+    </div>
+  </footer>
+  
+  <script>
+    function showTab(tabId) {
+      const contents = document.querySelectorAll('.tab-content');
+      const buttons = document.querySelectorAll('.tab-btn');
+  
+      contents.forEach(c => c.style.display = 'none');
+      buttons.forEach(b => b.classList.remove('active'));
+  
+      document.getElementById(tabId).style.display = 'block';
+      event.target.classList.add('active');
+    }
+
+    // LEARNING PAGE 
+// * ===== sample dataset =====
+//    Each item: id, title, excerpt, topic, media ('article','video','tool'), img
+// */
+const articles = [
+  {id:1, title:'How to manage a joint checking account', excerpt:'Learn how to manage a joint checking account and get answers for common questions you may have with these tips', topic:'Starting out on your own', media:'article', img:'./images/article1.jpg'},
+  {id:2, title:'How to open a joint bank account', excerpt:"Joint bank accounts are a convenient way to manage shared finances. Learn more about how to open a joint bank account", topic:'Paying for school', media:'article', img:'./images/article2.jpg'},
+  {id:3, title:'Savings vs. Emergency Fund: How to Save for Each', excerpt:'Learn how to manage your checking account to streamline your finances. Simplify your spending and avoid fees with these tips', topic:'Buying a home', media:'video', img:'./images/article3.jpeg'},
+  {id:4, title:'How to manage a savings account', excerpt:'Learn how to manage your savings account to the fullest. Learn more on how to save, budget and more with the tips that have been provided', topic:'Retirement', media:'article', img:'./images/article4.jpg'},
+  {id:5, title:'Credit Card Tips for Beginners', excerpt:"It's important to know how to manage your first credit card. Learn more about credit card tips and advice for beginners and new credit holders.", topic:'Starting out on your own', media:'article', img:'./images/article5.jpg'},
+  {id:6, title:'Savings vs. Emergency Fund: How to Save for Each', excerpt:'Learn the difference between a savings vs. an emergency fund. Knowing the difference can help you make financial decisions that work for you.', topic:'Paying for school', media:'tool', img:'./images/article6.jpg'},
+  {id:7, title:'What first-time car buyers need to know', excerpt:'Buying your first car can come with a few challenges. Learn more about what to consider before you make a new car purchase.', topic:'Buying a home', media:'article', img:'./images/article7.jpg'},
+  {id:8, title:'Purchasing a home: 5 myths debunked', excerpt:'Purchasing a home can come with many obstacles. Learn more about these five common myths and the untold truth behind them.', topic:'Starting out on your own', media:'article', img:'./images/article8.jpg'},
+  {id:9, title:'How to Avoid Checking Account Fees', excerpt:' Checking account fees are common across many banks. Learn more about checking account fees, what they are, and tips on how to avoid them', topic:'Retirement', media:'tool', img:'./images/article9.jpg'},
+  {id:10, title:'Scholarships & grants 101', excerpt:'Where to find scholarships and how to apply.', topic:'Paying for school', media:'article', img:'./images/article8.jpg'},
+  {id:11, title:'Mortgage pre-approval steps', excerpt:'Get pre-approved and strengthen your offer.', topic:'Buying a home', media:'article', img:'./images/article5.jpg'},
+  {id:12, title:'Side hustles for students', excerpt:'Part-time ways to boost your student budget.', topic:'Paying for school', media:'video', img:'./images/article3.jpg'},
+  {id:13, title:'Credit building basics', excerpt:'How to start building a good credit history.', topic:'Starting out on your own', media:'article', img:'https://picsum.photos/id/1081/800/500'},
+  {id:14, title:'Homeowner insurance explained', excerpt:'What’s covered & how to compare quotes.', topic:'Buying a home', media:'article', img:'https://picsum.photos/id/1090/800/500'},
+  {id:15, title:'Roth vs Traditional IRA', excerpt:'Key differences and which may suit you.', topic:'Retirement', media:'article', img:'https://picsum.photos/id/1100/800/500'},
+  {id:16, title:'Budget planner for students', excerpt:'A template to track your semester spending.', topic:'Paying for school', media:'tool', img:'https://picsum.photos/id/1116/800/500'},
+  {id:17, title:'Moving out checklist', excerpt:'Everything you need to handle when moving.', topic:'Starting out on your own', media:'article', img:'https://picsum.photos/id/1122/800/500'},
+  {id:18, title:'Refinancing your mortgage', excerpt:'When refinancing makes sense.', topic:'Buying a home', media:'article', img:'https://picsum.photos/id/113/800/500'},
+  {id:19, title:'Payroll & early pay', excerpt:'How to get paid earlier with bank features.', topic:'Starting out on your own', media:'article', img:'https://picsum.photos/id/114/800/500'},
+  {id:20, title:'Saving for internships', excerpt:'Ways to balance work and savings while studying.', topic:'Paying for school', media:'article', img:'https://picsum.photos/id/115/800/500'},
+  {id:21, title:'College budget worksheet', excerpt:'Download a worksheet to track your college costs.', topic:'Paying for school', media:'tool', img:'https://picsum.photos/id/116/800/500'},
+  {id:22, title:'Condo vs house: Which to buy?', excerpt:'Pros and cons of condo or house ownership.', topic:'Buying a home', media:'video', img:'https://picsum.photos/id/120/800/500'},
+  {id:23, title:'Estate planning basics', excerpt:'Simple steps to leave things organized for family.', topic:'Retirement', media:'article', img:'https://picsum.photos/id/121/800/500'},
+  {id:24, title:'Student budgeting webinar', excerpt:'Watch our short webinar on budgeting for school.', topic:'Paying for school', media:'video', img:'https://picsum.photos/id/122/800/500'},
+  {id:25, title:'Saving for a wedding', excerpt:'Budget tips when planning a big event.', topic:'Starting out on your own', media:'article', img:'https://picsum.photos/id/123/800/500'},
+  {id:26, title:'Down payment assistance', excerpt:'Programs and grants that help first-time buyers.', topic:'Buying a home', media:'tool', img:'https://picsum.photos/id/124/800/500'},
+  {id:27, title:'Tax planning for retirees', excerpt:'How to minimize tax in retirement distributions.', topic:'Retirement', media:'article', img:'https://picsum.photos/id/125/800/500'}
+];
+
+const topicsList = [
+  { key:'all', label:'All' },
+  { key:'Paying for school', label:'Paying for school' },
+  { key:'Starting out on your own', label:'Starting out on your own' },
+  { key:'Buying a home', label:'Buying a home' },
+  { key:'Retirement', label:'Retirement' }
+];
+
+const perPage = 9;
+let activeTopic = 'all';
+let activeMedia = 'all';
+let searchKeyword = '';
+let currentPage = 1;
+
+/* ----- helpers ----- */
+function getCounts(){
+  const counts = {};
+  articles.forEach(a => {
+    counts[a.topic] = (counts[a.topic] || 0) + 1;
+  });
+  return counts;
+}
+
+/* render topic pills dynamically (with counts if available) */
+function renderTopicPills(){
+  const wrapper = document.getElementById('topicsContainer');
+  wrapper.innerHTML = '';
+  const counts = getCounts();
+
+  topicsList.forEach(t => {
+    const count = (t.key === 'all') ? articles.length : (counts[t.key] || 0);
+    const btn = document.createElement('button');
+    btn.className = 'topic-pill' + ( (activeTopic === t.key) ? ' active' : '' );
+    btn.setAttribute('data-topic', t.key);
+    btn.setAttribute('aria-pressed', activeTopic === t.key ? 'true' : 'false');
+    btn.innerHTML = `${t.label}${t.key !== 'all' ? ' ('+count+')' : ''}`;
+    btn.addEventListener('click', () => {
+      activeTopic = t.key;
+      currentPage = 1;
+      renderTopicPills();
+      applyFiltersAndRender();
+    });
+    wrapper.appendChild(btn);
+  });
+}
+
+/* filter logic */
+function getFiltered(){
+  const kw = searchKeyword.trim().toLowerCase();
+  return articles.filter(a => {
+    if(activeTopic !== 'all' && a.topic !== activeTopic) return false;
+    if(activeMedia !== 'all' && a.media !== activeMedia) return false;
+    if(kw){
+      return a.title.toLowerCase().includes(kw) || a.excerpt.toLowerCase().includes(kw);
+    }
+    return true;
+  });
+}
+
+/* render results */
+function renderResults(){
+  const grid = document.getElementById('resultsGrid');
+  grid.innerHTML = '';
+  const filtered = getFiltered();
+  const total = filtered.length;
+  const totalPages = Math.max(1, Math.ceil(total / perPage));
+  if(currentPage > totalPages) currentPage = totalPages;
+
+  const startIndex = (currentPage - 1) * perPage;
+  const endIndex = Math.min(total, startIndex + perPage);
+  const pageItems = filtered.slice(startIndex, endIndex);
+
+  // results meta
+  const resultsMeta = document.getElementById('resultsMeta');
+  if(total === 0){
+    resultsMeta.textContent = `Results: 0 — 0 of 0 in ${activeTopic === 'all' ? 'All' : activeTopic}`;
+  } else {
+    resultsMeta.innerHTML = `Results: <strong>${startIndex + 1} &mdash; ${endIndex}</strong> of <strong>${total}</strong> in <a href="#" onclick="clearTopic();return false;">${activeTopic === 'all' ? 'All' : activeTopic}</a>`;
+  }
+
+  // page info
+  document.getElementById('pageInfo').textContent = `Page ${currentPage} of ${totalPages}`;
+
+  // pager controls
+  document.getElementById('prevBtn').disabled = currentPage <= 1;
+  document.getElementById('nextBtn').disabled = currentPage >= totalPages;
+
+  // render cards
+  pageItems.forEach(a => {
+    const col = document.createElement('div');
+    col.className = 'col-lg-4 col-md-6';
+
+    const card = document.createElement('article');
+    card.className = 'card card-article pb-4';
+
+    const img = document.createElement('img');
+    img.src = a.img;
+    img.alt = a.title;
+    card.appendChild(img);
+
+    const body = document.createElement('div');
+    body.className = 'card-body';
+
+    const title = document.createElement('div');
+    title.className = 'card-title primary-text fs-4';
+    title.textContent = a.title;
+
+    const excerpt = document.createElement('p');
+    excerpt.className = 'card-excerpt';
+    excerpt.textContent = a.excerpt;
+
+    body.appendChild(title);
+    body.appendChild(excerpt);
+    card.appendChild(body);
+    col.appendChild(card);
+    grid.appendChild(col);
+  });
+}
+
+/* apply filters and render */
+function applyFiltersAndRender(){
+  renderResults();
+}
+
+/* UI event hookups */
+document.getElementById('mediaSelect').addEventListener('change', (e) => {
+  activeMedia = e.target.value;
+  currentPage = 1;
+  applyFiltersAndRender();
+});
+
+document.getElementById('searchBtn').addEventListener('click', () => {
+  searchKeyword = document.getElementById('searchInput').value;
+  currentPage = 1;
+  applyFiltersAndRender();
+});
+document.getElementById('searchInput').addEventListener('keydown', (ev) => {
+  if(ev.key === 'Enter'){ searchKeyword = ev.target.value; currentPage = 1; applyFiltersAndRender(); }
+});
+
+document.getElementById('prevBtn').addEventListener('click', () => {
+  if(currentPage > 1){ currentPage--; renderResults(); window.scrollTo({top:0,behavior:'smooth'}); }
+});
+document.getElementById('nextBtn').addEventListener('click', () => {
+  const filtered = getFiltered();
+  const totalPages = Math.max(1, Math.ceil(filtered.length / perPage));
+  if(currentPage < totalPages){ currentPage++; renderResults(); window.scrollTo({top:0,behavior:'smooth'}); }
+});
+
+function clearTopic(){
+  activeTopic = 'all';
+  currentPage = 1;
+  renderTopicPills();
+  applyFiltersAndRender();
+}
+
+/* init */
+renderTopicPills();
+applyFiltersAndRender();
+  </script>
+<script src="./js/script.js"></script>  
+
+</body>

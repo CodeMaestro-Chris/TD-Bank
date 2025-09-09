@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Transfer History</title>
+  
+   <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+   <!-- Google Fonts (for clean sans-serif look) -->
+   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+ 
+   <link rel="stylesheet" href="./css/style.css">
+ 
+   <style>
+     body {
+       font-family: "Outfit", sans-serif;
+       background-color: #ffffff;
+     }
+    .arrow1{
+      rotate: 245deg;
+      top: -30px;
+      right: 120px;
+    }
+    .arrow2{
+      rotate: 310deg;
+      bottom: -50px;
+      right: 20px;
+    }
+    .arrow3{
+      rotate: 310deg;
+    }
+  #sidebar .nav-link {
+    position: relative;
+    display: inline-block;
+    color: white !important;
+  }
+  #sidebar .nav-link:hover{
+    color: #43B02A !important;
+  }
+
+  /* Tooltip styling */
+  #sidebar .nav-link::after {
+    content: attr(data-tooltip); /* take tooltip text from attribute */
+    position: absolute;
+    left: 60px; /* adjust distance from icon */
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    color: #000;
+    padding: 4px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, left 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  /* Show tooltip on hover */
+  #sidebar .nav-link:hover::after {
+    opacity: 1;
+    left: 50px; /* moves closer on hover for nice effect */
+  }
+  </style>
+</head>
+<body>
+
+<div class="d-flex" id="wrapper">
+
+  <!-- Sidebar -->
+  <div class="text-white py-4 sidebar" id="sidebar">
+    <div class="text-center mb-4 mt-1 pe-2">
+      <img src="./images/td-logo-en.png" alt="" class="img-fluid w-50">
+    </div>
+    <nav class="nav flex-column ps-3">
+      <!-- Sidebar Links -->
+      <a href="./index.html" class="nav-link text-white-50 fs-5 mb-2 mt-4" data-tooltip="Home">
+        <i class="fas fa-home"></i>
+      </a>
+      <a href="./user-dashboard.html" class="nav-link text-white-50 fs-5 mb-2" data-tooltip="Dashboard">
+        <i class="fas fa-circle-user"></i>
+      </a>
+      <a href="./dom.html" class="nav-link text-white-50 fs-5 mb-2" data-tooltip="Transfer History">
+        <i class="fas fa-clipboard-check"></i>
+      </a>
+      <a href="./domestic-transfer.html" class="nav-link text-white-50 fs-5 mb-2" data-tooltip="Domestic Transfer">
+        <i class="fas fa-exchange-alt"></i>
+      </a>
+      <a href="./interbank-transfer.html" class="nav-link text-white-50 fs-5 mb-2" data-tooltip="Interbank Transfer">
+        <i class="fas fa-money-bill-transfer"></i>
+      </a>
+      <a href="./wire-transfer.html" class="nav-link text-white-50 fs-5 mb-2" data-tooltip="Wire Transfer">
+        <i class="fas fa-hand-holding-dollar"></i>
+      </a>
+      <a onclick="logout()" class="nav-link text-white-50 fs-5 mb-2" data-tooltip="Logout">
+        <i class="fas fa-door-open"></i>
+      </a>
+      <!-- <a href="./profile.html" class="nav-link text-white-50 fs-5 mt-5" data-tooltip="Profile">
+        <img src="" alt="" class="rounded-circle" width="30" height="30" alt="Profile" id="profilePic3">
+      </a> -->
+    </nav>
+  </div>
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper" class="col-11 ml-6">
+
+     <!-- Navbar -->
+     <nav class="navbar bg-white shadow-sm p-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        
+        <!-- Left: Logo -->
+        <a class="col-lg-2 col-5 ms-lg-3" href="./index.html"><img src="./images/tdb-tag-white-en.png" alt="logo" class="w-100"/> </a>
+
+        <!-- Center: Navigation Links -->
+        <div class="d-flex justify-content-end align-items-center d-none d-lg-block">
+          <span class="me-3 fw-bold" id="name1">User</span>
+        </div>
+
+        <!-- Toggle for Mobile -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="collapse navbar-collapse d-lg-none px-4" id="mobileMenu">
+        <ul class="navbar-nav">
+          <a href="./index.html" class="nav-link text-white-50 fs-5 mb-2 mt-4">
+            <i class="fas fa-home me-2"></i> <span>Go To Home</span>
+          </a>
+          <a href="./user-dashboard.html" class="nav-link text-white fs-5 mb-2">
+            <i class="fas fa-circle-user me-2"></i> <span>Dashboard Overview</span>
+          </a>
+          <a href="./dom.html" class="nav-link text-white-50 fs-5 mb-2">
+            <i class="fas fa-clipboard-check me-2"></i> <span>Transfer History</span>
+          </a>
+          <a href="./domestic-transfer.html" class="nav-link text-white-50 fs-5 mb-2">
+            <i class="fas fa-exchange-alt me-2"></i> <span>Domestic Transfer</span>
+          </a>
+          <a href="./interbank-transfer.html" class="nav-link text-white-50 fs-5 mb-2">
+            <i class="fas fa-money-bill-transfer me-2"></i> <span>Interbank Transfer</span>
+          </a>
+          <a href="./wire-transfer.html" class="nav-link text-white-50 fs-5 mb-2">
+            <i class="fas fa-hand-holding-dollar me-2"></i> <span>Wire Transfer</span>
+          </a>
+          <a id="logout" class="nav-link text-white-50 fs-5 mb-2">
+            <i class="fas fa-door-open me-2"></i> <span>Logout</span>
+          </a>
+        </ul>
+      </div>
+    </nav>
+    
+
+    <div class="p-3 mt-4">
+        <!-- Header Row -->
+        <div class="d-flex justify-content-between align-items-center mb-4 print">
+          <h4 class="mb-2 fw-semibold">Transfer History</h4>
+          <button class="btn detail-bg text-white" onclick="printTable()">Print Statement</button>
+        </div>
+      
+      
+        <!-- Scrollable Table -->
+        <div class="table-responsive">
+          <table class="table align-middle shadow-sm border" id="transactionTable">
+            <thead class="text-muted fw-bold">
+              <tr>
+                <th>ID</th>
+                <th>AMOUNT</th>
+                <th>NAME</th>
+                <th>ACCOUNT NO.</th>
+                <th>TRANSACTION TYPE</th>
+                <th>DESCRIPTION</th>
+                <th>BANK</th>
+                <th>DATE/TIME</th>
+                <th>STATUS</th>
+              </tr>
+            </thead>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  function printTable() {
+    var divToPrint = document.getElementById("transactionTable");
+    var newWin = window.open("");
+    newWin.document.write("<html><head><title>Print Statement</title>");
+    newWin.document.write("<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css'>");
+    newWin.document.write("</head><body>");
+    newWin.document.write(divToPrint.outerHTML);
+    newWin.document.write("</body></html>");
+    newWin.document.close();
+    newWin.print();
+}
+</script>
+</body>

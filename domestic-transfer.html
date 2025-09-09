@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Domestic Transfer — Neobankia</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+   <!-- Google Fonts (for clean sans-serif look) -->
+   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+ 
+   <link rel="stylesheet" href="./css/style.css">
+ 
+   <style>
+     body {
+       font-family: "Outfit", sans-serif;
+       background-color: #ffffff;
+     }
+    .arrow1{
+      rotate: 245deg;
+      top: -30px;
+      right: 120px;
+    }
+    .arrow2{
+      rotate: 310deg;
+      bottom: -50px;
+      right: 20px;
+    }
+    .arrow3{
+      rotate: 310deg;
+    }
+  #sidebar .nav-link {
+    position: relative;
+    display: inline-block;
+    color: white !important;
+  }
+  #sidebar .nav-link:hover{
+    color: #43B02A !important;
+  }
+
+  /* Tooltip styling */
+  #sidebar .nav-link::after {
+    content: attr(data-tooltip); /* take tooltip text from attribute */
+    position: absolute;
+    left: 60px; /* adjust distance from icon */
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    color: #000;
+    padding: 4px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, left 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  /* Show tooltip on hover */
+  #sidebar .nav-link:hover::after {
+    opacity: 1;
+    left: 50px; /* moves closer on hover for nice effect */
+  }
+  </style>
+</head>
+<body>
+
+<div class="d-flex" id="wrapper">
+
+  <!-- Sidebar -->
+  <div class="text-white py-4 sidebar" id="sidebar">
+    <div class="text-center mb-4 mt-1 pe-2">
+      <img src="./images/td-logo-en.png" alt="" class="img-fluid w-50">
+    </div>
+    <nav class="nav flex-column ps-3">
+      <!-- Sidebar Links -->
+      <a href="./index.html" class="nav-link text-white-50 fs-5 mb-2 mt-4" data-tooltip="Home">
+        <i class="fas fa-home"></i>
+      </a>
+      <a href="./user-dashboard.html" class="nav-link text-white-50 fs-5 mb-2" data-tooltip="Dashboard">
+        <i class="fas fa-circle-user"></i>
+      </a>
+      <a href="./dom.html" class="nav-link text-white-50 fs-5 mb-2" data-tooltip="Transfer History">
+        <i class="fas fa-clipboard-check"></i>
+      </a>
+      <a href="./domestic-transfer.html" class="nav-link text-white-50 fs-5 mb-2" data-tooltip="Domestic Transfer">
+        <i class="fas fa-exchange-alt"></i>
+      </a>
+      <a href="./interbank-transfer.html" class="nav-link text-white-50 fs-5 mb-2" data-tooltip="Interbank Transfer">
+        <i class="fas fa-money-bill-transfer"></i>
+      </a>
+      <a href="./wire-transfer.html" class="nav-link text-white-50 fs-5 mb-2" data-tooltip="Wire Transfer">
+        <i class="fas fa-hand-holding-dollar"></i>
+      </a>
+      <a onclick="logout()" class="nav-link text-white-50 fs-5 mb-2" data-tooltip="Logout">
+        <i class="fas fa-door-open"></i>
+      </a>
+      <!-- <a href="./profile.html" class="nav-link text-white-50 fs-5 mt-5" data-tooltip="Profile">
+        <img src="" alt="" class="rounded-circle" width="30" height="30" alt="Profile" id="profilePic3">
+      </a> -->
+    </nav>
+  </div>
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper" class="col-11 ml-6">
+
+     <!-- Navbar -->
+     <nav class="navbar bg-white shadow-sm p-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        
+        <!-- Left: Logo -->
+        <a class="col-lg-2 col-5 ms-lg-3" href="./index.html"><img src="./images/tdb-tag-white-en.png" alt="logo" class="w-100"/> </a>
+
+        <!-- Center: Navigation Links -->
+        <div class="d-flex justify-content-end align-items-center d-none d-lg-block">
+          <span class="me-3 fw-bold" id="name1">User</span>
+        </div>
+
+        <!-- Toggle for Mobile -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="collapse navbar-collapse d-lg-none px-4" id="mobileMenu">
+        <ul class="navbar-nav">
+          <a href="./index.html" class="nav-link text-white-50 fs-5 mb-2 mt-4">
+            <i class="fas fa-home me-2"></i> <span>Go To Home</span>
+          </a>
+          <a href="./user-dashboard.html" class="nav-link text-white fs-5 mb-2">
+            <i class="fas fa-circle-user me-2"></i> <span>Dashboard Overview</span>
+          </a>
+          <a href="./dom.html" class="nav-link text-white-50 fs-5 mb-2">
+            <i class="fas fa-clipboard-check me-2"></i> <span>Transfer History</span>
+          </a>
+          <a href="./domestic-transfer.html" class="nav-link text-white-50 fs-5 mb-2">
+            <i class="fas fa-exchange-alt me-2"></i> <span>Domestic Transfer</span>
+          </a>
+          <a href="./interbank-transfer.html" class="nav-link text-white-50 fs-5 mb-2">
+            <i class="fas fa-money-bill-transfer me-2"></i> <span>Interbank Transfer</span>
+          </a>
+          <a href="./wire-transfer.html" class="nav-link text-white-50 fs-5 mb-2">
+            <i class="fas fa-hand-holding-dollar me-2"></i> <span>Wire Transfer</span>
+          </a>
+          <a id="logout" class="nav-link text-white-50 fs-5 mb-2">
+            <i class="fas fa-door-open me-2"></i> <span>Logout</span>
+          </a>
+        </ul>
+      </div>
+    </nav>
+    
+
+
+    <div class="container py-4">
+        <h2 class="page-title mb-3">Domestic Transfer</h2>
+
+        <!-- Banner -->
+        <div class="alert alert-warning d-flex align-items-center shadow-soft" role="alert">
+            <i class="bi bi-exclamation-triangle me-2"></i>
+            <div><strong>Notice:</strong> Ensure you fill the forms Carefully and correctly</div>
+        </div>
+
+        <!-- Transfer Card -->
+        <div class="card mt-5 shadow-soft">
+        <div class="card-body p-4 p-lg-5">
+            <h5 class="mb-4 detail fw-semibold">Enter Transfer Details</h5>
+
+            <!-- ========== DOMESTIC TRANSFER FORM ========== -->
+<form id="domesticTransferForm">
+  <div class="row g-3">
+
+    <!-- Beneficiary Name -->
+    <div class="col-md-6">
+      <label for="beneficiaryName" class="form-label">Beneficiary Account Name <span class="req">*</span></label>
+      <input type="text" id="beneficiaryName" name="beneficiaryName" class="form-control border" placeholder="e.g., John A. Doe" required>
+    </div>
+
+    <!-- Beneficiary Account Number -->
+    <div class="col-md-6">
+      <label for="beneficiaryAccount" class="form-label">Beneficiary Account Number <span class="req">*</span></label>
+      <input type="text" id="beneficiaryAccount" name="beneficiaryAccount" class="form-control border" placeholder="e.g., 6037011580" required>
+    </div>
+
+    <!-- Bank Name -->
+    <div class="col-md-6">
+      <label for="bankName" class="form-label">Bank Name <span class="req">*</span></label>
+      <input type="text" id="bankName" name="bankName" class="form-control border" placeholder="e.g., Airstro Bank" required>
+    </div>
+
+    <!-- Amount -->
+    <div class="col-md-6">
+      <label for="amount" class="form-label">Amount <span class="req">*</span></label>
+      <div class="input-group">
+        <span class="input-group-text">USD $</span>
+        <input type="number" id="amount" name="amount" class="form-control border" step="0.01" min="1" placeholder="0.00" required>
+      </div>
+    </div>
+
+    <!-- Account Type -->
+    <div class="col-md-6">
+      <label for="accountType" class="form-label">Account Type <span class="req">*</span></label>
+      <select id="accountType" name="accountType" class="form-select" required>
+        <option value="Savings" selected>Savings</option>
+        <option value="Checking">Checking</option>
+        <option value="Current">Current</option>
+        <option value="Business">Business</option>
+        <option value="Student">Student</option>
+      </select>
+    </div>
+
+    <!-- Description -->
+    <div class="col-12">
+      <label for="description" class="form-label">Description <span class="req">*</span></label>
+      <textarea id="description" name="description" class="form-control border" rows="3" placeholder="Transfer Description" required></textarea>
+    </div>
+  </div>
+
+  <!-- Submit -->
+  <div class="d-flex justify-content-end mt-4">
+    <button type="submit" class="btn py-2 px-4 primary-btn text-white">
+      <i class="bi bi-arrow-right-circle me-2"></i> Transfer
+    </button>
+  </div>
+</form>
+
+
+  <!-- ========== PASSWORD CONFIRM MODAL ========== -->
+  <div class="modal fade" id="confirmPasswordModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Confirm Transaction</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <label for="transactionPassword" class="form-label">Enter Password</label>
+          <input type="password" id="transactionPassword" class="form-control" placeholder="--- ---" required>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" id="confirmTransactionBtn" class="btn btn-success">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========== SUCCESS MODAL ========== -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-4">
+          <button type="button" class="btn-close float-right" data-bs-dismiss="modal"></button>
+          <div class="checkmark-wrapper">
+            <svg viewBox="0 0 52 52">
+              <circle class="circle" cx="26" cy="26" r="24" />
+              <path class="checkmark" d="M14 27 L22 35 L38 18" />
+            </svg>
+        </div>
+          <h4 class="modal-title text-center">Transaction Successful</h4>
+          <h5 class="text-success text-center mt-2" id="s_amount"></h5>
+        <div class="modal-body">
+          <p class="mb-2 d-flex justify-content-between"><span>Beneficiary Name:</span> <span class="fw-semibold" id="s_beneficiaryName"></span></p>
+          <p class="mb-2 d-flex justify-content-between"><span>Account Number:</span> <span class="fw-semibold" id="s_beneficiaryAccount"></span></p>
+          <p class="mb-2 d-flex justify-content-between"><span>Bank:</span> <span class="fw-semibold" id="s_bankName"></span></p>
+          <p class="mb-2 d-flex justify-content-between"><span>Account Type:</span> <span class="fw-semibold" id="s_accountType"></span></p>
+          <p class="mb-2 d-flex justify-content-between"><span>Description:</span> <span class="fw-semibold" id="s_description"></span></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+            <i class="section-note mt-4 mb-0">
+            Transfers may be subject to review. Ensure recipient details are correct before submitting.
+            </i>
+        </div>
+        </div>
+    </div>
+
+    
+    </div>
+    </div>
+    
+    
+<footer class="bg-light pt-5">
+  <div class="container text-center">
+
+    <!-- Contact CTA -->
+    <div class="mb-4">
+      <a href="#" class="primary-text fs-5 text-decoration-none">
+        Need to talk to us directly? <span class="fw-semibold">Contact us ›</span>
+      </a>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="mb-4">
+      <p class="fw-semibold text-muted">Follow TD Bank</p>
+      <div class="d-flex justify-content-center gap-3 col-3 mx-auto">
+        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-youtube"></i></a>
+        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-auto">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Privacy</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">California Privacy</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Online Advertising</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Terms of Use</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Security</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">About Us</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Accessibility</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Careers</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Site Map</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <hr class="w-75 mx-auto my-5">
+
+    <!-- Housing + FDIC Info -->
+    <div class="col-md-6 mx-auto my-3">
+      <img src="./images/equal-housing.svg" alt="Equal Housing" width="60" height="60">
+      <span class="primary-text fw-semibold mb-0">Equal Housing Lender</span>
+      <p class="primary-text fw-semibold">Member FDIC. Bank Deposits FDIC Insured</p>
+    </div>
+
+    <hr class="w-75 mx-auto my-5">
+    
+    <div class="col-lg-8 mx-auto fw-semibold text-muted">
+      <small>SECURITIES AND OTHER INVESTMENT AND INSURANCE PRODUCTS ARE: NOT A DEPOSIT; NOT FDIC INSURED; NOT INSURED BY ANY FEDERAL GOVERNMENT AGENCY; NOT GUARANTEED BY TD BANK, N.A. OR ANY OF ITS AFFILIATES; AND, MAY BE SUBJECT TO INVESTMENT RISK, INCLUDING POSSIBLE LOSS OF VALUE.</small>
+    </div>
+
+    <hr class="w-75 mx-auto my-5">
+    <div class="col-lg-8 mx-auto text-muted mb-4">
+      <small><span class="fw-semibold">tdbankservicesupport@gmail.com<br></span>
+          ©2025 TD Bank, N.A. All Rights Reserved.</small>
+    </div>
+    <br>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+
+
+<script>
+/// ✅ Stop page refresh and show password modal
+document.getElementById("domesticTransferForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  new bootstrap.Modal(document.getElementById("confirmPasswordModal")).show();
+});
+
+// ✅ Handle password confirmation
+document.getElementById("confirmTransactionBtn").addEventListener("click", async () => {
+  const password = document.getElementById("transactionPassword").value.trim();
+
+  if (!password) {
+    alert("Please enter your password.");
+    return;
+  }
+
+  // ✅ Close password modal
+  const confirmModal = bootstrap.Modal.getInstance(document.getElementById("confirmPasswordModal"));
+  confirmModal.hide();
+
+  // ✅ Fill success modal details
+  const form = document.getElementById("domesticTransferForm");
+  document.getElementById("s_beneficiaryName").textContent = form.beneficiaryName.value;
+  document.getElementById("s_beneficiaryAccount").textContent = form.beneficiaryAccount.value;
+  document.getElementById("s_bankName").textContent = form.bankName.value;
+  document.getElementById("s_amount").textContent = `USD $ ${form.amount.value}`;
+  document.getElementById("s_accountType").textContent = form.accountType.value;
+  document.getElementById("s_description").textContent = form.description.value;
+
+  // ✅ Show success modal
+  new bootstrap.Modal(document.getElementById("successModal")).show();
+});
+
+</script>
+</body>
+</html>
