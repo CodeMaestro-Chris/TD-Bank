@@ -11,7 +11,7 @@
 <body>
       <!-- green navbar start -->
     <div class="top-links d-none d-lg-flex">
-        <a class="nav-link" href="./personal.html">Personal</a>
+        <a class="nav-link" href="./personal.html" style="font-weight: 600;">Personal</a>
         <a class="nav-link" href="./SmallBusiness.html">Small Business</a>
         <a class="nav-link" href="./Commercial.html">Commercial</a>
         <a class="nav-link" href="./Investing.html">Investing</a>
@@ -105,14 +105,18 @@
           <a class="nav-link" href="#"><input type="search" id="search" placeholder="Search"></a>
           <ul class="navbar-nav ml-auto align-items-lg-center">
             <li class="nav-item top-links d-lg-flex d-block w-100 justify-content-center">
-                <select name="" id="Investing">
-                    <a class="nav-link" href="#"><option value="TD:Investing">TD:Investing</option></a>
-                    <a class="nav-link" href="./personal.html"><option value="personal">Personal</option></a>
-                    <a class="nav-link" href="./SmallBusiness.html"><option value="smallBusiness">Small Business</option></a>
-                    <a class="nav-link" href="./Commercial.html"><option value="commercial">Commercial</option></a>
-                    <a class="nav-link" href="./Investing.html"><option value="investing">Investing</option></a>
-                    <a class="nav-link" href="./About.html"><option value="aboutTd">About TD</option></a>
-                </select>
+                <div class="dropdown" id="Investing" style="background-color: black !important;">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        TD:Investing
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="./personal.html">Personal</a>
+                        <a class="dropdown-item" href="./SmallBusiness.html">Small Busines</a>
+                        <a class="dropdown-item" href="./Commercial.html">Commercial</a>
+                        <a class="dropdown-item" href="./Investing.html">Investing</a>
+                        <a class="dropdown-item" href="./About.html">About TD</a>
+                    </div>
+                </div>
             </li>
           <!-- Icons -->
           <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-map-marker-alt"></i> Locations</a></li>
@@ -691,6 +695,58 @@
         </div>
         <!-- DEPOSIT PROTECTION END -->
     </div>
+    
+    <!--COMMERCIAL FOOTER START -->
+
+    <div class="need-to-talk-footer">
+        <div id="need-to-talk-footer">
+            <div class="footer-image">
+                <img src="./Image/footer_1-removebg-preview.png" alt="image">
+            </div>
+            <div class="need-to-talk-text">
+                <h3>Need to talk to us directly? <a href="#">Contact us<i class="fa fa-angle-right"></i></a></h3>
+                <h5>Follow TD</h5>
+                <div class="footer-icon">
+                    <div id="icons">
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
+                    <div id="icons">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </div>
+                    <div id="icons">
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </div>
+                    <div id="icons">
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                    <div id="icons">
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-text-link">
+            <a href="#">Privacy & Security</a>
+            <a href="#">Legal</a>
+            <a href="#">Accessibility</a>
+            <a href="#">CDIC Member</a>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Manage online experience</a>
+            <a href="#">Site Index</a>
+        </div>
+        <div class="mobile-footer-image">
+            <img src="./Image/footer_1-removebg-preview.png" alt="image">
+        </div>
+        <div class="up-arrow-btn">
+            <p>TD Bank Tower – Corporate Office<span> 66 Wellington Street West, Toronto, ON M5K 1A2</span></p>
+            <!-- <button id="up-arrow-btn"><i class=" fa fa-angle-up"></i>Top</button> -->
+            <a href="./Commercial.html" id="up-arrow-btn"><i class="fa fa-angle-up"></i>Top</a>
+        </div>
+    </div>
+    <!--COMMERCIAL FOOTER END -->
+
+
 
 
 

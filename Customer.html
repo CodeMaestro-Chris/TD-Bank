@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Services</title>
+    <link rel="stylesheet" href="./Styles/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body>
+    <!-- green navbar start -->
+    <div class="top-links d-none d-lg-flex">
+        <a class="nav-link" href="./personal.html">Personal</a>
+        <a class="nav-link" href="./SmallBusiness.html">Small Business</a>
+        <a class="nav-link" href="./Commercial.html">Commercial</a>
+        <a class="nav-link" href="./Investing.html">Investing</a>
+        <a class="nav-link" href="./About.html">About TD</a>
+    </div>
+
+    <!-- green navbar end -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg main-navbar">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="./Investing.html">
+                <img src="./Image/td-logo-desktop.png" alt="image" class="logo-img">
+            </a>
+
+            <!-- Toggler button for mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tdNavbar" aria-controls="tdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="tdNavbar">
+                <ul class="navbar-nav ml-auto align-items-lg-center">
+                    <!-- Icons -->
+                    <li class="nav-item"><a class="nav-link" href="#"><input type="search" id="search" placeholder="Search"></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-map-marker-alt"></i> Locations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Help</a></li>
+
+                    <!-- Dropdown: Canada -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-globe"></i> Canada
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+                            <a class="dropdown-item" href="#">Canada ✔</a>
+                            <a class="dropdown-item" href="#">United Kingdom</a>
+                        </div>
+                    </li>
+                    <!-- Dropdown: English -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            English
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+                            <a class="dropdown-item" href="#">English</a>
+                            <a class="dropdown-item" href="#">Français</a>
+                        </div>
+                    </li>
+                    <!-- Divider (desktop only) -->
+                    <li class="d-none d-lg-block divider"></li>
+
+                    <!-- Dropdown: Login -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Login
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginDropdown">
+                            <a class="dropdown-item" href="#">EasyWeb</a>
+                            <a class="dropdown-item" href="#">WebBroker</a>
+                            <a class="dropdown-item" href="#">Insurance</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Navbar -->
+    <nav class="navbar navbar-expand-lg main-navbar" id="mobileNavbar">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./Image/td-logo-desktop.png" alt="image" class="logo-img">
+            </a>
+
+            <!-- Toggler button for mobile -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tdNavbar" aria-controls="tdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <!-- <li class="nav-item dropdown"> -->
+                    <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>
+                    Login
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginDropdown">
+                    <a class="dropdown-item" href="#">EasyWeb</a>
+                    <a class="dropdown-item" href="#">WebBroker</a>
+                    <a class="dropdown-item" href="#">Insurance</a>
+                    </div>
+                <!-- </li> -->
+            <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="tdNavbar">
+                    <a class="nav-link" href="#"><input type="search" id="search" placeholder="Search"></a>
+                    <ul class="navbar-nav ml-auto align-items-lg-center">
+                        <li class="nav-item top-links d-lg-flex d-block w-100 justify-content-center">
+                            <div class="dropdown" id="Investing" style="background-color: black !important;">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    TD:Investing
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="./personal.html">Personal</a>
+                                    <a class="dropdown-item" href="./SmallBusiness.html">Small Busines</a>
+                                    <a class="dropdown-item" href="./Commercial.html">Commercial</a>
+                                    <a class="dropdown-item" href="./Investing.html">Investing</a>
+                                    <a class="dropdown-item" href="./About.html">About TD</a>
+                                </div>
+                            </div>
+                        </li>
+                    <!-- Icons -->
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-map-marker-alt"></i> Locations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Help</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-globe"></i> Canada</a></li>
+
+                    <!-- Dropdown: English -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        English
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
+                        <a class="dropdown-item" href="#">English</a>
+                        <a class="dropdown-item" href="#">Français</a>
+                        </div>
+                    </li>
+
+                    <!-- Divider (desktop only) -->
+                    <li class="d-none d-lg-block divider"></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Mobile Navbar End -->
+
+    <div class="section"> 
+        <div class="customer-service">
+            <div id="customer-service">
+                <div class="customer-service-text">
+                    <h3 class="text-center">To Our Customers</h3>
+                    <p class="text-center" id="protecting-customer">Protecting Our Customers</p>
+                    <p>Delivering a comfortable banking experience is upholding the highest standards of integrity, honesty, professionalism and security</p>
+                </div>
+                <hr>
+                <div class="resolving-complaint">
+                    <div id="resolving-complaint">
+                        <h3>Resolving your Complaints</h3>
+                        <div class="resolving-btn">
+                            <button id="resolving-btn">Customer Help</button>
+                        </div>
+                    </div>
+                    <div id="resolving-complaint">
+                        <h3>TD’s Privacy Policy</h3>
+                        <div class="resolving-btn">
+                            <button id="resolving-btn">View TD’s Privacy Policy</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" id="slider"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1" id="slider"></li>
+                    </ol>
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                             <div class="d-block w-100" id="resolving-complaint">
+                                <h3>Resolving your Complaints</h3>
+                                <div class="resolving-btn">
+                                    <button id="resolving-btn">Customer Help</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block w-100" id="resolving-complaint">
+                                <h3>TD’s Privacy Policy</h3>
+                                <div class="resolving-btn">
+                                    <button id="resolving-btn">View TD’s Privacy Policy</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+       <!-- UNDERSTANDING THE CREDIT SECTION START -->
+
+        <div class="understanding-credit">
+            <div class="card-group">
+                <div class="card">
+                    <img src="./Image/customercarelanding-11.5imagestl.png" class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">Understanding the Credit <br> Granting Process</h5>
+                        <p class="card-text">
+                            Your guide to establishing and <br>maintaining a solid credit rating.s.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Image/customercarelanding-2.png" class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">Information on Powers <br> of Attorney﻿</h5>
+                        <p class="card-text">
+                            At TD, we do our utmost to ensure <br> you have the information you <br>
+                            need to make decisions related to <br> your financial affairs.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Image/customercarelanding-3.png" class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">Codes of Conduct and <br>Public Commitments</h5>
+                        <p class="card-text">
+                            At TD we are committed to providing our customers with <br>enhanced 
+                            consumer protection, <br>through our Public Commitments <br>
+                            and adherence to industry-level Codes of Conduct.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Image/customercarelanding-4.png" class="card-img-top" alt="image">
+                    <div class="card-body">
+                        <h5 class="card-title">Senior Customer <br>Complaints Office</h5>
+                        <p class="card-text">
+                            The role of the Senior Customer <br>Complaints Office is to conduct a <br>
+                            thorough and impartial <br> investigation of all of the issues <br>
+                            relating to customers' concerns.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" id="slider"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1" id="slider"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2" id="slider"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3" id="slider"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="card-group">
+                    <div class="carousel-item active">
+                        <div class="card d-block w-100">
+                            <img src="./Image/customercarelanding-11.5imagestl.png" class="card-img-top" alt="image">
+                            <div class="card-body">
+                                <h5 class="card-title">Understanding the Credit <br> Granting Process</h5>
+                                <p class="card-text">
+                                    Your guide to establishing and <br>maintaining a solid credit rating.s.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card d-block w-100">
+                            <img src="./Image/customercarelanding-2.png" class="card-img-top" alt="image">
+                            <div class="card-body">
+                                <h5 class="card-title">Information on Powers <br> of Attorney﻿</h5>
+                                <p class="card-text">
+                                    At TD, we do our utmost to ensure <br> you have the information you <br>
+                                    need to make decisions related to <br> your financial affairs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card d-block w-100">
+                            <img src="./Image/customercarelanding-3.png" class="card-img-top" alt="image">
+                            <div class="card-body">
+                                <h5 class="card-title">Codes of Conduct and <br>Public Commitments</h5>
+                                <p class="card-text">
+                                    At TD we are committed to providing our customers with <br>enhanced 
+                                    consumer protection, <br>through our Public Commitments <br>
+                                    and adherence to industry-level Codes of Conduct.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card d-block w-100">
+                            <img src="./Image/customercarelanding-4.png" class="card-img-top" alt="image">
+                            <div class="card-body">
+                                <h5 class="card-title">Senior Customer <br>Complaints Office</h5>
+                                <p class="card-text">
+                                    The role of the Senior Customer <br>Complaints Office is to conduct a <br>
+                                    thorough and impartial <br> investigation of all of the issues <br>
+                                    relating to customers' concerns.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- UNDERSTANDING THE CREDIT SECTION END -->
+
+        <!-- INFORMATION ON JOINT SECTION START -->
+
+        <div class="information-left-right-section">
+            <div class="information-left-section">
+                <img src="./Image/3.3b-1.png" alt="image">
+            </div>
+            <div class="information-right-section">
+                <h5>Information on Joint Deposit Accounts <i class="fa fa-angle-right"></i></h5>
+                <p>
+                    At TD Canada Trust, our personal deposit accounts may be set up
+                    in the names of two or more individuals.
+                </p>
+            </div>
+        </div>
+        <div class="fightingFruad-left-right-section">
+            <div class="fightingFruad-left-section">
+                <img src="./Image/3.3b-2.png" alt="image">
+            </div>
+            <div class="fightingFruad-right-section">
+                <h5>Fighting Fraud - Helpful Tips for Customers <i class="fa fa-angle-right"></i></h5>
+                <p>
+                    Safety precautions to help protect yourself and your money against <br>
+                    various types of fraud including identity theft, online fraud, 
+                    telemarketing scams, and credit card and debit card fraud.
+                </p>
+            </div>
+        </div>
+        <!-- INFORMATION ON JOINT SECTION END -->
+
+        <!-- LEARN MORE ABOUT HOW WE CARE SCETION START -->
+
+        <div class="learn-how-we-care">
+            <div class="learn-more-about">
+                <h3>Learn more about how we care for our customers</h3>
+                <div id="learn-more-about">
+                    <a href="./CoerciveTied.html">Coercive Tied Selling <i class="fa fa-angle-right"></i></a>
+                    <a href="./codesOfCoduct.html">Codes of Conduct and public commitments <i class="fa fa-angle-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- LEARN MORE ABOUT HOW WE CARE SCETION END -->
+    </div>
+    
+    <!-- ABOUT TD FOOTER SECTION START -->
+
+    <div class="back-to-top">
+        <div id="back-to-top">
+            <div id="find-us">
+                <a href="#"><i class="fa fa-location-arrow"></i>Find Us</a>
+                <a href="#"><i class="fa fa-question-circle"></i>Help</a>
+            </div>
+            <div class="back-to-top-tag">
+                <a href="./About.html"><i class="fa fa-angle-up"></i> Back to top</a>
+            </div>
+        </div>
+        <div class="about-contact-us">
+            <div id="about-contact-us" class="give-feedback">
+                <a href="#"><p>Contact Us</p></a>
+                <a href="#"><i class="fa fa-phone"></i>Call us</a><br>
+                <a href="#"><i class="fa fa-calendar"></i>Book an appointment</a><br>
+                <a href="#"><i class="fa fa-pencil"></i>Give feedback</a><br>
+            </div>
+            <div id="about-contact-us">
+                <h6>For Our Customers</h6>
+                <a href="#">News and economics</a><br>
+                <a href="#">For investors</a><br>
+                <a href="#">Customer care</a><br>
+                <a href="#">Careers</a><br>
+            </div>
+            <div id="about-contact-us">
+                <h6>Initiatives</h6>
+                <a href="#">Contributing to a more <br>sustainable future</a><br>
+                <a href="#">TD Ready Commitment</a><br>
+                <a href="#">TD Sponsorships</a><br>
+            </div>
+            <div id="about-contact-us">
+                <h6>Diversity & Inclusion at TD</h6>
+                <a href="#">Indigenous communities</a><br>
+                <a href="#">2SLGTBQ+</a><br>
+                <a href="#">People with disabilities</a><br>
+                <a href="#">Black experience</a><br>
+                <a href="#">Celebrating women</a><br>
+            </div>
+            <div id="about-contact-us">
+                <h6>Get To Know Us </h6>
+                <a href="#">Who we are</a><br>
+                <a href="#">Our people</a><br>
+                <a href="#">Corporate profile</a><br>
+                <a href="#">Corporate citizenship</a><br>
+                <a href="#">Environmental, Social and <br>Governance (ESG)</a><br>
+                <a href="#">Investor relations</a><br>
+                <a href="#">Awards</a><br>
+            </div>
+        </div>
+        <div class="mobile-about-contact-us">
+            <div id="mobile-back-to-top">
+                 <div class="back-to-top-tag">
+                    <a href="./About.html"><i class="fa fa-angle-up"></i> Back to top</a>
+                </div>
+                <div id="find-us">
+                    <a href="#"><i class="fa fa-location-arrow"></i><br>Find Us</a><br>
+                    <a href="#"><i class="fa fa-question-circle"></i><br>Help</a>
+                </div>
+            </div>
+             <div id="about-contact-us" class="give-feedback contact-footer">
+                <a href="#"><p>Contact Us</p></a>
+                <a href="#"><i class="fa fa-phone"></i>Call us</a><br>
+                <a href="#"><i class="fa fa-calendar"></i>Book an appointment</a><br>
+                <a href="#"><i class="fa fa-pencil"></i>Give feedback</a><br>
+            </div>
+            <div class="dropdown" id="dropdown" style="border-top: 2px solid #d6d1d1;">
+                <button class="btn btn-secondary dropdown-toggle drop-down-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    For Our Customers <div><i></i></div>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">News and economics</button>
+                    <button class="dropdown-item" type="button">For investors</button>
+                    <button class="dropdown-item" type="button">Customer care</button>
+                    <button class="dropdown-item" type="button">Careers</button>
+                </div>
+            </div>
+            <div class="dropdown" id="dropdown">
+                <button class="btn btn-secondary dropdown-toggle drop-down-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Initiatives <div><i></i></div>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">Contributing to a more <br>sustainable future</button>
+                    <button class="dropdown-item" type="button">TD Ready Commitment</button>
+                    <button class="dropdown-item" type="button">TD Sponsorships</button>
+                </div>
+            </div>
+            <div class="dropdown" id="dropdown">
+                <button class="btn btn-secondary dropdown-toggle drop-down-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Diversity & Inclusion at TD <div><i></i></div>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">Indigenous communities</button>
+                    <button class="dropdown-item" type="button">2SLGTBQ+</button>
+                    <button class="dropdown-item" type="button">People with disabilities</button>
+                    <button class="dropdown-item" type="button">Black experience</button>
+                    <button class="dropdown-item" type="button">Celebrating women</button>
+                </div>
+            </div>
+            <div class="dropdown" id="dropdown">
+                <button class="btn btn-secondary dropdown-toggle drop-down-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Get To Know Us <div><i></i></div>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <button class="dropdown-item" type="button">Who we are</button>
+                    <button class="dropdown-item" type="button">Our people</button>
+                    <button class="dropdown-item" type="button">Corporate profile</button>
+                    <button class="dropdown-item" type="button">Corporate citizenship</button>
+                    <button class="dropdown-item" type="button">Environmental, Social and <br>Governance (ESG)</button>
+                    <button class="dropdown-item" type="button">Investor relations</button>
+                    <button class="dropdown-item" type="button">Awards</button>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-privacy-security">
+            <div id="privacy-security">
+                <div class="privacy-security-contents">
+                    <div class="privacy-security-tags">
+                        <a href="#">Privacy and Security</a><br>
+                        <a href="#">Legal</a><br>
+                        <a href="#">Accessibility</a><br>
+                        <a href="#">CDIC Member</a><br>
+                        <a href="#">Careers</a><br>
+                        <a href="#">Manage online experience</a><br>
+                        <a href="#">Site Index</a><br>
+                    </div>
+                    <h6>TD Bank Tower – Corporate Office</h6>
+                    <p>66 Wellington Street West, Toronto, ON M5K 1A2</p>
+                </div>
+                <div class="privacy-security-image">
+                    <img src="./Image/footer.png" alt="image">
+                </div>
+            </div>
+        </div>
+        <div class="privacy-security">
+            <div id="privacy-security">
+                <div class="privacy-security-contents">
+                    <div class="privacy-security-tags">
+                        <a href="#">Privacy and Security</a>
+                        <a href="#">Legal</a>
+                        <a href="#">Accessibility</a>
+                        <a href="#">CDIC Member</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Manage online experience</a>
+                        <a href="#">Site Index</a>
+                    </div>
+                    <h6>TD Bank Tower – Corporate Office</h6>
+                    <p>66 Wellington Street West, Toronto, ON M5K 1A2</p>
+                </div>
+                <div class="privacy-security-image">
+                    <img src="./Image/footer.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="online-icons">
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube-play"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+    </div>
+
+    <!-- ABOUT TD FOOTER SECTION END -->
+   
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./Script/scripts.js"></script>
+</body>
+</html>
