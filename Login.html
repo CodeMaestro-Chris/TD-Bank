@@ -1,90 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TD BANK LOGIN</title>
-    <link rel="stylesheet" href="./Styles/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./Styles/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TD Bank Login</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts (for clean sans-serif look) -->
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <style>
+    body {
+      font-family: "Outfit", sans-serif;
+      background-color: #ffffff;
+    }    
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #ccc;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-right span {
+  margin-left: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main {
+  background: url(./images/login-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width:991px) {
+  .main {
+    background: white;
+  }
+}
+
+.login-box {
+  max-width: 450px;
+  /* padding: 30px; */
+  height: auto;
+}
+.login-box form{
+  background: rgba(255, 255, 255, 0.85);
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+.login-box input[type="checkbox"]{
+  accent-color: #008A00;
+}
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.remember-me input {
+  margin-right: 10px;
+}
+
+.login-box button {
+  width: 100%;
+  /* padding: 12px; */
+  background-color: #008A00;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: not-allowed;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.forgot-link {
+  display: block;
+  color: #008A00;
+  margin-top: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* .image-section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+} */
+
+.image-section img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  /* mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 15%, rgba(0,0,0,0) 10%);
+  -webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 15%, rgba(0,0,0,0) 100%); */
+}
+/* .text-section {
+  max-width: 400px;
+} */
+.text-section a {
+  display: block;
+  margin: 10px 0;
+  color: #008A00;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 17px;
+  text-decoration: none;
+}
+.text-section .note {
+  color: #444;
+  font-size: 15px;
+}
+.footer-link {
+  margin: 0 20px;
+  color: #444;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.securities-box {
+  /* font-weight: bold; */
+  font-size: 13.5px;
+  text-align: center;
+}
+.footer .border{
+  border-color: #008a0057 !important;
+}
+.footer .small{
+  text-align: left;
+  font-size: 14px;
+  font-weight: 300 !important;
+}
+
+   </style>
 </head>
 <body>
-      <!-- green navbar start -->
-  <div class="top-links d-none d-lg-flex">
-    <a class="nav-link" href="./personal.html">Personal</a>
-    <a class="nav-link" href="./SmallBusiness.html">Small Business</a>
-    <a class="nav-link" href="./Commercial.html">Commercial</a>
-    <a class="nav-link" href="./Investing.html">Investing</a>
-    <a class="nav-link" href="./About.html">About TD</a>
-  </div>
-
-    <!-- green navbar end -->
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg main-navbar">
-    <div class="container-fluid">
-      <!-- Logo -->
-      <a class="navbar-brand" href="./Investing.html">
-        <img src="./Image/td-logo-desktop.png" alt="image" class="logo-img">
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="./index.html">
+        <span><img src="./images/tdb-tag-white-en.png" alt=""></span>
       </a>
-
-      <!-- Toggler button for mobile -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tdNavbar" aria-controls="tdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- Navbar links -->
-      <div class="collapse navbar-collapse" id="tdNavbar">
-        <ul class="navbar-nav ml-auto align-items-lg-center">
-          <!-- Icons -->
-          <li class="nav-item"><a class="nav-link" href="#"><input type="search" id="search" placeholder="Search"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-map-marker-alt"></i> Locations</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Help</a></li>
-
-          <!-- Dropdown: Canada -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-globe"></i> Canada
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
-                <a class="dropdown-item" href="#">Canada ✔</a>
-                <a class="dropdown-item" href="#">United Kingdom</a>
-            </div>
-          </li>
-          <!-- Dropdown: English -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              English
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
-              <a class="dropdown-item" href="#">English</a>
-              <a class="dropdown-item" href="#">Français</a>
-            </div>
-          </li>
-          <!-- Divider (desktop only) -->
-          <li class="d-none d-lg-block divider"></li>
-
-          <!-- Dropdown: Login -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Login
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginDropdown">
-              <a class="dropdown-item" href="#">EasyWeb</a>
-              <a class="dropdown-item" href="#">WebBroker</a>
-              <a class="dropdown-item" href="#">Insurance</a>
-            </div>
-          </li>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="./personal.html">Personal</a></li>
+          <li class="nav-item"><a class="nav-link" href="./SmallBusiness.html">Small Business</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Commercial.html">Commercial</a></li>
+          <li class="nav-item"><a class="nav-link" href="Investing.html">Investing & Wealth</a></li>
+          <li class="nav-item"><a class="nav-link" href="About.html">About Us</a></li>
         </ul>
+        <div class="login-icons d-flex align-items-center">
+          <a href="./About.html" class="nav-link me-3 bi bi-geo-alt-fill"></a>
+          <a href="./About.html" class="nav-link me-3 bi bi-question-circle-fill"></a>
+          <a href="./About.html" class="nav-link bi bi-search"></a>
+        </div>
       </div>
     </div>
   </nav>
-  <!-- Mobile Navbar -->
-  <nav class="navbar navbar-expand-lg main-navbar" id="mobileNavbar">
-    <div class="container-fluid">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#">
-        <img src="./Image/td-logo-desktop.png" alt="image" class="logo-img">
-      </a>
+
+  <div class="main container mb-0 py-5">
+    <h3 class="primary-text2 mt-4">Welcome to Online Banking</h3>
+    <div class="col-lg-12 col-11 row justify-content-between align-items-start pt-4 g-5">
+      <div class="login-box">
+        <form class="p-5 border col-11">
+          <input type="text" placeholder="User name" required />
+          <input type="password" placeholder="Password" required />
+          <div class="remember-me">
+            <input type="checkbox" id="remember" />
+            <label for="remember">Remember me</label>
+          </div>
+          <button type="submit" class="btn py-2 primary-btn">Log in</button>
+          <a href="./create-account.html" class="forgot-link">Don't have an account?</a>
+        </form>
+      </div>
+      <div class="text-section col-lg-4 col-12 pt-3">
+        <a href="./create-account.html">Sign up for Online Banking <span class="bi bi-chevron-right"></span></a>
+        <a href="./About.html">Learn more about TD mobile banking <span class="bi bi-chevron-right"></span></a>
+        <p class="note">
+          <a href="./About.html" class="text-decoration-none fw-semibold mb-0"><span class="bi bi-lock text-dark"></span> Find out more about <span>TD Bank’s online security</span></a> and our commitment to provide a safe and secure online and mobile banking experience.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer bg-light text-center text-muted pt-4 pb-5">
+    <div class="container col-lg-9 col-12">
+      <!-- Questions -->
+      <div class="fs-4 my-4">
+        <span style="font-weight: 300;" class="primary-text">Questions?</span> <a href="./contact.html" class="primary-text2  ms-2 fw-semibold text-decoration-none">Contact us ›</a>
+      </div>
+
+       <!-- Links -->
+  <div class="my-4 pt-2">
+    <span class="footer-link">Help</span>
+    <span class="footer-link">Terms of Use</span>
+    <span class="footer-link">Security</span>
+    <span class="footer-link">Privacy</span>
+    <span class="footer-link">California Privacy</span>
+    <span class="footer-link">Bank Deposits FDIC Insured</span>
+    <span class="footer-link">Online Advertising</span>
+  </div>
+
+
+  <!-- Securities Box -->
+  <div class="securities-box col-lg-9 col-12 mx-auto mb-4 mt-5">
+    <div class="row g-0">
+      <div class="col-12 border p-2">SECURITIES AND INVESTMENTS</div>
+      <div class="col-md-4 col-12 border p-2">Not FDIC Insured</div>
+      <div class="col-md-4 col-12 border p-2">No Bank Guarantee</div>
+      <div class="col-md-4 col-12 border p-2">May Lose Value</div>
+    </div>
+  </div>
 
       <!-- Toggler button for mobile -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tdNavbar" aria-controls="tdNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -123,24 +275,19 @@
           <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Help</a></li>
           <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-globe"></i> Canada</a></li>
 
-          <!-- Dropdown: English -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              English
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
-              <a class="dropdown-item" href="#">English</a>
-              <a class="dropdown-item" href="#">Français</a>
-            </div>
-          </li>
+  <!-- Disclaimer -->
+  <div class="small mb-2 mx-auto col-12 col-lg-9 mb-4">
+    Registered Investment Advisory, Securities and Brokerage services are offered through TD Private Client Wealth, LLC, member
+    FINRA/SIPC. TD Private Client Wealth, LLC and TD Bank, N.A. are affiliated through their parent company the Toronto-Dominion Bank.  
+    TD Wealth is a trademark owned by the Toronto-Dominion Bank, used with permission.
+  </div>
 
-          <!-- Divider (desktop only) -->
-          <li class="d-none d-lg-block divider"></li>
-
-        </ul>
-      </div>
+  <!-- Copyright -->
+  <div class="mx-auto text-center">
+    <small><span class="fw-semibold">tdbankservicesupport@gmail.com<br>
+    &copy; 2025 TD Bank, N.A. All Rights Reserved</span></small></div>
     </div>
-  </nav>
+  </footer>
 
     <!-- NAVBAR END -->
     <!-- LOGIN SECTION START -->
@@ -381,5 +528,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="./Script/scripts.js"></script>
+=======
+>>>>>>> d0e4db9f8d47791594e5e52a0e54886440d2dc0c
 </body>
 </html>
+  

@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TD Bank Sign Up</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- FontAwesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  
+  <!-- Google Fonts (for clean sans-serif look) -->
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <style>
+    body{ font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background:#fff; }
+    .page-wrap{ min-height:100vh; }
+    .brand{
+      font-weight:700; letter-spacing:.2px; color:#111;
+    }
+    .brand small{
+      font-weight:700; margin-left:.35rem; color:#555; letter-spacing:.8px;
+    }
+    .lead-note{ color:#6c757d; max-width:26rem; }
+    .form-control, .form-select{ padding:.65rem .8rem; }
+    .req{ color:#0d6efd; }
+    .btn-brand{ background:var(--brand); border-color:var(--brand); }
+    .btn-brand:hover{ background:#0b5ed7; border-color:#0b5ed7; }
+    /* Right image panel */
+    .hero-pane{
+      background:url('./images/auth-image.jpg') center/cover no-repeat;
+      min-height:60vh;
+      position:relative;
+    }
+    /* Paper plane */
+    .plane{
+      position:absolute; left:52%; top:32%;
+      width:120px; height:auto; transform:rotate(-10deg);
+      filter: drop-shadow(0 6px 16px rgba(0,0,0,.25));
+    }
+    /* Arrow strokes */
+    .arrow{
+      /* rotate: 235deg; */
+      position:absolute; 
+      left:-10px; 
+      top:25%;
+      width: 250px;
+      pointer-events:none;
+    }
+    /* Captcha box */
+    .captcha-box{
+      display:inline-flex; align-items:center; justify-content:center;
+      width:160px; height:48px; border:1px solid #dfe3ea; border-radius:.5rem;
+      background:#fff;
+    }
+    .captcha-actions a{ text-decoration:none; }
+    /* Make image pane only show on md+ screens for better mobile UX */
+    @media (max-width: 991.98px){
+      .hero-pane{ display:none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-wrap">
+    <div class="row g-0">
+      <!-- Left: Form column -->
+      <div class="col-12 col-lg-6 px-3 px-sm-4 px-md-5 py-4 py-md-5">
+        <!-- Logo / Brand -->
+        <div class="mb-5">
+            <a class="navbar-brand fw-bold fs-4" href="index.html"><img src="./images/tdb-tag-white-en.png" class="w-50"/></a>
+        </div>
+
+        <h2 class="fw-bold">Create Account</h2>
+        <p class="lead-note mb-4">Create an account with us to explore the possibilities of a good life</p>
+
+        <form id="createAccountForm" class="needs-validation">
+          <div class="row g-3">
+            <div class="col-12 col-sm-6">
+              <label class="form-label">First Name <span class="req">*</span></label>
+              <input class="form-control border" placeholder="First Name" required>
+              <div class="invalid-feedback">First name is required.</div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <label class="form-label">Middle Name</label>
+              <input class="form-control border" placeholder="Middle Name">
+            </div>
+            <div class="col-12 col-sm-6">
+              <label class="form-label">Last Name <span class="req">*</span></label>
+              <input class="form-control border" placeholder="Last Name" required>
+              <div class="invalid-feedback">Last name is required.</div>
+            </div>
+
+            <div class="col-12 col-sm-6">
+              <label class="form-label">Username <span class="req">*</span></label>
+              <input class="form-control border" placeholder="Username" required>
+              <div class="invalid-feedback">Username is required.</div>
+            </div>
+
+            <div class="col-12 col-sm-6">
+              <label class="form-label">Password <span class="req">*</span></label>
+              <input type="password" class="form-control border" placeholder="Enter Password" required>
+              <div class="invalid-feedback">Password is required.</div>
+            </div>
+
+            <div class="col-12 col-sm-6">
+              <label class="form-label">Occupation</label>
+              <input class="form-control border" placeholder="Occupation">
+            </div>
+
+            <div class="col-12 col-sm-6">
+              <label class="form-label">Phone Number</label>
+              <input class="form-control border" placeholder="Eg +62 123 456 789" inputmode="tel" pattern="^[+0-9][0-9\s\-()]{5,}$">
+              <div class="invalid-feedback">Enter a valid phone number.</div>
+            </div>
+
+            <div class="col-12 col-sm-6">
+              <label class="form-label">Email Address <span class="req">*</span></label>
+              <input type="email" class="form-control border" placeholder="Email Address" required>
+              <div class="invalid-feedback">Enter a valid email.</div>
+            </div>
+
+            <div class="col-12 col-sm-6">
+              <label class="form-label">Date of Birth</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-calendar3"></i></span>
+                <input type="date" class="form-control border" placeholder="Day/Month/Year">
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6">
+              <label class="form-label">Marital Status</label>
+              <select class="form-select">
+                <option selected>Single</option>
+                <option>Married</option>
+                <option>Divorced</option>
+                <option>Widowed</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="col-12 col-sm-6">
+              <label class="form-label">Gender</label>
+              <select class="form-select">
+                <option selected>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="col-12">
+              <label class="form-label">Address</label>
+              <textarea class="form-control border" rows="3" placeholder="House or Office Address"></textarea>
+            </div>
+
+            <div class="col-12 col-sm-6">
+              <label class="form-label">Account Type</label>
+              <select class="form-select">
+                <option selected>Savings</option>
+                <option>Checking</option>
+                <option>Current</option>
+                <option>Business</option>
+              </select>
+            </div>
+
+            <div class="col-12 col-sm-6">
+              <label class="form-label">Account Currency</label>
+              <select class="form-select">
+                <option selected>Dollar</option>
+                <option>Euro</option>
+                <option>Pound</option>
+                <option>Yen</option>
+              </select>
+            </div>
+
+            <!-- Captcha -->
+            <div class="col-12">
+              <label class="form-label">Captcha</label>
+              <div class="d-flex align-items-center gap-3">
+                <div class="captcha-box">
+                  <!-- Inline SVG captcha -->
+                  <svg id="captchaSvg" width="160" height="48" viewBox="0 0 160 48"></svg>
+                </div>
+                <div class="captcha-actions small">
+                  Can’t read the image?<a href="#" id="refreshCaptcha" class="ms-1 primary-text2">Click here</a> to refresh
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <input id="captchaInput" class="form-control border" placeholder="Enter Captcha code" required>
+              <div class="invalid-feedback">Captcha does not match.</div>
+            </div>
+
+            <div class="col-12">
+              <button class="btn primary-btn py-2 text-white px-5 fw-semibold" type="submit">Create Account</button>
+            </div>
+
+            <div class="col-12">
+              <small>Already have an account? <a href="login.html" class="text-decoration-none primary-text2">Login</a></small>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Right: Hero image column -->
+      <div class="col-12 col-lg-6 hero-pane position-relative">
+        <!-- Paper plane -->
+        <img src="./images/auth-decoration.png" alt="" class="img-fluid col-1 mb-3 arrow">
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap & Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <script>
+    // --- Bootstrap client-side validation + captcha check ---
+    (function () {
+      const form = document.getElementById('createAccountForm');
+      const captchaSvg = document.getElementById('captchaSvg');
+      const captchaInput = document.getElementById('captchaInput');
+      const refreshBtn = document.getElementById('refreshCaptcha');
+
+      let captchaText = '';
+
+      function randInt(min, max){ return Math.floor(Math.random()*(max-min+1))+min; }
+      function randChar(){
+        const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+        return chars[randInt(0, chars.length-1)];
+      }
+      function generateCaptchaText(len=6){
+        let t=''; for(let i=0;i<len;i++) t += randChar();
+        return t;
+      }
+      function renderCaptcha(){
+        captchaText = generateCaptchaText();
+        // Clear
+        captchaSvg.innerHTML = '';
+        // Background clutter
+        for(let i=0;i<6;i++){
+          const line = document.createElementNS('http://www.w3.org/2000/svg','line');
+          line.setAttribute('x1', randInt(0,160));
+          line.setAttribute('y1', randInt(0,48));
+          line.setAttribute('x2', randInt(0,160));
+          line.setAttribute('y2', randInt(0,48));
+          line.setAttribute('stroke', ['#6a11cb','#2575fc','#ced4da'][i%3]);
+          line.setAttribute('stroke-width', randInt(1,2));
+          line.setAttribute('opacity','.6');
+          captchaSvg.appendChild(line);
+        }
+        // Text (draw per char with random transforms)
+        for(let i=0;i<captchaText.length;i++){
+          const ch = captchaText[i];
+          const text = document.createElementNS('http://www.w3.org/2000/svg','text');
+          text.textContent = ch;
+          text.setAttribute('x', 18 + i*22 + randInt(-2,2));
+          text.setAttribute('y', randInt(26,38));
+          text.setAttribute('fill', '#0d6efd');
+          text.setAttribute('font-size', '22');
+          text.setAttribute('font-weight', '700');
+          text.setAttribute('transform', `rotate(${randInt(-18,18)} ${20+i*22},30)`);
+          captchaSvg.appendChild(text);
+        }
+        // Extra dots
+        for(let i=0;i<20;i++){
+          const c = document.createElementNS('http://www.w3.org/2000/svg','circle');
+          c.setAttribute('cx', randInt(0,160));
+          c.setAttribute('cy', randInt(0,48));
+          c.setAttribute('r', randInt(1,2));
+          c.setAttribute('fill', ['#adb5bd','#dee2e6','#6c757d'][i%3]);
+          captchaSvg.appendChild(c);
+        }
+        captchaInput.value = '';
+        captchaInput.setCustomValidity('');
+      }
+
+      refreshBtn.addEventListener('click', (e)=>{ e.preventDefault(); renderCaptcha(); });
+
+      renderCaptcha();
+
+      form.addEventListener('submit', function (event) {
+        // captcha check
+        const ok = captchaInput.value.trim().toUpperCase() === captchaText.toUpperCase();
+        if(!ok){
+          captchaInput.setCustomValidity('Incorrect');
+        }else{
+          captchaInput.setCustomValidity('');
+        }
+
+        if (!form.checkValidity() || !ok) {
+          event.preventDefault();
+          event.stopPropagation();
+        } else {
+          event.preventDefault(); // demo—no backend
+          // Simple success feedback without leaving the page
+          const btn = form.querySelector('button[type="submit"]');
+          btn.disabled = true;
+          btn.innerText = 'Creating...';
+          setTimeout(()=>{
+            btn.disabled = false;
+            btn.innerText = 'Create Account';
+            renderCaptcha();
+            form.classList.remove('was-validated');
+            alert('Account created');
+          }, 800);
+        }
+
+        form.classList.add('was-validated');
+      }, false);
+    })();
+  </script>
+</body>
+</html>
