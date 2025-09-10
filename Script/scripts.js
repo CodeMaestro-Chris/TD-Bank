@@ -20,3 +20,16 @@ function formvalidation () {
 // LOGIN SECTION END
 
 
+let login = document.getElementById ("login");
+if (login) {
+    login.addEventListener ("click", function () {
+        location.href = "login.html"
+    }
+)}
+
+let online_btn = document.getElementById ("online_btn");
+if (online_btn) {
+    online_btn.addEventListener ("click", function () {
+        location.href = "login.html"
+    }
+)}

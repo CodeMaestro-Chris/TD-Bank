@@ -1041,13 +1041,6 @@ a {
     padding: 20px;
 }
 
-.section .small-business #small-business:hover {
-    background-color: transparent;
-    color: #008000;
-    border: 2px solid #008000;
-    transition: all 0.5s ease;
-}
-
 .section .small-business #small-business h1 {
     font-weight: 600;
 }
@@ -1175,7 +1168,31 @@ h3 {
     transition: all 0.5s ease;
 }
 
+.section .small-business .online-banking #online-trading #online_btn {
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #008000;
+    color: white;
+    border: transparent;
+    outline: none;
+    font-weight: 800px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.section .small-business .online-banking #online-trading #online_btn:hover {
+    background-color: transparent;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: all 0.5s ease;
+}
+
 .section .small-business .online-banking #online-trading #login i {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.section .small-business .online-banking #online-trading #online_btn i {
     margin-right: 15px;
     font-size: 20px;
 }
@@ -3925,7 +3942,7 @@ h3 {
     padding: 15px;
 }
 
-.section .card:hover .overlay {
+.section .overlay:hover {
     opacity: 1;
 }
 
