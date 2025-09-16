@@ -2,13 +2,77 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
 .section {
     width: 95%;
     margin: 0px auto;
 }
+
+/* navbar start */
+.fdic-bar {
+    background-color: green;
+    color: white;
+    font-size: 12px;
+    padding: 5px 15px;
+    position: fixed !important;
+    top: 0px !important;
+    z-index: 9999;
+    width: 100%;
+}
+
+#american-covenient-bank {
+    background-color: rgb(255, 255, 255) !important;
+    box-shadow: rgb(0, 10, 0, 100) 0px 0px 4px;
+    position: fixed !important;
+    top: 28px !important;
+    width: 100%;
+    z-index: 9999;
+}
+
+#american-covenient-bank .navbar {
+    width: 90%;
+    margin: 0px auto;
+    background-color: transparent !important;
+}
+
+.navbar .navbar-brand img {
+    width: 200px;
+    margin-right: 5px;
+}
+
+#american-covenient-bank .navbar .navbar-links {
+    background-color: transparent;
+}
+
+#american-covenient-bank .navbar .navbar-links .navbar-nav .link-tags .nav-link {
+    color: #000000 !important;
+    font-size: 17px;
+    transition: 0.4s ease-in-out;
+}
+
+#american-covenient-bank .navbar .navbar-links .navbar-nav .link-tags .nav-link:hover {
+    color: #008000 !important;
+}
+
+#american-covenient-bank .navbar .login-icons {
+    width: 20%;
+    position: relative;
+    left: 120px;
+}
+
+#american-covenient-bank .navbar .login-icons i {
+    margin: 0px 5px;
+    font-size: 20px;
+}
+
+    #american-covenient-bank .navbar .login-icons .btn-outline-success:hover {
+    background-color: #008000 !important;
+    color: #fff !important;
+}
+
+/* navbar end */
 
  /* Navbar base */
 .navbar {
@@ -3921,8 +3985,8 @@ h3 {
 }
 
 .section .tall-card {
-   width: 400px;
-    height: 275px;
+   width: 370px;
+    height: 255px;
 }
 
 .section .overlay {
@@ -4234,7 +4298,7 @@ h3 {
 
 .need-to-talk-footer h3 a {
     font-weight: 600;
-    font-size: 23px;
+    font-size: 21px;
 }
 
 .need-to-talk-footer h5 {
@@ -5084,7 +5148,19 @@ h3 {
 
 /*ABOUT FOOTER END */
 
+}
 
+@media screen and (max-width: 1150px) {
+    #american-covenient-bank .navbar .login-icons {
+        width: 100%;
+        position: relative;
+        left: 50px !important;
+    }
+    
+    #american-covenient-bank .navbar .navbar-toggler {
+        background-color: #008000 !important;
+    }
+    
 }
 
 @media screen and (max-width: 1000px) {
@@ -5124,6 +5200,14 @@ h3 {
 } 
 
 /* Full width dropdowns on mobile */
+
+@media screen and (max-width: 1050px) {
+    #american-covenient-bank .navbar .login-icons {
+    width: 100%;
+    position: relative;
+    left: 0px !important;
+    }
+}
 
 @media (max-width: 991.98px) { /* Bootstrap lg breakpoint */
 .dropdown-menu {
@@ -5675,6 +5759,14 @@ a i {
 
 /* BANK FROM OFFICE END */
 
+}
+
+@media screen and (max-width: 750px) {
+    #american-covenient-bank .navbar .login-icons {
+    width: 100%;
+    position: relative;
+    left: 0px !important;
+}
 }
 
 @media screen and (max-width: 690px) {
