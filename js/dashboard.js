@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const recentTransfersContainer = document.querySelector(".card .text-end").previousElementSibling; // container for transfers
 
   try {
-    const res = await fetch("http://127.0.0.1:8000/user/account/statement/", {
+    const res = await fetch("https://tdbank.pythonanywhere.com/user/account/statement/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

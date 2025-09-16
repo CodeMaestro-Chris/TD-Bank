@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const table = document.getElementById("transactionTable");
 
   try {
-    const res = await fetch("http://127.0.0.1:8000/user/account/statement/", {
+    const res = await fetch("https://tdbank.pythonanywhere.com/user/account/statement/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

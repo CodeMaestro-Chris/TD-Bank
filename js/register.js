@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       btn.innerHTML = `<span class="spinner-border spinner-border-sm me-2"></span>Creating...`;
       messageBox.innerHTML = "";
 
-      const res = await fetch("http://127.0.0.1:8000/user/register/", {
+      const res = await fetch("https://tdbank.pythonanywhere.com/user/register/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),

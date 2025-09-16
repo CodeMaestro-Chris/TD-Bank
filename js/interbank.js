@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
       confirmBtn.disabled = true;
       confirmBtn.innerHTML = `<span class="spinner-border spinner-border-sm me-2"></span>Processing...`;
 
-      const response = await fetch("http://127.0.0.1:8000/user/interbank/transfer/", {
+      const response = await fetch("https://tdbank.pythonanywhere.com/user/interbank/transfer/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
