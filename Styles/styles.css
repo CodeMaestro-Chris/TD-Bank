@@ -22,6 +22,11 @@
     width: 100%;
 }
 
+.fdic-bar .fdic-bar-text {
+    position: relative;
+    right: 47px;
+}
+
 #american-covenient-bank {
     background-color: rgb(255, 255, 255) !important;
     box-shadow: rgb(0, 10, 0, 100) 0px 0px 4px;
@@ -5151,6 +5156,13 @@ h3 {
 }
 
 @media screen and (max-width: 1150px) {
+/* .navbar start */
+
+    .fdic-bar .fdic-bar-text {
+        position: relative;
+        right: 5px;
+    }
+
     #american-covenient-bank .navbar .login-icons {
         width: 100%;
         position: relative;
@@ -5160,6 +5172,7 @@ h3 {
     #american-covenient-bank .navbar .navbar-toggler {
         background-color: #008000 !important;
     }
+ /* navbar end */
     
 }
 
@@ -5684,6 +5697,12 @@ a i {
 }
 
 @media screen and (max-width: 800px) {
+/* .navbar start */
+ .fdic-bar .fdic-bar-text {
+    position: relative;
+    right: 5px;
+}
+ /* navbar end */
 /* GET TO KNOW US START */
 .section .left-right-section {
     display: block;
@@ -5770,7 +5789,7 @@ a i {
 }
 
 @media screen and (max-width: 690px) {
-    
+
 /* ABOUT TD START  */
 
 .about-td .grid {
