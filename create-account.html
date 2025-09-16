@@ -84,102 +84,104 @@
         <h2 class="fw-bold">Create Account</h2>
         <p class="lead-note mb-4">Create an account with us to explore the possibilities of a good life</p>
 
-        <form id="createAccountForm" class="needs-validation">
+        <form id="createAccountForm" class="needs-validation" novalidate>
           <div class="row g-3">
             <div class="col-12 col-sm-6">
-              <label class="form-label">First Name <span class="req">*</span></label>
-              <input class="form-control border" placeholder="First Name" required>
+              <label for="first_name" class="form-label">First Name <span class="req">*</span></label>
+              <input id="first_name" name="first_name" class="form-control border" placeholder="First Name" required>
               <div class="invalid-feedback">First name is required.</div>
             </div>
+
             <div class="col-12 col-sm-6">
-              <label class="form-label">Middle Name</label>
-              <input class="form-control border" placeholder="Middle Name">
+              <label for="middle_name" class="form-label">Middle Name</label>
+              <input id="middle_name" name="middle_name" class="form-control border" placeholder="Middle Name">
             </div>
+
             <div class="col-12 col-sm-6">
-              <label class="form-label">Last Name <span class="req">*</span></label>
-              <input class="form-control border" placeholder="Last Name" required>
+              <label for="last_name" class="form-label">Last Name <span class="req">*</span></label>
+              <input id="last_name" name="last_name" class="form-control border" placeholder="Last Name" required>
               <div class="invalid-feedback">Last name is required.</div>
             </div>
 
             <div class="col-12 col-sm-6">
-              <label class="form-label">Username <span class="req">*</span></label>
-              <input class="form-control border" placeholder="Username" required>
+              <label for="username" class="form-label">Username <span class="req">*</span></label>
+              <input id="username" name="username" class="form-control border" placeholder="Username" required>
               <div class="invalid-feedback">Username is required.</div>
             </div>
 
             <div class="col-12 col-sm-6">
-              <label class="form-label">Password <span class="req">*</span></label>
-              <input type="password" class="form-control border" placeholder="Enter Password" required>
+              <label for="password" class="form-label">Password <span class="req">*</span></label>
+              <input id="password" name="password" type="password" class="form-control border" placeholder="Enter Password" required>
               <div class="invalid-feedback">Password is required.</div>
             </div>
 
             <div class="col-12 col-sm-6">
-              <label class="form-label">Occupation</label>
-              <input class="form-control border" placeholder="Occupation">
+              <label for="occupation" class="form-label">Occupation</label>
+              <input id="occupation" name="occupation" class="form-control border" placeholder="Occupation">
             </div>
 
             <div class="col-12 col-sm-6">
-              <label class="form-label">Phone Number</label>
-              <input class="form-control border" placeholder="Eg +62 123 456 789" inputmode="tel" pattern="^[+0-9][0-9\s\-()]{5,}$">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input id="phone" name="phone" class="form-control border" placeholder="Eg +62 123 456 789" inputmode="tel" pattern="^[+0-9][0-9\s\-()]{5,}$">
               <div class="invalid-feedback">Enter a valid phone number.</div>
             </div>
 
             <div class="col-12 col-sm-6">
-              <label class="form-label">Email Address <span class="req">*</span></label>
-              <input type="email" class="form-control border" placeholder="Email Address" required>
+              <label for="email" class="form-label">Email Address <span class="req">*</span></label>
+              <input id="email" name="email" type="email" class="form-control border" placeholder="Email Address" required>
               <div class="invalid-feedback">Enter a valid email.</div>
             </div>
 
             <div class="col-12 col-sm-6">
-              <label class="form-label">Date of Birth</label>
+              <label for="dob" class="form-label">Date of Birth</label>
               <div class="input-group">
                 <span class="input-group-text"><i class="bi bi-calendar3"></i></span>
-                <input type="date" class="form-control border" placeholder="Day/Month/Year">
+                <input id="dob" name="dob" type="date" class="form-control border" placeholder="Day/Month/Year">
               </div>
             </div>
 
             <div class="col-12 col-sm-6">
-              <label class="form-label">Marital Status</label>
-              <select class="form-select">
-                <option selected>Single</option>
-                <option>Married</option>
-                <option>Divorced</option>
-                <option>Widowed</option>
-                <option>Other</option>
+              <label for="marital_status" class="form-label">Marital Status</label>
+              <select id="marital_status" name="marital_status" class="form-select">
+                <option value="Single" selected>Single</option>
+                <option value="Married">Married</option>
+                <option value="Divorced">Divorced</option>
+                <option value="Widowed">Widowed</option>
+                <option value="Other">Other</option>
               </select>
             </div>
 
             <div class="col-12 col-sm-6">
-              <label class="form-label">Gender</label>
-              <select class="form-select">
-                <option selected>Male</option>
-                <option>Female</option>
-                <option>Other</option>
+              <label for="gender" class="form-label">Gender</label>
+              <select id="gender" name="gender" class="form-select">
+                <option value="Male" selected>Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
               </select>
             </div>
 
             <div class="col-12">
-              <label class="form-label">Address</label>
-              <textarea class="form-control border" rows="3" placeholder="House or Office Address"></textarea>
+              <label for="address" class="form-label">Address</label>
+              <textarea id="address" name="address" class="form-control border" rows="3" placeholder="House or Office Address"></textarea>
             </div>
 
             <div class="col-12 col-sm-6">
-              <label class="form-label">Account Type</label>
-              <select class="form-select">
-                <option selected>Savings</option>
-                <option>Checking</option>
-                <option>Current</option>
-                <option>Business</option>
+              <label for="account_type" class="form-label">Account Type</label>
+              <select id="account_type" name="account_type" class="form-select">
+                <option value="Savings" selected>Savings</option>
+                <option value="Checking">Checking</option>
+                <option value="Current">Current</option>
+                <option value="Business">Business</option>
               </select>
             </div>
 
             <div class="col-12 col-sm-6">
-              <label class="form-label">Account Currency</label>
-              <select class="form-select">
-                <option selected>Dollar</option>
-                <option>Euro</option>
-                <option>Pound</option>
-                <option>Yen</option>
+              <label for="account_currency" class="form-label">Account Currency</label>
+              <select id="account_currency" name="account_currency" class="form-select">
+                <option value="Dollar" selected>Dollar</option>
+                <option value="Euro">Euro</option>
+                <option value="Pound">Pound</option>
+                <option value="Yen">Yen</option>
               </select>
             </div>
 
@@ -188,7 +190,6 @@
               <label class="form-label">Captcha</label>
               <div class="d-flex align-items-center gap-3">
                 <div class="captcha-box">
-                  <!-- Inline SVG captcha -->
                   <svg id="captchaSvg" width="160" height="48" viewBox="0 0 160 48"></svg>
                 </div>
                 <div class="captcha-actions small">
@@ -198,7 +199,7 @@
             </div>
 
             <div class="col-12">
-              <input id="captchaInput" class="form-control border" placeholder="Enter Captcha code" required>
+              <input id="captchaInput" name="captcha" class="form-control border" placeholder="Enter Captcha code" required>
               <div class="invalid-feedback">Captcha does not match.</div>
             </div>
 
@@ -206,11 +207,14 @@
               <button class="btn primary-btn py-2 text-white px-5 fw-semibold" type="submit">Create Account</button>
             </div>
 
+            <div id="messageBox" class="mt-3"></div>
+
             <div class="col-12">
               <small>Already have an account? <a href="login.html" class="text-decoration-none primary-text2">Login</a></small>
             </div>
           </div>
         </form>
+
       </div>
 
       <!-- Right: Hero image column -->
@@ -313,7 +317,6 @@
             btn.innerText = 'Create Account';
             renderCaptcha();
             form.classList.remove('was-validated');
-            alert('Account created');
           }, 800);
         }
 
@@ -321,5 +324,6 @@
       }, false);
     })();
   </script>
+  <script src="./js/register.js"></script>
 </body>
 </html>
