@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trazemid Bank Login</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts (for clean sans-serif look) -->
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <style>
+    body {
+      font-family: "Outfit", sans-serif;
+      background-color: #ffffff;
+    }    
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #ffffff;
+  border-bottom: 2px solid #ccc;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-right span {
+  margin-left: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main{
+  background: linear-gradient(45deg, #143D60 55%, white 10%);
+  /* height: 100vh; */
+}
+@media screen and (max-width:991px) {
+  main{
+    background: white;
+  }
+}
+
+.login-box {
+  max-width: 450px;
+  height: auto;
+}
+.login-box form{
+  background: rgba(255, 255, 255, 0.93);
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+.login-box input[type="checkbox"]{
+  accent-color: #143D60 !important;
+}
+.remember-me {
+  margin: 10px 0;
+}
+
+.remember-me input {
+  margin-right: 10px;
+}
+
+.login-box button {
+  width: 100%;
+  /* padding: 12px; */
+  background-color: #143D60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: not-allowed;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.forgot-link {
+  display: block;
+  color: #143D60;
+  margin-top: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+/* .text-section {
+  max-width: 400px;
+} */
+.text-section a {
+  display: block;
+  margin: 10px 0;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 17px;
+  text-decoration: none;
+}
+.text-section .note {
+  color: lightgray;
+  font-size: 15px;
+}
+.footer-link {
+  margin: 0 20px;
+  color: lightgray;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+.securities-box {
+  font-size: 13.5px;
+  text-align: center;
+}
+.arrow{
+      rotate: 90deg;
+      position:absolute !important; 
+      right: -20px; 
+      top: -120px;
+      width: 300px;
+      pointer-events:none;
+    }
+footer {
+  border-color: #143D60 !important;
+}
+.footer .small{
+  text-align: left;
+  font-size: 14px;
+  font-weight: 300 !important;
+}
+
+   </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="./index.html">
+        <span><img src="./images/td-logo-en.png" alt="" class="w-50"></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="./personal.html">Personal</a></li>
+          <li class="nav-item"><a class="nav-link" href="./SmallBusiness.html">Small Business</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Commercial.html">Commercial</a></li>
+          <li class="nav-item"><a class="nav-link" href="Investing.html">Investing & Wealth</a></li>
+          <li class="nav-item"><a class="nav-link" href="About.html">About Us</a></li>
+        </ul>
+        <div class="login-icons d-flex align-items-center">
+          <a class="btn primary-btn rounded ms-3 px-lg-3 px-2 text-decoration-none" href="./create-account.html"><span class="me-1 bi bi-person-plus-fill"></span> Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+  <div class="container mb-0 mt-5">
+    <div class="col-lg-12 g-5 row justify-content-between align-items-center">
+      <div class="login-box pb-5">
+        <form class="p-5 border col-12 rounded shadow-sm">
+          <h4 class="primary-text3 mb-4 text-center">Welcome to Online Banking</h4>
+          <input type="text" placeholder="User name" required />
+          <input type="password" placeholder="Password" required />
+          <div class="remember-me">
+            <input type="checkbox" id="remember" class="me-1"/>
+            <label for="remember" class="primary-text">Remember me</label>
+          </div>
+          <button type="submit" class="btn py-2 primary-btn">Log in</button>
+          <a href="./create-account.html" class="forgot-link">Don't have an account?</a>
+        </form>
+      </div>
+      <div class="col-10 col-lg-3 hero-pane position-relative section-1">
+        <!-- Paper plane -->
+        <img src="./images/auth-decoration.png" alt="" class="img-fluid w-50 mb-3 arrow">
+      </div>
+      <div class="col-lg-4">
+        <img src="./images/earth-planet-doodle.gif" alt="" class="ms-5 w-100 section-1">
+      </div>
+      <!-- <div class="text-section col-lg-4 col-12 pt-3">
+        <a href="./create-account.html">Sign up for Online Banking <span class="bi bi-chevron-right"></span></a>
+        <a href="./About.html">Learn more about TD mobile banking <span class="bi bi-chevron-right"></span></a>
+        <p class="note">
+          <a href="./About.html" class="text-decoration-none fw-semibold mb-0"><span class="bi bi-lock"></span> Find out more about <span>Trazemid Bank’s online security</span></a> and our commitment to provide a safe and secure online and mobile banking experience.
+        </p>
+      </div> -->
+    </div>
+  </div>
+</main>
+  <!-- Footer -->
+  
+<footer class="bg-light pt-5">
+  <div class="container text-center">
+
+    <div class="mb-4">
+      <a href="./login.html" class="primary-text fs-5 text-decoration-none">
+        Need to talk to us directly? <span class="fw-semibold">Contact us ›</span>
+      </a>
+    </div>
+
+    <div class="mb-4">
+      <p class="fw-semibold text-muted">Follow Trazemid Bank</p>
+      <div class="d-flex justify-content-center gap-3 col-3 mx-auto">
+        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-youtube"></i></a>
+        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+    
+    <div class="row justify-content-center mb-4">
+      <div class="col-auto">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Privacy</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">California Privacy</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Online Advertising</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Terms of Use</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Security</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">About Us</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Accessibility</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Careers</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Site Map</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <hr class="w-75 mx-auto my-5">
+    <div class="col-lg-8 mx-auto text-muted mb-4">
+      <small><span class="fw-semibold">tdbankservicesupport@gmail.com<br>
+          ©2025 Trazemid Bank, N.A. All Rights Reserved.</small>
+    </div>
+    <br>
+  </div>
+</footer>
+
+</body>
+</html>
+  
