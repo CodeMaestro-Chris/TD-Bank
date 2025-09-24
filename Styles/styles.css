@@ -3,11 +3,107 @@
     margin: 0;
     box-sizing: border-box;
     /* font-family: sans-serif; */
+    font-family: "Outfit", sans-serif;
 }
 
 .section {
     /* width: 95%; */
     margin: 0px auto;
+}
+
+/* navbar start */
+.fdic-bar {
+    background-color: green;
+    color: white;
+    font-size: 12px;
+    padding: 5px 15px;
+    position: fixed !important;
+    top: 0px !important;
+    z-index: 9999;
+    width: 100%;
+}
+
+.fdic-bar .fdic-bar-text {
+    position: relative;
+    right: 47px;
+}
+
+#american-covenient-bank {
+    background-color: rgb(255, 255, 255) !important;
+    box-shadow: rgb(0, 10, 0, 100) 0px 0px 4px;
+    position: fixed !important;
+    top: 28px !important;
+    width: 100%;
+    z-index: 9999;
+}
+
+#american-covenient-bank .navbar {
+    width: 90%;
+    margin: 0px auto;
+    background-color: transparent !important;
+}
+
+.navbar .navbar-brand img {
+    width: 200px;
+    margin-right: 5px;
+}
+
+#american-covenient-bank .navbar .navbar-links {
+    background-color: transparent;
+}
+
+#american-covenient-bank .navbar .navbar-links .navbar-nav .link-tags .nav-link {
+    color: #000000 !important;
+    font-size: 17px;
+    transition: 0.4s ease-in-out;
+}
+
+#american-covenient-bank .navbar .navbar-links .navbar-nav .link-tags .nav-link:hover {
+    color: #008000 !important;
+}
+
+#american-covenient-bank .navbar .login-icons {
+    width: 20%;
+    position: relative;
+    left: 120px;
+}
+
+#american-covenient-bank .navbar .login-icons i {
+    margin: 0px 5px;
+    font-size: 20px;
+}
+
+    #american-covenient-bank .navbar .login-icons .btn-outline-success:hover {
+    background-color: #008000 !important;
+    color: #fff !important;
+}
+
+/* navbar end */
+
+ /* Navbar base */
+.navbar {
+    padding: 0;
+    
+}
+
+/* Top links (desktop strip, collapse into menu on mobile) */
+.top-links {
+    background-color: #008A00; /* TD green */
+    padding: 5px 0;
+    position: fixed !important;
+    top: 0 !important;
+    width: 100%;
+    z-index: 9999 !important; 
+}
+
+.top-links .nav-link {
+    color: white !important;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 8px;
+}
+.top-links .nav-link:hover {
+    text-decoration: underline;
 }
 
 /* Main navbar */
@@ -47,29 +143,12 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.section {
-    position: relative;
-}
-
-.selector {
-    display: flex !important;
-    width: 90% !important;
-    margin: 0px auto !important;
-    padding: 10px 0px;
-    color: #000000 !important;
-    background-color: #000000 !important;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.selector .nav-item {
-    background-color: #000000 !important;
-}
-
-.selector .nav-item .nav-link .dropdown-menu {
-    color: #000000 !important;
+.navbar .container-fluid #tdNavbar .navbar-nav .nav-item .dropdown .dropdown-toggle {
+    background-color: transparent !important; 
+    color: #fff; border: none !important; 
+    font-weight: 600 !important; 
+    font-size: 22px !important; 
+    outline: none !important;
 }
 
 .award-recognition {
@@ -87,6 +166,7 @@
 .recognized {
     margin-top: 120px !important;
 }
+
 /* GET TO KNOW US START */
 
 .section .left-right-section {
@@ -158,6 +238,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    color: #008000;
 }
 
 .about-td .grid .who-we-are .icon i {
@@ -198,6 +279,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    color: #008000;
 }
 
 .about-td .grid .our-colleaques .icon i {
@@ -273,6 +355,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    color: #008000;
 }
 
 .about-td .grid .corporate-citizenship .icon i {
@@ -313,6 +396,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    color: #008000;
 }
 
 .about-td .grid .sustainability .icon i {
@@ -353,6 +437,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    color: #008000;
 }
 
 .about-td .grid .investor-relations .icon i {
@@ -1076,7 +1161,31 @@ h3 {
     transition: all 0.5s ease;
 }
 
+.section .small-business .online-banking #online-trading #online_btn {
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #008000;
+    color: white;
+    border: transparent;
+    outline: none;
+    font-weight: 800px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.section .small-business .online-banking #online-trading #online_btn:hover {
+    background-color: transparent;
+    border: 2px solid #008000;
+    color: #008000;
+    transition: all 0.5s ease;
+}
+
 .section .small-business .online-banking #online-trading #login i {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.section .small-business .online-banking #online-trading #online_btn i {
     margin-right: 15px;
     font-size: 20px;
 }
@@ -1143,6 +1252,7 @@ h3 {
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    color: #008000;
 }
 
 .welcome-td .grid .find-cheque .icon i {
@@ -1183,6 +1293,7 @@ h3 {
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    color: #008000;
 }
 
 .welcome-td .grid .find-savings .icon i {
@@ -1223,6 +1334,7 @@ h3 {
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    color: #008000;
 }
 
 .welcome-td .grid .find-credit .icon i {
@@ -1263,6 +1375,7 @@ h3 {
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    color: #008000;
 }
 
 .welcome-td .grid .explore-mortgage .icon i {
@@ -1303,6 +1416,7 @@ h3 {
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    color: #008000;
 }
 
 .welcome-td .grid .personal-investing .icon i {
@@ -1343,6 +1457,7 @@ h3 {
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    color: #008000;
 }
 
 .welcome-td .grid .borrowing .icon i {
@@ -1383,6 +1498,7 @@ h3 {
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    color: #008000;
 }
 
 .welcome-td .grid .invest-trade .icon i {
@@ -1423,6 +1539,7 @@ h3 {
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    color: #008000;
 }
 
 .welcome-td .grid .personalized-wealth .icon i {
@@ -1463,6 +1580,7 @@ h3 {
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    color: #008000;
 }
 
 .welcome-td .grid .today-rate .icon i {
@@ -1536,6 +1654,7 @@ h3 {
     padding: 10px 20px;
     background-color: #143D60;
     border: none;
+    border: 2px solid transparent;
     outline: none;
     color: #ffffff;
     font-weight: 800px;
@@ -1547,6 +1666,8 @@ h3 {
     background-color: #ffffff;
     border: 2px solid #143D60;
     color: #143D60;
+    border: 2px solid #008000;
+    color: #008000;
 }
 
 .section .need-help #mobile-need-help {
@@ -1595,10 +1716,13 @@ h3 {
     padding: 10px 20px;
     background-color: #143D60;
     border: transparent;
+    background-color: #008000;
+    border: 2px solid transparent;
     outline: none;
     color: #ffffff;
     font-weight: 800px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .section .plan-ur-move #plan-ur-move .plan-ur-move-contents .plan-ur-move-btn #plan-ur-move-btn:hover {
@@ -1606,6 +1730,8 @@ h3 {
     border: 2px solid #143D60;
     color: #143D60;
     transition: 0.3s ease-in-out;
+    border: 2px solid #008000;
+    color: #008000;
  }
 /* PLAN YOUR MOVE END */
 
@@ -1626,10 +1752,13 @@ h3 {
     padding: 10px 20px;
     background-color: #143D60;
     border: transparent;
+    background-color: #008000;
+    border: 2px solid transparent;
     outline: none;
     color: #ffffff;
     font-weight: 800px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .td-advice .td-advice-btn #td-advice-btn:hover {
@@ -1637,6 +1766,8 @@ h3 {
     border: 2px solid #143D60;
     color: #143D60;
     transition: 0.3s ease-in-out;
+    border: 2px solid #008000;
+    color: #008000;
 }
 /* TD ADVICE END */
 
@@ -1664,18 +1795,18 @@ h3 {
     padding: 10px 20px;
     width: 100%;
     background-color: #ffffff !important;
-    border: transparent !important;
+    border: 2px solid transparent !important;
     outline: none !important;
     color: #143D60 !important;
     font-weight: 800px !important;
     border: 2px solid #143D60 !important;
     cursor: pointer !important;
+    transition: 0.3s ease-in-out !important;
 }
 
 .plan-ur-financial .grid .card .card-body .btn:hover {
     background-color: #143D60 !important;
     color: #ffffff !important;
-    transition: 0.3s ease-in-out !important;
 }
 
 /* PLAN FOR YOUR FINANCIAL END */
@@ -1721,6 +1852,8 @@ h3 {
     padding: 10px 20px;
     background-color: #143D60;
     border: transparent;
+    background-color: #008000;
+    border: 2px solid transparent;
     outline: none;
     color: #ffffff;
     font-weight: 800px;
@@ -1753,11 +1886,14 @@ h3 {
     padding: 10px 20px;
     background-color: #143D60;
     border: transparent;
+    background-color: #008000;
+    border: 2px solid transparent;
     outline: none;
     color: #ffffff;
     font-weight: 800px;
     cursor: pointer;
     width: 100%;
+    transition: 0.3s ease-in-out;
 }
 
 .section .protect-fraud .protect-fraud-contents .right-side .right-side-btn #right-side-btn:hover {
@@ -1765,6 +1901,8 @@ h3 {
     border: 2px solid #143D60;
     color: #143D60;
     transition: 0.3s ease-in-out;
+    border: 2px solid #008000;
+    color: #008000;
 }
 /* PROTECT YOURSELF AGAINST FRAUD END */
 
@@ -1787,10 +1925,12 @@ h3 {
     padding: 10px 20px;
     background-color: #143D60;
     border: none;
+    border: 2px solid transparent;
     outline: none;
     color: #ffffff;
     font-weight: 800px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .section .estate-planning #estate-planning .estate-planning-btn #estate-planning-btn:hover {
@@ -1798,6 +1938,8 @@ h3 {
     border: 2px solid #143D60;
     color: #143D60;
     transition: 0.3s ease-in-out;
+    border: 2px solid #008000;
+    color: #008000;
 }
 
 .section .mobile-estate-planning {
@@ -1815,10 +1957,12 @@ h3 {
     padding: 10px 20px;
     background-color: #143D60;
     border: none;
+    border: 2px solid transparent;
     outline: none;
     color: #ffffff;
     font-weight: 800px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .section .mobile-estate-planning #estate-planning .estate-planning-btn #estate-planning-btn:hover {
@@ -1826,6 +1970,8 @@ h3 {
     border: 2px solid #143D60;
     color: #143D60;
     transition: 0.3s ease-in-out;
+    border: 2px solid #008000;
+    color: #008000;
 }
 
 .section .estate-planning #mobile-estate-planning {
@@ -1856,11 +2002,14 @@ h3 {
     padding: 10px 20px;
     background-color: #143D60;
     border: transparent;
+    background-color: #008000;
+    border: 2px solid transparent;
     outline: none;
     color: #ffffff;
     font-weight: 800px;
     width: 30%;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .check-financial-health .check-financial-health-btn #check-financial-health-btn:hover {
@@ -1868,6 +2017,8 @@ h3 {
     border: 2px solid #143D60;
     color: #143D60;
     transition: 0.3s ease-in-out;
+    border: 2px solid #008000;
+    color: #008000;
 }
 
 /* CHECK YOUR FINANCIAL HEALTH END */
@@ -1901,11 +2052,14 @@ h3 {
     padding: 10px 20px;
     background-color: #143D60;
     border: transparent;
+    background-color: #008000;
+    border: 2px solid transparent;
     outline: none;
     color: #ffffff;
     font-weight: 800px;
     width: 50%;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .section .it-never-been #it-never-been .easy-safe-secure #easy-safe-secure-btn:hover {
@@ -1913,6 +2067,8 @@ h3 {
     border: 2px solid #143D60;
     color: #143D60;
     transition: 0.3s ease-in-out;
+    border: 2px solid #008000;
+    color: #008000;
 }
 
 .section .it-never-been #it-never-been .bank-from-anywhere h3 {
@@ -1923,11 +2079,14 @@ h3 {
     padding: 10px 20px;
     background-color: #143D60;
     border: transparent;
+    background-color: #008000;
+    border: 2px solid transparent;
     outline: none;
     color: #ffffff;
     font-weight: 800px;
     width: 50%;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .section .it-never-been #it-never-been .bank-from-anywhere #bank-from-anywhere-btn:hover {
@@ -1935,6 +2094,8 @@ h3 {
     border: 2px solid #143D60;
     color: #143D60;
     transition: 0.3s ease-in-out;
+    border: 2px solid #008000;
+    color: #008000;
 }
 
 /* IT NEVER BEEN END */
@@ -2002,6 +2163,7 @@ h3 {
 .section .update-content .get-advice .card .card-body a:hover {
     background-color: #143D60;
     color: #fff;
+    border: 2px solid transparent;
     transition: 0.4s ease-in-out;
 }
 
@@ -2027,11 +2189,20 @@ h3 {
     padding: 10px 20px;
     background-color: #143D60;
     border: none;
+    border: 2px solid transparent;
     outline: none;
     color: #ffffff;
     font-weight: 800px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
+
+.section .why-banking-td #why-banking-td .why-banking-td-btn #why-banking-td-btn:hover {
+    background-color: #ffffff;
+    border: 2px solid #008000;
+    color: #008000;
+}
+
 
 .section .why-banking-td #why-banking-td span {
     font-weight: 600;
@@ -2071,6 +2242,7 @@ h3 {
     padding: 10px 20px;
     background-color: #143D60;
     border: none;
+    border: 2px solid transparent;
     outline: none;
     color: #ffffff;
     font-weight: 800px;
@@ -2144,6 +2316,9 @@ h3 {
     border: none;
     color: #143D60;
     border: 2px solid #143D60;
+    border: 2px solid transparent;
+    color: #008000;
+    border: 2px solid #008000;
     outline: none;
     font-weight: 600;
 }
@@ -2157,6 +2332,7 @@ h3 {
     padding: 12px 20px;
     background-color: #143D60;
     border: none;
+    border: 2px solid transparent;
     outline: none;
     color: #ffffff;
     font-weight: 800px;
@@ -2260,17 +2436,19 @@ h3 {
     background-color: white;
     border: transparent;
     border: 2px solid #143D60;
+    border: 2px solid transparent;
+    border: 2px solid #008000;
     outline: none;
     color:#143D60;
     font-weight: 800px;
     cursor: pointer;
     margin-bottom: 15px;
+    transition: all 0.5s ease;
 }
 
 .section .get-up-to-dollar .get-up-to-dollar-contents .get-up-to-dollar-btn #Learn-more:hover {
     background-color: #143D60;
     color: white;
-    transition: all 0.5s ease;
 }
 
 .section .get-up-to-dollar .get-up-to-dollar-contents .get-up-to-dollar-btn a {
@@ -2314,17 +2492,19 @@ h3 {
     background-color: white;
     border: transparent;
     border: 2px solid #143D60;
+    border: 2px solid transparent;
+    border: 2px solid #008000;
     outline: none;
     color:#143D60;
     font-weight: 800px;
     cursor: pointer;
     margin-bottom: 15px;
+    transition: all 0.5s ease;
 }
 
 .section .aeroplane-visa .aeroplane-visa-contents .aeroplane-visa-btn #Learn-more:hover {
     background-color: #143D60;
     color: white;
-    transition: all 0.5s ease;
 }
 
 .section .aeroplane-visa .aeroplane-visa-contents .aeroplane-visa-btn a {
@@ -2370,17 +2550,19 @@ h3 {
     background-color: white;
     border: transparent;
     border: 2px solid #143D60;
+    border: 2px solid transparent;
+    border: 2px solid #008000;
     outline: none;
     color:#143D60;
     font-weight: 800px;
     cursor: pointer;
     margin-bottom: 15px;
+    transition: all 0.5s ease;
 }
 
 .section .start-growing .start-growing-contents .start-growing-btn #Learn-more:hover {
     background-color: #143D60;
     color: white;
-    transition: all 0.5s ease;
 }
 
 .section .start-growing .start-growing-contents .start-growing-btn a {
@@ -2481,12 +2663,21 @@ h3 {
     text-align: center;
     align-items: center;
     margin-right: 20px;
+    color: #008000;
 }
 
 .section .point-of-sale .point-of-sale-contents .icons:hover {
     background-color: #143D60;
     transition: 0.4s ease-in-out;
 
+}
+
+.section .point-of-sale .point-of-sale-contents i {
+    font-size: 30px;
+}
+
+.section .point-of-sale .point-of-sale-contents i:hover {
+    color: #fff !important;
 }
 
 .section .point-of-sale .point-of-sale-contents #online-payment  {
@@ -2542,19 +2733,19 @@ h3 {
     padding: 10px 20px;
     width: 20%;
     background-color: #ffffff;
-    border: transparent;
+    border: 2px solid transparent;
     outline: none;
     color: #143D60;
     font-weight: 800px;
     border: 2px solid #143D60;
     cursor: pointer;
     margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
 }
 
 .section .let-us-help #get_started:hover {
     background-color: #143D60;
     color: #ffffff;
-    transition: 0.3s ease-in-out;
 }
 
 /* LET US HELP FIND IDEAL SECTION END  */
@@ -2597,19 +2788,19 @@ h3 {
     padding: 10px 20px;
     width: 20%;
     background-color: #ffffff;
-    border: transparent;
+    border: 2px solid transparent;
     outline: none;
     color: #143D60;
     font-weight: 800px;
     border: 2px solid #143D60;
     cursor: pointer;
     margin-bottom: 20px;
+    transition: 0.3s ease-in-out;
 }
 
 .section .pos #see_all_pos:hover {
     background-color: #143D60;
     color: #ffffff;
-    transition: 0.3s ease-in-out;
 }
 
 /*  POINT-OF-SALE (POS) SECTION SECTION END  */
@@ -2640,19 +2831,19 @@ h3 {
     padding: 10px 20px;
     width: 60%;
     background-color: #ffffff;
-    border: transparent;
+    border: 2px solid transparent;
     outline: none;
     color: #143D60;
     font-weight: 800px;
     border: 2px solid #143D60;
     cursor: pointer;
     margin-top: 20px;
+    transition: 0.3s ease-in-out;
 }
 
 .section .accept-secure-payment #see_online-btn:hover {
     background-color: #143D60;
     color: #ffffff;
-    transition: 0.3s ease-in-out;
 }
 
 /* ACCEPT SECURE ONLINE PAYMENT SECTION END  */
@@ -2882,6 +3073,7 @@ h3 {
     justify-content: center;
     align-items: center;
     margin-right: 20px;
+    color: #008000;
 }
 
 .welcome-to-td #welcome-to-td .welcome-to-td-grid .welcome-to-td-icons #icons i {
@@ -3244,15 +3436,14 @@ h3 {
 .it-is-our-business {
     margin: 0px auto;
     text-align: center;
-    background-image: url('../Image/commercial-landing2.png');
+    background-image: url('../Image/it-is-our-bizz1.jpeg');
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .it-is-our-business #it-is-our-business {
-    background-color: #000000a4;
-    padding: 170px 0px;
-}
+    background-color: #00000070;
+    padding: 90px 0px;
+ }
 
 .it-is-our-business h3 {
     color: #ffff;
@@ -3269,7 +3460,7 @@ h3 {
 
 .section .we-re-here {
     text-align: center;
-    margin: 40px auto;
+    margin: 0px auto;
 }
 
 .section .we-re-here h3 {
@@ -3507,12 +3698,20 @@ h3 {
     text-align: center;
     align-items: center;
     margin-right: 20px;
+    color: #008000;
 }
 
 .section .we-offer-expertise .expertise-contents .expertise-icon:hover {
     background-color: #143D60;
     transition: 0.4s ease-in-out;
+}
 
+.section .we-offer-expertise .expertise-contents i {
+    font-size: 30px;
+}
+
+.section .we-offer-expertise .expertise-contents i:hover {
+    color: #fff !important;
 }
 
 .section .we-offer-expertise .expertise-contents .expertise-card  {
@@ -3564,12 +3763,20 @@ h3 {
     text-align: center;
     align-items: center;
     margin-right: 20px;
+    color: #008000;
 }
 
 .section .we-offer-expertise .expertise-contents .expertise-icon:hover {
     background-color: #143D60;
     transition: 0.4s ease-in-out;
+}
 
+.section .we-offer-expertise .expertise-contents i {
+    font-size: 30px;
+}
+
+.section .we-offer-expertise .expertise-contents i:hover {
+    color: #fff !important;
 }
 
 .section .we-offer-expertise .expertise-contents .expertise-card  {
@@ -3785,20 +3992,20 @@ h3 {
     margin: 40px 0px;
 }
 
-.section .card {
+.section .investor-card {
     position: relative;
     overflow: hidden;
     margin: 0px auto;
 }
 
-.section .card img {
+.section .investor-card img {
     width: 100%;
     display: block;
 }
 
 .section .tall-card {
-   width: 400px;
-    height: 275px;
+   width: 370px;
+    height: 255px;
 }
 
 .section .overlay {
@@ -3818,24 +4025,747 @@ h3 {
     padding: 15px;
 }
 
-.section .card:hover .overlay {
+.section .overlay:hover {
     opacity: 1;
 }
 
 /* WITH TD SECTION END */
 
+/* OUR CUSTOMER SECTION START */
+
+.section .customer-service {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.section .customer-service .customer-service-text h3 {
+    color: #008000;
+    margin: 20px 0px;
+}
+
+.section .customer-service #customer-service #protecting-customer {
+    color: #008000;
+    font-weight: 600;
+    margin: 20px 0px;
+    font-size: 23px;
+}
+
+.section .customer-service #customer-service hr {
+    background-color: #008000;
+    height: 3px;
+    width: 44%;
+    margin: 30px auto;
+}
+
+.section .customer-service #customer-service .resolving-complaint {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin: 30px auto;
+    width: 90%;
+}
+
+.section .customer-service #customer-service .resolving-complaint .resolving-btn {
+    width: 50%;
+    margin: 30px auto;
+}
+
+.section .customer-service #customer-service .resolving-complaint .resolving-btn #resolving-btn  {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #008000;
+    border: none;
+    border: 2px solid #008000;
+    outline: none;
+    font-weight: 800px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.section .customer-service #customer-service .resolving-complaint #resolving-btn:hover {
+    background-color: #008000;
+    color: #ffffff;
+    transition: 0.4s ease-in-out;
+}
+
+.section .customer-service #customer-service #carouselExampleIndicators {
+    display: none;
+    padding: 30px 0px !important;
+}
+
+.section .customer-service #customer-service #carouselExampleIndicators .carousel-indicators #slider {
+    color: #008A00 !important;
+    height: 20px;
+    width: 20px;
+    border-radius: 50% !important;
+    background-color: #008A00 !important;
+    position: relative;
+    bottom: 220px;
+}
+
+.section .customer-service #customer-service #carouselExampleIndicators .carousel-inner .carousel-item #resolving-complaint .resolving-btn #resolving-btn {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #008000;
+    border: none;
+    border: 2px solid #008000;
+    outline: none;
+    font-weight: 800px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.section .customer-service #customer-service #carouselExampleIndicators .carousel-inner .carousel-item #resolving-complaint .resolving-btn #resolving-btn:hover {
+    background-color: #008000;
+    color: #ffffff;
+    transition: 0.4s ease-in-out;
+}
+
+.section .customer-service #customer-service #carouselExampleIndicators .carousel-inner .carousel-item #resolving-complaint .resolving-btn {
+    width: 70%;
+    margin: 30px auto;
+}
+
+/* OUR CUSTOMER SECTION END */
 
 
+/* UNDERSTANDING THE CREDIT SECTION START */
+
+.understanding-credit {
+    margin: 40px auto;
+    /* width: 95%; */
+}
+
+.understanding-credit .card-group {
+    gap: 20px !important;
+    margin: 40px auto;
+}
+
+.understanding-credit .card-group .card-body {
+    border: none !important;
+    background-color: #f0f0f0 !important; 
+    text-align: center !important;
+}
+
+.understanding-credit .card-group .card-body h5 {
+    color: #008000 !important;
+    font-weight: 550 !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+}
+
+.section .slide {
+    display: none;
+}
+
+.section .slide .carousel-inner {
+    margin: 40px auto;
+    width: 95%;
+}
+
+.section .slide #slider {
+    color: #008A00 !important;
+    height: 20px;
+    width: 20px;
+    border-radius: 50% !important;
+    background-color: #008A00 !important;
+    position: relative;
+    bottom: 270px;
+}
+
+.section .slide .carousel-inner .card-group {
+    gap: 20px !important;
+    margin: 40px auto;
+}
+
+.section .slide .carousel-inner .card-group .card-body {
+    border: none !important;
+    background-color: #f0f0f0 !important; 
+    text-align: center !important;
+}
+
+.section .slide .carousel-inner .card-group .card-body h5 {
+    color: #008000 !important;
+    font-weight: 550 !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+} 
+
+.section .information-left-right-section {
+    display: flex;
+    width: 60%;
+    margin: 40px auto;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+.section .information-left-right-section .information-left-section {
+    width: 70%;
+}
+
+.section .information-left-right-section .information-left-section img {
+    width: 100%;
+}
+
+.section .information-left-right-section .information-right-section {
+    width: 100%;
+}
+
+.section .information-left-right-section .information-right-section h5 {
+  color: #008A00;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.section .information-left-right-section .information-right-section h5 i {
+    font-weight: 600;
+}
 
 
+.section .fightingFruad-left-right-section {
+    display: flex;
+    width: 60%;
+    margin: 30px auto;
+    gap: 40px;
+}
 
+.section .fightingFruad-left-right-section .fightingFruad-left-section {
+    width: 70%;
+}
 
+.section .fightingFruad-left-right-section .fightingFruad-left-section img {
+    width: 100%;
+}
 
+.section .fightingFruad-left-right-section .fightingFruad-right-section {
+    width: 100%;
+}
 
+.section .fightingFruad-left-right-section .fightingFruad-right-section h5 {
+  color: #008A00;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
 
+.section .fightingFruad-left-right-section .fightingFruad-right-section h5 i {
+    font-weight: 600;
+}
 
+/* UNDERSTANDING THE CREDIT SECTION END */
 
+ /* LEARN MORE ABOUT HOW WE CARE SCETION START */
 
+.section .learn-how-we-care {
+    border-top: 10px solid #d6d1d1;
+    padding-top: 20px;
+}
+
+.section .learn-how-we-care .learn-more-about {
+    margin: 20px auto;
+    width: 60%;
+    text-align: center;
+}
+
+.section .learn-how-we-care .learn-more-about h3 {
+    margin: 10px 0px;
+    color: #00281A;
+    font-weight: 600;
+}
+
+.section .learn-how-we-care .learn-more-about h3 i {
+    font-weight: 600;
+}
+
+.section .learn-how-we-care .learn-more-about #learn-more-about {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.section .learn-more-about #learn-more-about a {
+    font-weight: 600;
+    color: #008000;
+    text-decoration: none;
+}
+
+.section .learn-more-about #learn-more-about a i {
+    font-weight: 600;
+}
+
+/* COMMERCIAL FOOTER START */
+
+.need-to-talk-footer {
+    text-align: center;
+    border-top: 8px solid #00281A;
+    background-color: #fbfbfb;
+}
+
+.need-to-talk-footer #need-to-talk-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 70%;
+}
+
+.need-to-talk-footer h3 {
+    color: #000000;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.need-to-talk-footer h3 a {
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.need-to-talk-footer h5 {
+    margin-bottom: 20px;
+}
+
+.need-to-talk-footer #need-to-talk-footer .footer-image {
+    width: 70%;
+}
+
+.need-to-talk-footer #need-to-talk-footer .footer-image img {
+    width: 100%;
+}
+
+.need-to-talk-footer #need-to-talk-footer .need-to-talk-text {
+    width: 100%;
+}
+
+.need-to-talk-footer #need-to-talk-footer .need-to-talk-text .footer-icon {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+.need-to-talk-footer #need-to-talk-footer .need-to-talk-text .footer-icon #icons {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #043804;
+    background-color: transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #043804;
+}
+
+.need-to-talk-footer #need-to-talk-footer .need-to-talk-text .footer-icon #icons:hover {
+    background-color: #043804 !important;
+}
+
+.need-to-talk-footer #need-to-talk-footer .need-to-talk-text .footer-icon #icons i {
+    font-size: 20px;
+    color: #000000;
+}
+
+.need-to-talk-footer #need-to-talk-footer .need-to-talk-text .footer-icon #icons i:hover {
+    color: #fff;
+}
+
+.need-to-talk-footer .footer-text-link {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0px auto;
+    padding-bottom: 30px;
+}
+
+.need-to-talk-footer .footer-text-link a {
+    color: #000000 !important;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.need-to-talk-footer .mobile-footer-image {
+    display: none;
+}
+
+.need-to-talk-footer .up-arrow-btn p {
+    border-top: 2px solid #f0eded;
+    width: 85%;
+    margin: 0px auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+} 
+
+.up-arrow-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.up-arrow-btn #up-arrow-btn {
+    width: 80px;
+    height: 50px;
+    border: none;
+    border: 2px solid transparent;
+    background-color: transparent;
+    border: 2px solid #043804;
+    color: #043804;
+    border-radius: 25px;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0) 0px 5px 0px;
+}
+
+.up-arrow-btn #up-arrow-btn i {
+    font-size: 28px;
+    font-weight: 600;
+    position: relative;
+    top: 5px;
+}
+
+/*COMMERCIAL FOOTER END */
+
+/* ABOUT TD FOOTER SECTION START */
+
+.back-to-top {
+    border-top: 8px solid #008000;
+    background-color: #f0eded;  
+}
+
+.back-to-top #back-to-top {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.back-to-top #back-to-top #find-us a {
+    color: #000000 !important;
+    font-weight: 600;
+}
+
+.back-to-top #back-to-top #find-us a i {
+    color: #008000 !important;
+}
+
+.back-to-top #back-to-top .back-to-top-tag {
+    padding: 10px 15px;
+    border: none;
+    border: 2px solid transparent;
+    background-color: transparent;
+    border: 2px solid #043804;
+    color: #043804;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0) 0px 5px 0px;
+}
+
+.back-to-top #back-to-top .back-to-top-tag i {
+    font-size: 28px;
+    font-weight: 600;
+    position: relative;
+    top: 5px;
+}
+
+.back-to-top .about-contact-us {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 90%;
+    margin: 20px auto;
+    border-top: 1px solid #bebcbc;
+}
+
+.back-to-top .about-contact-us .give-feedback {
+    border-right: 1px solid #bebcbc;
+}
+
+.back-to-top .about-contact-us #about-contact-us {
+    line-height: 30px;
+    padding: 20px;
+}
+
+.back-to-top .about-contact-us #about-contact-us a {
+    color: #000000 !important;
+    font-size: 14px;
+}
+
+.back-to-top .about-contact-us #about-contact-us a i {
+    color: #008A00;
+    font-size: 20px;
+    margin-right: 20px;
+    padding: 5px 0px;
+}
+
+.back-to-top .about-contact-us #about-contact-us a p {
+    color: #000000;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.back-to-top .about-contact-us #about-contact-us h6 {
+    font-weight: 600;
+}
+
+.back-to-top .privacy-security {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.back-to-top .privacy-security #privacy-security {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-to-top .privacy-security #privacy-security .privacy-security-contents .privacy-security-tags {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+} 
+
+.back-to-top .privacy-security #privacy-security .privacy-security-contents .privacy-security-tags a {
+    color: #008000 !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.back-to-top .privacy-security #privacy-security .privacy-security-contents h6 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.back-to-top .privacy-security #privacy-security .privacy-security-contents p {
+    font-size: 14px;
+}
+
+.back-to-top .privacy-security #privacy-security .privacy-security-image {
+    width: 15%;
+}
+
+.back-to-top .privacy-security #privacy-security .privacy-security-image img {
+    width: 100%;
+}
+
+.online-icons {
+    display: flex;
+    width: 90%;
+    gap: 30px;
+    margin: 0px auto;
+    padding-bottom: 40px;
+}
+
+.online-icons i {
+    font-size: 25px;
+    color: #008A00;
+}
+
+.mobile-about-contact-us {
+    display: none;
+}
+
+.mobile-about-contact-us {
+    display: block;
+}
+
+.mobile-about-contact-us #mobile-back-to-top {
+    display: none;
+}
+
+.back-to-top .mobile-privacy-security #privacy-security {
+    display: none;
+}
+
+.mobile-about-contact-us #dropdown {
+    display: none;
+}
+
+.back-to-top .mobile-about-contact-us .contact-footer {
+    display: none;
+}
+
+.investing-footer-logo {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px auto;
+    align-items: center;
+}
+
+.investing-footer-logo .investing-footer-contents {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.investing-footer-logo .investing-footer-tag {
+    width: 100%;
+}
+
+.investing-footer-logo .investing-footer-tag a {
+    color: #816d3f !important;
+    font-size: 22px;
+}
+
+.investing-footer-logo .investing-footer-img-logo {
+    width: 100%;
+}
+
+.investing-footer-logo .investing-footer-img-logo img {
+    width: 50%;
+}
+
+.investing-footer-logo .investing-footer-text {
+    width: 100%;
+    color: #008A00;
+}
+
+.investing-footer-logo .investing-footer-text h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.investing-footer-logo .investing-footer-text h5 i {
+    font-weight: 600;
+}
+/* ABOUT TD FOOTER SECTION END */
+
+/* COERCIVE LINK SECTION START */
+
+.accordion-title:before {
+    font-family: FontAwesome;
+    content:"\f068";
+}
+
+.accordion-title.collapsed:before {
+    content:"\f067";
+    border: 2px solid #008000 !important;
+    text-align: center;
+    place-content: center !important;
+    padding: 3px 5px;
+    align-items: center;
+    border-radius: 50% !important;
+}
+
+.container h3 {
+    text-align: center;
+    color: #00281A;
+    margin: 30px 0px;
+    font-weight: 600;
+}
+
+.container #accordion {
+    gap: 10px !important;
+}
+
+.section .container .prohibited-conduct-border {
+    width: 60%;
+    margin: 0px auto;
+    border-bottom: 3px solid #008A00;
+}
+
+.container #accordion #prohibited-conduct-card {
+    margin-top: 30px !important;
+    background-color: transparent !important;
+    background-color: transparent !important;
+    border: none; 
+    border-bottom: 1px solid #d6d1d1;
+    border-radius: none !important;
+}
+
+.container #accordion #prohibited-conduct-card #card-toggle {
+    background-color: transparent !important;
+}
+
+.container #accordion #prohibited-conduct-card #card-body p span {
+    font-weight: 600;
+}
+
+.container #accordion #prohibited-conduct-card #card-body ul {
+    width: 97%;
+    margin: 0px auto;
+}
+
+.container #accordion #prohibited-conduct-card #card-body ul li::marker{
+    color: #008000;
+    font-size: 22px;
+}
+
+.container #accordion #prohibited-conduct-card #card-body ul li h6 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.container #accordion #prohibited-conduct-card #card-body table {
+    border: 1px solid #d6d1d1;
+    padding: 5px;
+    text-align: center;
+}
+
+.container #accordion #prohibited-conduct-card #card-body table tr {
+    border: 1px solid #d6d1d1;
+    padding: 10px 25px;
+}
+
+.container #accordion #prohibited-conduct-card #card-body table th {
+    border: 1px solid #d6d1d1;
+    padding: 10px 25px;
+}
+
+.container #accordion #prohibited-conduct-card #card-body table td {
+    border: 1px solid #d6d1d1;
+    padding: 10px 25px;
+}
+
+/* COERCIVE LINK SECTION END */
+
+.codes-of-conduct {
+    width: 95%;
+    margin: 30px auto;
+}
+
+.codes-of-conduct #codes-of-conduct-border {
+    width: 50%;
+    margin: 30px auto;
+    border-bottom: 3px solid #008000;
+}
+
+.codes-of-conduct h3 {
+    padding-top: 90px;
+    color: #008000;
+    text-align: center;
+}
+
+.codes-of-conduct .code-of-conducts-text p {
+    text-align: center;
+}
+
+.codes-of-conduct .code-of-conducts-text p span {
+    color: #008000;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.codes-of-conduct .code-of-conducts-text {
+    width: 95%;
+    margin: 0px auto;
+}
+
+.codes-of-conduct ul {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.codes-of-conduct ul li span {
+    color: #008A00;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.codes-of-conduct ul li {
+    width: 85%;
+    margin: 10px auto;
+}
+
+.codes-of-conduct ul li::marker {
+    color: #008000;
+    font-size: 20px;
+}
 
 
 
@@ -3855,71 +4785,6 @@ h3 {
 
 
 @media screen and (max-width: 1200px) {
-    
-/* INVESTING AT TD SECTION START */
-
-.section {
-    margin-top: 80px;
-}
-
-.section #invest {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-/* INVESTING AT TD SECTION END */
-
-/* WE HAVE MORE TO OFFER START*/
-
-.section .we-have-more #we-have-more {
-    display: block;
-    width: 95%;
-    
-}
-.section .we-have-more .we-have-more-btn #we-have-more-btn {
-    width: 60%;
-}
-
-/* WE HAVE MORE TO OFFER END */
-
-
-/* WITH TD SECTION START */
-
-.section .with-td-investor #with-td-investor {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.section .card {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-}
-
-.section .card img {
-    width: 100%;
-    display: block;
-}
-
-
-/* WITH TD SECTION END */
-
-}
-
-@media screen and (max-width: 1000px) {
-
-/* PERSONAL SECTION START */
-
-.section .small-business {
-    grid-template-columns: repeat(3,1fr);
-}
-
-
-.section .small-business .online-banking {
-    display: none;
-}
-
-/* PERSONAL SECTION END  */
-
 
 /* GET UP TO DOLLAR SECTION START */
 
@@ -3928,17 +4793,21 @@ h3 {
 }
 
 .section .get-up-to-dollar .mobile-image {
-    display: block;
+    display: none;
     text-align: center;
     width: 100%;
 }
 
 .section .get-up-to-dollar #get-up-to-dollar {
-  display: none;
+  display: block;
 }
 
 .section .get-up-to-dollar .get-up-to-dollar-image {
-    display: none;
+    display: block;
+}
+
+.section .get-up-to-dollar .get-up-to-dollar-image img {
+    width: 100%;
 }
 
 .section .get-up-to-dollar .get-up-to-dollar-contents {
@@ -3985,6 +4854,366 @@ h3 {
 }
 /* GET UP TO DOLLAR SECTION END */
 
+/* BANK FROM OFFICE START */
+
+.section .bank-from-office h3 {
+    color: #000000;
+    margin: 15px 0px;
+}
+
+.section .bank-from-office .bank-from-office-contents {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* BANK FROM OFFICE END */
+
+    
+/* INVESTING AT TD SECTION START */
+
+.section {
+    margin-top: 80px;
+}
+
+.section #invest {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* INVESTING AT TD SECTION END */
+
+/* WE HAVE MORE TO OFFER START*/
+
+.section .we-have-more #we-have-more {
+    display: block;
+    width: 95%;
+    
+}
+.section .we-have-more .we-have-more-btn #we-have-more-btn {
+    width: 60%;
+}
+
+/* WE HAVE MORE TO OFFER END */
+
+
+/* WITH TD SECTION START */
+
+.section .with-td-investor #with-td-investor {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.section .investor-card {
+    position: relative;
+    width: 100%;
+    /* height: 200px; */
+    /* overflow: hidden; */
+}
+
+.section .investor-card img {
+    width: 100%;
+    display: block;
+}
+
+/* WITH TD SECTION END */
+
+/* WE'RE READY TO HELP YOU SECTION START */
+
+.section .we-are-ready #we-are-ready {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* WE'RE READY TO HELP YOU SECTION END */
+
+/* OUR LEADERSHIP START */
+
+.our-leadership .our-leadership-contents .second-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* OUR LEADERSHIP END */
+
+/* COMMERCIAL SECTION IT'S OUR BUSINESS START */
+
+.it-is-our-business {
+    margin-top: 45px !important;
+}
+/* COMMERCIAL SECTION IT'S OUR BUSINESS END */
+
+
+/* COMMERCIAL FOOTER START */
+
+.need-to-talk-footer {
+    text-align: center;
+}
+
+.need-to-talk-footer #need-to-talk-footer {
+    grid-template-columns: 1fr;
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.need-to-talk-footer h5 {
+    margin-bottom: 35px;
+}
+
+.need-to-talk-footer #need-to-talk-footer .footer-image {
+    display: none;
+}
+
+.need-to-talk-footer #need-to-talk-footer .need-to-talk-text {
+    width: 100%;
+}
+
+.need-to-talk-footer #need-to-talk-footer .need-to-talk-text .footer-icon {
+    gap: 10px;
+    width: 75%;
+    margin: 20px auto;
+}
+
+.need-to-talk-footer .footer-text-link {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 80%;
+    padding-bottom: 5px;
+    text-align: center;
+    margin: 10px auto;
+    padding-top: 20px;
+}
+
+.need-to-talk-footer .mobile-footer-image {
+    width: 50%;
+    margin: 0px auto;
+    display: block;
+}
+
+.need-to-talk-footer .mobile-footer-image img {
+    width: 100%;
+    text-align: center;
+}
+
+.need-to-talk-footer .up-arrow-btn p {
+    font-size: 14px;
+    width: 70%;
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+} 
+
+/*COMMERCIAL FOOTER END */
+
+/*ABOUT FOOTER START */
+
+.back-to-top #back-to-top {
+    display: none;
+}
+
+.mobile-about-contact-us {
+    display: block;
+}
+
+.mobile-about-contact-us #mobile-back-to-top {
+    display: block;
+}
+
+.back-to-top .about-contact-us {
+    display: none;
+}
+
+.back-to-top .about-contact-us .give-feedback {
+    display: block;
+}
+
+.back-to-top .privacy-security {
+    display: none;
+}
+
+.mobile-about-contact-us #mobile-back-to-top a {
+    color: #000000 !important;
+    font-size: 14px;
+}
+
+.mobile-about-contact-us #mobile-back-to-top i {
+    color: #008A00 !important;
+    font-size: 20px;
+    margin-right: 20px;
+    padding: 5px 0px;
+}
+
+.mobile-about-contact-us #mobile-back-to-top .back-to-top-tag {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0px;
+    border-bottom: 2px solid #d6d1d1 !important;
+}
+
+.mobile-about-contact-us #mobile-back-to-top .back-to-top-tag a {
+    color: #008A00 !important;
+    font-weight: 600;
+}
+
+.back-to-top .mobile-about-contact-us .give-feedback a p {
+    font-weight: 600;
+}
+
+.mobile-about-contact-us #mobile-back-to-top #find-us {
+    display: flex;
+    padding: 15px 0px;
+    border-bottom: 2px solid #d6d1d1 !important;
+}
+
+.mobile-about-contact-us #mobile-back-to-top #find-us a {
+    width: 90%;
+    text-align: center;
+}
+
+.back-to-top .mobile-about-contact-us #about-contact-us {
+    line-height: 30px;
+    padding: 20px;
+}
+
+.back-to-top .mobile-about-contact-us #about-contact-us a {
+    color: #000000 !important;
+    font-size: 17px;
+}
+
+.back-to-top .mobile-about-contact-us #about-contact-us a i {
+    color: #008A00 !important;
+    font-size: 22px;
+    margin-right: 20px;
+    padding: 5px 0px;
+}
+
+.back-to-top .mobile-about-contact-us #dropdown .drop-down-toggle {
+    background-color: transparent !important;
+    color: #000000;
+    border: none;
+    outline: none !important;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+}
+
+.back-to-top .mobile-about-contact-us #dropdown .dropdown-menu {
+    background-color: #f0eded !important;
+}
+
+.back-to-top .mobile-about-contact-us #dropdown .dropdown-menu .dropdown-item {
+    color: #000000 !important;
+    font-size: 14px !important;
+    font-weight: 500;
+}
+
+.back-to-top .mobile-privacy-security #privacy-security {
+    display: block;
+}
+
+.back-to-top .mobile-privacy-security #privacy-security .privacy-security-contents .privacy-security-tags {
+    display: block;
+    border-top: 2px solid #d6d1d1;
+    padding-top: 20px;
+    line-height: 45px;
+    font-weight: 600;
+    margin: 15px 0px;
+}
+
+.back-to-top .mobile-privacy-security #privacy-security .privacy-security-contents h6 {
+    border-top: 2px solid #d6d1d1;
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.back-to-top .mobile-privacy-security #privacy-security .privacy-security-contents p {
+    width: 100%;
+    text-align: center;
+}
+
+.back-to-top .mobile-privacy-security #privacy-security .privacy-security-image {
+    width: 40%;
+    margin: 0px auto;
+}
+
+.back-to-top .mobile-privacy-security #privacy-security .privacy-security-image img {
+    width: 100%;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.mobile-about-contact-us #dropdown {
+    display: block;
+    padding-top: 20px;
+} 
+
+.online-icons {
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.online-icons a {
+    width: 40%;
+    text-align: center;
+}
+
+.online-icons a i {
+    color: #008000 !important;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*ABOUT FOOTER END */
+
+}
+
+@media screen and (max-width: 1150px) {
+/* .navbar start */
+
+    .fdic-bar .fdic-bar-text {
+        position: relative;
+        right: 5px;
+    }
+
+    #american-covenient-bank .navbar .login-icons {
+        width: 100%;
+        position: relative;
+        left: 50px !important;
+    }
+    
+    #american-covenient-bank .navbar .navbar-toggler {
+        background-color: #008000 !important;
+    }
+ /* navbar end */
+    
+}
+
+@media screen and (max-width: 1000px) {
+
+/* PERSONAL SECTION START */
+
+.section .small-business {
+    grid-template-columns: repeat(3,1fr);
+}
+
+
+.section .small-business .online-banking {
+    display: none;
+}
+
+/* PERSONAL SECTION END  */
+
+
+/* WE'RE READY TO HELP YOU SECTION START */
+
+.section .we-are-ready #we-are-ready {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* WE'RE READY TO HELP YOU SECTION END */
+
 /* POINT OF SALES SECTION START  */
 
 .section .point-of-sale .point-of-sale-contents {
@@ -3992,9 +5221,20 @@ h3 {
 }
 
 /* POINT OF SALES SECTION END */
+
+
+
 } 
 
 /* Full width dropdowns on mobile */
+
+@media screen and (max-width: 1050px) {
+    #american-covenient-bank .navbar .login-icons {
+    width: 100%;
+    position: relative;
+    left: 0px !important;
+    }
+}
 
 @media (max-width: 991.98px) { /* Bootstrap lg breakpoint */
 .dropdown-menu {
@@ -4023,6 +5263,43 @@ a i {
 }
 
 
+#mobileNavbar #tdNavbar {
+    background-color: #fff !important; /* white background */
+    /* padding: 10px 0;     */
+}
+
+#mobileNavbar #tdNavbar .navbar-nav .top-links .nav-link {
+    color: #d4c5a0 !important;
+    background-color: #f0f0f0 !important;
+}  
+
+#mobileNavbar #tdNavbar .navbar-nav .top-links .nav-link:hover {
+    color: #ffffff !important;
+    transition: 0.4s ease-in-out;
+}
+
+#mobileNavbar #tdNavbar .nav-item {
+    color: #000000 !important;
+}
+
+#mobileNavbar .container-fluid #tdNavbar .nav-link #search {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #000000;
+    font-size: 16px;
+    border: 2px solid #000000;
+    padding: 0px 10px !important;
+    width: 100%;
+    height: 40px !important;
+    margin-top: 20px !important;
+}
+
+#tdNavbar .nav-link #search i {
+    display: none !important;
+}
+
+}
 
 @media screen and (max-width: 900px) {
 /* ABOUT TD START  */
@@ -4060,6 +5337,32 @@ a i {
 
 
 /* OUR STORY END */
+
+/* WE'RE READY TO HELP YOU SECTION START */
+
+.section .we-are-ready #we-are-ready {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* WE'RE READY TO HELP YOU SECTION END */
+
+
+.uplifting #uplifting .card-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* BANKING ADVICE SECTION START*/
+
+.banking-advice {
+    text-align: center;
+}
+
+.banking-advice .card-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/* BANKING ADVICE SECTION END */
 
 /* TD EVENTS START */
 .td-event .td-event-contents {
@@ -4101,14 +5404,6 @@ a i {
 }
 
 /* INNOVATION ACCELERATED END  */
-
-/* OUR LEADERSHIP START */
-
-.our-leadership .our-leadership-contents .second-grid {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-/* OUR LEADERSHIP END */
 
 
 /* PERSONAL SECTION START */
@@ -4170,14 +5465,14 @@ a i {
     grid-template-columns: 1fr;
 }
 
-.section .card {
+.section .investor-card {
     position: relative;
     width: 100%;
-    height: 200px;
-    overflow: hidden;
+    /* height: 200px; */
+    /* overflow: hidden; */
 }
 
-.section .card img {
+.section .investor-card img {
     width: 100%;
     display: block;
 }
@@ -4205,7 +5500,73 @@ a i {
 
 
 @media screen and (max-width: 850px) {
-    /* PERSONAL SECTION START */
+
+    
+/* GET UP TO DOLLAR SECTION START */
+
+.section .get-up-to-dollar #get-up-to-dollar-div {
+    grid-template-columns: 1fr;
+}
+
+.section .get-up-to-dollar .mobile-image {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.section .get-up-to-dollar #get-up-to-dollar {
+  display: block;
+}
+
+.section .get-up-to-dollar .get-up-to-dollar-image {
+    display: none;
+}
+
+.section .get-up-to-dollar .get-up-to-dollar-contents {
+    width: 100%;
+    margin: 0px auto;
+}
+
+.section .get-up-to-dollar-contents #para {
+    display: none;
+}
+
+.section .get-up-to-dollar .get-up-to-dollar-contents #mobile-para {
+    display: block;
+}
+
+.section .meet-ur-small-biss {
+    display: flex;
+}
+
+.section .meet-ur-small-biss #meet-ur-small-biss {
+    border-left: none;
+    padding-left: 0px;
+}
+
+.section .meet-ur-small-biss #touch-bistro {
+    border-left: none;
+    padding-left: 0px;
+}
+
+.section .meet-ur-small-biss #td-merchant {
+    border-left: none;
+    padding-left: 0px;
+}
+
+.section .meet-ur-small-biss h3 {
+    color: #008000;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.section .meet-ur-small-biss a {
+    text-decoration: none;
+    color: #000000!important;
+}
+/* GET UP TO DOLLAR SECTION END */
+
+/* PERSONAL SECTION START */
 
 .section .small-business {
     grid-template-columns: 1fr;
@@ -4248,14 +5609,12 @@ a i {
     display: block;
 }
 
-
 .section .small-business .small-business-contents .small-business-btn #Learn-more {
     width: 100%;
     margin: 15px auto;
 }
 
 /* PERSONAL SECTION END  */
-
 
 /* LOGIN SECTION START */
 
@@ -4326,11 +5685,16 @@ a i {
 }
 
 @media screen and (max-width: 800px) {
+/* .navbar start */
+ .fdic-bar .fdic-bar-text {
+    position: relative;
+    right: 5px;
+}
+ /* navbar end */
 /* GET TO KNOW US START */
 .section .left-right-section {
     display: block;
 }
-
 
 .section .left-right-section .left-section {
     width: 95%;
@@ -4342,6 +5706,17 @@ a i {
     margin: 20px auto;
     text-align: center;
 }
+
+/* GET TO KNOW US END */
+
+
+/* BANKING ADVICE SECTION START*/
+
+.banking-advice {
+    text-align: center;
+}
+
+/* BANKING ADVICE SECTION END */
 
 /* UPDATES FROM US START */
 
@@ -4366,13 +5741,43 @@ a i {
 
 /* UPDATES FROM US END */
 
-/* GET TO KNOW US END */
+/* UNDERSTANDING THE CREDIT SECTION START */
 
+.understanding-credit {
+    display: none;
+}
+
+.section .slide {
+    display: block;
+} 
+
+/* UNDERSTANDING THE CREDIT SECTION END */
 
 }
 
+@media screen and (max-width: 755px) {
+
+
+/* BANK FROM OFFICE START */
+
+.section .bank-from-office .bank-from-office-contents {
+    grid-template-columns: 1fr;
+}
+
+/* BANK FROM OFFICE END */
+
+}
+
+@media screen and (max-width: 750px) {
+    #american-covenient-bank .navbar .login-icons {
+    width: 100%;
+    position: relative;
+    left: 0px !important;
+}
+}
+
 @media screen and (max-width: 690px) {
-    
+
 /* ABOUT TD START  */
 
 .about-td .grid {
@@ -4521,6 +5926,7 @@ a i {
     padding: 10px 20px;
     background-color: #143D60;
     border: none;
+    border: 2px solid transparent;
     outline: none;
     color: #ffffff;
     font-weight: 800px;
@@ -4792,8 +6198,15 @@ a i {
 
  
 .welcome-to-td #welcome-to-td .welcome-to-td-grid {
-    display: block;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 20px; */
+}
+
+.welcome-to-td #welcome-to-td .welcome-to-td-grid .welcome-to-td-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* WELCOME TO TD SMALL BUSINESS SECTION END */
@@ -4804,10 +6217,12 @@ a i {
     text-align: center;
 }
 
+.banking-advice .card-group {
+    display: block;
+}
 /* BANKING ADVICE SECTION END */
 
 /*  GO TO ADVICE HUB SECTION START  */
-
 
 .section .go-to-advice-hub #go-to-advice-hub-btn {
     width: 80%;
@@ -4831,6 +6246,10 @@ a i {
 } 
 
 /* LOOKING FOR GOVERNMENT? SECTION END */
+
+.uplifting #uplifting .card-group {
+    display: block;
+}
 
 
 /* WE'RE READY TO HELP YOU SECTION START */
@@ -4961,14 +6380,14 @@ a i {
     grid-template-columns: 1fr;
 }
 
-.section .card {
+.section .investor-card {
     position: relative;
     width: 100%;
     height: 200px;
     overflow: hidden;
 }
 
-.section .card img {
+.section .investor-card img {
     width: 100%;
     display: block;
 }
@@ -4976,8 +6395,169 @@ a i {
 
 /* WITH TD SECTION END */
 
+
+/* OUR CUSTOMER SECTION START */
+
+.section .customer-service #customer-service .resolving-complaint {
+    display: none;
 }
 
+.section .customer-service #customer-service #carouselExampleIndicators {
+    display: block;
+}
+
+.section .customer-service #customer-service hr {
+    width: 60%;
+}
+
+/* OUR CUSTOMER SECTION END */
+
+
+.section .information-left-right-section {
+    display: block;
+    width: 95%;
+}
+
+.section .information-left-right-section .information-left-section {
+    width: 95%;
+}
+
+.section .information-left-right-section .information-right-section h5 {
+    margin-top: 20px;
+}
+
+.section .fightingFruad-left-right-section {
+    display: block;
+    width: 95%;
+}
+
+.section .fightingFruad-left-right-section .fightingFruad-left-section {
+    width: 95%;
+}
+
+.section .fightingFruad-left-right-section .fightingFruad-right-section h5 {
+    margin-top: 20px;
+}
+
+/* UNDERSTANDING THE CREDIT SECTION END */
+
+ /* LEARN MORE ABOUT HOW WE CARE SCETION START */
+
+.section .learn-how-we-care .learn-more-about {
+    margin: 40px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.section .learn-how-we-care .learn-more-about #learn-more-about {
+   display: grid;
+    grid-template-columns: 1fr;
+}
+
+.section .learn-how-we-care .learn-more-about #learn-more-about a {
+    margin: 10px 0px;
+}
+
+/* COMMERCIAL FOOTER START */
+
+.need-to-talk-footer {
+    text-align: center;
+}
+
+.need-to-talk-footer #need-to-talk-footer {
+    grid-template-columns: 1fr;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.need-to-talk-footer #need-to-talk-footer .footer-image {
+    display: none;
+}
+
+.need-to-talk-footer #need-to-talk-footer .need-to-talk-text {
+    width: 100%;
+}
+
+.need-to-talk-footer #need-to-talk-footer .need-to-talk-text .footer-icon {
+    gap: 10px;
+    width: 75%;
+    margin: 20px auto;
+}
+
+.need-to-talk-footer .footer-text-link {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 100%;
+    padding-bottom: 5px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.need-to-talk-footer .mobile-footer-image {
+    width: 50%;
+    margin: 0px auto;
+    display: block;
+}
+
+.need-to-talk-footer .mobile-footer-image img {
+    width: 100%;
+    text-align: center;
+}
+
+.need-to-talk-footer .up-arrow-btn p {
+    font-size: 14px;
+    width: 70%;
+    text-align: center;
+    margin: 0px auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+} 
+
+/*COMMERCIAL FOOTER END */
+
+/* INVESTING FOOTER START */
+
+
+.investing-footer-logo {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.investing-footer-logo .investing-footer-contents {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.investing-footer-logo .investing-footer-img-logo img{
+    width: 20%;
+    margin: 10px 0px;
+}
+/* INVESTING FOOTER END */
+
+}
+
+@media screen and (max-width: 500px) {
+/* FOOTER SECTION START */
+
+ .online-icons {
+    display: flex;
+    width: 80%;
+    gap: 30px;
+    margin: 0px auto;
+    padding-bottom: 40px;
+}
+
+ /* FOOTER SECTION END */
+
+}
 @media screen and (max-width: 425px) {
  
 /*  WE OFFER EXPERTISE IN SPECIFIC BUSINESS START */
@@ -5152,6 +6732,15 @@ a i {
 }
 /* WITH TD SECTION END */
 
+
+/*ABOUT FOOTER START */
+
+.online-icons {
+    width: 90%;
+    text-align: center;
+    margin-top: 20px;
 }
+
+/*ABOUT FOOTER END */
 
 }
