@@ -1,14 +1,19 @@
 /* FDIC Info Bar */
 .fdic-bar {
-    background-color: green;
+    background-color: #143D60;
     color: white;
     font-size: 12px;
     padding: 5px 15px;
 }
-
+.nav-link.active{
+  color: #EB5B00 !important;
+}
+.bg-primary{
+  background-color: #143D60 !important;
+}
 /* Navbar styling */
 .top-nav{
-    background-color: #008A00;
+    background-color: #143D60;
     color: white;
     font-size: .9rem;
     font-weight: 300;
@@ -23,7 +28,8 @@
 }
 
 .nav-link:hover {
-    text-decoration: underline;
+    text-decoration: none ;
+    color: #007a00 !important;
 }
 
 .login-icons i {
@@ -37,18 +43,29 @@
     display: flex;
     flex-wrap: wrap;
 }
-
+.personal-hero p{
+  font-size: medium;
+}
+@media screen and (max-width: 991px){
+  .hero-section{
+    display: block;
+  }
+  .hero-section .col-md-5{
+    width: 100%;
+  }
+  .hero-section .col-md-3{
+    width: 100%;
+  }
+}
 .left-hero img{
-    /* max-width: 1000px; */
     max-width: 1300px;      
 }
-
 .left-hero .top {
     opacity: 1;
 }
 
 .middle-hero {
-    background-color: green;
+    background-color: #143D60;
     color: white;
     padding: 50px 40px;
 }
@@ -71,7 +88,7 @@
 
 .right-hero {
     background-color: #ffffff;
-    padding: 40px 30px;
+    padding: 40px 20px;
     border-left: 1px solid #e0e0e0;
 }
 
@@ -89,17 +106,18 @@
 .right-hero a {
     display: block;
     margin-bottom: 10px;
-    color: green;
+    color: #143D60;
     font-size: 14px;
     text-decoration: none;
 }
 
 .right-hero a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #007a00;
 }
 .right-hero .login-btn{
     display: inline-block;
-    background-color: green;
+    background-color: #143D60;
     width: 50%;
     color: white;
     font-weight: 500;
@@ -108,24 +126,27 @@
 .right-hero .sign-btn{
     display: inline-block;
     width: 50%;
-    color: #008A00;
+    color: #143D60;
     font-weight: 500;
     margin-bottom: 10px;
 }
 .primary-text{
-    color: #1A5336;
+    color: #143D60;
 }
 .primary-text2{
-    color: #008A00;
+    color: #143D60;
+}
+.primary-text3{
+  color: #009900;
 }
 .primary-btn{
-    background-color: #008A00;
-    color: #fff;
-    border-radius: 0;
+    background-color: #143D60;
+    color: #fff !important;
+    border-radius: 0 !important;
 }
 .primary-btn:hover{
     background-color: #007a33;
-    color: #fff;
+    color: #fff !important;
     border-radius: 0;
 }
 p{
@@ -145,13 +166,13 @@ h6{
   }
 
   .services-section h2 {
-    color: #004d33;
+    color: #EB5B00;
     font-weight: 600;
     margin-bottom: 0.5rem;
   }
 
   .services-section h5 {
-    color: #004d33;
+    color: #EB5B00;
     margin-bottom: 40px;
   }
 
@@ -180,13 +201,13 @@ h6{
   .service-card .icon-circle {
     width: 80px;
     height: 80px;
-    border: 2px solid #008A00;
+    border: 2px solid #007a00;
     border-radius: 50%;
     margin: 0 auto 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #1A5336;
+    color: #143D60;
     font-size: 32px;
   }
 
@@ -198,7 +219,7 @@ h6{
   .icon-circle {
     width: 80px;
     height: 80px;
-    border: 2px solid #008A00;
+    border: 2px solid #143D60;
     border-radius: 50%;
     margin: 0 auto 15px;
     display: flex;
@@ -296,7 +317,7 @@ h6{
   bottom: 0;
   background: rgba(255, 255, 255, 0.95);
   width: 100%;
-  height: 35%;
+  height: 30%;
 }
 .overlay-text p{
     font-size: 16px;
@@ -325,14 +346,9 @@ footer{
     border-top: 5px solid #1A5336;
 }
 
-:root{
-    --td-green: #006f43;
-    --td-green-2: #00873e;
-    --light-green-bg: #f6fbf6; /* filter area background */
-  }
  /* Filter area */
  .filter-area{
-    background: var(--light-green-bg);
+    background: #143D60;
     padding: 32px 22px;
     margin-top: 12px;
     border-top: 1px solid rgba(0,0,0,0.03);
@@ -352,7 +368,7 @@ footer{
     gap:8px;
     padding:5px 16px;
     border-radius: 999px;
-    border:2px solid #008A00;
+    border:2px solid #143D60;
     color: #1a2f23;
     cursor: pointer;
     background-color: white;
@@ -363,9 +379,9 @@ footer{
   .topic-pill:hover{ box-shadow: 0 6px 16px rgba(0,0,0,0.06); background-color: rgb(243, 243, 243); }
 
   .topic-pill.active{
-    background: #008A00;
+    background: #143D60;
     color: #fff;
-    border-color: #008A00;
+    border-color: #143D60;
   }
 
   .topics-row { 
@@ -397,7 +413,7 @@ footer{
     right:10px;
     top:50%;
     transform:translateY(-50%);
-    color:var(--td-green);
+    color:var(--td-#143D60);
     cursor:pointer;
   }
 
@@ -591,14 +607,14 @@ a.app-store-btn:hover{
     color: white !important;
   }
   .nav-link:hover{
-    color: #008A00 !important;
+    color: #143D60 !important;
     text-decoration: none;
   }
   .navbar .navbar-brand{
     color: white;
   }
   .navbar button.navbar-toggler{
-    background-color: #008A00;
+    background-color: #143D60;
   }
 }
 @media screen and (max-width: 800px){

@@ -4432,10 +4432,10 @@ input[type="button"].btn-block {
   padding: 1.25rem;
 }
 
-.card-img {
+/* .card-img {
   width: 100%;
   border-radius: calc(0.25rem - 1px);
-}
+} */
 
 .card-img-top {
   width: 100%;

@@ -3,139 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COMMERCIAL TD BANK</title>
+    <title>COMMERCIAL Trazemid Bank</title>
     <link rel="stylesheet" href="./Styles/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./Styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts (for clean sans-serif look) -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
 <body>
-  <!-- green navbar start -->
-  <div class="top-links d-none d-lg-flex">
-    <a class="nav-link" href="./personal.html">Personal</a>
-    <a class="nav-link" href="./SmallBusiness.html">Small Business</a>
-    <a class="nav-link" href="./Commercial.html">Commercial</a>
-    <a class="nav-link" href="./Investing.html">Investing</a>
-    <a class="nav-link" href="./About.html">About TD</a>
+   <!-- FDIC Info Bar -->
+  <div class="fdic-bar text-start">
+    <div class="container">
+        <span><img src="./images/fdic-logo-white-en.png" alt="" class="img-fluid"> Insured — Backed by the full faith and credit of the U.S. Government</span>
+    </div>
   </div>
-
-    <!-- green navbar end -->
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg main-navbar">
-    <div class="container-fluid">
-      <!-- Logo -->
-      <a class="navbar-brand" href="./Investing.html">
-        <img src="./Image/td-logo-desktop.png" alt="image" class="logo-img">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="./index.html">
+        <span><img src="./images/td-logo-en.png" alt="" class="w-50"></span>
       </a>
-
-      <!-- Toggler button for mobile -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tdNavbar" aria-controls="tdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <!-- Navbar links -->
-      <div class="collapse navbar-collapse" id="tdNavbar">
-        <ul class="navbar-nav ml-auto align-items-lg-center">
-          <!-- Icons -->
-          <li class="nav-item"><a class="nav-link" href="#"><input type="search" id="search" placeholder="Search"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-map-marker-alt"></i> Locations</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Help</a></li>
-
-          <!-- Dropdown: Canada -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fa fa-globe"></i> Canada
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
-                <a class="dropdown-item" href="#">Canada ✔</a>
-                <a class="dropdown-item" href="#">United Kingdom</a>
-            </div>
-          </li>
-          <!-- Dropdown: English -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              English
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
-              <a class="dropdown-item" href="#">English</a>
-              <a class="dropdown-item" href="#">Français</a>
-            </div>
-          </li>
-          <!-- Divider (desktop only) -->
-          <li class="d-none d-lg-block divider"></li>
-
-          <!-- Dropdown: Login -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Login
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginDropdown">
-              <a class="dropdown-item" href="#">EasyWeb</a>
-              <a class="dropdown-item" href="#">WebBroker</a>
-              <a class="dropdown-item" href="#">Insurance</a>
-            </div>
-          </li>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="./personal.html">Personal</a></li>
+          <li class="nav-item"><a class="nav-link" href="./SmallBusiness.html">Small Business</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Commercial.html">Commercial</a></li>
+          <li class="nav-item"><a class="nav-link active" href="Investing.html">Investing & Wealth</a></li>
+          <li class="nav-item"><a class="nav-link" href="About.html">About Us</a></li>
         </ul>
+        <div class="login-icons d-flex align-items-end">
+          <a class="btn primary-btn rounded ms-3 text-decoration-none text-white" href="./login.html"><span class="me-1 bi bi-person-fill"></span> Log In</a>
+        </div>
       </div>
     </div>
   </nav>
-  <!-- Mobile Navbar -->
-  <nav class="navbar navbar-expand-lg main-navbar" id="mobileNavbar">
-    <div class="container-fluid">
-      <!-- Logo -->
-      <a class="navbar-brand" href="#">
-        <img src="./Image/td-logo-desktop.png" alt="image" class="logo-img">
-      </a>
 
-      <!-- Toggler button for mobile -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#tdNavbar" aria-controls="tdNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-        <!-- <li class="nav-item dropdown"> -->
-            <a class="nav-link dropdown-toggle" href="#" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user"></i>
-              Login
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="loginDropdown">
-              <a class="dropdown-item" href="#">EasyWeb</a>
-              <a class="dropdown-item" href="#">WebBroker</a>
-              <a class="dropdown-item" href="#">Insurance</a>
-            </div>
-          <!-- </li> -->
-      <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="tdNavbar">
-          <a class="nav-link" href="#"><input type="search" id="search" placeholder="Search"></a>
-          <ul class="navbar-nav ml-auto align-items-lg-center">
-            <li class="nav-item top-links d-lg-flex d-block w-100 justify-content-center">
-                <select name="" id="Investing">
-                    <a class="nav-link" href="#"><option value="TD:Investing">TD:Investing</option></a>
-                    <a class="nav-link" href="./personal.html"><option value="personal">Personal</option></a>
-                    <a class="nav-link" href="./SmallBusiness.html"><option value="smallBusiness">Small Business</option></a>
-                    <a class="nav-link" href="./Commercial.html"><option value="commercial">Commercial</option></a>
-                    <a class="nav-link" href="./Investing.html"><option value="investing">Investing</option></a>
-                    <a class="nav-link" href="./About.html"><option value="aboutTd">About TD</option></a>
-                </select>
-            </li>
-          <!-- Icons -->
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-map-marker-alt"></i> Locations</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Help</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-globe"></i> Canada</a></li>
-
-          <!-- Dropdown: English -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              English
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="langDropdown">
-              <a class="dropdown-item" href="#">English</a>
-              <a class="dropdown-item" href="#">Français</a>
-            </div>
-          </li>
-
-          <!-- Divider (desktop only) -->
-          <li class="d-none d-lg-block divider"></li>
-
-        </ul>
-      </div>
+  <!-- Hero Section -->
+  <div class="container bg-primary d-flex text-center text-white justify-content-center align-content-center p-5">
+    <div class="personal-hero py-5">
+        <p class="text-white-50">Start banking with us</p>
+        <h1>Make An Investment</h1>
     </div>
-  </nav>
+</div>
 
     <!-- NAVBAR END -->
     <!-- INVESTING AT TD SECTION START -->
@@ -214,14 +131,14 @@
           <h3>With TD, you're a more informed investor.</h3>
           <div id="with-td-investor">        
               <div class="card">
-                  <img src="./Image/invest-made-easy.jpeg" alt="image">
+                  <img src="https://picsum.photos/id/142/800/500" alt="image">
                   <div class="overlay">
                       <p>Explore-TD Easy Trades<sup>TM</sup>TD Direct investing <br>
                       as two ways to start investing on your </p>
                   </div>
               </div>
               <div class="card">
-                  <img src="./Image/invest-uncover.png" alt="image">
+                  <img src="https://picsum.photos/id/520/800/500" alt="image">
                   <div class="overlay">
                       <p>
                           Our advisors apply the principles of <br>
@@ -248,7 +165,7 @@
               </div>
               <div class="card tall-card">
                   <div class="card-img">
-                      <img src="./Image/tdb-homepage-high-en (1).png" alt="image">
+                      <img src="https://picsum.photos/id/180/800/500" alt="image">
                   </div>
                   <div class="overlay">
                       <p>
@@ -261,71 +178,58 @@
       </div>
       <!-- WITH TD SECTION END -->
 
-      <!-- FIND YOUR ANSWER START -->
+      
+<footer class="bg-light pt-5">
+  <div class="container text-center">
 
-      <div class="find-your-answer">
-          <h3>Have a question? Find answers here</h3>
-          <form action="" onsubmit="return formvalidation ()" method="post">
-              <input type="text" id="input" placeholder="What's your question?">
-              <button id="ask-us">Ask Us</button>
-          </form>
-          <a href="#">Popular questions <i class="fa fa-angle-right"></i></a>
+    <!-- Contact CTA -->
+    <div class="mb-4">
+      <a href="./login.html" class="primary-text fs-5 text-decoration-none">
+        Need to talk to us directly? <span class="fw-semibold">Contact us ›</span>
+      </a>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="mb-4">
+      <p class="fw-semibold text-muted">Follow Trazemid Bank</p>
+      <div class="d-flex justify-content-center gap-3 col-3 mx-auto">
+        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-youtube"></i></a>
+        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-linkedin"></i></a>
       </div>
+    </div>
 
-      <!-- FIND YOUR ANSWER END -->
+    <!-- Footer Links -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-auto">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Privacy</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">California Privacy</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Online Advertising</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Terms of Use</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Security</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">About Us</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Accessibility</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Careers</a></li>
+          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Site Map</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+
+    <hr class="w-75 mx-auto my-5">
+    <div class="col-lg-8 mx-auto text-muted mb-4">
+      <small><span class="fw-semibold">tdbankservicesupport@gmail.com<br>
+          ©2025 Trazemid Bank, N.A. All Rights Reserved.</small>
+    </div>
+    <br>
+  </div>
+</footer>
   </div>
     <!-- INVESTING AT TD SECTION END -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

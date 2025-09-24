@@ -2,59 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
 }
 
 .section {
-    width: 95%;
+    /* width: 95%; */
     margin: 0px auto;
 }
 
- /* Navbar base */
-.navbar {
-    padding: 0;
-    
-}
-
-/* Top links (desktop strip, collapse into menu on mobile) */
-.top-links {
-    background-color: #008A00; /* TD green */
-    padding: 5px 0;
-    position: fixed !important;
-    top: 0 !important;
-    width: 100%;
-    z-index: 9999 !important; 
-}
-
-.top-links .nav-link {
-    color: white !important;
-    font-weight: 500;
-    font-size: 14px;
-    margin: 0 8px;
-}
-.top-links .nav-link:hover {
-    text-decoration: underline;
-}
-
 /* Main navbar */
-.main-navbar {
-    background-color: #00281A; /* Dark green */
-    position: fixed !important;
-    top: 40px !important;
-    width: 100%;
-    z-index: 9999 !important; 
-}
-
-.navbar-nav .nav-link {
-    color: #d4c5a0 !important; /* Gold-ish */
-    font-size: 15px;
-    margin-left: 10px;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #ffffff !important;
-}
-
 .divider {
     border-left: 1px solid #d4c5a0;
     height: 25px;
@@ -77,88 +33,18 @@
     font-size: 16px;
 }
 .dropdown-menu .dropdown-item:hover {
-    background-color: #008A00;
+    background-color: #143D60;
     color: #fff;
 }
 
 
-/* Mobile toggle button */
-.navbar-toggler {
-    border: none;
-}
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28212,197,160,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
+
 
 /* Collapsed menu styling */
-.navbar-collapse {
-    background-color: #00281A; /* Dark green menu on mobile */
-}
+
 .navbar-collapse .nav-link {
-    color: #d4c5a0 !important;
+    color: #143D60 !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-.navbar-collapse .nav-link:hover {
-    color: #fff !important;
-}
-
-a i {
-    margin: 0px 5px;
-}
-
-#search {
-    background-color: transparent;
-    outline: none;
-    border: none;
-    color: #d4c5a0;
-    font-size: 16px;
-    border-bottom: 1px solid #d4c5a0;
-}
-
-#search ::placeholder {
-    color: #d4c5a0;
-    opacity: 0.7; /* Slightly transparent placeholder */
-    font-weight: 600;
-    padding: 0px 10px !important;
-}
-
-#search:focus {
-    border-bottom: 2px solid #d4c5a0; /* Highlight on focus */
-}
-
-#mobileNavbar {
-    display: none !important; /* Hide all nav items by default */
-}
-
-#mobileNavbar .container-fluid .navbar-toggler {
-    position: relative;
-}
-
-#mobileNavbar .container-fluid .navbar-toggler {
-    position: absolute;
-    left: 55px;
-    top: 5px;
-}
-
-#mobileNavbar #nav-link .nav-item {
-    color: #000000 !important;
-    font-weight: 600;
-    width: 100% !important;
-    border: 2px solid #000000 !important;
-}
-
-.top-links {
-display: none; /* Hide top links on mobile */
-}
-
-
-#mobileNavbar .container-fluid #loginDropdown {
-    color: #d4c5a0 !important;
-}
-    
-#mobileNavbar .container-fluid #loginDropdown i {
-    color: #d4c5a0 !important;
-    font-size: 20px;
 }
 
 .section {
@@ -230,9 +116,8 @@ display: none; /* Hide top links on mobile */
     font-size: 30px;
     font-weight: 800px;
     width: 90%;
-    color: #008000;
-}
-
+    color: #143D60;
+}   
 /* GET TO KNOW US END */
 
 /* ABOUT TD START  */
@@ -243,12 +128,12 @@ display: none; /* Hide top links on mobile */
 
 .section .about-td #about-td {
     text-align: center;
-    color: #008000;
+    color: #143D60;
 }
 
 .section .about-td #get-to-know-us {
     text-align: center;
-    color: #008000;
+    color: #143D60;
     margin-top: 20px;
 }
 
@@ -266,7 +151,7 @@ display: none; /* Hide top links on mobile */
 .about-td .grid .who-we-are .icon {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -277,7 +162,7 @@ display: none; /* Hide top links on mobile */
 
 .about-td .grid .who-we-are .icon i {
     font-size: 30px;
-    color: #008000;
+    color: #143D60;
 }
 
 .about-td .grid .who-we-are .icon i:hover {
@@ -285,12 +170,12 @@ display: none; /* Hide top links on mobile */
 }
 
 .about-td .grid .who-we-are .icon:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
 }
 
 .about-td .grid .who-we-are .who-we-are-contents h6 {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -306,7 +191,7 @@ display: none; /* Hide top links on mobile */
 .about-td .grid .our-colleaques .icon {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -317,7 +202,7 @@ display: none; /* Hide top links on mobile */
 
 .about-td .grid .our-colleaques .icon i {
     font-size: 30px;
-    color: #008000;
+    color: #143D60;
 }
 
 .about-td .grid .our-colleaques .icon i:hover {
@@ -325,12 +210,12 @@ display: none; /* Hide top links on mobile */
 }
 
 .about-td .grid .our-colleaques .icon:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
 }
 
 .about-td .grid .our-colleaques .our-colleagues-contents h6 {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -346,7 +231,7 @@ display: none; /* Hide top links on mobile */
 .about-td .grid .corporate-profile .icon {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -360,12 +245,12 @@ display: none; /* Hide top links on mobile */
 }
 
 .about-td .grid .corporate-profile .icon:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
 }
 
 .about-td .grid .corporate-profile .corporate-profile-contents h6 {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -381,7 +266,7 @@ display: none; /* Hide top links on mobile */
 .about-td .grid .corporate-citizenship .icon {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -392,7 +277,7 @@ display: none; /* Hide top links on mobile */
 
 .about-td .grid .corporate-citizenship .icon i {
     font-size: 30px;
-    color: #008000;
+    color: #143D60;
 }
 
 .about-td .grid .corporate-citizenship .icon i:hover {
@@ -400,12 +285,12 @@ display: none; /* Hide top links on mobile */
 }
 
 .about-td .grid .corporate-citizenship .icon:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
 }
 
 .about-td .grid .corporate-citizenship .corporate-citizenship-contents h6 {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -421,7 +306,7 @@ display: none; /* Hide top links on mobile */
 .about-td .grid .sustainability .icon {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -432,7 +317,7 @@ display: none; /* Hide top links on mobile */
 
 .about-td .grid .sustainability .icon i {
     font-size: 30px;
-    color: #008000;
+    color: #143D60;
 }
 
 .about-td .grid .sustainability .icon i:hover {
@@ -440,12 +325,12 @@ display: none; /* Hide top links on mobile */
 }
 
 .about-td .grid .sustainability .icon:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
 }
 
 .about-td .grid .sustainability .sustainability-contents h6 {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -461,7 +346,7 @@ display: none; /* Hide top links on mobile */
 .about-td .grid .investor-relations .icon {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -472,7 +357,7 @@ display: none; /* Hide top links on mobile */
 
 .about-td .grid .investor-relations .icon i {
     font-size: 30px;
-    color: #008000;
+    color: #143D60;
 }
 
 .about-td .grid .investor-relations .icon i:hover {
@@ -480,12 +365,12 @@ display: none; /* Hide top links on mobile */
 }
 
 .about-td .grid .investor-relations .icon:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
 }
 
 .about-td .grid .investor-relations .investor-relations-contents h6 {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -499,7 +384,7 @@ display: none; /* Hide top links on mobile */
 
 .our-story h3 {
     text-align: center;
-    color: #008000;
+    color: #143D60;
 }
 
 .our-story .working-together {
@@ -524,7 +409,7 @@ display: none; /* Hide top links on mobile */
 }
 
 .our-story .working-together .working-together-contents a {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -561,7 +446,7 @@ display: none; /* Hide top links on mobile */
 }
 
 .our-story .Reimaging-our-future .Reimaging-our-future-contents a {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -599,7 +484,7 @@ display: none; /* Hide top links on mobile */
 }
 
 .our-story .Protecting-our-planet .Protecting-our-planet-contents a {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -627,7 +512,7 @@ display: none; /* Hide top links on mobile */
 
 .td-event h3 {
     text-align: center;
-    color: #008000;
+    color: #143D60;
 }
 
 .td-event .td-event-contents {
@@ -640,7 +525,7 @@ display: none; /* Hide top links on mobile */
 }
 
 .td-event .td-event-contents .td-event-image {
-    width: 100%;
+    width: 90%;
 }
 
 .td-event .td-event-contents .td-event-image img {
@@ -671,7 +556,7 @@ display: none; /* Hide top links on mobile */
 
 .td-event .explore-td {
     padding: 10px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
     border: none;
     margin: 0px auto;
@@ -679,7 +564,7 @@ display: none; /* Hide top links on mobile */
 
 .td-event .explore-td:hover {
     background-color: transparent;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     color: #005700;
     transition: all 0.5s ease;
 }
@@ -741,7 +626,7 @@ display: none; /* Hide top links on mobile */
 }
 
 .innovation .Empowered .Empowered-contents a {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -778,7 +663,7 @@ display: none; /* Hide top links on mobile */
 }
 
 .innovation .human-approach .human-approach-contents a {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -805,7 +690,7 @@ display: none; /* Hide top links on mobile */
 
 .our-leadership #leadership {
     text-align: center;
-    color: #008000;
+    color: #143D60;
 }
 
 .our-leadership p {
@@ -821,7 +706,7 @@ display: none; /* Hide top links on mobile */
 }
 
 .our-leadership a {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
     text-align: center;
@@ -890,7 +775,7 @@ display: none; /* Hide top links on mobile */
 .award-recognition #award {
     color: #000000;
     text-align: center;
-    border-bottom: 2px solid #008000;
+    border-bottom: 2px solid #143D60;
     padding-bottom: 20px;
 }
 
@@ -901,7 +786,7 @@ display: none; /* Hide top links on mobile */
 }
 
 .award-recognition .sustainability-indices li::marker {
-    color: #008000;
+    color: #143D60;
 }
 
 .award-recognition .Social h3 {
@@ -912,7 +797,7 @@ display: none; /* Hide top links on mobile */
 }
 
 .award-recognition .Social li::marker {
-    color: #008000;
+    color: #143D60;
 }
 
 .award-recognition .Environmental h3 {
@@ -923,7 +808,7 @@ display: none; /* Hide top links on mobile */
 }
 
 .award-recognition .Environmental li::marker {
-    color: #008000;
+    color: #143D60;
 }
 
 .award-recognition .Governance-Reputation h3 {
@@ -934,7 +819,7 @@ display: none; /* Hide top links on mobile */
 }
 
 .award-recognition .Governance-Reputation li::marker {
-    color: #008000;
+    color: #143D60;
 }
 
 .copywrite {
@@ -957,7 +842,7 @@ display: none; /* Hide top links on mobile */
 }
 
 a {
-    color: #008000 !important;
+    color: #143D60 !important;
     text-decoration: none !important;
 }
 
@@ -1040,7 +925,7 @@ a {
 .section .small-business {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
     border-bottom: 2px solid #d6d1d1;
     gap: 40px;
     align-items: center;
@@ -1052,15 +937,15 @@ a {
 }
 
 .section .small-business #small-business {
-    background-color: #008000;
+    background-color: #143D60;
     color: #ffffff;
     padding: 20px;
 }
 
 .section .small-business #small-business:hover {
     background-color: transparent;
-    color: #008000;
-    border: 2px solid #008000;
+    color: #143D60;
+    border: 2px solid #143D60;
     transition: all 0.5s ease;
 }
 
@@ -1087,16 +972,16 @@ a {
     padding: 10px 20px;
     background-color: white;
     border: transparent;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     outline: none;
-    color:#008000;
+    color:#143D60;
     font-weight: 800px;
     cursor: pointer;
     margin-bottom: 15px;
 }
 
 .section .small-business .small-business-contents .small-business-btn #Learn-more:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
     transition: all 0.5s ease;
 }
@@ -1121,7 +1006,7 @@ h3 {
 .section .small-business .online-banking #online-banking #login {
     padding: 10px 20px;
     width: 100%;
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
     border: transparent;
     outline: none;
@@ -1132,8 +1017,8 @@ h3 {
 
 .section .small-business .online-banking #online-banking #login:hover {
     background-color: transparent;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: all 0.5s ease;
 }
 
@@ -1149,7 +1034,7 @@ h3 {
 }
 
 .section .small-business .online-banking #online-banking .online-banking-tag a {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-size: 13px;
     font-weight: 600;
@@ -1175,7 +1060,7 @@ h3 {
 .section .small-business .online-banking #online-trading #login {
     padding: 10px 20px;
     width: 100%;
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
     border: transparent;
     outline: none;
@@ -1186,8 +1071,8 @@ h3 {
 
 .section .small-business .online-banking #online-trading #login:hover {
     background-color: transparent;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: all 0.5s ease;
 }
 
@@ -1203,7 +1088,7 @@ h3 {
 }
 
 .section .small-business .online-banking #online-trading .online-banking-tag a {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-size: 13px;
     font-weight: 600;
@@ -1226,12 +1111,12 @@ h3 {
 
 .section .welcome-td #welcome-td {
     text-align: center;
-    color: #008000;
+    color: #143D60;
 }
 
 .section .welcome-td #explore-td {
     text-align: center;
-    color: #008000;
+    color: #143D60;
     margin-top: 20px;
 }
 
@@ -1251,7 +1136,7 @@ h3 {
 .welcome-td .grid .find-cheque .icon {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -1262,7 +1147,7 @@ h3 {
 
 .welcome-td .grid .find-cheque .icon i {
     font-size: 30px;
-    color: #008000;
+    color: #143D60;
 }
 
 .welcome-td .grid .find-cheque .icon i:hover {
@@ -1270,12 +1155,12 @@ h3 {
 }
 
 .welcome-td .grid .find-cheque .icon:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
 }
 
 .welcome-td .grid .find-cheque .find-cheque-contents h6 {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -1291,7 +1176,7 @@ h3 {
 .welcome-td .grid .find-savings .icon {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -1302,7 +1187,7 @@ h3 {
 
 .welcome-td .grid .find-savings .icon i {
     font-size: 30px;
-    color: #008000;
+    color: #143D60;
 }
 
 .welcome-td .grid .find-savings .icon i:hover {
@@ -1310,12 +1195,12 @@ h3 {
 }
 
 .welcome-td .grid .find-savings .icon:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
 }
 
 .welcome-td .grid .find-savings .find-savings-contents h6 {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -1331,7 +1216,7 @@ h3 {
 .welcome-td .grid .find-credit .icon {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -1342,7 +1227,7 @@ h3 {
 
 .welcome-td .grid .find-credit .icon i {
     font-size: 30px;
-    color: #008000;
+    color: #143D60;
 }
 
 .welcome-td .grid .find-credit .icon i:hover {
@@ -1350,12 +1235,12 @@ h3 {
 }
 
 .welcome-td .grid .find-credit .icon:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
 }
 
 .welcome-td .grid .find-credit .find-credit-contents h6 {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -1371,7 +1256,7 @@ h3 {
 .welcome-td .grid .explore-mortgage .icon {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -1382,7 +1267,7 @@ h3 {
 
 .welcome-td .grid .explore-mortgage .icon i {
     font-size: 30px;
-    color: #008000;
+    color: #143D60;
 }
 
 .welcome-td .grid .explore-mortgage .icon i:hover {
@@ -1390,12 +1275,12 @@ h3 {
 }
 
 .welcome-td .grid .explore-mortgage .icon:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
 }
 
 .welcome-td .grid .explore-mortgage .explore-mortgage-contents h6 {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -1411,7 +1296,7 @@ h3 {
 .welcome-td .grid .personal-investing .icon {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -1422,7 +1307,7 @@ h3 {
 
 .welcome-td .grid .personal-investing .icon i {
     font-size: 30px;
-    color: #008000;
+    color: #143D60;
 }
 
 .welcome-td .grid .personal-investing .icon i:hover {
@@ -1430,12 +1315,12 @@ h3 {
 }
 
 .welcome-td .grid .personal-investing .icon:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
 }
 
 .welcome-td .grid .personal-investing .personal-investing-contents h6 {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -1451,7 +1336,7 @@ h3 {
 .welcome-td .grid .borrowing .icon {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -1462,7 +1347,7 @@ h3 {
 
 .welcome-td .grid .borrowing .icon i {
     font-size: 30px;
-    color: #008000;
+    color: #143D60;
 }
 
 .welcome-td .grid .borrowing .icon i:hover {
@@ -1470,12 +1355,12 @@ h3 {
 }
 
 .welcome-td .grid .borrowing .icon:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
 }
 
 .welcome-td .grid .borrowing .borrowing-contents h6 {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -1491,7 +1376,7 @@ h3 {
 .welcome-td .grid .invest-trade .icon {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -1502,7 +1387,7 @@ h3 {
 
 .welcome-td .grid .invest-trade .icon i {
     font-size: 30px;
-    color: #008000;
+    color: #143D60;
 }
 
 .welcome-td .grid .invest-trade .icon i:hover {
@@ -1510,12 +1395,12 @@ h3 {
 }
 
 .welcome-td .grid .invest-trade .icon:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
 }
 
 .welcome-td .grid .invest-trade .invest-trade-contents h6 {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -1531,7 +1416,7 @@ h3 {
 .welcome-td .grid .personalized-wealth .icon {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -1542,7 +1427,7 @@ h3 {
 
 .welcome-td .grid .personalized-wealth .icon i {
     font-size: 30px;
-    color: #008000;
+    color: #143D60;
 }
 
 .welcome-td .grid .personalized-wealth .icon i:hover {
@@ -1550,12 +1435,12 @@ h3 {
 }
 
 .welcome-td .grid .personalized-wealth .icon:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
 }
 
 .welcome-td .grid .personalized-wealth .personalized-wealth-contents h6 {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -1571,7 +1456,7 @@ h3 {
 .welcome-td .grid .today-rate .icon {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -1582,7 +1467,7 @@ h3 {
 
 .welcome-td .grid .today-rate .icon i {
     font-size: 30px;
-    color: #008000;
+    color: #143D60;
 }
 
 .welcome-td .grid .today-rate .icon i:hover {
@@ -1590,12 +1475,12 @@ h3 {
 }
 
 .welcome-td .grid .today-rate .icon:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
 }
 
 .welcome-td .grid .today-rate .today-rate-contents h6 {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -1621,7 +1506,7 @@ h3 {
 
 .section .need-help #need-help .need-help-btn #get-started {
     padding: 10px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     border: none;
     outline: none;
     color: #ffffff;
@@ -1631,8 +1516,8 @@ h3 {
 
 .section .need-help #need-help .need-help-btn #get-started:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
 }
 
@@ -1649,19 +1534,19 @@ h3 {
 
 .section .mobile-need-help #need-help .need-help-btn #get-started {
     padding: 10px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     border: none;
     outline: none;
     color: #ffffff;
     font-weight: 800px;
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .section .mobile-need-help #need-help .need-help-btn #get-started:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
-    transition: 0.3s ease-in-out;
+    border: 2px solid #143D60;
+    color: #143D60;
 }
 
 .section .need-help #mobile-need-help {
@@ -1678,7 +1563,7 @@ h3 {
 
 .section .plan-ur-move {
     margin: 40px auto;
-    background-color: rgb(240, 240, 240);
+    /* background-color:  rgb(240, 240, 240); */
     padding: 20px 0px;
 } 
 
@@ -1708,7 +1593,7 @@ h3 {
 
 .section .plan-ur-move #plan-ur-move .plan-ur-move-contents .plan-ur-move-btn #plan-ur-move-btn {
     padding: 10px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     border: transparent;
     outline: none;
     color: #ffffff;
@@ -1718,8 +1603,8 @@ h3 {
 
 .section .plan-ur-move #plan-ur-move .plan-ur-move-contents .plan-ur-move-btn #plan-ur-move-btn:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
  }
 /* PLAN YOUR MOVE END */
@@ -1739,7 +1624,7 @@ h3 {
 
 .td-advice .td-advice-btn #td-advice-btn {
     padding: 10px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     border: transparent;
     outline: none;
     color: #ffffff;
@@ -1749,8 +1634,8 @@ h3 {
 
 .td-advice .td-advice-btn #td-advice-btn:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
 }
 /* TD ADVICE END */
@@ -1771,9 +1656,9 @@ h3 {
     border-bottom: 2px solid #d6d1d1
 }
 
-.plan-ur-financial .grid .card .card-body {
+/* .plan-ur-financial .grid .card .card-body {
     background-color: rgb(240, 240, 240);
-}
+} */
 
 .plan-ur-financial .grid .card .card-body .btn {
     padding: 10px 20px;
@@ -1781,14 +1666,14 @@ h3 {
     background-color: #ffffff !important;
     border: transparent !important;
     outline: none !important;
-    color: #008000 !important;
+    color: #143D60 !important;
     font-weight: 800px !important;
-    border: 2px solid #008000 !important;
+    border: 2px solid #143D60 !important;
     cursor: pointer !important;
 }
 
 .plan-ur-financial .grid .card .card-body .btn:hover {
-    background-color: #008000 !important;
+    background-color: #143D60 !important;
     color: #ffffff !important;
     transition: 0.3s ease-in-out !important;
 }
@@ -1834,7 +1719,7 @@ h3 {
 
 .section .protect-fraud .protect-fraud-contents .left-side .left-side-btn #left-side-btn {
     padding: 10px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     border: transparent;
     outline: none;
     color: #ffffff;
@@ -1845,8 +1730,8 @@ h3 {
 
 .section .protect-fraud .protect-fraud-contents .left-side .left-side-btn #left-side-btn:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
 }
 
@@ -1866,7 +1751,7 @@ h3 {
 
 .section .protect-fraud .protect-fraud-contents .right-side .right-side-btn #right-side-btn {
     padding: 10px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     border: transparent;
     outline: none;
     color: #ffffff;
@@ -1877,8 +1762,8 @@ h3 {
 
 .section .protect-fraud .protect-fraud-contents .right-side .right-side-btn #right-side-btn:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
 }
 /* PROTECT YOURSELF AGAINST FRAUD END */
@@ -1900,7 +1785,7 @@ h3 {
 
 .section .estate-planning #estate-planning .estate-planning-btn #estate-planning-btn {
     padding: 10px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     border: none;
     outline: none;
     color: #ffffff;
@@ -1910,8 +1795,8 @@ h3 {
 
 .section .estate-planning #estate-planning .estate-planning-btn #estate-planning-btn:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
 }
 
@@ -1928,7 +1813,7 @@ h3 {
 
 .section .mobile-estate-planning #estate-planning .estate-planning-btn #estate-planning-btn {
     padding: 10px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     border: none;
     outline: none;
     color: #ffffff;
@@ -1938,8 +1823,8 @@ h3 {
 
 .section .mobile-estate-planning #estate-planning .estate-planning-btn #estate-planning-btn:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
 }
 
@@ -1969,7 +1854,7 @@ h3 {
 
 .check-financial-health .check-financial-health-btn #check-financial-health-btn {
     padding: 10px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     border: transparent;
     outline: none;
     color: #ffffff;
@@ -1980,8 +1865,8 @@ h3 {
 
 .check-financial-health .check-financial-health-btn #check-financial-health-btn:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
 }
 
@@ -2014,7 +1899,7 @@ h3 {
 
 .section .it-never-been #it-never-been .easy-safe-secure #easy-safe-secure-btn {
     padding: 10px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     border: transparent;
     outline: none;
     color: #ffffff;
@@ -2025,8 +1910,8 @@ h3 {
 
 .section .it-never-been #it-never-been .easy-safe-secure #easy-safe-secure-btn:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
 }
 
@@ -2036,7 +1921,7 @@ h3 {
 
 .section .it-never-been #it-never-been .bank-from-anywhere #bank-from-anywhere-btn {
     padding: 10px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     border: transparent;
     outline: none;
     color: #ffffff;
@@ -2047,8 +1932,8 @@ h3 {
 
 .section .it-never-been #it-never-been .bank-from-anywhere #bank-from-anywhere-btn:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
 }
 
@@ -2082,7 +1967,7 @@ h3 {
 
 .section .update-content .update .card .card-body a {
     background-color: transparent !important;
-    color: #008000 !important;
+    color: #143D60 !important;
     border: none !important;
     font-weight: 600;
 }
@@ -2107,15 +1992,15 @@ h3 {
 
 .section .update-content .get-advice .card .card-body a {
     background-color: white !important;
-    color: #008000 !important;
+    color: #143D60 !important;
     border: none !important;
-    border: 2px solid #008000 !important;
+    border: 2px solid #143D60 !important;
     font-weight: 600;
     width: 80%;
 }
 
 .section .update-content .get-advice .card .card-body a:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: #fff;
     transition: 0.4s ease-in-out;
 }
@@ -2140,7 +2025,7 @@ h3 {
 
 .section .why-banking-td #why-banking-td .why-banking-td-btn #why-banking-td-btn {
     padding: 10px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     border: none;
     outline: none;
     color: #ffffff;
@@ -2158,8 +2043,8 @@ h3 {
 
 .section .why-banking-td #why-banking-td .why-banking-td-btn #why-banking-td-btn:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
 }
 
@@ -2184,7 +2069,7 @@ h3 {
 
 .section .mobile-why-banking-td #why-banking-td .why-banking-td-btn #why-banking-td-btn {
     padding: 10px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     border: none;
     outline: none;
     color: #ffffff;
@@ -2194,8 +2079,8 @@ h3 {
 
 .section .mobile-why-banking-td #why-banking-td .why-banking-td-btn #why-banking-td-btn:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
 }
 
@@ -2217,7 +2102,7 @@ h3 {
 
 .td-enriches h3 {
     text-align: center;
-    color: #008000;
+    color: #143D60;
     margin: 20px 0px;
 }
 
@@ -2227,7 +2112,7 @@ h3 {
 }
 
 .td-enriches #td-enriches .card-group .card h5 {
-    color: #008000;
+    color: #143D60;
 }
 
 #mobile-td-enriches {
@@ -2257,20 +2142,20 @@ h3 {
     width: 40%;
     padding: 10px 10px;
     border: none;
-    color: #008000;
-    border: 2px solid #008000;
+    color: #143D60;
+    border: 2px solid #143D60;
     outline: none;
     font-weight: 600;
 }
 
 .section .find-your-answer form #input:focus {
-    border: 2px solid #008000;
-    box-shadow: 0px 0px 5px #008000;
+    border: 2px solid #143D60;
+    box-shadow: 0px 0px 5px #143D60;
  }
  
 .section .find-your-answer form #ask-us {
     padding: 12px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     border: none;
     outline: none;
     color: #ffffff;
@@ -2281,13 +2166,13 @@ h3 {
  
 .section .find-your-answer form #ask-us:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
 }
 
 .section .find-your-answer a {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -2323,7 +2208,7 @@ h3 {
 }
 
 .section .deposit-protection a i {
-    color: #008000;
+    color: #143D60;
     text-decoration: none;
     font-weight: 600;
 }
@@ -2374,16 +2259,16 @@ h3 {
     padding: 10px 20px;
     background-color: white;
     border: transparent;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     outline: none;
-    color:#008000;
+    color:#143D60;
     font-weight: 800px;
     cursor: pointer;
     margin-bottom: 15px;
 }
 
 .section .get-up-to-dollar .get-up-to-dollar-contents .get-up-to-dollar-btn #Learn-more:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
     transition: all 0.5s ease;
 }
@@ -2428,16 +2313,16 @@ h3 {
     padding: 10px 20px;
     background-color: white;
     border: transparent;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     outline: none;
-    color:#008000;
+    color:#143D60;
     font-weight: 800px;
     cursor: pointer;
     margin-bottom: 15px;
 }
 
 .section .aeroplane-visa .aeroplane-visa-contents .aeroplane-visa-btn #Learn-more:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
     transition: all 0.5s ease;
 }
@@ -2484,16 +2369,16 @@ h3 {
     padding: 10px 20px;
     background-color: white;
     border: transparent;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     outline: none;
-    color:#008000;
+    color:#143D60;
     font-weight: 800px;
     cursor: pointer;
     margin-bottom: 15px;
 }
 
 .section .start-growing .start-growing-contents .start-growing-btn #Learn-more:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
     transition: all 0.5s ease;
 }
@@ -2578,7 +2463,7 @@ h3 {
 
 .section .point-of-sale .point-of-sale-contents i {
     font-size: 30px;
-    color: #008000;
+    color: #143D60;
 }
 
 .section .point-of-sale .point-of-sale-contents i:hover {
@@ -2588,7 +2473,7 @@ h3 {
 .section .point-of-sale .point-of-sale-contents .icons {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -2599,7 +2484,7 @@ h3 {
 }
 
 .section .point-of-sale .point-of-sale-contents .icons:hover {
-    background-color: #008000;
+    background-color: #143D60;
     transition: 0.4s ease-in-out;
 
 }
@@ -2659,15 +2544,15 @@ h3 {
     background-color: #ffffff;
     border: transparent;
     outline: none;
-    color: #008000;
+    color: #143D60;
     font-weight: 800px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     cursor: pointer;
     margin-bottom: 20px;
 }
 
 .section .let-us-help #get_started:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: #ffffff;
     transition: 0.3s ease-in-out;
 }
@@ -2714,15 +2599,15 @@ h3 {
     background-color: #ffffff;
     border: transparent;
     outline: none;
-    color: #008000;
+    color: #143D60;
     font-weight: 800px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     cursor: pointer;
     margin-bottom: 20px;
 }
 
 .section .pos #see_all_pos:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: #ffffff;
     transition: 0.3s ease-in-out;
 }
@@ -2757,15 +2642,15 @@ h3 {
     background-color: #ffffff;
     border: transparent;
     outline: none;
-    color: #008000;
+    color: #143D60;
     font-weight: 800px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     cursor: pointer;
     margin-top: 20px;
 }
 
 .section .accept-secure-payment #see_online-btn:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: #ffffff;
     transition: 0.3s ease-in-out;
 }
@@ -2779,7 +2664,7 @@ h3 {
     background-image: url('../Image/our\ story\ img\ 1.png');
     background-repeat: no-repeat;
     background-size: contain;
-    border-bottom: 5px solid #008000;
+    border-bottom: 5px solid #143D60;
 }
 
 .login #login {
@@ -2797,7 +2682,7 @@ h3 {
 }
 
 .login #login .welcome-to-login h3 {
-    color: #008000;
+    color: #143D60;
 }
 
 .login #login .welcome-to-login form {
@@ -2863,18 +2748,18 @@ h3 {
 }
 
 .login #login .welcome-to-login form input:hover {
-    border-bottom: 2px solid #008000;
+    border-bottom: 2px solid #143D60;
     transition: 0.4s ease-in-out;
 }
 
 .login #login .welcome-to-login form input:focus {
-    border: 2px solid #008000;
-    box-shadow: 0px 0px 5px #008000;
+    border: 2px solid #143D60;
+    box-shadow: 0px 0px 5px #143D60;
 }
 
 .login #login .welcome-to-login form #forget_tag {
     text-decoration: none;
-    color: #008000;
+    color: #143D60;
     font-weight: 600;
 }
 
@@ -2903,7 +2788,7 @@ h3 {
 
 .login #login .sign_up #lock i {
     margin: 0px 10px;
-    color: #008000;
+    color: #143D60;
     font-size: 30px;
 }
 
@@ -2990,7 +2875,7 @@ h3 {
 .welcome-to-td #welcome-to-td .welcome-to-td-grid .welcome-to-td-icons #icons {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -3001,7 +2886,7 @@ h3 {
 
 .welcome-to-td #welcome-to-td .welcome-to-td-grid .welcome-to-td-icons #icons i {
     font-size: 30px;
-    color: #008000;
+    color: #143D60;
 }
 
 .welcome-to-td #welcome-to-td .welcome-to-td-grid .welcome-to-td-icons #icons i:hover {
@@ -3009,7 +2894,7 @@ h3 {
 }
 
 .welcome-to-td #welcome-to-td .welcome-to-td-grid .welcome-to-td-icons #icons:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: white;
 }
 
@@ -3035,11 +2920,10 @@ h3 {
 
 .banking-advice .card-group .card-body {
     border: none !important;
-    background-color: #f0f0f0 !important; 
 }
 
 .banking-advice .card-group .card-body h5 {
-    color: #008000 !important;
+    color: #143D60 !important;
     font-weight: 600 !important;
 }
 
@@ -3055,7 +2939,7 @@ h3 {
 
 .section .go-to-advice-hub #go-to-advice-hub-btn {
     padding: 10px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     border: transparent;
     outline: none;
     color: #ffffff;
@@ -3066,8 +2950,8 @@ h3 {
 
 .section .go-to-advice-hub #go-to-advice-hub-btn:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
 }
 
@@ -3077,9 +2961,9 @@ h3 {
 
 
 .section .business-banking {
-    margin: 40px auto;
+    /* margin: 40px auto; */
     text-align: center;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
     padding: 20px;
 }
 
@@ -3102,15 +2986,15 @@ h3 {
 
 .section .business-banking #business-banking .card .card-body a {
     background-color: white !important;
-    color: #008000 !important;
+    color: #143D60 !important;
     border: none !important;
-    border: 2px solid #008000 !important;
+    border: 2px solid #143D60 !important;
     font-weight: 600;
     width: 80%;
 }
 
 .section .business-banking #business-banking .card .card-body a:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: #fff;
     transition: 0.4s ease-in-out;
 }
@@ -3125,7 +3009,6 @@ h3 {
     align-items: center;
     margin: 40px auto;
     padding-bottom: 40px;
-    border-bottom: 2px solid #f0eded;
 }
 
 .section .industry-expertise h3 {
@@ -3136,19 +3019,19 @@ h3 {
 .section .industry-expertise #industry-expertise .industry-expertise-btn #industry-expertise-btn {
     padding: 10px 20px;
     background-color: #ffffff;
-    color: #008000;
+    color: #143D60;
     border: transparent;
     outline: none;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     font-weight: 800px;
     cursor: pointer;
     width: 30%;
 }
 
 .section .industry-expertise #industry-expertise .industry-expertise-btn #industry-expertise-btn:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: #ffffff;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     transition: 0.3s ease-in-out;
 }
 
@@ -3159,7 +3042,7 @@ h3 {
 
 .section .industry-expertise #industry-expertise #industry-expertise-btn {
     padding: 10px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     border: none;
     outline: none;
     color: #ffffff;
@@ -3169,8 +3052,8 @@ h3 {
 
 .section .industry-expertise #industry-expertise #industry-expertise-btn:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
 }
 
@@ -3183,7 +3066,7 @@ h3 {
 
 .section .mobile-industry-expertise #mobile-industry-expertise .industry-expertise-btn #industry-expertise-btn {
     padding: 10px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     border: none;
     outline: none;
     color: #ffffff;
@@ -3193,8 +3076,8 @@ h3 {
 
 .section .mobile-industry-expertise #mobile-industry-expertise .industry-expertise-btn #industry-expertise-btn:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
 }
 
@@ -3225,7 +3108,7 @@ h3 {
 }
 
 .section .uplifting .card .card-body h5 {
-    color: #008000 !important;
+    color: #143D60 !important;
     margin: 10px 0px !important;
     font-weight: 600 !important;
 }
@@ -3257,16 +3140,16 @@ h3 {
     padding: 10px 20px;
     background-color: #ffffff;
     border: none;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     outline: none;
-    color: #008000;
+    color: #143D60;
     font-weight: 600;
     cursor: pointer;
     width: 25%;
 } 
 
 .section .looking-for-government .looking-for-government-btn #looking-for-government-btn:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: #ffffff;
     transition: 0.3s ease-in-out;
 }
@@ -3296,7 +3179,7 @@ h3 {
     padding: 10px 20px;
     border: none;
     outline: none;
-    background-color: #008000;
+    background-color: #143D60;
     color: #ffffff;
     font-weight: 600;
     cursor: pointer;
@@ -3311,8 +3194,8 @@ h3 {
 
 .section .we-are-ready #we-are-ready .find-an-account #book-an-appointment-btn:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
 }
 
@@ -3320,7 +3203,7 @@ h3 {
     padding: 10px 20px;
     border: none;
     outline: none;
-    background-color: #008000;
+    background-color: #143D60;
     color: #ffffff;
     font-weight: 600;
     cursor: pointer;
@@ -3329,8 +3212,8 @@ h3 {
 
 .section .we-are-ready #we-are-ready .book-an-appointment #book-an-appointment-btn:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
 }
 
@@ -3339,15 +3222,15 @@ h3 {
     background-color: #ffffff;
     border: none;
     outline: none;
-    color: #008000;
+    color: #143D60;
     font-weight: 600;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     cursor: pointer;
     width: 90%;
 }
 
 .section .we-are-ready #we-are-ready .call-us-btn #call-us-btn:hover {
-    background-color: #008000;
+    background-color: #143D60;
     color: #ffffff;
     transition: 0.3s ease-in-out;
 }
@@ -3398,7 +3281,7 @@ h3 {
 }
 
 .section .we-re-here #visit-para {
-    color: #008000;
+    color: #143D60;
     font-weight: 600;
 }
 
@@ -3411,7 +3294,7 @@ h3 {
 
 .section .we-re-here #we-re-here .see-td p {
     margin: 15px 0px;
-    color: #008000;
+    color: #143D60;
     font-weight: 600;
 }
 
@@ -3606,7 +3489,7 @@ h3 {
 
 .section .we-offer-expertise .expertise-contents i {
     font-size: 30px;
-    color: #008000;
+    color: #143D60;
 }
 
 .section .we-offer-expertise .expertise-contents i:hover {
@@ -3616,7 +3499,7 @@ h3 {
 .section .we-offer-expertise .expertise-contents .expertise-icon {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -3627,7 +3510,7 @@ h3 {
 }
 
 .section .we-offer-expertise .expertise-contents .expertise-icon:hover {
-    background-color: #008000;
+    background-color: #143D60;
     transition: 0.4s ease-in-out;
 
 }
@@ -3663,7 +3546,7 @@ h3 {
 
 .section .we-offer-expertise .expertise-contents i {
     font-size: 30px;
-    color: #008000;
+    color: #143D60;
 }
 
 .section .we-offer-expertise .expertise-contents i:hover {
@@ -3673,7 +3556,7 @@ h3 {
 .section .we-offer-expertise .expertise-contents .expertise-icon {
     width: 80px;
     height: 80px;
-    border: 2px solid #008000;
+    border: 2px solid #143D60;
     background-color: transparent;
     border-radius: 50%;
     display: flex;
@@ -3684,7 +3567,7 @@ h3 {
 }
 
 .section .we-offer-expertise .expertise-contents .expertise-icon:hover {
-    background-color: #008000;
+    background-color: #143D60;
     transition: 0.4s ease-in-out;
 
 }
@@ -3818,7 +3701,7 @@ h3 {
 
 .section #invest .invest #invest-para {
     font-weight:600;
-    color: #008000;
+    color: #143D60;
     margin: 15px 0px;
 }
 
@@ -3852,7 +3735,7 @@ h3 {
 }
 
 .section .we-have-more #we-have-more .we-have-more-text p {
-    color: #008000;
+    color: #143D60;
     font-weight: 600;
 }
 
@@ -4091,7 +3974,7 @@ h3 {
 }
 
 .section .meet-ur-small-biss h3 {
-    color: #008000;
+    color: #143D60;
     font-weight: 600;
     font-size: 15px;
 }
@@ -4134,91 +4017,12 @@ h3 {
     transition: 0.4s ease-in-out;
 }
 
-#mobileNavbar {
-    display: block !important;
-    position: fixed !important;
-    top: 0px !important;
-    width: 100%;
-    z-index: 9999 !important; /* Show on mobile */
-}
-
-.main-navbar {
-    display: none; /* Hide desktop navbar on mobile */
-}
-
-.top-links {
-    display: block;
-    background-color: #ffffff !important;
-}
-
-.main-navbar a.nav-link {
-    color: #000000 !important;
-    font-weight: 600;
-}
-
-.main-navbar a.nav-link:hover {
-    color: #000000 !important;
-}
-
 a i {
     margin: 0px 5px;
     color: #000000 !important;
 }
 
 
-#mobileNavbar #tdNavbar {
-    background-color: #fff !important; /* white background */
-    /* padding: 10px 0;     */
-}
-
-#mobileNavbar #tdNavbar .navbar-nav .top-links .nav-link {
-    color: #d4c5a0 !important;
-    background-color: #f0f0f0 !important;
-}  
-
-#mobileNavbar .container-fluid #tdNavbar .navbar-nav .nav-item #Investing {
-    color: #000000 !important;
-    font-weight: 600;
-    width: 95% !important;
-    height: 50px !important;
-    border: none !important;
-    margin: 0px 10px !important;
-    background-color: #f0f0f0 !important;
-    outline: none !important;
-}
-
-#mobileNavbar .container-fluid #tdNavbar .navbar-nav .nav-item option {
-    color: #000000 !important;
-    padding: 10px !important;
-}
-
-#mobileNavbar #tdNavbar .navbar-nav .top-links .nav-link:hover {
-    color: #ffffff !important;
-    transition: 0.4s ease-in-out;
-}
-
-#mobileNavbar #tdNavbar .nav-item {
-    color: #000000 !important;
-}
-
-#mobileNavbar .container-fluid #tdNavbar .nav-link #search {
-    background-color: transparent;
-    outline: none;
-    border: none;
-    color: #000000;
-    font-size: 16px;
-    border: 2px solid #000000;
-    padding: 0px 10px !important;
-    width: 100%;
-    height: 40px !important;
-    margin-top: 20px !important;
-}
-
-#tdNavbar .nav-link #search i {
-    display: none !important;
-}
-
-}
 
 @media screen and (max-width: 900px) {
 /* ABOUT TD START  */
@@ -4715,7 +4519,7 @@ a i {
 
 .section .mobile-industry-expertise #industry-expertise .industry-expertise-btn #industry-expertise-btn {
     padding: 10px 20px;
-    background-color: #008000;
+    background-color: #143D60;
     border: none;
     outline: none;
     color: #ffffff;
@@ -4726,8 +4530,8 @@ a i {
 
 .section .mobile-industry-expertise #industry-expertise .industry-expertise-btn #industry-expertise-btn:hover {
     background-color: #ffffff;
-    border: 2px solid #008000;
-    color: #008000;
+    border: 2px solid #143D60;
+    color: #143D60;
     transition: 0.3s ease-in-out;
 }
 
@@ -4800,7 +4604,7 @@ a i {
 
 #mobile-td-enriches .card .card-body {
     text-align: center;
-    color: #008000;
+    color: #143D60;
 }
 
 .td-enriches #td-enriches {
@@ -5350,3 +5154,4 @@ a i {
 
 }
 
+}
