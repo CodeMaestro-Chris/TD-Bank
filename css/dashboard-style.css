@@ -39,13 +39,10 @@ a.app-store-btn {
   padding: 0.6rem 1.5rem;
   font-weight: 500;
 }
-a.app-store-btn:hover{
-  color: red !important;
-}
-.app-store-btn.btn-light{
+/* .app-store-btn.btn-light{
   background-color: white !important;
   transition: .2s;
-}
+} */
 .app-store-btn.btn-light:hover{
   background-color: #004d33;
   color: white;

@@ -22,511 +22,683 @@
 </head>
 <body>
 
-  <!-- FDIC Info Bar -->
-  <div class="fdic-bar text-start">
-    <div class="container">
-        <span><img src="./images/fdic-logo-white-en.png" alt="" class="img-fluid"> Insured — Backed by the full faith and credit of the U.S. Government</span>
-    </div>
-  </div>
+  
+  <section class="hero mb-5">
+    <!-- ✅ Navbar -->
+      <nav class="navbar py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        
+        <!-- Left: Logo -->
+        <a class="navbar-brand fw-bold fs-4" href="index.html"><img src="./images/td-logo-en.png" class="col-2" /> Trazemid Bank<span style="color: #00b90f">.</span></a>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="./index.html">
-        <span><img src="./images/td-logo-en.png" alt="" class="w-50"></span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarMain">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="./personal.html">Personal</a></li>
-          <li class="nav-item"><a class="nav-link" href="./SmallBusiness.html">Small Business</a></li>
-          <li class="nav-item"><a class="nav-link" href="./Commercial.html">Commercial</a></li>
-          <li class="nav-item"><a class="nav-link" href="Investing.html">Investing & Wealth</a></li>
-          <li class="nav-item"><a class="nav-link" href="About.html">About Us</a></li>
+        <!-- Center: Navigation Links -->
+        <ul class="nav d-none d-lg-flex justify-content-end text-dark">
+          <li class="nav-item"><a class="nav-link px-3 text-dark fw-semibold" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link px-3 text-dark fw-semibold" href="./About.html">
+              About Us
+            </a>
+          </li>
+          <li class="nav-item"><a class="nav-link px-3 text-dark fw-semibold" href="features.html">Features</a></li>
+          <li class="nav-item"><a class="nav-link px-3 text-dark fw-semibold" href="./reviews.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link px-3 text-dark fw-semibold" href="./contact.html">Contact</a></li>
         </ul>
-        <div class="login-icons d-flex align-items-center">
-          <a class="btn primary-btn rounded ms-3 text-decoration-none" href="./login.html"><span class="me-1 bi bi-person-fill"></span> Log In</a>
+
+        <!-- Right: CTA Button -->
+        <div class="d-none d-lg-block">
+          <a href="./login.html" class="btn primary-btn app-store-btn">Get Started</a>
+        </div>
+
+        <!-- Toggle for Mobile -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="collapse navbar-collapse d-lg-none px-4" id="mobileMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-white" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./features.html">Features</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./reviews.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#benefits">Benefits</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./index.html#faq">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./contact.html">Contact</a></li>
+          <li class="nav-item mt-2"><a class="btn btn-light app-store-btn" href="./login.html">Start Banking</a></li>
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <!-- Hero Section -->
+    <div class="flex-direction-column mt-3" style="background: linear-gradient(to top, #fcfcfb6e, #fcfcfb6e), url(./images/earth1.png); background-position: top center; background-size: 90%; background-repeat: no-repeat;">
+      <!-- Text content -->
+      <div class="col-md-6 text-center mx-auto px-2 pt-4 mb-5">
+        <!-- Trust badges -->
+        <div class="trusted-badge mt-5 mb-4 p-1 col-lg-6 col-md-6 mx-auto d-flex align-items-center justify-content-center border rounded-pill" data-aos="fade-up">
+          <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="User 1" class="hero-user1"/>
+          <img src="https://randomuser.me/api/portraits/men/94.jpg" alt="User 2" class="hero-user2"/>
+          <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="User 3" class="hero-user3"/>
+          <span class="ms-3 text-muted">Trusted by 21,000+ people</span>
+        </div>
+        <h1 class="mb-3 display-5 fw-semibold"  data-aos="fade-up" data-aos-delay="100">Best way to manage<br /><span style="word-spacing: 4px;">payment from anywhere<span style="color: #00b90f">.</span></span></h1>
+        <p class="mb-4" data-aos="fade-up" data-aos-delay="200">Experience smooth, secure, and smart financial operations – directly from your mobile device.</p>
+        <div class="d-flex gap-3 justify-content-center">
+          <a href="./login.html" class="btn primary-btn2 app-store-btn" data-aos="zoom-in" data-aos-delay="100">Start Banking</a>
+          <a href="./login.html" class="btn  primary-btn app-store-btn " data-aos="zoom-in" data-aos-delay="200">Go to Login</a>
         </div>
       </div>
-    </div>
-  </nav>
 
-  <!-- Hero Section -->
-  <div class="container hero-section">
-    <!-- Left -->
-    <div class="col-md-4 d-flex flex-column justify-content-center align-items-center left-hero" style="background-image: url(./images/user-n-atm.png); background-size: cover; background-repeat: no-repeat; background-position: center;">
-
-    </div>
-
-    <!-- Middle -->
-    <div class="col-md-5 middle-hero d-flex flex-column">
-      <h2>Banking made simple,<br>designed for your life.</h2>
-      <p>Manage your money anytime, anywhere with secure online tools, easy transfers, and 24/7 support—all in one place.</p>
-      <a href="./login.html" class="btn btn-outline-light w-50">Get Started</a>
-    </div>
-    
-    <!-- Right -->
-    <div class="col-md-3 right-hero fw-semibold">
-      <h5>Online Banking</h5>
-      <div class="d-flex">
-        <a href="./login.html" class="btn login-btn"><span class="bi bi-lock-fill me-1"></span> Sign In</a>
-        <a href="./create-account.html" class="btn sign-btn">Sign Up <span class="bi bi-chevron-right ml-1"></span></a>
+      <!-- Image content -->
+      <div class="col-md-12 text-center mt-5 mt-md-0 position-relative">
+        <!-- <img src="./images/WGUnCmbjAOmiB6xJq46r4whcqo.png" alt="" class="spiral"> -->
+        <img src="./images/hand-n-atm.png" alt="App Mockup" class="phone-mockup mt-5" data-aos="fade-up"/>
+        <img src="images/938o5GSmp7c9eUmmqmPjOi9Bs.png" alt="" class="bt-shadow2">
+        <img src="images/938o5GSmp7c9eUmmqmPjOi9Bs.png" alt="" class="bt-shadow">
       </div>
-      <a href="./personal.html" class="fw-semibold">Explore Personal Online Banking <span class="bi bi-chevron-right ml-1"></span></a>
-      <a href="./SmallBusiness.html">Discover Small Business Online Banking <span class="bi bi-chevron-right ml-1"></span></a>
-      <hr>
-      <a href="./login.html">Stay protected from fraud <span class="bi bi-chevron-right ml-1"></span></a>
-      <a href="./login.html">Schedule an Appointment <span class="bi bi-chevron-right ml-1"></span></a>
-    </div>    
-  </div>
-<main class="content">
-  <div class="container">
-    <section class="services-section container pt-5 sec-1">      
-        <h3 class="text-center primary-text">Online Banking & Financial Services to Meet Your Goals</h3>
-        <div class="col-5 border mx-auto my-5"></div>
-        <h4 class="primary-text text-center mb-5">What can we help you find?</h4>
-        <div class="carousel-wrapper mx-auto position-relative">
-          <div class="carousel-arrow left py-1 px-4" id="leftArrow" style="display: none;">&#10094;</div>
-          <div class="carousel-arrow right py-1 px-4" id="rightArrow">&#10095;</div>
-      
-          <div class="carousel-track" id="carouselTrack">
-            <div class="service-card">
-              <div class="icon-circle"><i class="bi bi-credit-card"></i></div>
-              <p>Checking Accounts</p>
-            </div>
-            <div class="service-card">
-              <div class="icon-circle"><i class="bi bi-piggy-bank"></i></div>
-              <p>Savings Accounts</p>
-            </div>
-            <div class="service-card">
-              <div class="icon-circle"><i class="bi bi-receipt"></i></div>
-              <p>CDs</p>
-            </div>
-            <div class="service-card">
-              <div class="icon-circle"><i class="bi bi-credit-card-2-back"></i></div>
-              <p>Credit Cards</p>
-            </div>
-            <div class="service-card">
-              <div class="icon-circle"><i class="bi bi-cash-stack"></i></div>
-              <p>Personal Loans</p>
-            </div>
-            <div class="service-card">
-              <div class="icon-circle"><i class="bi bi-house-door"></i></div>
-              <p>Mortgage</p>
-            </div>
-            <div class="service-card">
-              <div class="icon-circle"><i class="bi bi-star-fill"></i></div>
-              <p>Special Offers</p>
-            </div>
-          </div>
-          
-        </div>
-      </section>
-      
-    <section class="services-section container pt-5 sec-2">      
-        <h3 class="text-center primary-text mb-0">Online Banking & Financial Services to Meet Your Goals</h3>
-        <hr class="col-5 mx-auto">
-        <h4 class="primary-text text-center mb-5 mt-0">What can we help you find?</h4>
-        <div class="carousel-wrapper mx-auto position-relative">
-          <div class="carousel-arrow left py-1 px-4" id="leftArrow" style="display: none;">&#10094;</div>
-          <div class="carousel-arrow right py-1 px-4" id="rightArrow">&#10095;</div>
-      
-          <div class="row" id="carouselTrack">
-            <div class="service-card2 col-6">
-              <div class="icon-circle"><i class="bi bi-credit-card"></i></div>
-              <p>Checking Accounts</p>
-            </div>
-            <div class="service-card2 col-6">
-              <div class="icon-circle"><i class="bi bi-piggy-bank"></i></div>
-              <p>Savings Accounts</p>
-            </div>
-            <div class="service-card2 col-6">
-              <div class="icon-circle"><i class="bi bi-receipt"></i></div>
-              <p>CDs</p>
-            </div>
-            <div class="service-card2 col-6">
-              <div class="icon-circle"><i class="bi bi-credit-card-2-back"></i></div>
-              <p>Credit Cards</p>
-            </div>
-            <div class="service-card2 col-6">
-              <div class="icon-circle"><i class="bi bi-cash-stack"></i></div>
-              <p>Personal Loans</p>
-            </div>
-            <div class="service-card2 col-6">
-              <div class="icon-circle"><i class="bi bi-house-door"></i></div>
-              <p>Mortgage</p>
-            </div>
-            <div class="service-card2 col-6">
-              <div class="icon-circle"><i class="bi bi-star-fill"></i></div>
-              <p>Special Offers</p>
-            </div>
-          </div>
-          
-        </div>
-      </section>
+    </div>
 
-      <section>
-        <h3 class="primary-text text-center">Manage your bank accounts</h2>
-        <p class="text-center">
-          Explore unexpectedly human ways to manage your bank accounts 24/7—even when you're on the go.
+  </section>
+  
+
+  <main class="container">
+    <!-- Main content -->
+      <section id="statsSection" class="my-5 mx-auto py-5 row gap-4 justify-content-between top-users">
+      <h2 class="fw-semibold col-12 col-lg-6">
+        Top used financial app used by millions of happy users.
+      </h2>
+
+      <div class="row gap-4 justify-content-between col-12 col-lg-5 mb-5">
+        <div class="col-6">
+          <h1 class="display-5 title detail">
+            <span id="usersCount">0</span>M+
+          </h1>
+          <span class="text-muted">Users Worldwide</span>
+        </div>
+        <div class="col-sm-7 col-md-5 col-lg-4">
+          <h1 class="display-5 title detail">
+            <span id="ratingCount">0</span>
+          </h1>
+          <span class="text-muted">Rating out of 5</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-5 py-5">
+      <h2 class="text-center mb-3 caption">Trazemid Bank offers extensive features</h2>
+      <p class="text-center text-muted mb-5">We give you the blocks needed to create a truly professional experience.</p>
+
+      <div class="d-block d-lg-flex justify-content-between" id="features">
+        <!-- Left Side: Feature List -->
+        <div class="col-lg-6 feature-items">
+          <div class="feature-item active" data-image="./images/chart.png">
+            <h5 class="fw-semibold">Automatic Expense Tracking</h5>
+            <p class="feature-desc">Automatically categorize expenses to see where money goes.</p>
+          </div>
+          <div class="feature-item" data-image="images/explore2.png">
+            <h5 class="fw-semibold">Streamlined Bill Payment</h5>
+            <p class="feature-desc">Pay bills and manage payments all in one place without any issue.</p>
+          </div>
+          <div class="feature-item" data-image="images/count-funds.png">
+            <h5 class="fw-semibold">Real-time Money Activity</h5>
+            <p class="feature-desc">Get notifications for unusual spending activity.</p>
+          </div>
+          <div class="feature-item" data-image="images/atm-num.png">
+            <h5 class="fw-semibold">Automatic Bank Sync</h5>
+            <p class="feature-desc">Sync and update your bank transactions automatically.</p>
+          </div>
+        </div>
+
+        <!-- Right Side: Feature Image -->
+        <div class="col-lg-6 col-12 p-0 p-md-5 feature-image-wrapper">
+          <img id="featureImage" src="images/chart.png" class="feature-image show" alt="Feature Preview" />
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS 1 -->
+    <section class="row justify-content-between align-items-center my-5" id="benefits"> 
+        <div class="col-12 col-lg-5" data-aos="fade-right">
+          <p class="detail fw-semibold">BENEFITS</p>
+          <h1 class="caption">Save time and money with our powerful tools.</h1>
+          <p class="note mt-3 mb-3">Trazemid Bank gives you the blocks needed to create a truly professional website for your SaaS is a long established fact that a reader.</p>
+          <a href="./login.html" class="btn primary-btn app-store-btn">Get Started</a>
+        </div>
+        <div class="col-12 col-lg-6 mt-5 mt-lg-0" data-aos="fade-right" data-aos-delay="100">
+          <!-- <div class="benefit-img-wrapper py-5 px-4"> -->
+            <img src="./images/coins.png" alt="" class="w-100">
+          <!-- </div> -->
+        </div>
+    </section>
+
+    <!-- BENEFITS 2 -->
+    <section class="row justify-content-between align-items-center mb-0 mt-5 my-lg-5 pt-5">
+      <div class="col-12 col-lg-5" data-aos="fade-up">
+        <p class="detail fw-semibold">BENEFITS</p>
+        <h1 class="caption">10,000+ customers and growing daily.</h1>
+        <p class="note mt-3 mb-4">
+          From seamless transfers to everyday banking, Trazemid Bank helps you stay ahead with tools built for modern living.
         </p>
-    
-        <div class="row feature-cards sec-1">
-          <div class="feature-card h-100 text-center border-right pt-4 col-md-3">
-            <img src="./images/explore1.jpg" alt="Feature 1">
-            <h6 class="mt-3">24/7 Lifestyle Assistance</h6>
-            <p class="px-2 mt-3">From travel support to emergency help, get real assistance anytime you need it—day or night.</p>
-        </div>
-        <div class="feature-card h-100 text-center pt-4 col-md-3">
-            <img src="./images/explore3.png" alt="Feature 2">
-            <h6 class="mt-3">Instant Digital Access</h6>
-            <p class="px-2 mt-3">Open an account, replace cards, or manage services instantly through our secure digital channels.</p>
-        </div>
-        <div class="feature-card h-100 text-center pt-4 col-md-3">
-            <img src="./images/explore2.png" alt="Feature 3">
-            <h6 class="mt-3">Smarter Payments</h6>
-            <p class="px-2 mt-3">Seamlessly pay bills, set up auto-pay, and track expenses with smart insights in one app.</p>
-        </div>
-        <div class="border-left feature-card h-100 text-center pt-4 col-md-3">
-            <img src="./images/explore4.jpg" alt="Feature 4">
-            <h6 class="mt-3">On-the-Go Deposits</h6>
-            <p class="px-2 mt-3">Snap, upload, and deposit checks in minutes—no need to visit a branch.</p>
-        </div>        
-        </div>
-      </section>
-
-      
-      <!-- Carousel -->
-    <div id="featureCarousel" class="carousel slide sec-2" data-bs-ride="carousel">
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#featureCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-            <button type="button" data-bs-target="#featureCarousel" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#featureCarousel" data-bs-slide-to="2"></button>
-            <button type="button" data-bs-target="#featureCarousel" data-bs-slide-to="3"></button>
-        </div>
-    
-        <!-- Carousel Inner -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="feature-card text-center pt-4">
-                <img src="./images/explore1.jpeg" alt="Manage Card 1" class="img-fluid">
-                <h5 class="mt-3">Live customer service when you need it</h5>
-                <p class="px-2">Call 1-888-751-9000 to talk to a real person any time of day, any day of the week</p>
-                </div>
-            </div>
-        
-            <div class="carousel-item">
-                <div class="feature-card text-center pt-4">
-                <img src="./images/explore2.jpeg" alt="Manage Card 2" class="img-fluid">
-                <h5 class="mt-3">Quick and easy instant-issue cards</h5>
-                <p class="px-2">Order a new or replacement card at your nearest bank location and take it with you the same day</p>
-                </div>
-            </div>
-        
-            <div class="carousel-item">
-                <div class="feature-card text-center pt-4">
-                <img src="./images/explore3.jpeg" alt="Manage Card 3" class="img-fluid">
-                <h5 class="mt-3">Pay your bills on the go</h5>
-                <p class="px-2">Make payments, view history and get e-bills. Reduce the hassle of paying bills with Bill Pay and the Trazemid Bank app</p>
-                </div>
-            </div>
-        
-            <div class="carousel-item">
-                <div class="feature-card text-center pt-4">
-                <img src="./images/explore4.jpeg" alt="Manage Card 4" class="img-fluid">
-                <h5 class="mt-3">Deposit checks anytime</h5>
-                <p class="px-2">Deposit checks using your smartphone or tablet camera with Trazemid Bank Mobile Deposit. Funds are usually available the next business day</p>
-                </div>
-            </div>
-        </div><br>
-    </div>
-  </div>
-    <div class="protect bg-light py-5 py-lg-2 my-5 section-1">
-        <div class="container row mx-auto align-items-center">
-            <div class="col-md-6">
-                <h4>Protect against fraud</h4>
-                <p class="my-3">Find out what to do if you suspect fraud, and learn how to keep your accounts and identity more secure</p>
-                <a href="./About.html" class="btn primary-btn py-2 w-50">Learn More</a>
-            </div>
-            <div class="col-md-6">
-                <img src="./images/onlinemobilesecurityguarantee-en.svg" alt="" class="w-100 img-fluid">
-            </div>
-        </div>
-    </div>
-    <div class="protect bg-light py-5 py-lg-2 my-5 section-2">
-        <div class="container row mx-auto align-items-center">
-            <div class="col-md-6">
-                <img src="./images/onlinemobilesecurityguarantee-en.svg" alt="" class="w-100 img-fluid">
-            </div>
-            <div class="col-md-6 text-center">
-                <h4>Protect against fraud</h4>
-                <p class="my-3">Find out what to do if you suspect fraud, and learn how to keep your accounts and identity more secure</p>
-                <a href="./About.html" class="btn primary-btn py-2 w-100">Learn More</a>
-            </div>
-        </div>
-    </div>
-    <div class="container my-5 py-2">
-        <section>
-            <h4 class="primary-text text-center">Introducing TD Overdraft Relief</h2>
-            <p class="text-center">
-                With TD Overdraft Relief1, we offer you even more flexibility—including no fee if you overdraw your checking account balance by $50 or less.
-            </p>
-            <div class="row feature-cards justify-content-between sec-1">
-                <div class="feature-card h-100 text-center pt-4 col-md-4">
-                    <h6 class="mt-3">How TD Overdraft Relief helps</h6>
-                    <p class="px-2">If you overdraw the available balance in your checking account by $50 or less, we won't charge you an overdraft fee</p>
-                </div>
-                <div class="feature-card h-100 text-center pt-4 col-md-4">
-                    <h6 class="mt-3">More time to prevent fees with Grace Period</h6>
-                    <p class="px-2">Our Grace Period2 gives you time to fix an overdraft. Just cover the overdrawn balance plus any additional transactions by 11 PM ET the next business day</p>
-                </div>
-                <div class="feature-card h-100 text-center pt-4 col-md-4">
-                    <h6 class="mt-3">Additional overdraft options for you</h6>
-                    <p class="px-2">You'll find automatic coverage with Standard Overdraft Service3 included with most <span class="primary-text2">checking accounts</span>. You might also choose Savings Overdraft Protection, TD Debit Card Advance or <span class="primary-text2">overdraft options for TD Small Business customers</span></p>
-                </div>
-            </div>
-            <div id="featureCarousel" class="carousel slide sec-2" data-bs-ride="carousel">
-                <!-- Indicators -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#featureCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-                    <button type="button" data-bs-target="#featureCarousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#featureCarousel" data-bs-slide-to="2"></button>  
-                </div>
+        <a href="./login.html" class="btn primary-btn app-store-btn">Get Started</a>
+      </div>
+       
+        <div class="col-12 col-lg-6 mb-lg-5 mb-0 mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
             
-                <!-- Carousel Inner -->
-                <div class="carousel-inner">
-                    <div class="carousel-item col-12 active">
-                        <div class="feature-card text-center pt-4 col-12">
-                            <h6 class="mt-3">How TD Overdraft Relief helps</h6>
-                            <p class="px-2">If you overdraw the available balance in your checking account by $50 or less, we won't charge you an overdraft fee</p>
-                        </div>
-                    </div>
-                
-                    <div class="carousel-item col-12">
-                        <div class="feature-card text-center pt-4 col-12">
-                            <h5 class="mt-3">More time to prevent fees with Grace Period</h5>
-                            <p class="px-2">Our Grace Period gives you time to fix an overdraft. Just cover the overdrawn balance plus any additional transactions by 11 PM ET the next business day</p>
-                        </div>
-                    </div>
-                
-                    <div class="carousel-item col-12">
-                        <div class="feature-card text-center pt-4 col-12">
-                            <h6 class="mt-3">Additional overdraft options for you</h6>
-                            <p class="px-2">You'll find automatic coverage with Standard Overdraft Service3 included with most <span class="primary-text2">checking accounts</span>. You might also choose Savings Overdraft Protection, TD Debit Card Advance or <span class="primary-text2">overdraft options for TD Small Business customers</span></p>
-                        </div>
-                    </div>
-                </div><br>
-            </div>
-            <center><a href="./About.html" class="btn primary-btn py-2 w-25 section-1">Learn More</a></center>
-            <a href="./About.html" class="btn primary-btn py-2 w-100 section-2">Learn More</a>
-          </section>
-    </div>
-    <div class="protect bg-light py-5 my-5">
-        <div class="container row mx-auto align-items-center convenient py-3 px-5">
-            <div class="col-md-6 px-2 section-2">
-                <h4 class="primary-text">America's most convenient bank</h4>
-                <img src="./images/locateabranch-smp-en.svg" alt="" class="w-100 img-fluid">
-                <p class="my-3">Your local Trazemid Bank is here for you—visit us early, late or on weekends.</p>
-                <a href="./login.html" class="btn primary-btn py-2 w-100">Get Started</a>
-            </div>
+            <img src="./images/explore3.png" alt="" class="w-100 rounded mb-4">
         </div>
-        <div class="container d-flex mx-auto align-items-center convenient py-1 px-5 justify-content-between section-1">
-          <div class="col-md-7 px-5">
-              <h4 class="primary-text">America's most convenient bank</h4>
-              <p class="my-3">Your local Trazemid Bank is here for you—visit us early, late or on weekends.</p>
-              <a href="./login.html" class="btn primary-btn py-2 w-50">Get Started</a>
+    </section>
+  </main>
+
+  <section class="my-0 my-lg-5 more-features py-5">
+    <h2 class="text-center my-5 caption" data-aos="fade-up">Loaded with more features</h2>
+    <div class="row g-4 container mx-auto mb-5">
+      <div class="col-md-12 col-lg-6" data-aos="fade-right">
+        <div class="p-4 rounded-4 bg-white h-100">
+          <div class="d-flex align-items-center mb-2">
+            <i class="bi bi-calendar3 detail me-2 fs-4"></i>
+            <strong>Essential Budget Planning</strong>
           </div>
-          <img src="./images/locateabranch-smp-en.svg" alt="" class="w-25 img-fluid">
-        </div>
-    </div>
-    
-<section class="py-5 bg-white">
-  <div class="text-center">
-    <h3 class="primary-text">Bank anywhere, anytime</h3>
-    <div class="d-flex justify-content-center section-1 container">
-      <!-- Card 1 -->
-      <div class="col-md-4">
-        <div class="position-relative overflow-hidden">
-          <img src="./images/auth-image2.jpg" class="img-fluid w-100" alt="Credit Offer">
-          <div class="overlay-text px-4 py-2">
-            <p class="primary-text fw-semibold mb-2">
-              Check your credit card offers <span class="primary-text">›</span>
-            </p>
-            <p class="text-light-emphasis">
-              You may be prequalified, and there's no impact to your credit when you check online.
-            </p>
-          </div>
+          <p class="text-muted mb-0">Easily create and manage budgets to track spending.</p>
         </div>
       </div>
 
-      <!-- Card 2 -->
-      <div class="col-md-4">
-        <div class="position-relative overflow-hidden">
-          <img src="./images/atm-num2.png" class="img-fluid w-100" alt="Complete Checking">
-          <div class="overlay-text px-4 py-2">
-            <p class="primary-text fw-semibold mb-2">
-              Start banking with us today ›
-            </p>
-            <p class="text-light-emphasis">
-              New customers can earn a sweet bonus with qualifying activities.
-            </p>
+      <div class="col-md-12 col-lg-6" data-aos="fade-right" data-aos-delay="100">
+        <div class="p-4 rounded-4 bg-white h-100">
+          <div class="d-flex align-items-center mb-2">
+            <i class="bi bi-bar-chart-line detail me-2 fs-4"></i>
+            <strong>Automatic Expense Tracking</strong>
           </div>
+          <p class="text-muted mb-0">Automatically categorize expenses to see where money goes.</p>
         </div>
       </div>
 
-      <!-- Card 3 -->
-      <div class="col-md-4">
-        <div class="position-relative overflow-hidden">
-          <img src="./images/dolz.jpg" class="img-fluid w-100" alt="TD Early Pay">
-          <div class="overlay-text px-4 py-2">
-            <p class="primary-text fw-semibold mb-2">
-              Your money, even sooner ›
-            </p>
-            <p class="text-light-emphasis">
-              With TD Early Pay, get your paycheck up to 2 business days early.
-            </p>
+      <div class="col-md-12 col-lg-6" data-aos="fade-right" data-aos-delay="200">
+        <div class="p-4 rounded-4 bg-white h-100">
+          <div class="d-flex align-items-center mb-2">
+            <i class="bi bi-bullseye detail me-2 fs-4"></i>
+            <strong>Custom Goals</strong>
           </div>
+          <p class="text-muted mb-0">Set custom savings goals with auto-contribution.</p>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-6" data-aos="fade-right" data-aos-delay="300">
+        <div class="p-4 rounded-4 bg-white h-100">
+          <div class="d-flex align-items-center mb-2">
+            <i class="bi bi-wallet2 detail me-2 fs-4"></i>
+            <strong>Streamlined Bill Payment</strong>
+          </div>
+          <p class="text-muted mb-0">Pay bills and manage payments all in one place.</p>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-6" data-aos="fade-right" data-aos-delay="500">
+        <div class="p-4 rounded-4 bg-white h-100">
+          <div class="d-flex align-items-center mb-2">
+            <i class="bi bi-bell detail me-2 fs-4"></i>
+            <strong>Real-time Activity Notifications</strong>
+          </div>
+          <p class="text-muted mb-0">Get notifications for unusual spending activity.</p>
+        </div>
+      </div>
+
+      <div class="col-md-12 col-lg-6" data-aos="fade-right" data-aos-delay="600">
+        <div class="p-4 rounded-4 bg-white h-100">
+          <div class="d-flex align-items-center mb-2">
+            <i class="bi bi-brightness-high detail me-2 fs-4"></i>
+            <strong>Personalized Interface Themes</strong>
+          </div>
+          <p class="text-muted mb-0">Toggle between light and dark interface themes.</p>
+        </div>
+      </div>
+      <div class="col-12 text-center mt-5">
+        <!-- <p class="text-center col-12 col-lg-7 mx-auto primary-text" data-aos="fade-in" data-aos-delay="300">Trazemid Bank gives you the blocks needed to create a truly professional website for your SaaS is a long established fact that a reader.</p> -->
+        <!-- <a href="./login.html" class="btn primary-btn app-store-btn mx-auto w-20 mt-2" data-aos="fade-in" data-aos-delay="300">Get Started</a> -->
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="testimonial-slider py-5 text-white" style="background-image: url(./images/earth1.png); background-position: center center; background-size: 90%; background-repeat: no-repeat;">
+  <div class="container overflow-hidden mt-5 trusted">
+    <h2 class="text-center mb-5 caption">Trusted by 18,000+ customers</h2>
+
+    <!-- Row 1 -->
+    <div class="slider-wrapper mb-5">
+      <div class="slider-track slider-track-left">
+        <!-- Duplicate content for seamless loop -->
+        <div class="testimonial-box"><br>
+          <p>"Trazemid Bank caught fraudulent charges on my accounts that I never would have noticed." - Chris P.</p> <br>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <div class="testimonial-box"><br>
+          <p>"This app makes budgeting so simple. I actually look forward to using it every month." - Kevin T.</p> <br>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <div class="testimonial-box"><br>
+          <p>"I can finally pay all my bills on time and in one place. Trazemid Bank kept me organized." - Michael B.</p> <br>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <div class="testimonial-box"><br>
+          <p>"Knowing my credit score and how to improve it has been a game changer thanks to Trazemid Bank." - David L.</p> <br>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+
+        <!-- Duplicate again -->
+        <div class="testimonial-box"><br>
+          <p>"Trazemid Bank caught fraudulent charges on my accounts that I never would have noticed." - Chris P.</p> <br>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <div class="testimonial-box"><br>
+          <p>"This app makes budgeting so simple. I actually look forward to using it every month." - Kevin T.</p> 
+        <br>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <div class="testimonial-box"><br>
+          <p>"I can finally pay all my bills on time and in one place. Trazemid Bank kept me organized." - Michael B.</p> <br>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <div class="testimonial-box"><br>
+          <p>"Knowing my credit score and how to improve it has been a game changer thanks to Trazemid Bank." - David L.</p> <br>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
         </div>
       </div>
     </div>
-    
-    <div id="featureCarousel" class="carousel slide sec-2" data-bs-ride="carousel">
-        <!-- Indicators -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#featureCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
-            <button type="button" data-bs-target="#featureCarousel" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#featureCarousel" data-bs-slide-to="2"></button>  
+
+    <!-- Row 2 -->
+    <div class="slider-wrapper">
+      <div class="slider-track slider-track-right mb-5">
+        <!-- Duplicate content for seamless loop -->
+        <div class="testimonial-box">
+          <p>"The auto-budgeting feature saved me hours each week!" - Clara S.</p><br>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
         </div>
-    
-        <!-- Carousel Inner -->
-        <div class="carousel-inner">
-            <div class="carousel-item col-12 active">
-                    <img src="./images/personal-loan.jpeg" alt="Manage Card 1" class="img-fluid w-100">
-                <div class="feature-card text-center pt-4 col-12">
-                    <p class="primary-text2 fw-semibold">Get started ›</p>
-                    <p class="mb-4">Apply for a TD Fit Personal Loan</p>
-                    <p>Secure your dream projects and unlock funds with an unsecured personal loan today.</p>
-                </div>
-            </div>
-        
-            <div class="carousel-item col-12">
-                    <img src="./images/click.jpeg" alt="Manage Card 2" class="img-fluid w-100">
-                <div class="feature-card text-center pt-4 col-12">
-                    <p class="primary-text2 fw-semibold">Click. Tap. Cha-Ching ›</p>
-                    <p>Mobile Deposits are that easy.</p>
-                </div>
-            </div>
-        
-            <div class="carousel-item col-12">
-                    <img src="./images/smarter.jpeg" alt="Manage Card 2" class="img-fluid w-100">
-                <div class="feature-card text-center pt-4 col-12">
-                    <p class="primary-text2 fw-semibold">Bank smarter ›</p>
-                    <p>Visit Finance 101 to get tips and tools for managing your finances.</p>
-                </div>
-            </div>
-        </div><br>
+        <div class="testimonial-box">
+          <p>"Best app for tracking all my transactions across banks." - James R.</p><br>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <div class="testimonial-box">
+          <p>"Simple, secure, and sleek. Just what I needed." - Aisha K.</p><br>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <div class="testimonial-box">
+          <p>"Trazemid Bank's alerts keep me on track every month." - Brian G.</p><br>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+
+        <!-- Duplicate again -->
+        <div class="testimonial-box">
+          <p>"The auto-budgeting feature saved me hours each week!" - Clara S.</p><br>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <div class="testimonial-box">
+          <p>"Best app for tracking all my transactions across banks." - James R.</p><br>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <div class="testimonial-box">
+          <p>"Simple, secure, and sleek. Just what I needed." - Aisha K.</p><br>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+        <div class="testimonial-box">
+          <p>"Trazemid Bank's alerts keep me on track every month." - Brian G.</p><br>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+          <i class="bi bi-star-fill"></i>
+        </div>
+      </div>
     </div>
-    
   </div>
 </section>
 
-    <hr>
-    <div class="container my-5">
-      <h4 class="primary-text text-center mb-4">Get to Know About Trazemid Bank</h4>
-      <div class="row justify-content-center align-items-center gap-3">
-        <div class="col-md-5">
-          <img src="./images/atm-num.png" alt="" class="w-100 img-fluid">
-        </div>
-        <div class="col-md-5">
-          <p>Discover how our banking solutions are designed to fit your lifestyle, from everyday transactions to long-term goals.</p>
-          <p>We make it simple to save, spend, and grow your money—all with secure tools and real support whenever you need it.</p>
-          
-          <!-- Half-width button -->
-          <a href="./About.html" class="btn primary-btn py-2 px-5 w-50 section-1">Learn More</a>
-          
-          <!-- Full-width button -->
-          <a href="./About.html" class="btn primary-btn py-2 px-5 w-100 section-2 mt-2">Explore Services</a>
-        </div>
-        
+
+<main class="container my-5 py-5" id="faq">
+  <h1 class="text-center caption">Frequently Asked Questions</h1>
+  <!-- Accordion start -->
+<div class="accordion" id="accordionExample">
+
+  <!-- 1. How do I open an account? -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <h5>How do I open an account?</h5>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Opening an account is fast and free. Just click on “Get Started,” and follow the prompts to verify your identity.
       </div>
     </div>
-    
-    <div class="bg-light py-5">
-        <div class="container px-5">
-            <h4 class="mb-3 primary-text">Have a question? Find answers here</h4>
-            <div class="d-lg-flex justify-content-between">
-                <div class="col-md-8 position-relative">
-                    <!-- <i class="bi bi-search position-absolute"></i> -->
-                    <input type="text" class="form-control subscribe h-100 py-2" placeholder="What's your question?">
-                </div>
-                <div class="col-md-8 section-2 mt-3"> 
-                    <a href="#" onclick="alert('Thank for contacting us, we will keep in touch')" class="btn primary-btn py-2 w-100">Ask Us</a>
-                </div>
-                <div class="col-md-3 section-1">
-                    <a href="#" onclick="alert('Thank for contacting us, we will keep in touch')" class="btn primary-btn py-2 w-100">Ask Us</a>
-                </div>
-            </div>
-        </div>
+  </div>
+
+  <!-- 2. Is my money safe with Trazemid Bank? -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <h5>Is my money safe with Trazemid Bank?</h5>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Absolutely. We use bank-grade encryption and are fully licensed and regulated. Your funds are also insured up to the legal limit.
+      </div>
     </div>
+  </div>
+
+  <!-- 3. How can I send or receive money? -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <h5>How can I send or receive money?</h5>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        You can send or receive money instantly using a phone number, account number, or QR code — all from your dashboard.
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Are there any hidden charges? -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        <h5>Are there any hidden charges?</h5>
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        No. We believe in full transparency. All fees are clearly listed and shown before any transaction is completed.
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. What should I do if I forget my password? -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        <h5>What should I do if I forget my password?</h5>
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Tap “Forgot Password” on the login screen and follow the instructions. You’ll be able to reset your password securely in minutes.
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Can I use Trazemid Bank outside my country? -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSix">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        <h5>Can I use Trazemid Bank outside my country?</h5>
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+      data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Yes! Trazemid Bank works globally. You can access your account, send or receive money, and manage your finances wherever you are.
+      </div>
+    </div>
+  </div>
+
+</div>
+<p class="mt-5 text-center">Have more questions? <a href="./contact.html" class="detail text-decoration-none">Contact our support</a></p>
+<!-- Accordion end -->
 </main>
 
-<footer class="bg-light pt-5">
-    <div class="container text-center">
   
-      <!-- Contact CTA -->
-      <div class="mb-4">
-        <a href="./login.html" class="primary-text fs-5 text-decoration-none">
-          Need to talk to us directly? <span class="fw-semibold">Contact us ›</span>
-        </a>
-      </div>
-  
-      <!-- Social Icons -->
-      <div class="mb-4">
-        <p class="fw-semibold text-muted">Follow Trazemid Bank</p>
-        <div class="d-flex justify-content-center gap-3 col-3 mx-auto">
-          <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-youtube"></i></a>
-          <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-linkedin"></i></a>
-        </div>
-      </div>
-  
-      <!-- Footer Links -->
-      <div class="row justify-content-center mb-4">
-        <div class="col-auto">
-          <ul class="list-inline mb-0">
-            <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Privacy</a></li>
-            <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">California Privacy</a></li>
-            <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Online Advertising</a></li>
-            <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Terms of Use</a></li>
-            <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Security</a></li>
-            <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">About Us</a></li>
-            <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Accessibility</a></li>
-            <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Careers</a></li>
-            <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Site Map</a></li>
-          </ul>
-        </div>
-      </div>
-  
-      <!-- Divider -->
-  
-      <hr class="w-75 mx-auto my-5">
-      <div class="col-lg-8 mx-auto text-muted mb-4">
-        <small><span class="fw-semibold">tdbankservicesupport@gmail.com<br>
-            ©2025 Trazemid Bank, N.A. All Rights Reserved.</small>
-      </div>
-      <br>
+  <section class="build-website-section text-center py-5">
+    <div class="container build">
+    <!-- <img src="./images/dots.png" style="" alt=""> -->
+      <h2 class="display-5 fw-bold">Build Your Financial Future</h2>
+      <p class="text-muted">
+        Trazemid Bank gives you the tools you need to manage your money smartly—designed for speed, security, and simplicity.
+      </p>
+      <a href="./login.html" class="btn primary-btn px-4 py-2 mt-3 rounded-pill">Get Started with Trazemid Bank</a>
     </div>
-  </footer>
+
+    <!-- Icons and Avatars (Positioned absolutely) -->
+    <div class="floating-icons">
+      <img src="https://randomuser.me/api/portraits/men/73.jpg" class="floating-avatar top-left d-none d-lg-block" alt="User Avatar" data-aos="fade-in" data-aos-delay="50"/>
+      <img src="https://randomuser.me/api/portraits/men/85.jpg" class="floating-icon top-center" alt="Icon" data-aos="fade-in" data-aos-delay="100"/>
+      <img src="https://randomuser.me/api/portraits/women/63.jpg" class="floating-avatar top-right" alt="User Avatar" data-aos="fade-in" data-aos-delay="150"/>
+      <img src="https://randomuser.me/api/portraits/women/81.jpg" class="floating-icon bottom-left" alt="Icon" data-aos="fade-in" data-aos-delay="200"/>
+      <img src="https://randomuser.me/api/portraits/men/18.jpg" class="floating-avatar bottom-right d-none d-lg-block" alt="User Avatar" data-aos="fade-in" data-aos-delay="250"/>
+    </div>
+  </section>
+
+
+<!-- FOOTER  -->
+<footer class="text-white pt-5 pb-2"style="background-image: url(./images/world-dotted-map.png); background-position: center; background-size: 60%; background-repeat: no-repeat;">
+  <div class="container">
+    <div class="row gy-4 justify-content-between py-5">
+
+    <!-- Company Branding -->
+    <div class="col-lg-3">
+      <h4 class="fw-bold text-uppercase">Trazemid Bank</h4>
+      <p class="text-white-50 mt-2">Revolutionizing finance with simple, smart, and secure banking for everyone.</p>
+      <div class="d-flex gap-3 mt-3">
+        <span class="text-white fs-5"><i class="bi bi-facebook"></i></span>
+        <span class="text-white fs-5"><i class="bi bi-linkedin"></i></span>
+        <span class="text-white fs-5"><i class="bi bi-instagram"></i></span>
+      </div>
+    </div>
+
+    <!-- Quick Navigation -->
+    <div class="col-lg-2 col-md-6">
+      <h6 class="text-uppercase fw-semibold">Company</h6>
+      <ul class="list-unstyled mt-3">
+        <li><a href="./index.html" class="text-white-50 text-decoration-none d-block mb-2">Home</a></li>
+        <li><a href="./about.html" class="text-white-50 text-decoration-none d-block mb-2">About Us</a></li>
+        <li><a href="./features.html" class="text-white-50 text-decoration-none d-block mb-2">Features</a></li>
+        <li><a href="./reviews.html" class="text-white-50 text-decoration-none d-block mb-2">Our Reviews</a></li>
+        <li><a href="./contact.html" class="text-white-50 text-decoration-none d-block">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Resources -->
+    <div class="col-lg-3 col-md-6">
+      <h6 class="text-uppercase fw-semibold">User Dashboard</h6>
+      <ul class="list-unstyled mt-3">
+        <li><a href="./login.html" class="text-white-50 text-decoration-none d-block mb-2">Overview</a></li>
+        <li><a href="./login.html" class="text-white-50 text-decoration-none d-block mb-2">Bank Statement</a></li>
+        <li><a href="./login.html" class="text-white-50 text-decoration-none d-block mb-2">Inter-BankTransfer</a></li>
+        <li><a href="./login.html" class="text-white-50 text-decoration-none d-block mb-2">Domestic Transfer</a></li>
+        <li><a href="./login.html" class="text-white-50 text-decoration-none d-block">Wire Transfer</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="col-lg-3">
+      <h6 class="text-uppercase fw-semibold">Contact</h6>
+      <ul class="list-unstyled mt-3 text-white-50">
+        <li><i class="bi bi-envelope-fill me-1"></i>tdbankservicesupport@gmail.com</li>
+          <li class="mt-2"><i class="bi bi-telephone-fill me-2"></i>+1 (414) 485-4572</li>
+      </ul>
+    </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="text-center border-top border-secondary mt-2 py-4">
+      <small class="text-white-50">&copy; 2025 Trazemid Bank. All rights reserved.</small>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!-- FIRST COUNTER -->
+    <script>
+    function countUp(id, endValue, suffix = "") {
+      const el = document.getElementById(id);
+      let start = 0;
+      const duration = 1000;
+      const increment = endValue / (duration / 50);
+
+      const counter = setInterval(() => {
+        start += increment;
+        if (start >= endValue) {
+          start = endValue;
+          clearInterval(counter);
+        }
+        el.textContent = (Math.round(start * 10) / 10) + suffix;
+      }, 50);
+    }
+
+    let hasCounted = false; // Prevents multiple triggers
+
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && !hasCounted) {
+            countUp("usersCount", 15.7);
+            countUp("ratingCount", 4.9);
+            hasCounted = true;
+            observer.disconnect();
+          }
+        });
+      },
+      { threshold: 0.5 } // Adjust sensitivity
+    );
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const target = document.getElementById("statsSection");
+      if (target) observer.observe(target);
+    });
+
+
+
+  // ON-CLICK SLIDING ANIMATION 
+  const features = document.querySelectorAll(".feature-item");
+const imageWrapper = document.querySelector(".feature-image-wrapper");
+let featureImage = document.getElementById("featureImage"); // initial reference
+let currentIndex = 0;
+
+features.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    if (index === currentIndex) return;
+
+    // Highlight active feature
+    features.forEach(el => el.classList.remove("active"));
+    item.classList.add("active");
+
+    const newImageSrc = item.getAttribute("data-image");
+    const isForward = index > currentIndex;
+
+    // Create and insert new image
+    const newImg = document.createElement("img");
+    newImg.src = newImageSrc;
+    newImg.className = `feature-image ${isForward ? "slide-in-right" : "slide-in-left"}`;
+    imageWrapper.appendChild(newImg);
+
+    // Trigger slide out on current image
+    featureImage.classList.add(isForward ? "slide-out-left" : "slide-out-right");
+
+    setTimeout(() => {
+      // Remove old image
+      featureImage.remove();
+
+      // Finalize new image
+      newImg.classList.remove("slide-in-left", "slide-in-right");
+      newImg.classList.add("show");
+      newImg.id = "featureImage";
+
+      // Update reference
+      featureImage = newImg;
+      currentIndex = index;
+    }); // ⏱ match your CSS transition
+  });
+});
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script src="./js/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 700,
+      once: true,
+      });
+  </script>
   
 
 <script src="./js/script.js"></script>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
 </body>

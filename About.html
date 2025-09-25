@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trazemid Bank</title>
+    <title>About Trazemid Bank</title>
     <link rel="stylesheet" href="./Styles/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./Styles/styles.css">
@@ -16,35 +16,53 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-   <!-- FDIC Info Bar -->
-  <div class="fdic-bar text-start">
-    <div class="container">
-        <span><img src="./images/fdic-logo-white-en.png" alt="" class="img-fluid"> Insured — Backed by the full faith and credit of the U.S. Government</span>
-    </div>
-  </div>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="./index.html">
-        <span><img src="./images/td-logo-en.png" alt="" class="w-50"></span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarMain">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="./personal.html">Personal</a></li>
-          <li class="nav-item"><a class="nav-link" href="./SmallBusiness.html">Small Business</a></li>
-          <li class="nav-item"><a class="nav-link" href="./Commercial.html">Commercial</a></li>
-          <li class="nav-item"><a class="nav-link" href="Investing.html">Investing & Wealth</a></li>
-          <li class="nav-item"><a class="nav-link active" href="About.html">About Us</a></li>
+    
+  <section class="hero mb-5">
+    <!-- ✅ Navbar -->
+      <nav class="navbar py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+        
+        <!-- Left: Logo -->
+        <a class="navbar-brand fw-bold fs-4 col-3 col-lg-1 me-5" href="index.html"><img src="./images/td-logo-en.png" class="col-12 me-0" />Trazemid Bank<span style="color: #00b90f">.</span></a>
+
+        <!-- Center: Navigation Links -->
+        <ul class="nav d-none d-lg-flex justify-content-end text-dark ms-5">
+          <li class="nav-item"><a class="nav-link px-3 text-dark fw-semibold" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link px-3 text-dark fw-semibold" href="./About.html">
+              About Us
+            </a>
+          </li>
+          <li class="nav-item"><a class="nav-link px-3 text-dark fw-semibold" href="features.html">Features</a></li>
+          <li class="nav-item"><a class="nav-link px-3 text-dark fw-semibold" href="./reviews.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link px-3 text-dark fw-semibold" href="./contact.html">Contact</a></li>
         </ul>
-        <div class="login-icons d-flex align-items-end">
-          <a class="btn primary-btn rounded ms-3 text-decoration-none text-white" href="./login.html"><span class="me-1 bi bi-person-fill"></span> Log In</a>
+
+        <!-- Right: CTA Button -->
+        <div class="d-none d-lg-block">
+          <a href="./login.html" class="btn primary-btn app-store-btn">Get Started</a>
         </div>
+
+        <!-- Toggle for Mobile -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
-    </div>
-  </nav>
+
+      <!-- Mobile Menu -->
+      <div class="collapse navbar-collapse d-lg-none px-4" id="mobileMenu">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-white" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./features.html">Features</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./reviews.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="index.html#benefits">Benefits</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./index.html#faq">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="./contact.html">Contact</a></li>
+          <li class="nav-item mt-2"><a class="btn btn-light app-store-btn" href="./login.html">Start Banking</a></li>
+        </ul>
+      </div>
+    </nav>
 
   <!-- Hero Section -->
   <div class="container bg-primary d-flex text-center text-white justify-content-center align-content-center p-5">
@@ -76,138 +94,314 @@
         <!-- ABOUT TD END  -->
 
         <!-- OUR STORY START -->
-
-        <div class="our-story container">
-            <h3>Our story</h3>
-            <div class="working-together">
-                <div class="working-together-image">
-                    <img src="./images/explore2.png" alt="image">
-                </div>
-                <div class="working-together-contents">
-                    <a href="#">Working together, toward an inclusive and <br> sustainable future <i class="fa fa-angle-right"></i></a>
-                    <p>Our Environmental, Social and Governance (ESG) strategy reflects the commitments we make and is represented by the actions we take together. Learn more about our approach to ESG.</p>
-                </div>
+        
+    <!-- Mission, Vision, Values -->
+    <section class="py-5 my-5">
+        <div class="container">
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+            <div class="icon-box">
+                <i class="bi bi-bullseye fs-3 primary-text mb-4"></i>
+                <h5 class="fw-bold">Our Mission</h5>
+                <p>To empower individuals and businesses with innovative, user-friendly financial solutions that drive growth and inclusivity.</p>
             </div>
-            <div class="Protecting-our-planet">
-                <div class="Protecting-our-planet-image">
-                    <img src="./images/count-funds.png" alt="image">
-                </div>
-                <div class="Protecting-our-planet-contents">
-                    <a href="#">Protecting yourself from fraud and scams<i class="fa fa-angle-right"></i></a>
-                    <p>Resources and advice to help keep you and your family safe and informed</p>
-                </div>
             </div>
-        </div>
-
-        <!-- OUR STORY END -->
-
-            <!-- TD EVENTS START -->
-        <div class="td-event">
-            <h3>TD Events</h3>
-            <div class="td-event-contents container">
-                <div class="td-event-image">
-                    <img src="./images/img_4.jpg" alt="image">
-                </div>
-                <div class="td-event-contents-text">
-                    <small>Proven innovator, new perspectives</small><br>
-                    <p>TD Invent – It's how we bring <br>innovation to life.</p>
-                </div>
+            <div class="col-md-4">
+            <div class="icon-box">
+                <i class="bi bi-eye-fill fs-3 primary-text"></i>
+                <h5 class="fw-bold">Our Vision</h5>
+                <p>To become Africa's most trusted neobank by delivering cutting-edge banking experiences that simplify lives.</p>
             </div>
-            <p id="td-event">TD Invent is our enterprise approach to innovation and supports our business <br>strategy as a forward-focused bank. It's about using emerging technology to <br>engage with our customers and exceeding their rapidly evolving expectations. </p>
-            <div class="btn">
-                <button class="explore-td">Explore TD Invent</button>   
+            </div>
+            <div class="col-md-4">
+            <div class="icon-box">
+                <i class="bi bi-heart-fill fs-3 primary-text"></i>
+                <h5 class="fw-bold">Our Values</h5>
+                <p>Integrity, Innovation, Customer-Centricity, Security, and Excellence.</p>
+            </div>
             </div>
         </div>
-
-        <!-- TD EVENTS END -->
-
-        <!-- INNOVATION ACCELERATED END  -->
-
-        <div class="innovation">
-            <div class="innovation-accelerated container">
-                <div class="innovation-accelerated-image col-lg-5">
-                    <img src="./images/chart.png" alt="image">
-                </div>
-                <div class="innovation-accelerated-contents">
-                    <h4>Fast growing</h4>
-                    <p>We’ve developed a proven, repeatable way to explore, test and get <br>our ground-breaking ideas into your hands fast.</p>
-                </div>
-            </div>
-            <div class="Empowered container">
-                <div class="Empowered-image col-lg-5">
-                    <img src="./images/article1.jpg" alt="image">
-                </div>
-                <div class="Empowered-contents">
-                    <h4>Empowered colleagues</h4>
-                    <p>We’ve made it easy for TD employees to harness their creativity, bring their ideas to life, and solve customer and colleague problems.</p>
-                </div>
-            </div>
-            <div class="human-approach container">
-                <div class="human-approach-image col-lg-5">
-                    <img src="./images/coins2.png" alt="image">
-                </div>
-                <div class="human-approach-contents">
-                    <h4>A human approach</h4>
-                    <p>We put you at the centre of everything we do. This ensures we’re designing things that you want, need and can use intuitively.</p>
-                </div>
-            </div>
         </div>
-
-        <!-- INNOVATION ACCELERATED END -->
+    </section>
 
     </div>
-
-    <footer class="bg-light pt-5">
-        <div class="container text-center">
-      
-          <!-- Contact CTA -->
-          <div class="mb-4">
-            <a href="./login.html" class="primary-text fs-5 text-decoration-none">
-              Need to talk to us directly? <span class="fw-semibold">Contact us ›</span>
-            </a>
-          </div>
-      
-          <!-- Social Icons -->
-          <div class="mb-4">
-            <p class="fw-semibold text-muted">Follow Trazemid Bank</p>
-            <div class="d-flex justify-content-center gap-3 col-3 mx-auto">
-              <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-twitter-x"></i></a>
-              <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-youtube"></i></a>
-              <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-      
-          <!-- Footer Links -->
-          <div class="row justify-content-center mb-4">
-            <div class="col-auto">
-              <ul class="list-inline mb-0">
-                <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Privacy</a></li>
-                <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">California Privacy</a></li>
-                <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Online Advertising</a></li>
-                <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Terms of Use</a></li>
-                <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Security</a></li>
-                <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">About Us</a></li>
-                <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Accessibility</a></li>
-                <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Careers</a></li>
-                <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Site Map</a></li>
-              </ul>
-            </div>
-          </div>
-      
-          <!-- Divider -->
-      
-          <hr class="w-75 mx-auto my-5">
-          <div class="col-lg-8 mx-auto text-muted mb-4">
-            <small><span class="fw-semibold">tdbankservicesupport@gmail.com<br>
-                ©2025 Trazemid Bank, N.A. All Rights Reserved.</small>
-          </div>
-          <br>
+<!-- Company Stats -->
+<section class="py-5 bg-dark my-5" id="statsSection">
+<div class="container text-center text-white py-4">
+  <div class="row g-4">
+    <div class="col-md-3">
+      <h1 class="fw-bold"><span class="count-up" data-target="20.3">0</span>M</h1>
+      <p class="text-white-50 fw-semibold">Users Worldwide</p>
+    </div>
+    <div class="col-md-3">
+      <h1 class="fw-bold count-up" data-target="85.5">0</h1>
+      <p class="text-white-50">System Uptime</p>
+    </div>
+    <div class="col-md-3">
+      <h1 class="fw-bold count-up" data-target="150">0</h1>
+      <p class="text-white-50 fw-semibold">Team Members</p>
+    </div>
+    <div class="col-md-3">
+      <h1 class="fw-bold count-up" data-target="24">0</h1>
+      <p class="text-white-50 fw-semibold">Customer Support</p>
+    </div>
+  </div>
+</div>
+</section>
+        
+<main class="container my-5 py-5" id="faq">
+    <h1 class="text-center caption">Frequently Asked Questions</h1>
+    <!-- Accordion start -->
+  <div class="accordion" id="accordionExample">
+  
+    <!-- 1. How do I open an account? -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <h5>How do I open an account?</h5>
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Opening an account is fast and free. Just click on “Get Started,” and follow the prompts to verify your identity.
         </div>
-      </footer>
+      </div>
+    </div>
+  
+    <!-- 2. Is my money safe with Trazemid Bank? -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <h5>Is my money safe with Trazemid Bank?</h5>
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Absolutely. We use bank-grade encryption and are fully licensed and regulated. Your funds are also insured up to the legal limit.
+        </div>
+      </div>
+    </div>
+  
+    <!-- 3. How can I send or receive money? -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <h5>How can I send or receive money?</h5>
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          You can send or receive money instantly using a phone number, account number, or QR code — all from your dashboard.
+        </div>
+      </div>
+    </div>
+  
+    <!-- 4. Are there any hidden charges? -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <h5>Are there any hidden charges?</h5>
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          No. We believe in full transparency. All fees are clearly listed and shown before any transaction is completed.
+        </div>
+      </div>
+    </div>
+  
+    <!-- 5. What should I do if I forget my password? -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          <h5>What should I do if I forget my password?</h5>
+        </button>
+      </h2>
+      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Tap “Forgot Password” on the login screen and follow the instructions. You’ll be able to reset your password securely in minutes.
+        </div>
+      </div>
+    </div>
+  
+    <!-- 6. Can I use Trazemid Bank outside my country? -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingSix">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          <h5>Can I use Trazemid Bank outside my country?</h5>
+        </button>
+      </h2>
+      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+        data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          Yes! Trazemid Bank works globally. You can access your account, send or receive money, and manage your finances wherever you are.
+        </div>
+      </div>
+    </div>
+  
+  </div>
+  <p class="mt-5 text-center">Have more questions? <a href="./contact.html" class="detail text-decoration-none">Contact our support</a></p>
+  <!-- Accordion end -->
+  </main>
+  </section>
+<!-- FOOTER  -->
+<footer class="text-white pt-5 pb-2"style="background-image: url(./images/world-dotted-map.png); background-position: center; background-size: 60%; background-repeat: no-repeat;">
+    <div class="container">
+      <div class="row gy-4 justify-content-between py-5">
+  
+      <!-- Company Branding -->
+      <div class="col-lg-3">
+        <h4 class="fw-bold text-uppercase">Trazemid Bank</h4>
+        <p class="text-white-50 mt-2">Revolutionizing finance with simple, smart, and secure banking for everyone.</p>
+        <div class="d-flex gap-3 mt-3">
+          <span class="text-white fs-5"><i class="bi bi-facebook"></i></span>
+          <span class="text-white fs-5"><i class="bi bi-linkedin"></i></span>
+          <span class="text-white fs-5"><i class="bi bi-instagram"></i></span>
+        </div>
+      </div>
+  
+      <!-- Quick Navigation -->
+      <div class="col-lg-2 col-md-6">
+        <h6 class="text-uppercase fw-semibold">Company</h6>
+        <ul class="list-unstyled mt-3">
+          <li><a href="./index.html" class="text-white-50 text-decoration-none d-block mb-2">Home</a></li>
+          <li><a href="./about.html" class="text-white-50 text-decoration-none d-block mb-2">About Us</a></li>
+          <li><a href="./features.html" class="text-white-50 text-decoration-none d-block mb-2">Features</a></li>
+          <li><a href="./reviews.html" class="text-white-50 text-decoration-none d-block mb-2">Our Reviews</a></li>
+          <li><a href="./contact.html" class="text-white-50 text-decoration-none d-block">Contact Us</a></li>
+        </ul>
+      </div>
+  
+      <!-- Resources -->
+      <div class="col-lg-3 col-md-6">
+        <h6 class="text-uppercase fw-semibold">User Dashboard</h6>
+        <ul class="list-unstyled mt-3">
+          <li><a href="./login.html" class="text-white-50 text-decoration-none d-block mb-2">Overview</a></li>
+          <li><a href="./login.html" class="text-white-50 text-decoration-none d-block mb-2">Bank Statement</a></li>
+          <li><a href="./login.html" class="text-white-50 text-decoration-none d-block mb-2">Inter-BankTransfer</a></li>
+          <li><a href="./login.html" class="text-white-50 text-decoration-none d-block mb-2">Domestic Transfer</a></li>
+          <li><a href="./login.html" class="text-white-50 text-decoration-none d-block">Wire Transfer</a></li>
+        </ul>
+      </div>
+  
+      <!-- Contact Info -->
+      <div class="col-lg-3">
+        <h6 class="text-uppercase fw-semibold">Contact</h6>
+        <ul class="list-unstyled mt-3 text-white-50">
+          <li><i class="bi bi-envelope-fill me-1"></i>tdbankservicesupport@gmail.com</li>
+            <li class="mt-2"><i class="bi bi-telephone-fill me-2"></i>+1 (414) 485-4572</li>
+        </ul>
+      </div>
+  
+      </div>
+  
+      <!-- Bottom Bar -->
+      <div class="text-center border-top border-secondary mt-2 py-4">
+        <small class="text-white-50">&copy; 2025 Trazemid Bank. All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
 
 
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const counters = document.querySelectorAll('.count-up');
+      
+          const options = {
+            threshold: 0.5,
+          };
+      
+          const observer = new IntersectionObserver(function (entries, observer) {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const counter = entry.target;
+                const updateCount = () => {
+                  const target = +counter.getAttribute('data-target');
+                  const isDecimal = target % 1 !== 0;
+                  const increment = target / 200;
+      
+                  let count = 0;
+      
+                  const tick = () => {
+                    count += increment;
+                    if (count < target) {
+                      counter.textContent = isDecimal
+                        ? count.toFixed(1)
+                        : Math.floor(count).toLocaleString();
+                      requestAnimationFrame(tick);
+                    } else {
+                      counter.textContent = isDecimal
+                        ? target.toFixed(1)
+                        : target.toLocaleString();
+                    }
+                  };
+      
+                  tick();
+                };
+      
+                updateCount();
+                observer.unobserve(counter); // run only once
+              }
+            });
+          }, options);
+      
+          counters.forEach(counter => observer.observe(counter));
+        });
+      
+        // ON-CLICK SLIDING ANIMATION 
+        const features = document.querySelectorAll(".feature-item");
+      const imageWrapper = document.querySelector(".feature-image-wrapper");
+      let featureImage = document.getElementById("featureImage"); // initial reference
+      let currentIndex = 0;
+      
+      features.forEach((item, index) => {
+        item.addEventListener("click", () => {
+          if (index === currentIndex) return;
+      
+          // Highlight active feature
+          features.forEach(el => el.classList.remove("active"));
+          item.classList.add("active");
+      
+          const newImageSrc = item.getAttribute("data-image");
+          const isForward = index > currentIndex;
+      
+          // Create and insert new image
+          const newImg = document.createElement("img");
+          newImg.src = newImageSrc;
+          newImg.className = `feature-image ${isForward ? "slide-in-right" : "slide-in-left"}`;
+          imageWrapper.appendChild(newImg);
+      
+          // Trigger slide out on current image
+          featureImage.classList.add(isForward ? "slide-out-left" : "slide-out-right");
+      
+          setTimeout(() => {
+            // Remove old image
+            featureImage.remove();
+      
+            // Finalize new image
+            newImg.classList.remove("slide-in-left", "slide-in-right");
+            newImg.classList.add("show");
+            newImg.id = "featureImage";
+      
+            // Update reference
+            featureImage = newImg;
+            currentIndex = index;
+          }); // ⏱ match your CSS transition
+        });
+      });
+      </script>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
