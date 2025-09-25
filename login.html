@@ -199,17 +199,46 @@ footer {
   <div class="container mb-0 mt-5">
     <div class="col-lg-12 g-5 d-flex row justify-content-between align-items-center">
       <div class="login-box pb-5">
-        <form class="p-5 border col-12 rounded shadow-sm">
-          <h4 class="primary-text3 mb-4 text-center">Welcome to Online Banking</h4>
-          <input type="text" placeholder="User name" required />
-          <input type="password" placeholder="Password" required />
-          <div class="remember-me">
-            <input type="checkbox" id="remember" class="me-1"/>
-            <label for="remember" class="primary-text">Remember me</label>
-          </div>
-          <button type="submit" class="btn py-2 primary-btn">Log in</button>
-          <a href="./create-account.html" class="forgot-link">Don't have an account?</a>
-        </form>
+        <form id="loginForm" class="p-5 border col-12 rounded shadow-sm">
+            <h4 class="primary-text3 mb-4 text-center">Welcome to Online Banking</h4>
+            
+            
+            <input 
+              type="text" 
+              id="usernameOrEmail" 
+              placeholder="User name or Email" 
+              class="form-control mb-3"
+              required 
+            />
+
+           
+            <input 
+              type="password" 
+              id="password" 
+              placeholder="Password" 
+              class="form-control mb-3"
+              required 
+            />
+
+           
+            <div class="remember-me">
+              <input type="checkbox" id="remember" class="me-1"/>
+              <label for="remember" class="primary-text">Remember me</label>
+            </div>
+
+            
+            <div id="messageBox" class="my-3"></div>
+
+           
+            <button 
+              type="submit" 
+              id="loginBtn" 
+              class="btn py-2 primary-btn">
+              Log in
+            </button>
+
+            <a href="./create-account.html" class="forgot-link">Don't have an account?</a>
+          </form>
       </div>
       <div class="col-10 col-lg-3 hero-pane position-relative section-1">
         <!-- Paper plane -->
@@ -287,7 +316,7 @@ footer {
     </div>
   </div>
 </footer>
-
+<script src="./js/login.js"></script>
 </body>
 </html>
   

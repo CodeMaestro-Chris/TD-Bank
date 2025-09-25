@@ -229,7 +229,7 @@
       <textarea id="description" name="description" class="form-control border" rows="3" placeholder="Transfer Description" required></textarea>
     </div>
   </div>
-
+  <div id="messageBox" class="my-3"></div>
   <!-- Submit -->
   <div class="d-flex justify-content-end mt-4">
     <button type="submit" class="btn py-2 px-4 primary-btn text-white">
@@ -370,39 +370,6 @@
     
 
 
-<script>
-/// ✅ Stop page refresh and show password modal
-document.getElementById("domesticTransferForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  new bootstrap.Modal(document.getElementById("confirmPasswordModal")).show();
-});
-
-// ✅ Handle password confirmation
-document.getElementById("confirmTransactionBtn").addEventListener("click", async () => {
-  const password = document.getElementById("transactionPassword").value.trim();
-
-  if (!password) {
-    alert("Please enter your password.");
-    return;
-  }
-
-  // ✅ Close password modal
-  const confirmModal = bootstrap.Modal.getInstance(document.getElementById("confirmPasswordModal"));
-  confirmModal.hide();
-
-  // ✅ Fill success modal details
-  const form = document.getElementById("domesticTransferForm");
-  document.getElementById("s_beneficiaryName").textContent = form.beneficiaryName.value;
-  document.getElementById("s_beneficiaryAccount").textContent = form.beneficiaryAccount.value;
-  document.getElementById("s_bankName").textContent = form.bankName.value;
-  document.getElementById("s_amount").textContent = `USD $ ${form.amount.value}`;
-  document.getElementById("s_accountType").textContent = form.accountType.value;
-  document.getElementById("s_description").textContent = form.description.value;
-
-  // ✅ Show success modal
-  new bootstrap.Modal(document.getElementById("successModal")).show();
-});
-
-</script>
+<script src="./js/domestic.js"></script>
 </body>
 </html>

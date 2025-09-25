@@ -280,7 +280,7 @@
           <label class="form-label required">Description <span class="req">*</span></label>
           <textarea id="description" class="form-control border" rows="3" placeholder="Transfer description (Optional)"></textarea>
         </div>
-
+        <div id="messageBox" class="my-3"></div>
         <div class="col-12 d-flex justify-content-end">
           <button type="submit" class="btn py-2 px-4 btn-submit text-white primary-btn print-btn">
             <span class="me-2"><i class="bi bi-arrow-right-circle"></i></span>Transfer
@@ -420,38 +420,7 @@
 
 
 <script>
-/// ✅ Stop page refresh and show password modal
-document.getElementById("wireTransferForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  new bootstrap.Modal(document.getElementById("confirmPasswordModal")).show();
-});
-
-// ✅ Handle password confirmation
-document.getElementById("confirmTransactionBtn").addEventListener("click", async () => {
-  const password = document.getElementById("transactionPassword").value.trim();
-
-  if (!password) {
-    alert("Please enter your password.");
-    return;
-  }
-
-  // ✅ Close password modal
-  const confirmModal = bootstrap.Modal.getInstance(document.getElementById("confirmPasswordModal"));
-  confirmModal.hide();
-
-  // ✅ Fill success modal details
-  const form = document.getElementById("wireTransferForm");
-  document.getElementById("s_beneficiaryName").textContent = form.beneficiaryName.value;
-  document.getElementById("s_beneficiaryAccount").textContent = form.beneficiaryAccount.value;
-  document.getElementById("s_bankName").textContent = form.bankName.value;
-  document.getElementById("s_amount").textContent = `USD $ ${form.amount.value}`;
-  document.getElementById("s_accountType").textContent = form.accountType.value;
-  document.getElementById("s_description").textContent = form.description.value;
-
-  // ✅ Show success modal
-  new bootstrap.Modal(document.getElementById("successModal")).show();
-});
-
 </script>
+<script src="./js/wire.js"></script>
 </body>
 </html>

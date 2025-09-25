@@ -354,43 +354,9 @@
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   
-      
+
   
-  <script>
-    // ✅ Stop page refresh and show password modal
-    document.getElementById("wireTransferForm").addEventListener("submit", function (e) {
-      e.preventDefault();
-      new bootstrap.Modal(document.getElementById("confirmPasswordModal")).show();
-    });
-    
-    // ✅ Handle password confirmation
-    document.getElementById("confirmTransactionBtn").addEventListener("click", async () => {
-      const password = document.getElementById("transactionPassword").value.trim();
-    
-      if (!password) {
-        alert("Please enter your password.");
-        return;
-      }
-    
-      // ✅ Close password modal
-      const confirmModal = bootstrap.Modal.getInstance(document.getElementById("confirmPasswordModal"));
-      confirmModal.hide();
-    
-      // ✅ Fill success modal details
-      const form = document.getElementById("wireTransferForm");
-      document.getElementById("s_beneficiaryName").textContent = form.querySelector("#beneficiaryName").value;
-      document.getElementById("s_beneficiaryAccount").textContent = form.querySelector("#beneficiaryAccount").value;
-      document.getElementById("s_bankName").textContent = form.querySelector("#bankName").value;
-      document.getElementById("s_amount").textContent = `USD $ ${form.querySelector("#amount").value}`;
-      document.getElementById("s_accountType").textContent = form.querySelector("#accountType").value;
-      document.getElementById("s_description").textContent = form.querySelector("#description").value;
-    
-      // ✅ Show success modal
-      new bootstrap.Modal(document.getElementById("successModal")).show();
-    });
-    
-  
-  </script>
+  <script src="./js/interbank.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
 </html>
