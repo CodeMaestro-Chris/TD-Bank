@@ -148,34 +148,56 @@ footer {
    </style>
 </head>
 <body>
+  
+  <!-- ✅ Navbar -->
+    <nav class="navbar py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      
+      <!-- Left: Logo -->
+      <a class="navbar-brand fw-bold fs-4 col-3 col-lg-1 me-5 text-dark" href="index.html"><img src="./images/td-logo-en.png" class="col-5 me-2" />Trazemid Bank<span style="color: #00b90f">.</span></a>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="./index.html">
-        <span><img src="./images/td-logo-en.png" alt="" class="w-50"></span>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+      <!-- Center: Navigation Links -->
+      <ul class="nav d-none d-lg-flex justify-content-end text-dark ms-5">
+        <li class="nav-item"><a class="nav-link px-3 text-dark fw-semibold" href="index.html">Home</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link px-3 text-dark fw-semibold" href="./About.html">
+            About Us
+          </a>
+        </li>
+        <li class="nav-item"><a class="nav-link px-3 text-dark fw-semibold" href="features.html">Features</a></li>
+        <li class="nav-item"><a class="nav-link px-3 text-dark fw-semibold" href="./reviews.html">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link px-3 text-dark fw-semibold" href="./contact.html">Contact</a></li>
+      </ul>
+
+      <!-- Right: CTA Button -->
+      <div class="d-none d-lg-block">
+        <a href="./create-account.html" class="btn primary-btn app-store-btn">Get Started</a>
+      </div>
+
+      <!-- Toggle for Mobile -->
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarMain">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="./personal.html">Personal</a></li>
-          <li class="nav-item"><a class="nav-link" href="./SmallBusiness.html">Small Business</a></li>
-          <li class="nav-item"><a class="nav-link" href="./Commercial.html">Commercial</a></li>
-          <li class="nav-item"><a class="nav-link" href="Investing.html">Investing & Wealth</a></li>
-          <li class="nav-item"><a class="nav-link" href="About.html">About Us</a></li>
-        </ul>
-        <div class="login-icons d-flex align-items-center">
-          <a class="btn primary-btn rounded ms-3 px-lg-3 px-2 text-decoration-none" href="./create-account.html"><span class="me-1 bi bi-person-plus-fill"></span> Sign Up</a>
-        </div>
-      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="collapse navbar-collapse d-lg-none px-4" id="mobileMenu">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-dark" href="./index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="./about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="./features.html">Features</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="./reviews.html">Reviews</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="index.html#benefits">Benefits</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="./index.html#faq">FAQs</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="./contact.html">Contact</a></li>
+        <li class="nav-item mt-2"><a class="nav-link text-dark" href="./login.html">Start Banking</a></li>
+      </ul>
     </div>
   </nav>
 
   <main>
   <div class="container mb-0 mt-5">
-    <div class="col-lg-12 g-5 row justify-content-between align-items-center">
+    <div class="col-lg-12 g-5 d-flex row justify-content-between align-items-center">
       <div class="login-box pb-5">
         <form class="p-5 border col-12 rounded shadow-sm">
           <h4 class="primary-text3 mb-4 text-center">Welcome to Online Banking</h4>
@@ -208,50 +230,61 @@ footer {
 </main>
   <!-- Footer -->
   
-<footer class="bg-light pt-5">
-  <div class="container text-center">
+<!-- FOOTER  -->
+<footer class="text-white pt-5 pb-2"style="background-image: url(./images/world-dotted-map.png); background-position: center; background-size: 60%; background-repeat: no-repeat;">
+  <div class="container">
+    <div class="row gy-4 justify-content-between py-5">
 
-    <div class="mb-4">
-      <a href="./login.html" class="primary-text fs-5 text-decoration-none">
-        Need to talk to us directly? <span class="fw-semibold">Contact us ›</span>
-      </a>
-    </div>
-
-    <div class="mb-4">
-      <p class="fw-semibold text-muted">Follow Trazemid Bank</p>
-      <div class="d-flex justify-content-center gap-3 col-3 mx-auto">
-        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-twitter-x"></i></a>
-        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-youtube"></i></a>
-        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="text-decoration-none icon-circle2 p-3"><i class="bi bi-linkedin"></i></a>
+    <!-- Company Branding -->
+    <div class="col-lg-3">
+      <h4 class="fw-bold text-uppercase">Trazemid Bank</h4>
+      <p class="text-white-50 mt-2">Revolutionizing finance with simple, smart, and secure banking for everyone.</p>
+      <div class="d-flex gap-3 mt-3">
+        <span class="text-white fs-5"><i class="bi bi-facebook"></i></span>
+        <span class="text-white fs-5"><i class="bi bi-linkedin"></i></span>
+        <span class="text-white fs-5"><i class="bi bi-instagram"></i></span>
       </div>
     </div>
 
-    
-    <div class="row justify-content-center mb-4">
-      <div class="col-auto">
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Privacy</a></li>
-          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">California Privacy</a></li>
-          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Online Advertising</a></li>
-          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Terms of Use</a></li>
-          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Security</a></li>
-          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">About Us</a></li>
-          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Accessibility</a></li>
-          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Careers</a></li>
-          <li class="list-inline-item mx-2"><a href="#" class="text-muted text-decoration-none">Site Map</a></li>
-        </ul>
-      </div>
+    <!-- Quick Navigation -->
+    <div class="col-lg-2 col-md-6">
+      <h6 class="text-uppercase fw-semibold">Company</h6>
+      <ul class="list-unstyled mt-3">
+        <li><a href="./index.html" class="text-white-50 text-decoration-none d-block mb-2">Home</a></li>
+        <li><a href="./about.html" class="text-white-50 text-decoration-none d-block mb-2">About Us</a></li>
+        <li><a href="./features.html" class="text-white-50 text-decoration-none d-block mb-2">Features</a></li>
+        <li><a href="./reviews.html" class="text-white-50 text-decoration-none d-block mb-2">Our Reviews</a></li>
+        <li><a href="./contact.html" class="text-white-50 text-decoration-none d-block">Contact Us</a></li>
+      </ul>
     </div>
 
-
-    <hr class="w-75 mx-auto my-5">
-    <div class="col-lg-8 mx-auto text-muted mb-4">
-      <small><span class="fw-semibold">tdbankservicesupport@gmail.com<br>
-          ©2025 Trazemid Bank, N.A. All Rights Reserved.</small>
+    <!-- Resources -->
+    <div class="col-lg-3 col-md-6">
+      <h6 class="text-uppercase fw-semibold">User Dashboard</h6>
+      <ul class="list-unstyled mt-3">
+        <li><a href="./login.html" class="text-white-50 text-decoration-none d-block mb-2">Overview</a></li>
+        <li><a href="./login.html" class="text-white-50 text-decoration-none d-block mb-2">Bank Statement</a></li>
+        <li><a href="./login.html" class="text-white-50 text-decoration-none d-block mb-2">Inter-BankTransfer</a></li>
+        <li><a href="./login.html" class="text-white-50 text-decoration-none d-block mb-2">Domestic Transfer</a></li>
+        <li><a href="./login.html" class="text-white-50 text-decoration-none d-block">Wire Transfer</a></li>
+      </ul>
     </div>
-    <br>
+
+    <!-- Contact Info -->
+    <div class="col-lg-3">
+      <h6 class="text-uppercase fw-semibold">Contact</h6>
+      <ul class="list-unstyled mt-3 text-white-50">
+        <li><i class="bi bi-envelope-fill me-1"></i>tdbankservicesupport@gmail.com</li>
+          <li class="mt-2"><i class="bi bi-telephone-fill me-2"></i>+1 (414) 485-4572</li>
+      </ul>
+    </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="text-center border-top border-secondary mt-2 py-4">
+      <small class="text-white-50">&copy; 2025 Trazemid Bank. All rights reserved.</small>
+    </div>
   </div>
 </footer>
 
